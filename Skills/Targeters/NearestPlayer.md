@@ -1,13 +1,13 @@
-## Description
-Targets the nearest player in a radius
+## 用途
+將半徑內最近的玩家設為目標
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 設定項
+| 設定項 | 簡化   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| radius    | r         | The radius of the targeter                                           | 5       |
+| radius    | r         | 半徑大小      | 5       |
 
 
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:

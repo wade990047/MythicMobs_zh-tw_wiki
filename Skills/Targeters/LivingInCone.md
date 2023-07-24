@@ -1,16 +1,16 @@
-## Description
-Targets all living entities in cone with a specified angle, length and rotation relative to facing direction
+## 用途
+將扇形範圍內的所有實體設為目標(可指定項:角度、半徑、旋轉角度)
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| angle     | a         | The angle of the cone                                                | 90      |
-| range     | r         | The length of the cone                                               | 16      |
-| rotation  | rot       | The rotation of the cone                                             | 0       |
+| angle     | a         | 扇形角度           | 90      |
+| range     | r         | 扇形長度           | 16      |
+| rotation  | rot       | 扇形旋轉角度        | 0       |
 
 
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:
@@ -18,7 +18,7 @@ ExampleSkill:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] entitiesInCone
 - [x] livingEntitiesInCone
 - [x] LEIC

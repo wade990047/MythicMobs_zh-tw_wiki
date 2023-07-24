@@ -1,14 +1,9 @@
-## Description
-Targets the Owner of the casting mob.  
-The Owner can be set via the [SetOwner](/Skills/mechanics/setowner) mechanic.
+## 用途
+將施法者的擁有者設為目標  
+擁有者可以透過技能 **[SetOwner](/Skills/mechanics/setowner)** 進行設定
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
-This metaskill will send a message to the Owner of the casting mob
+## 範例
+這項技能會向施法者的擁有者發送一條消息
 ```yaml
 ExampleSkill:
   Skills:

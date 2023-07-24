@@ -1,12 +1,7 @@
-## Description
-Targets the rider of the casting mob
+## 用途
+將正在騎乘自己的生物設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
   Skills:
   - message{m="Get off!"} @Passenger

@@ -1,12 +1,7 @@
-## Description
-Targets all the players on the casting mob's [Threat Table](/Mobs/ThreatTables)
+## 用途
+將在威脅表上的所有玩家設為目標 [威脅表](/Mobs/ThreatTables)
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
   Skills:
   - ignite @ThreatTablePlayers

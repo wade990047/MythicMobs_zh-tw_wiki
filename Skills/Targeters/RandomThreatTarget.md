@@ -1,17 +1,12 @@
-## Description
-Targets a random entity on the casting mob's [Threat Table](/Mobs/ThreatTables)
+## 用途
+將威脅表上的所有實體隨機選擇一個設為目標 [威脅表](/Mobs/ThreatTables)
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
   Skills:
   - ignite @RandomThreatTarget
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] RTT

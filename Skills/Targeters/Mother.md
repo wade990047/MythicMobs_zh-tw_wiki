@@ -1,18 +1,13 @@
-## Description
-Targets the mother of the casting mob
+## 用途
+將目標的母親設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
   Skills:
   - goto @Mother
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] mom
 - [x] mommy

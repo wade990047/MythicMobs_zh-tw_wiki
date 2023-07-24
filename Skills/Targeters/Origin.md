@@ -1,23 +1,18 @@
-## Description
-Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where this is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile)
+## 用途
+將最外層技能的起點位置設為目標。通常會是施法生物，但在特殊情況下情況會是其他目標(例如投射物(Projectile)技能，其中起點是投射物的當前位置)
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
-The origin targeter is extremely versatile. Take the following metaskill, for instance:
+## 範例
+起點定位器用途極其廣泛。以下為技能範例:
 ```yaml
 ExampleSkill:
   Skills:
   - effect:particles @origin
 ```
-If it is executed by a mob normally, if will display the particles at its location, since the origin of the skill is itself. In this aspect, `origin` does not behave differently from a `self` targeter.  
+如果正常由生物執行，則會在其位置顯示粒子，因為技能的起源是其本身。在這方面，`origin`的行為與`self`目標沒有什麼不同。  
 
-But if the metaskill is executed inside a meta mechanic or after manually changing a skill's origin via the [Origin Universal Attribute](/Skills/Mechanics#universal-attributes), the origin of the skill will change most of the times, and the particles will be displayed in a different spot.  
+但如果技能是在技能內部執行的，或者通過[起點通用屬性](/Skills/Mechanics#universal-attributes)手動更改技能的起點後執行，則技能的起點大多數時候都會改變，並且粒子將顯示在不同的位置。 
 
-The exact position of the `origin` changes based on the context, and more information regarding this behavior can be found in wiki pages for the various mechanics that *do* make use of this.
+`origin`的確切位置會根據上下文而變化，有關此行為的更多信息可以在 wiki 頁面中找到**確實**使用此功能的各種機制。
 
-## Aliases
+## 簡化寫法
 - [x] source

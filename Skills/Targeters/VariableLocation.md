@@ -1,14 +1,14 @@
-## Description
-Targets the location stored in the specified variable. One such variable can be set via the [SetVariableLocation](/skills/mechanics/setvariablelocation) mechanic.
+## 用途
+將指定變量(Variable)中存儲的位置設為目標 [設定變量位置](/skills/mechanics/setvariablelocation)
 
-## Attributes
+## 細項設定
 
-| Attribute      | Aliases  | Description                                                | Default |
+| 設定項      | 簡寫  | 用途            | 預設值 |
 |----------------|----------|------------------------------------------------------------|:-------:|
-| variable       | name, n, var, key, k | The name of the variable.                      |         |
-| scope          | s        | The scope of the variable. Can optionally be set in the name, using the scope.name syntax                                                                        |         |
+| variable       | name, n, var, key, k | 變量名稱                      |         |
+| scope          | s        | 變量類型|         |
 
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:
@@ -16,5 +16,5 @@ ExampleSkill:
   - e:p{y=2} @VariableLocation{var=caster.1}
 ```
 
-## Aliases
+## 簡化寫法
 - [x] varLocation

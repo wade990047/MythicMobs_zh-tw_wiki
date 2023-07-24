@@ -1,12 +1,7 @@
-## Description
-Targets the caster's location
+## 用途
+將施法者的位置設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:
@@ -14,7 +9,7 @@ ExampleSkill:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] casterLocation
 - [x] bossLocation
 - [x] mobLocation

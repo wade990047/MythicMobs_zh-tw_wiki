@@ -1,12 +1,7 @@
-## Description
-Targets the vanilla owner of the caster, if the caster is a wolf
+## 用途
+將狼的主人設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
   Skills:
   - heal{a=10} @WolfOwner

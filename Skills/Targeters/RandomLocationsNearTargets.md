@@ -1,17 +1,17 @@
-## Description
-Targets random locations near the inherited targets
+## 用途
+將繼承目標周圍的隨機位置設為目標
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| amount    | a         | The amount of points                                                 | 5       |
-| radius    | r, maxradius, maxr | The radius in which target points will be generated         | 5       |
-| minradius | minr      | The minimum radius in which target points will be generated          | 0       |
-| spacing   | s         | The minimum amount of space between selected targets                 | 0       |
+| amount    | a         | 點的數量             | 5       |
+| radius    | r, maxradius, maxr | 最大半徑         | 5       |
+| minradius | minr      | 最小半徑          | 0       |
+| spacing   | s         | 每個目標的間隔               | 0       |
 
 
-## Examples
+## 範例
 ```yaml
 ExampleSkill1:
   Skills:
@@ -23,7 +23,7 @@ ExampleSkill2:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] randomLocationsNearTarget
 - [x] randomLocationsNearTargetEntities
 - [x] randomLocationsNearTargetLocations

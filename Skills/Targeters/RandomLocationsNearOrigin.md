@@ -1,16 +1,16 @@
-## Description
-Targets random locations near the origin of the metaskill
+## 用途
+將技能起點附近的隨機位置設為目標
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| amount    | a         | The amount of points                                                 | 5       |
-| radius    | r, maxradius, maxr | The radius in which target points will be generated         | 5       |
-| minradius | minr      | The minimum radius in which target points will be generated          | 0       |
-| spacing   | s         | The minimum amount of space between selected targets                 | 0       |
+| amount    | a         | 點的數量             | 5       |
+| radius    | r, maxradius, maxr | 最大半徑         | 5       |
+| minradius | minr      | 最小半徑         | 0       |
+| spacing   | s         | 選定目標之間的最小相隔空間量                | 0       |
 
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:
@@ -21,7 +21,7 @@ ExampleSkill:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] RLO
 - [x] randomLocationsOrigin
 - [x] RLNO

@@ -1,12 +1,7 @@
-## Description
-Targets the entity that triggered the skilltree
+## 用途
+將觸發技能的實體設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
 TomTheMurderous:
   Type: COW

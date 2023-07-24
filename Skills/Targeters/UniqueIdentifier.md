@@ -1,15 +1,15 @@
-## Description
-Targets a specific entity by their UUID. Can be a placeholder.
+## 用途
+將指定UUID的生物設為目標，支援 Placeholder
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| uuid      | u         | The uuid of the entity                                               | 0       |
+| uuid      | u         | 實體的uuid           | 0       |
 
 
-## Examples
-The following mob will remeber the uuid of the entity that first hit it after it spawned, and will continue to ignite them every 10 seconds after that
+## 範例
+下面的生物會記住他生成後第一個擊中他的實體的 uuid，並且會每 10 秒點燃他
 ```yaml
 VengefulMob:
   Type: ZOMBIE
@@ -19,5 +19,5 @@ VengefulMob:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] uuid

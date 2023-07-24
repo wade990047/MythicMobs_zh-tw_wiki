@@ -1,20 +1,20 @@
-## Description
-Targets the locations all players in the given radius around the caster
+## 用途
+將指定半徑內的所有玩家的位置設為目標
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| radius    | r         | The radius of the targeter                                           | 5       |
-| yoffset   | y         | The y offset of the targeted locations                               | 0       |
+| radius    | r         | 目標半徑範圍       | 5       |
+| yoffset   | y         | 目標位置的 y 偏移量                             | 0       |
 
 
-## Examples
+## 範例
 ```yaml
   Skills:
   - effect:particles @PlayerLocationsInRadius{r=10}
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] PLIR

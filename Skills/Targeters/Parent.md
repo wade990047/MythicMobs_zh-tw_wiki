@@ -1,13 +1,8 @@
-## Description
-Targets the Parent of the casting mob
+## 用途
+將生物的父母設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
-This metaskill will write in chat the name of its parent
+## 範例
+這項技能會在聊天室中輸出其父級生物的名稱
 ```yaml
 ExampleSkill:
   Skills:
@@ -15,5 +10,5 @@ ExampleSkill:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] summoner

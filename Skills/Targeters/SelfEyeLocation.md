@@ -1,12 +1,7 @@
-## Description
-Targets the caster's eye location
+## 用途
+將自己的所視位置設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:
@@ -14,7 +9,7 @@ ExampleSkill:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] eyeDirection
 - [x] casterEyeLocation
 - [x] bossEyeLocation

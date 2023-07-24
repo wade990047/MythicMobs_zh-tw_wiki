@@ -1,14 +1,14 @@
-## Description
-Targets all players in the given radius around the origin of the metaskill.  
+## 用途
+將靠近技能觸發半徑內的所有玩家設為目標 相關技能:origin
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| radius    | r         | The radius of the targeter                                           | 5       |
+| radius    | r         | 目標半徑範圍       | 5       |
 
 
-## Examples
-In this example, when the created projectile ends for whatever reason, it will damage every player in a 2 block radius around itself
+## 範例
+當創建的投射物由於某種原因結束時，它將對自身周圍半徑內 2 格的每個玩家造成傷害
 ```yaml
   Skills:
   - projectile{...;

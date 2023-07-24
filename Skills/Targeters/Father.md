@@ -1,18 +1,13 @@
-## Description
-Targets the father of the casting mob
+## 用途
+將目標的父親設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
   Skills:
   - goto @Father
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] dad
 - [x] daddy <!-- UwU -->

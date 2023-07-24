@@ -1,12 +1,7 @@
-## Description
-Targets the caster's [Tracked Location](/skills/mechanics/tracklocation)
+## 用途
+將怪物正在追踪的位置設為目標 [跟隨位置](/skills/mechanics/tracklocation)
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
   Skills:
   - goto @TrackedLocation

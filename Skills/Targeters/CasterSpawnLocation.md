@@ -1,12 +1,7 @@
-## Description
-Targets the caster's spawn location, if a MythicMob
+## 用途
+將施法者的重生點設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
 ReturnToSpawn:
   Skills:
@@ -14,5 +9,5 @@ ReturnToSpawn:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] casterSpawn

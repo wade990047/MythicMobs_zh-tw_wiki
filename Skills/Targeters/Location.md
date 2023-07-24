@@ -1,19 +1,19 @@
-## Description
-Targets the specified coordinates in the caster's world
+## 用途
+將世界的指定坐標設為目標
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| location  | loc, l, c | The full location, in the `x,y,z,yaw,pitch` format                   |         |
-| x         |           | If `location` is not set, it's the x coordinate of the target location | 0     |
-| y         |           | If `location` is not set, it's the y coordinate of the target location | 0     |
-| z         |           | If `location` is not set, it's the z coordinate of the target location | 0     |
-| yaw       |           | If `location` is not set, it's the yaw of the target location         | 0      |
-| pitch     |           | If `location` is not set, it's the pitch of the target location       | 0      |
+| location  | loc, l, c | 完整的資料型態, 格式為 `x,y,z,yaw,pitch`                  |         |
+| x         |           | 如果 `location` 沒有被設定, 這項用來設定 **x** 座標 | 0     |
+| y         |           | 如果 `location` 沒有被設定, 這項用來設定 **y** 座標 | 0     |
+| z         |           | 如果 `location` 沒有被設定, 這項用來設定 **z** 座標 | 0     |
+| yaw       |           | 如果 `location` 沒有被設定, 這項用來設定頭的前後左右偏移       | 0      |
+| pitch     |           | 如果 `location` 沒有被設定, 這項用來設定頭的上下偏移       | 0      |
 
 
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:

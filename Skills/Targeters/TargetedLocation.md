@@ -1,11 +1,6 @@
-## Description
-Targets the inherited targeted locations. Useful for [Targets Filtering](/Skills/Metaskills#targets-filtering) by using [Targeter Options](/Skills/Targeters#targeter-options).
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 用途
+將目標的位置設為目標. 對於 [目標篩選器](/Skills/Metaskills#targets-filtering) 十分實用並且配合 [目標設定項](/Skills/Targeters#targeter-options).
+## 範例
 ```yaml
 ExampleSkill1:
   Skills:
@@ -17,6 +12,6 @@ ExampleSkill2:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] targetedLocations
 - [x] targetedLoc

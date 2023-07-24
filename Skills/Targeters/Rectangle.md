@@ -1,23 +1,25 @@
 ## Targeter: Rectangle
-Returns the # of points target locations that comprise a rectangle. Depending on the parameters, some elements of the rectangle can be modified, such as it being filled or not, if to target only its outline, its location and so on
+將組成矩形的目標位置點設為目標
 
-### Attributes
+根據參數，可以修改矩形的某些元素，例如是否填充或不填充，是否僅針對其輪廓、位置等
 
-| Attribute      | Aliases  | Description                                                | Default |
+### 細項設定
+
+| 設定項      | 簡寫  | 用途            | 預設值 |
 |----------------|----------|------------------------------------------------------------|:-------:|
-| x              |          | The size of the rectangle on the **x** axis                |         |
-| y              |          | The size of the rectangle on the **y** axis                |         |
-| z              |          | The size of the rectangle on the **z** axis                |         |
-| xOffset        |          | The offset of the rectangle on the **x** axis              |         |
-| yOffset        |          | The offset of the rectangle on the **y** axis              |         |
-| zOffset        |          | The offset of the rectangle on the **z** axis              |         |
-| points         | p        | Amount of points per cube 'line'                           |         |
-| filled         | fill, f  | If the rectangle should be filled                          |         |
-| outline        | edge, onlyEdge, e, onlyOutline, o | If only the outline should be drawn |       |
-| rotation       | r        | The 3D rotation of the rectangle                           |         |
-| fromOrigin     | origin   | If the rectangle should be drawn from the origin of the metaskill |  |
+| x              |          | **x** 軸上矩形的大小                |         |
+| y              |          | **y** 軸上矩形的大小                |         |
+| z              |          | **z** 軸上矩形的大小                |         |
+| xOffset        |          | 矩形在 **x** 軸上的偏移量              |         |
+| yOffset        |          | 矩形在 **x** 軸上的偏移量              |         |
+| zOffset        |          | 矩形在 **z** 軸上的偏移量              |         |
+| points         | p        | 每個立方體`線`的數量                           |         |
+| filled         | fill, f  | 矩形應該被填充                         |         |
+| outline        | edge, onlyEdge, e, onlyOutline, o | 只畫輪廓 |       |
+| rotation       | r        | 矩形的 3D 旋轉                           |         |
+| fromOrigin     | origin   | 矩形是否應該從技能的起點繪製 |  |
 
-## Examples
+## 範例
 ```yaml
 ExampleMob1:
   Type: ZOMBIE

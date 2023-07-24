@@ -1,113 +1,114 @@
-# Targeters
+# 目標選擇器
 
-Targeters are used to determine what a skill targets when it is fired.
+目標選擇器是用來決定技能使用後所要瞄準及應用的目標。
 
-While targeters are technically optional (as the default targeter will usually be @trigger), forgetting a targeter is probably one of the most common mistakes people who are new to MythicMobs make.
+雖然目標選擇器在技術上是非必要設定的(默認目標選擇器是 `@trigger`)，但忘記設定目標選擇器是 MythicMobs 新手最常犯的錯誤之一。
 
-When a targeter is used on the Skill mechanic, all of the skills inside of the meta-skill inherit the initial targeter. You can still overwrite the parent targeter for individual mechanics inside of the meta-skill by giving them their own targeter to use.
+當目標選擇器用於技能機制時，最外層技能內的所有技能都會繼承初始的目標選擇器。
+
+但仍然可以通過為最外層技能內的各個技能提供自己的目標選擇器來覆蓋其主目標選擇器。
 
 [[_TOC_]]
 
-## Entity Targeters
+## 實體類目標選擇器
 
-### Single-Entity Targeters
+### 獨立實體目標選擇器
 
-| Targeter | Shorthand | Description                                                                     |
+| 目標選擇器 | 其他寫法 | 用法|
 |----------|-----------|---------------------------------------------------------------------------------|
-| @[Self][]                                                                                                                                                                            | @Caster<br>@Boss<br>@Mob                                                                                                                                                                            | Targets the caster of the mechanic                                                                                                                                                                            |
-| @[Target][]                                                                                                                                                                            | @T                                                                                                                                                                            | Targets the caster's target                                                                                                                                                                            |
-| @[Trigger][]                                                                                                                                                                            |    | Targets the entity that triggered the skill                                                                                                                                                                            |
-| @[NearestPlayer][]                                                                                                                                                                            |    | Targets the nearest player in radius                                                                                                                                                                            |
-| @[WolfOwner][]                                                                                                                                                                            |    | Targets the owner of the wolf                                                                                                                                                                            |
-| @[Owner][]                                                                                                                          |    | Targets the [owner](/skills/mechanics/setowner) of the mob                                                                                                                          |
-| @[Parent][]                                                                                                                          | @summoner                                                                                                                          | Targets the [parent](/skills/mechanics/setparent) of the mob                                                                                                                          |
-| @[Mount][]                                                                                                                                                                            |                                                                                                                                                                            | Targets the entity that the mob is currently riding                                                                                                                                                                            |
-| @[Children][]                                                                                                                          | @child<br>@summons                                                                                                                          | Targets any child entities summoned by the caster.                                                                                                                          |
-| @[Father][]                                                                                                                          | @dad<br>@daddy                                                                                                                          | Targets the father of the casting mob.                                                                                                                          |
-| @[Mother][]                                                                                                                          | @mom<br>@mommy                                                                                                                          | Targets the mother of the casting mob.                                                                                                                          |
-| @[Passenger][]                                                                                                                          |    | Targets the rider of the casting mob.                                                                                                                          |
-| @[PlayerByName][]                                                                                                                          | @specificplayer                                                                                                                          | Targets a specific player by name. Supports placeholders.                                                                                                                           |
-| @[UniqueIdentifier][]                                                                                                                          | @UUID                                                                                                                          | Targets a specific entity by their UUID, supports placeholders                                                                                                                          |
-| @[Vehicle][]                                                                                                                          |    | Targets the caster's vehicle                                                                                                                          |
+| @[Self][]  | `@Caster` | 將自己設為技能目標 |
+| @[Target][]  | `@T` | 技能使用者的目標  |
+| @[Trigger][]  | | 將觸發技能的生物設為目標 |
+| @[NearestPlayer][]  | | 將半徑內最近的玩家設為目標 |
+| @[WolfOwner][]  | | 將狼的主人設為目標 |
+| @[Owner][]  | | 將生物的擁有者設為目標 對應技能:**[owner](/skills/mechanics/setowner)** |
+| @[Parent][]  | `@summoner`| 將生物的父母設為目標 對應技能:**[parent](/skills/mechanics/setparent)**|
+| @[Mount][]  |  | 將目標正在騎乘的生物設為目標 |
+| @[Children][]  | `@child`<br>`@summons`  | 將這隻生物所召喚的生物設為目標  |
+| @[Father][]  | `@dad`| 將目標的父親設為目標  |
+| @[Mother][]  | `@mom`  | 將目標的母親設為目標  |
+| @[Passenger][]  | | 將正在騎乘自己的生物設為目標  |
+| @[PlayerByName][]  | `@specificplayer`  | 將指定名稱的玩家設為目標，支援 Placeholder  |
+| @[UniqueIdentifier][]  | `@UUID ` | 將指定UUID的生物設為目標，支援 Placeholder  |
+| @[Vehicle][]  | | 將施術者的坐騎設為目標  |
 
 
-### Multi-Entity Targeters
+### 複數實體目標選擇器
 
-| Targeter | Shorthand | Description                                                                     |
+| 目標選擇器 | 其他寫法 | 用法 |
 |----------|-----------|---------------------------------------------------------------------------------|
-| @[LivingInCone][]                                                                                                                                                                            | @entitiesInCone<br>@livingEntitiesInCone<br>@LEIC<br>@EIC                                                                                                                                                                            | Targets all living entities in cone with a specified angle, length and rotation relative to facing direction                                                                                                                                                                            |
-| @[LivingInWorld][]                                                                                                                                                                            | @EIW                                                                                                                                                                            | Targets all living entities in the caster's world                                                                     |
-| @[NotLivingNearOrigin][]                                                                                                                                                                            | @nonLivingNearOrigin<br>@NLNO                                                                                                                                                                            | Targets all non living entities in a radius near the origin                                                                     |
-| @[PlayersInRadius][]                                                                                                                                                                            | @PIR                                                                                                                                                                            | Targets all players in the given radius                                                                                                                                                                            |
-| @[MobsInRadius][]                                                                                                                                                                            | @MIR                                                                                                                                                                            | Targets all mythicmobs or vanilla overrides of the given type in a radius                                                                   |
-| @[EntitiesInRadius][]                                                                                                                                   | @livingEntitiesInRadius<br>@livingInRadius<br>@allInRadius<br>@EIR                                                                                                                          | Targets all entities in the given radius.                                                                                                                                   |
-| @[EntitiesInRing][]                                                                                                                                   | @EIRR                                                                                                                          | Targets all entities in the given ring.                                                                                                                                   |
-| @[PlayersInWorld][]                                                                                                                                   | @World                                                                                                                                   | Targets all players in the current world.                                                                        |
-| @[PlayersOnServer][]                                                                                                                                   | @Server<br>@Everyone                                                                                                                                   | Targets all players in the server.                                                                                                                                   |
-| @[PlayersInRing][]                                                                                                                                   |    | Target all players between the specified min and max radius.                                                                                                                                   |
-| @[PlayersNearOrigin][]                                                                                                                                   |    | Targets players near the [origin](/skills/targeters/origin) of a meta-skill.                                                                                                                                   |
-| @[MobsNearOrigin][]                                                                                                                                   |    | Targets all MythicMobs or vanilla overrides of the given type(s) in a radius around the origin                                                                                                                                   |
-| @[EntitiesNearOrigin][]                                                                                                                                                                            | @ENO                                                                                                                                                                            | Targets all entities near the [origin](/skills/targeters/origin) of a meta-skill                                                                                                                                                                            |
-| @[Siblings][]                                                                                                                                                                            | @sibling<br>@brothers<br>@sisters                                                                                                                                                                            | Targets any mobs that share the same parent as the caster.                                                                                                                                                                            |
-| @[ItemsNearOrigin][]                                                                                                                                                                            |    | Targets item drops near the [origin](/skills/targeters/origin) of a meta-skill.                                                                                                                                                                            |
-| @[ItemsInRadius][]                                                                                                                                                                            | @IIR                                                                                                                                                                            | Targets all item drops in the given radius                                                                       |
+| @[LivingInCone][]  | `@livingEntitiesInCone`<br>`@EIC`| 將扇形範圍內的所有實體設為目標(可指定項:角度、半徑、旋轉角度)  |
+| @[LivingInWorld][]| `@EIW`|將世界內的所有實體設為目標|
+| @[NotLivingNearOrigin][]  |`@NLNO`| 將在指定半徑內的所有非生物實體設為目標 |
+| @[PlayersInRadius][]  | `@PIR`  | 將半徑內的所有玩家設為目標  |
+| @[MobsInRadius][]  | `@MIR`  | 將半徑內的所有指定怪物設為目標  |
+| @[EntitiesInRadius][] | `@EIR`  | 將半徑內的所有實體設為目標 |
+| @[EntitiesInRing][] | `@EIRR`  | 將指定環型中的所有實體設為目標 |
+| @[PlayersInWorld][] | `@World` | 將當前世界的所有玩家設為目標 |
+| @[PlayersOnServer][] | `@Server`<br>`@Everyone` | 將伺服器上的所有玩家設為目標 |
+| @[PlayersInRing][] | | 將指定最小和最大半徑之間的所有玩家設為目標 |
+| @[PlayersNearOrigin][] | | 將靠近技能觸發半徑內的所有玩家設為目標 相關技能:**[origin](/skills/targeters/origin)** |
+| @[MobsNearOrigin][] | | 將靠近技能觸發半徑內的指定怪物設為目標 |
+| @[EntitiesNearOrigin][]  | `@ENO`  | 將靠近技能觸發半徑內的所有實體設為目標 相關技能:**[origin](/skills/targeters/origin)**|
+| @[Siblings][]  | `@sibling`  | 將與施法者擁有同一父母的任何生物設為目標 |
+| @[ItemsNearOrigin][]  | | 將掉落在技能原始點附近的物品設為目標 **[origin](/skills/targeters/origin)** |
+| @[ItemsInRadius][]  | `@IIR`  | 將半徑內的所有掉落物設為目標 |
 
 
-### ThreatTable Targeters
+### 威脅相關目標選擇器
 
-These targeters only work if the mob has [Threat Tables](/Mobs/ThreatTables) enabled.
+要使用這些目標選擇器要確認 **[威脅表](/Mobs/ThreatTables)** 功能為啟用狀態.
 
-| Targeter | Shorthand | Description                                                                     |
+| 目標選擇器 | 其他寫法 | 用法 |
 |----------|-----------|---------------------------------------------------------------------------------|
-| @[ThreatTable][]                                                                                                                          | @TT                                                                                                                          | Targets every entity on the casting mob's threat table                                                                                                                         |
-| @[ThreatTablePlayers][]                                                                                                                          |    | Targets all the players on the casting mob's threat table                                                                                                                          |
-| @[RandomThreatTarget][]                                                                                                                          | @RTT                                                                                                                          | Targets a random entity on the casting mob's threat table                                                                                                                          |
-| @[RandomThreatTargetLocation][]                                                                                                                          | @RTTL                                                                                                                          | Targets the location of a random entity on the casting mob's threat table                                                                                                                          |
+| @[ThreatTable][]  | `@TT`  | 將存在於威寫表上的所有實體設為目標 |
+| @[ThreatTablePlayers][]  | | 將在威脅表上的所有玩家設為目標  |
+| @[RandomThreatTarget][]  | `@RTT`  | 將威脅表上的所有實體隨機選擇一個設為目標  |
+| @[RandomThreatTargetLocation][]  | `@RTTL`  | 將威脅表上隨機實體的位置設為目標  |
 
 
 
-## Location Targeters
+## 位置目標選擇器
 
-### Single-Location Targeters
+### 獨立位置目標選擇器
 
-| Targeter | Shorthand | Description                                                                     |
+| 目標選擇器 | 其他寫法 | 用法 |
 |----------|-----------|---------------------------------------------------------------------------------|
-| @[SelfLocation][]                                                                                                                          | @casterLocation<br>@bossLocation<br>@mobLocation                                                                                                                          | Targets the caster's location                                                                                                                          |
-| @[SelfEyeLocation][]                                                                                                                          | @eyeDirection<br>@casterEyeLocation<br>@bossEyeLocation<br>@mobEyeLocation                                                                                                                          | Targets the caster's eye location                                                                                                                          |
-| @[Forward][]                                                                                                                          |   | Targets a location in front of caster's facing direction                                                                                                                          |
-| @[ProjectileForward][]                                                                                                                          |    | Targets a location in front of the casting projectile, relative to its direction                                                                                                                          |
-| @[TargetLocation][]                                                                                                                          | @targetloc<br>@TL | Targets the caster's target's location                                                                                                                                                                                                                |
-| @[TriggerLocation][]                                                                                                                                                                            |    | Targets the location of the entity that triggered the skill                                                                                                                                                                            |
-| @[SpawnLocation][]                                                                                                                          |    | Targets the world's spawn location.                                                                                                                          |
-| @[CasterSpawnLocation][]                                                                                                                          |    | Targets the location the caster spawned at.                                                                                                                          |
-| @[Location][]                                                                                                                          |    | Targets the specified coordinates in the caster's world.                                                                                                                          |
-| @[Origin][]                                                                                                                          | @source                                                                                                                          | Targets the location of the "origin" or "source" of a meta-skill. While that is usually the casting mob, there are special cases where this is not true (such as with the Projectile Skill, where the "origin" is the location of the projectile).                                                                                                                          |
-| @[ObstructingBlock][]                                                                                                                          |    | Tries to target the block in front of the caster that is obstructing it                                                                                                                          |
-| @[TrackedLocation][]                                                                                                                          |    | Targets the mob's tracked location                                                                                                                          |
-| @[NearestStructure][]                                                                                                                          |    | Targets the nearest structure of the specified type within a radius in the caster's world                                                                                                                          |
-| @[VariableLocation][]                                                                                                                          | @varLocation                                                                                                                          | Targets the location stored in the specified variable                                                                                                                          |
+| @[SelfLocation][]  | `@casterLocation` | 將施法者的位置設為目標  |
+| @[SelfEyeLocation][]  | `@eyeDirection`<br>`@casterEyeLocation`  | 將目標的所視位置設為目標  |
+| @[Forward][]  || 將施法者的前方設為目標  |
+| @[ProjectileForward][]  | | 將投射物前方相對於其方向的位置設為目標  |
+| @[TargetLocation][]  | `@TL` | 將目標的位置設為目標|
+| @[TriggerLocation][]  | | 將技能觸發者的位置設為目標  |
+| @[SpawnLocation][]  | | 將世界重生點設為目標  |
+| @[CasterSpawnLocation][]  | | 將施法者的重生點設為目標  |
+| @[Location][]  | | 將世界的指定坐標設為目標  |
+| @[Origin][]  | `@source`  | 將最外層技能的**起點**位置設為目標。通常會是施法生物，但在特殊情況下情況會是其他目標(例如投射物(Projectile)技能，其中**起點**是投射物的當前位置)|
+| @[ObstructingBlock][]  | | 將施法者前方阻礙的方塊設為目標  |
+| @[TrackedLocation][]  | | 將怪物正在追踪的位置設為目標  |
+| @[NearestStructure][]  | | 將施法者世界半徑內最近的指定類型結構設為目標  |
+| @[VariableLocation][]  | `@varLocation`  | 將指定變量(Variable)中存儲的位置設為目標  |
 
 
-### Multi-Location Targeters
+### 複數位置目標選擇器
 
-| Targeter | Shorthand | Description                                                                     |
+| 目標選擇器 | 其他寫法 | 用法 |
 |----------|-----------|---------------------------------------------------------------------------------|
-| @[ForwardWall][]                                                                                                                          |    | Targets a plane in front of the caster                                                                                                                          |
-| @[PlayerLocationsInRadius][]                                                                                                                          | @PLIR                                                                                                                          | Targets all player locations in the given radius                                                                                    |
-| @[Ring][]                                                                                                                          |    | Target points to form a ring of locations                                                                                                                          |
-| @[Cone][]                                                                                                                                                                            |    | Returns the # of points target locations that comprise a cone (Note: Cone is fixed on the y-axis, and cannot be rotated up or down)                                                                                                                          |
-| @[Sphere][]                                                                                                                                                                            |    | Targets points in a sphere around the caster                                                                                                                                                                            |
-| @[Rectangle][]                                                                                                                                                                            | @cube<br>@cuboid                                                                                                                                                                            | Returns the # of points target locations that comprise a rectangle                                                                                                                                                                            |
-| @[RandomLocationsNearCaster][]                                                                                                                                                                            | @RLO<br>@randomLocationsOrigin<br>@RLNO                                                                                                                                                                            | Targets random locations near the origin of a skill.                                                                                                                                                                            |
-| @[RandomLocationsNearOrigin][]                                                                                                                                                                            | @RLO<br>@randomLocationsOrigin<br>@RLNO                                                                                                                                                                            | Targets random locations near the origin of a skill.                                                                                                                                                                            |
-| @[RingAroundOrigin][]                                                                                                                                                                            | @ringOrigin<br>@RAO                                                                                                                                                                            | Targets locations in a specified ring around the origin.                                                                                                                                                                            |
-| @[Spawners][]                                                                                                                          |    | Targets the location of the specified spawners.                                                                                                                          |
+| @[ForwardWall][]  | | 將施法者前方的平面位置設為目標  |
+| @[PlayerLocationsInRadius][]  | `@PLIR`  | 將指定半徑內的所有玩家的位置設為目標 |
+| @[Ring][]  | | 用點形成環型，將每點位置設為目標  |
+| @[Cone][]  | | 將構成圓錐體的目標位置點設為目標 (注意：圓錐體固定在y軸上，不能上下旋轉)  |
+| @[Sphere][]  | | 將施法者周圍球體中的點設為目標  |
+| @[Rectangle][]  | `@cube`  | 將組成矩形的目標位置點設為目標  |
+| @[RandomLocationsNearOrigin][]  | `@RLO`<br>`@RLNO`  | 將技能起點附近的隨機位置設為目標  |
+| @[RingAroundOrigin][]  | `@RAO`  | 將定位原點周圍指定環型中的位置設為目標  |
+| @[Spawners][]  | | 將指定刷怪籠的位置設為目標  |
 
 
 
-## Meta Targeters
+## 繼承目標選擇器
 
-The targeters below are called "meta-targeters" (or "special targeters"). They target relative to an [inherited target](Metaskills#inheritance). For example:
+下面的定位器稱為 **繼承目標選擇器** 他們的目標是相對於[繼承目標](Metaskills#inheritance)。例如：
 ```yaml
 # Mob file
 Laser:
@@ -126,58 +127,60 @@ Laser:
   Skills:
   - ignite @EntitiesInLine{r=1}
 ```
-In the example skill above, the "ignite" mechanic will target entities between the caster and the targeter specified in `- skill{s=Laser} @target`, i.e. a line between the caster and the caster's target.
+在上面的示例技能中，`點燃(ignite)` 技能將瞄準施法者和 `- Skill{s=Laser} @target` 中指定的目標之間的所有實體，即施法者和目標之間的一條線。
 
-Some meta-targeters also allow the mechanic to be casted "fromOrigin". This will change the starting location of the meta-targeter to be @Origin rather than the caster, which can allow for some complex effects, particularly when used with Projectiles.
+一些主目標允許技能被`fromOrigin`施放。這會將主目標選擇器的起始位置更改為 `@Origin` 而不是施法者，這可以實現一些複雜的效果，特別是與投射物(Projectile)一起使用時。
 
 
-### Meta-Entity Targeters
+### 繼承目標選擇器 實體配合
 
-| Targeter | Shorthand | Description                                                                     |
+| 目標選擇器 | 其他寫法 | 用法 |
 |----------|-----------|---------------------------------------------------------------------------------|
-| @[LivingInLine][]                                                                                                                          | @entitiesInLine<br>@livingEntitiesInLine<br>@LEIL<br>@EIL                                                                                                                          | Targets any entities in a line between the inherited target and the casting mob.                                                                                                                          |
-| @[LivingNearTargetLocation][]                                                                                                                          | @LNTL<br>@ENTL<br>@ENT                                                                                                                          | Targets all living entities near the inherited target.                                                                                                                                                        |
-| @[PlayersNearTargetLocations][]                                                                                                                          | @playersNearTargetLocation<br>@PNTL                                                                                                                          | Targets all players near the inherited targets.                                                                                                                          |
-| @[TargetedTarget][]                                                                                                                          | @Targeted                                                                                                                          | Targets the inherited targeted entities.                                                                                                                          |
+| @[LivingInLine][]  | `@LEIL`<br>`@EIL`  | 將繼承目標和施法生物之間一條線上的所有實體設為目標  |
+| @[LivingNearTargetLocation][]  | `@LNTL`<br>`@ENT`  | 將繼承目標附近的所有實體設為目標  |
+| @[PlayersNearTargetLocations][]  | `@PNTL`  | 將繼承目標附近的所有玩家設為目標  |
+| @[TargetedTarget][]  | `@Targeted`  | 將繼承目標的實體設為目標  |
 
 
-### Meta-Location Targeters
+### 繼承目標選擇器 位置配合
 
-| Targeter | Shorthand | Description                                                                     |
+| 目標選擇器 | 其他寫法 | 用法 |
 |----------|-----------|---------------------------------------------------------------------------------|
-| @[Line][]                                                                                                                          |    | Targets locations between the mob and the inherited targets.                                                                                                                                                     |
-| @[RandomLocationsNearTargets][]                                                                                                                          | @randomLocationsNearTarget<br>@randomLocationsNearTargetEntities<br>@randomLocationsNearTargetLocations<br>@RLNT<br>@RLNTE<br>@RLNTL                                                                                                                          | Targets random locations around the inherited targets.                                                                                                                          |
-| @[FloorOfTargets][]                                                                                                                          | @FOT<br>@floorsOfTarget                                                                                                                          | Targets the blocks underneath the inherited targets.                                                                                                                                                            |
-| @[LocationsOfTargets][]                                                                                                                          | @locationOfTarget<br>@LOT                                                                                                                          | Targets the location of the inherited target entities.                                                                                                                                                                   |
-| @[TargetedLocation][]                                                                                                                          | @targetedLocations<br>@targetedLoc                                                                                                                          | Targets the location of the inherited target locations.                                                                                            |
-| @[BlocksInRadius][]                                                                                                                          | @BIR                                                                                                                          | Targets all blocks in a radius of the inherited targets.                                                                                                                          |
-| @[TargetBlock][]                                                                                                                          |    | Targets the block the casting player is looking at.                                                                                                                          |
-| @[BlocksInChunk][]                                                                                                                          | @BIC                                                                                                                          | Targets all blocks in a chunk relative to the inherited target.                                            |
-| @[BlocksNearOrigin][]                                                                                                                          | @BNO                                                                                                                          | Targets all blocks in a radius around the origin of the metaskill.                                                                                                                                                     |
-| @[BlockVein][]                                                                                                                          | @vein<br>@bv                                                                                                                          | Target all adjancent blocks that match the blocktype, starting from the origin of the skill.                                                                                                                                                     |
+| @[Line][]  | | 將生物和繼承目標之間的位置設為目標 |
+| @[RandomLocationsNearTargets][]  | `@RLNT`<br>`@RLNTE`  | 將繼承目標周圍的隨機位置設為目標  |
+| @[FloorOfTargets][]  | `@FOT`  | 將繼承目標的實體下方的方塊設為目標 |
+| @[LocationsOfTargets][]  | `@LOT`  | 將繼承目標的實體位置設為目標|
+| @[TargetedLocation][]  | `@targetedLoc`  | 將繼承目標位置的位置設為目標|
+| @[BlocksInRadius][]  | `@BIR`  | 將繼承目標半徑內的所有方塊設為目標 |
+| @[TargetBlock][]  | | 將玩家看著的方塊設為目標  |
+| @[BlocksInChunk][]  | `@BIC`  | 將繼承目標的區塊中的所有方塊設為目標|
+| @[BlocksNearOrigin][]  | `@BNO`  | 將主技能起點指定半徑內的所有方塊設為目標 |
+| @[BlockVein][]  | `@vein`<br>`@bv`  | 從技能的起點開始，將與方塊類型匹配的所有相鄰方塊設為目標|
 
 
-### None Targeter
+### 空 目標選擇器
 
-| Targeter | Shorthand | Description                                                      |
+| 目標選擇器 | 其他寫法 | 用法 |
 |----------|-----------|------------------------------------------------------------------|
-| @None    |           | Provides no target. (Useful for mechanics with no target input.) |
+| @None | | 無目標 (對於沒有目標輸入的機制很有用) |
 
 
 
-# Common Attributes
-There are some common attributes that can be used in most of the Targeters, depending on the targeter's returned value
+# 基本的細項設定
+有一些通用屬性可以在大多數 目標選擇器(Targeter)中使用，具體取決於目標選擇器(Targeter)的返回值
 
-## All Targeters
+## 可用於所有目標選擇器
 
-### Sudo Attributes
-| Attribute                                | Shorthand        | Description                                                                                                      |
+### 強制指定細項設定
+| 目標選擇器 | 其他寫法 | 用法 |
 | ---------------------------------------- | ---------------- | ----------------------------------------- |
-| sudoparent                               | fromparent, ofparent, asparent, parent, ofparent                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Parent][] of the casting entity executing the mechanic|
-| sudoowner                                | fromowner, ofowner, asowner, owner, ofowner                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Owner][] of the casting entity executing the mechanic |
-| sudotrigger                                | fromtrigger, oftrigger, astrigger, trigger, oftrigger                      | If this attribute is set to `true`, the targeter will be parsed as if it was the [Trigger][] of the skilltree executing the mechanic |
+| sudoparent | parent  | 若這項設定被設置為 `true`, 目標選擇器將被設定為執行技能施法實體的 [Parent][] |
+| sudoowner  | owner   | 若這項設定被設置為 `true`, 目標選擇器將被設定為執行技能施法實體的 [Owner][]  |
+| sudotrigger| trigger | 若這項設定被設置為 `true`, 目標選擇器將被設定為執行技能施法實體的 [Trigger][]|
 
-In this example, [the mob will keep getting teleported in front of its owner](https://cdn.discordapp.com/attachments/523443579574681600/1101186712174088253/a.gif), since the `Forward` targeter is using the `sudoowner` attribute, and is, as such, getting parsed as if it was the owner of the casting mob executing the mechanic
+在下面這個範例中, [生物會不斷被傳送到其主人面前](https://cdn.discordapp.com/attachments/523443579574681600/1101186712174088253/a.gif)
+
+因為目標選擇器`Forward`正在使用`sudoowner`的屬性，因此觸發後的目標會是執行技能的生物所有者
 ```yaml
 TestOwner:
   Type: Wolf
@@ -187,98 +190,113 @@ TestOwner:
 ```
 
 
-## Location Targeters
-| Attribute                                | Shorthand        | Description                                                                                                      |
+## 位置目標細項設定
+| 目標選擇器 | 其他寫法 | 用法 |
 | ---------------------------------------- | ---------------- | ----------------------------------------- |
-| xoffset                                  | xo, x            | Centers the offset on the x axis           |
-| yoffset                                  | yo, y            | Centers the offset on the y axis           |
-| zoffset                                  | zo, z            | Centers the offset on the z axis           |
-| forwardOffset                            | foffset, fo      | Centers forward and backward offset, based on the caster's viewing angle |
-| sideOffset                               | soffset, so      | Centers left and right offset, based on the caster's viewing angle |
-| rotatex                                  | rotx             | Rotation on the x axis                    |
-| rotatey                                  | roty             | Rotation on the y axis                    |
-| rotatez                                  | rotz             | Rotation on the z axis                    |
-| coordinatex                              | cx               | Sets the x axis coordinate                    |
-| coordinatey                              | cy               | Sets the y axis coordinate                    |
-| coordinatez                              | cz               | Sets the z axis coordinate                    |
-| blocktypes                               | blocktype, bt   | Only targets selected block types. Multiple blocks can be listed by separating them using a `,`<br>You can add a `#` at the front of the type to indicate that the block only needs to match part of the type, add `@` to indicate that the block only needs to match the start of the type |
-| blockignores                             | blockignore      | Excludes selected block types from the targeter. Multiple blocks can be listed by separating them using a `,` |
-| coordinateyaw                            | cyaw             | Sets the yaw value                        |
-| coordinatepitch                          | cpitch           | Sets the pitch value                        |
-| blockcentered                            | centered         | Boolean value. If set to true, the center of the block at the target location will be targeted, instead of the target location itself |
+| xoffset | xo, x  | 以起點為主的 **x** 軸偏移 |
+| yoffset | yo, y  | 以起點為主的 **y** 軸偏移 |
+| zoffset | zo, z  | 以起點為主的 **z** 軸偏移 |
+| forwardOffset| foffset, fo | 以起點為主的 **前後** 偏移 以施術者視角為主|
+| sideOffset | soffset, so | 以起點為主的 **左右** 偏移 以施術者視角為主|
+| rotatex | rotx| 以起點為主的 **x** 軸旋轉|
+| rotatey | roty| 以起點為主的 **y** 軸旋轉|
+| rotatez | rotz| 以起點為主的 **z** 軸旋轉|
+| coordinatex| cx| 設置 **x** 軸坐標|
+| coordinatey| cy| 設置 **y** 軸坐標|
+| coordinatez| cz| 設置 **z** 軸坐標|
+| blocktypes | blocktype, bt| 僅針對指定的方塊類型，可以同時指定多個方塊，並用`,`分隔他們<br>可以在方塊類型前面添加`#`表示該方塊只需匹配類型中的部分內容，<br>添加`@`表示只需要匹配方塊類型的開頭 |
+| blockignores | blockignore | 從目標選擇器中排除指定的方塊類型。可以通過使用`,`分隔來列出多個方塊 |
+| coordinateyaw| cyaw| 設定偏移位置 |
+| coordinatepitch | cpitch | 設置音高值 |
+| blockcentered| centered | 布林值(true/false). 如果設定為 true, 目標位置的方塊中心將成為目標，而不是目標位置 |
 
 
-# Targeter Options
+# target-filters
 
-## Target Filters
+## 目標篩選器
 
-Target Filters allow you to filter out certain targets, and makes targeters a lot more flexible.
+目標篩選器允許你篩選掉某些目標，並使目標選擇器更加靈活。
 
-They are used with two options (available on ANY entity-targeter):
+以下兩個設定項可擇一使用(可在任何目標選擇器上使用):
 
--   ignore=X
--   target=X
+-ignore=X
+-target=X
 
-For example, to make a targeter that will ignore any players or non-hostile mobs, you'd use this:
+例如，要製作一個忽略所有玩家及動物的目標選擇器，你可以使用這個:
 
-    damage{a=20} @EntitiesInRadius{r=10;ignore=players,animals}
+ damage{a=20} @EntitiesInRadius{r=10;ignore=players,animals}
 
-To make a targeter ONLY target players, you'd do something like this:
+例如，要製作一個只指定玩家的目標選擇器，你可以使用這個:
 
-    skill{s=ASkill} @EntitiesInRadius{r=5;target=players}
+ skill{s=ASkill} @EntitiesInRadius{r=5;target=players}
 
-Possible filters include:
+可用的篩選器選項:
 
--   self
--   animals *(non-hostile mobs)*
--   armorstands/armor_stands
--   creative *(ignored by default)*
--   creatures *(any type of sentient entity)*
--   flyingmobs
--   marker
--   monsters *(hostile mobs)*
--   NPCs *(Citizens NPCs, ignored by default)*
--   players
--   samefaction *(mobs marked with the same faction type)*
--   spectators *(ignored by default)*
--   vanilla
--   villager
--   watermobs
--   owner
--   More coming later...
+-self **自己**
 
-You can also turn off specific filters by just adding the option
-**targetXXXXX** replacing XXXXX with the filter name, e.g.
-**targetPlayers=false** or **targetcreative=true**
+-animals **友善生物**
 
-Note: As of MM 4.15 or MM 5.0, you can set the default target filters in MythicMobs/config.yml
+-armorstands/armor_stands **盔甲座**
 
-## Target Limits
+-creative *(預設為忽略狀態)* **創造模式**
 
-All entity and location targeters also support target limits (as of v5.0.4). With this you can limit how many entities/locations are targeted, including the order in which they are selected.
+-creatures  **生物**
 
-This is done with the options:
+-flyingmobs **盔甲座**
 
--   limit=#
--   sort=X
+-marker
 
-Lets say you want your ability to only target the 2 nearest players within 30 blocks. To do this, you'd simply set the limit 2 to and sort by nearest:
+-monsters **敵對生物**
 
--   **@PlayersInRadius{r=30;limit=2;sort=NEAREST}**
+-NPCs *(Citizens NPCs 預設為忽略狀態)* **NPC**
 
-Currently, sort can have the following values:
+-players **玩家**
 
-**General sorters:**
-- NONE *(usually sorts by how long the entity has existed)*
-- RANDOM
-- NEAREST
-- FURTHEST
+-samefaction **相同派系**
 
-**Entity Only Sorters**
-- HIGHEST_HEALTH
-- LOWEST_HEALTH
-- HIGHEST_THREAT
-- LOWEST_THREAT
+-spectators *(預設為忽略狀態)* **觀察者模式**
+
+-vanilla 
+
+-villager **村民**
+
+-watermobs **水下生物**
+
+-owner **擁有者**
+
+
+你可以通過添加選項來關閉特定過濾器
+**targetXXXXX** 將 XXXXX 替換為過濾器名稱，例如
+**targetPlayers=false** 或 **targetcreative=true**
+
+注意：從 MM 4.15 或 MM 5.0 開始，您可以在 MythicMobs/config.yml 中設置默認目標篩選器
+
+## 目標選擇器限制
+
+所有實體和位置定位器還支持目標限制（從 v5.0.4 開始）。通過此功能，你可以限制目標實體/位置的數量，包括選擇它們的順序.
+
+可以通過以下設定項完成：
+
+-limit=# **最大上限**
+-sort=X **排序方式**
+
+假設你要將半徑內 30 格方塊內最近的 2 個玩家設為目標。為此，你需要將最大上限設置為 2 並按最接近的距離排序：
+
+-**@PlayersInRadius{r=30;limit=2;sort=NEAREST}**
+
+目前，排序方式可以有以下方式:
+
+**距離排序選擇器**
+- NONE **按目標存在的時間排序**
+- RANDOM **隨機選擇目標**
+- NEAREST **距離越近的目標**
+- FURTHEST **距離越遠的目標**
+
+**實體排序選擇器**
+- HIGHEST_HEALTH **血量越高的目標**
+- LOWEST_HEALTH **血量越低的目標**
+- HIGHEST_THREAT **威脅值越高的目標**
+- LOWEST_THREAT **威脅值越低的目標**
 
 
 <!-- LINKS -->

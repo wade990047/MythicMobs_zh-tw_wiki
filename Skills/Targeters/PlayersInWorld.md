@@ -1,12 +1,7 @@
-## Description
-Targets all players in the caster's world
+## 用途
+將當前世界的所有玩家設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
 PlayerCount:
   Skills:
@@ -15,5 +10,5 @@ PlayerCount:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] World

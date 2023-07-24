@@ -1,14 +1,14 @@
-## Description
-Targets all entities in the given radius around the origin of the metaskill.  
-This targeter is an extension of the **[EntitiesInRadius Targeter](/Skills/Targeters/EntitiesInRadius)** and can, as such, **use any of its attributes**
+## 用途
+將靠近技能觸發半徑內的所有實體設為目標 相關技能:origin
+這項目標選擇器是 **[EntitiesInRadius](/Skills/Targeters/EntitiesInRadius)** 的延伸, 可以直接使用, **他的相關細項設定**
 
 
-## Attributes
->*This targeter has no unique attributes, but can use the [EntitiesInRadius](/Skills/Targeters/EntitiesInRadius)'s ones*
+## 細項設定
+>*該目標器沒有獨立的細項設定，但可以使用 [EntitiesInRadius](/Skills/Targeters/EntitiesInRadius) 的相關細項設定*
 
 
-## Examples
-In this example, when the created projectile ends for whatever reason, it will damage every living entity in a 2 block radius around itself
+## 範例
+當創建的投射物由於某種原因結束時，他將傷害自身半徑 2 格內的所有生物
 ```yaml
   Skills:
   - projectile{...;
@@ -22,6 +22,6 @@ In this example, when the created projectile ends for whatever reason, it will d
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] NearOrigin
 - [x] ENO

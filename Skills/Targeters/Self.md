@@ -1,12 +1,8 @@
-## Description
-Targets the caster of the mechanic
+## 用法
+將自己設為技能目標
 
 
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:
@@ -14,7 +10,7 @@ ExampleSkill:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] caster
 - [x] boss
 - [x] mob

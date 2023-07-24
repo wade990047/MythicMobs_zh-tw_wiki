@@ -1,15 +1,14 @@
-## Description
-Targets all players near the inherited target locations
+## 用途
+將繼承目標附近的所有玩家設為目標
 
-
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| radius    | r         | The radius of the targeter                                           | 5       |
+| radius    | r         | 目標半徑範圍       | 5       |
 
 
-## Examples
-This mechanic will damage every player in a 2 block radius from the target of the mob once executed
+## 範例
+對生物目標半徑 2 格內的每個玩家造成傷害
 ```yaml
 ExampleSkill1:
   Skills:
@@ -21,6 +20,6 @@ ExampleSkill2:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] playersNearTargetLocation
 - [x] PNTL

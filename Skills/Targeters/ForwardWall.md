@@ -1,18 +1,18 @@
-## Description
-Targets a plane of blocks in front of the caster
+## 用途
+將施法者前方的平面位置設為目標
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| forward   | f, amount, a | How distant should the targeted point be                          | 5       |
-| yoffset   | y         | The y offset of the plane                                            | 0       |
-| height    | h         | The height of the plane                                              | 2       |
-| width     | w         | The width of the plane                                               | 3       |
+| forward   | f, amount, a | 目標點應該有多遠                         | 5       |
+| yoffset   | y         | 平面的 y 偏移       | 0       |
+| height    | h         | 平面的高度          | 2       |
+| width     | w         | 平面的寬度          | 3       |
 
 
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:

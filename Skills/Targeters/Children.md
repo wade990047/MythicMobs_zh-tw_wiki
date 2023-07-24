@@ -1,18 +1,13 @@
-## Description
-Targets any child entities summoned by the caster
+## 用途
+將這隻生物所召喚的生物設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
   Skills:
   - heal{a=10} @Children
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] child
 - [x] summons

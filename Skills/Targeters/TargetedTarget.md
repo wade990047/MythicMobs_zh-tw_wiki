@@ -1,11 +1,6 @@
-## Description
-Targets the inherited targeted entities. Useful for [Targets Filtering](/Skills/Metaskills#targets-filtering) by using [Targeter Options](/Skills/Targeters#targeter-options).
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 用途
+將繼承目標的實體設為目標. 對於 [目標篩選器](/Skills/Metaskills#targets-filtering) 非常實用，可以配合 [目標選擇器](/Skills/Targeters#targeter-options).
+## 範例
 ```yaml
 ExampleSkill1:
   Skills:
@@ -17,5 +12,5 @@ ExampleSkill2:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] targeted

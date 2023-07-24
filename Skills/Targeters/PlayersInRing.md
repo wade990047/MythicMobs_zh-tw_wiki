@@ -1,16 +1,16 @@
-## Description
-Targets all players in a ring around the caster.  
-The targeted players will be the ones at a distance from the caster between the minimum and the maximum range.
+## 用途
+將指定最小和最大半徑之間的所有玩家設為目標 
+目標是距施法者的距離在最小和最大範圍之間的所有玩家。
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| minrange  | min       | The minimum range of the ring                                        | 5       |
-| maxrange  | max       | The maximum range of the ring                                        | 10      |
+| minrange  | min       | 環形的最小範圍    | 5       |
+| maxrange  | max       | 環形的最大範圍    | 10      |
 
 
-## Examples
+## 範例
 ```yaml
   Skills:
   - ignite @PlayersInRing{min=2;max=10}

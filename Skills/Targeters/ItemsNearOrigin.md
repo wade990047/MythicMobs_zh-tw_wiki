@@ -1,14 +1,14 @@
-## Description
-Targets all items in a radius around the origin of the metaskill
+## 用途
+將掉落在技能原始點附近的物品設為目標 origin
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| radius    | r         | The radius of the targeter                                           | 5       |
+| radius    | r         | 目標半徑範圍       | 5       |
 
-## Examples
-In this example, a projectile launched by a player will make the caster pick up every item in a 5 block radius around the projectile every execution of the onTick metaskill
+## 範例
+每次執行 onTick 技能時，玩家發射的投射物將使施法者撿起投射物半徑 5 格內的所有物品
 ```yaml
 ExampleSkill:
   Skills:
@@ -19,5 +19,5 @@ ExampleSkill:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] INO

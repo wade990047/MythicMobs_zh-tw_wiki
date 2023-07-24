@@ -1,12 +1,7 @@
-## Description
-Targets the location of the inherited targets
+## 用途
+將繼承目標的實體位置設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
 ExampleSkill1:
   Skills:
@@ -18,6 +13,6 @@ ExampleSkill2:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] locationOfTarget
 - [x] LOT

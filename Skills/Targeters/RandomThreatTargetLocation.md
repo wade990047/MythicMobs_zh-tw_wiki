@@ -1,17 +1,12 @@
-## Description
-Targets the location of a random entity on the casting mob's [Threat Table](/Mobs/ThreatTables)
+## 用途
+將威脅表上隨機實體的位置設為目標 [威脅表](/Mobs/ThreatTables)
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
   Skills:
   - effect:particles{y=2} @RandomThreatTargetLocation
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] RTTL

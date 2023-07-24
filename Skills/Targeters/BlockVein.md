@@ -1,29 +1,29 @@
 ## Targeter: BlockVein
-Target all adjancent blocks that match the blocktype, starting from the origin of the skill
+從技能的起點開始，將與方塊類型匹配的所有相鄰方塊設為目標
 
-### Attributes
+### 細項設定
 
-| Attribute      | Aliases         | Description                                            | Default |
+| 設定項      | 簡寫         | 用途        | 預設值 |
 |----------------|-----------------|--------------------------------------------------------|:-------:|
-| blocktypes     | blocktype, bt, t, material, materials, mat, m, blocks, block, b                        | Blocks to add to the vein. Can be a list.                                                 | STONE   |
-| limit          | max, l, m       | Limit of the number of blocks added to the vein.       | 10      |
-| originMustMatch| match           | Should the targeted blocks match the one at the origin of the metaskill                                                                                   | true    |
+| blocktypes     | blocktype, bt, t, material, materials, mat, m, blocks, block, b | 方塊類型。可以是一個列表             | STONE   |
+| limit          | max, l, m       | 添加到礦脈的方塊數量限制       | 10      |
+| originMustMatch| match           | 目標方塊是否與技能起點處的方塊相匹配          | true    |
 
-## Examples
+## 範例
 ```yaml
-# Vein mine whatever you mine
+# 一次挖除周圍相同方塊
 VeinMinerPickaxe:
   Id: NETHERITE_PICKAXE
   Skills:
   - breakblock{origin=@TargetBlock} @Vein{bt=<caster.raycast>} ~onBlockBreak
 
-# Vein mine only certain ores
+# 一次型挖除特定礦物
 VeinMinerPickaxeOres:
   Id: DIAMOND_PICKAXE
   Skills:
   - breakblock{origin=@TargetBlock} @Vein{bt=REDSTONE_ORE, DEEPSLATE_REDSTONE_ORE} ~onBlockBreak
 
-# Vein mine all ores
+# 挖除所有礦物
 VeinMinerPickaxeOres_V2:
   Id: DIAMOND_PICKAXE
   Skills:

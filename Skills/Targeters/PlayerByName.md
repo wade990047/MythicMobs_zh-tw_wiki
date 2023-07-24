@@ -1,14 +1,14 @@
-## Description
-Targets a specific player by their name. Can be a placeholder.
+## 用途
+將指定名稱的玩家設為目標，支援 Placeholder
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| name      | n         | The name of the player                                               | CarsonJF|
+| name      | n         | 玩家名稱           | CarsonJF|
 
 
-## Examples
-The following mob will remeber the name of the player that first hit it after it spawned, and will continue to ignite them every 10 seconds after that
+## 範例
+生物會記住他生成後第一個擊中它的玩家名字，並且之後會每 10 秒點燃他們
 ```yaml
 VengefulMob:
   Type: ZOMBIE
@@ -18,5 +18,5 @@ VengefulMob:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] specificplayer

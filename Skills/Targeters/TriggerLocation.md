@@ -1,12 +1,7 @@
-## Description
-Targets the location of the entity that triggered the skilltree
+## 用途
+將技能觸發者的位置設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
 BobTheVengeful:
   Type: COW

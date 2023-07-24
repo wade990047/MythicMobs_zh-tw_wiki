@@ -1,15 +1,15 @@
-## Description
-Targets a location in front of the casting projectile, relative to its direction
+## 用途
+將投射物前方相對於其方向的位置設為目標
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| forward   | f, amount, a | How far ahead should the targeted point be                        | 1       |
-| rotate    | rot       | The rotation, around the projectile, of the target location          | 0       |
+| forward   | f, amount, a | 目標點應該向前多遠                        | 1       |
+| rotate    | rot       | 目標位置繞著子彈的旋轉角度         | 0       |
 
 
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:

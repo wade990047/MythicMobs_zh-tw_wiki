@@ -1,12 +1,7 @@
-## Description
-Targets any mobs that share the same parent as the caster
+## 用途
+將與施法者擁有同一父母的任何生物設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:
@@ -14,7 +9,7 @@ ExampleSkill:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] sibling
 - [x] brothers
 - [x] sisters

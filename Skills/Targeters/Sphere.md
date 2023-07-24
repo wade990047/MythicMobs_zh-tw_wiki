@@ -1,15 +1,15 @@
-## Description
-Targets points in a sphere around the caster
+## 用途
+將施法者周圍球體中的點設為目標
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| radius    | r         | The radius of the targeter                                           | 5       |
-| points    | p         | The amount of points                                                 | 10      |
-| yoffset   | y         | The offset of the targets on the y axis                              | 0       |
+| radius    | r         | 目標半徑範圍       | 5       |
+| points    | p         | 目標點的數量             | 10      |
+| yoffset   | y         | 目標在 y 軸上的偏移                              | 0       |
 
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:

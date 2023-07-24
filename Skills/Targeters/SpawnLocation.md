@@ -1,12 +1,7 @@
-## Description
-Targets the world's spawn location
+## 用途
+將世界重生點設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:

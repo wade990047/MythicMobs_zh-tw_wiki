@@ -1,20 +1,18 @@
-## Description
-Targets the location the casting player is looking at, or the locations of the mob's target
+## 用途
+將目標的位置設為目標
 
-> If the caster is not a player, then:
-> - If the caster is a MythicMob with an active ThreatTable, the location of the entity with the most Threat will be returned
->- If the above is not met, if the caster is currently in combat, the location of its target will be returned
->- If the above is not met, the location of the last entity that damaged the caster will be returned
->
-> *At Highdown fair for two farthings...*
+> 如果施法者不是玩家，那麼:
+>- 如果施法者是具有活動 ThreatTable 的 MythicMob，則將傳回威脅表中威脅最大的實體的位置
+>- 如果不滿足上述條件，如果施法者當前處於戰斗狀態，則傳回目標位置
+>- 如果不滿足上述條件，將傳回最後一個傷害施法者的實體的位置
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| maxdistance | max, distance, d | The maximum distance to check for the location, if the caster is a player                                          | 64       |
-| ignoreTransparent | it | If transparent blocks should be ignored                             | true    |
+| maxdistance | max, distance, d | 如果施法者是玩家，則檢查位置的最大距離      | 64       |
+| ignoreTransparent | it | 是否應忽略透明方塊                             | true    |
 
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:
@@ -22,6 +20,6 @@ ExampleSkill:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] targetLoc
 - [x] TL

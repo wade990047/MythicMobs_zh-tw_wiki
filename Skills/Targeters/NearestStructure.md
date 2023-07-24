@@ -1,16 +1,16 @@
-## Description
-Targets the nearest structure of the specified type within a radius in the caster's world
+## 用途
+將施法者世界半徑內最近的指定類型結構設為目標
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| type      | t         | The type of the structure                                         | STRONGHOLD |
-| radius    | r         | The radius of the targeter                                           | 5000    |
-| unexplored | u        | Whether the structure should be unexplored                           | false   |
+| type      | t         | 結構類型     | STRONGHOLD |
+| radius    | r         | 目標半徑範圍       | 5000    |
+| unexplored | u        | 結構是否應該要是尚未被探索的                          | false   |
 
 
-## Examples
+## 範例
 ```yaml
 StrongholdFinder:
   Cooldown: 10

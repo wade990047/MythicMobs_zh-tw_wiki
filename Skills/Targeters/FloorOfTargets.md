@@ -1,15 +1,15 @@
-## Description
-Targets the first solid block below the inherited targets
+## 用途
+將繼承目標的實體下方的方塊設為目標
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| tries     | t, max, m | The maximum number of attempts the targeter will make to fetch the targets | 3 |
+| tries     | t, max, m | 目標選擇器改變目標資料的最大次數 | 3 |
 
 
-## Examples
-This mechanic will mask the block below every player in a 10 blocks radius to ice
+## 範例
+該機制會將半徑 10 格內每個玩家下方的方塊遮蓋成冰
 ```yaml
 ExampleSkill1:
   Skills:
@@ -21,6 +21,6 @@ ExampleSkill2:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] floorsOfTarget
 - [x] FOT

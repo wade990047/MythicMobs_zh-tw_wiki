@@ -1,12 +1,7 @@
-## Description
-Targets all living entities in the caster's world
+## 用途
+將世界內的所有實體設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
 EntityCount:
   Skills:
@@ -15,5 +10,5 @@ EntityCount:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] EIW

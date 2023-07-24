@@ -1,12 +1,7 @@
-## Description
-Targets all players in the server
+## 用途
+將伺服器上的所有玩家設為目標
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
 PlayerCount_ServerWide:
   Skills:
@@ -15,6 +10,6 @@ PlayerCount_ServerWide:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] server
 - [x] everyone

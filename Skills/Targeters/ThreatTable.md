@@ -1,17 +1,12 @@
-## Description
-Targets every entity on the casting mob's [Threat Table](/Mobs/ThreatTables)
+## 用途
+將存在於威寫表上的所有實體設為目標 [威脅表](/Mobs/ThreatTables)
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
   Skills:
   - ignite @ThreatTable
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] TT

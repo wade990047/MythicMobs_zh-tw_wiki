@@ -1,15 +1,10 @@
-## Description
-Targets the caster's target.
+## 用法
+將敵人設為目標
 
-- If the caster is a mob, targets its target
-- If the caster is a player, targets the entity the player is looking at, if close enough
+- 如果施法者是怪物，目標就是敵人
+- 如果施法者是玩家，目標就是玩家正在查看的實體(如果足夠近)
 
-
-## Attributes
->*This targeter has no attributes*
-
-
-## Examples
+## 範例
 ```yaml
 ExampleSkill:
   Skills:
@@ -17,5 +12,5 @@ ExampleSkill:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] T

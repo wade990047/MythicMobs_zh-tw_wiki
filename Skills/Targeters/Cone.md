@@ -1,19 +1,19 @@
-## Description
-Returns the # of points target locations that comprise a cone.  
-Note: Cone is fixed on the y-axis, and cannot be rotated up or down
+## 用途
+
+將構成圓錐體的目標位置點設為目標 (注意：圓錐體固定在y軸上，不能上下旋轉)
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 設定項 | 簡寫   | 用途                      | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| angle     | a         | The angle of the cone                                                | 90      |
-| range     | r         | The length of the cone                                               | 16      |
-| points    | p         | The number of points that will be targeted inside the cone    | angle*range*0.1|
-| rotation  | rot       | The rotation of the cone                                             | 0       |
-| yoffset   | yo, y     | The y offset of the cone                                             | 0       |
+| angle     | a         | 圓錐體的角度            | 90      |
+| range     | r         | 圓錐體的長度            | 16      |
+| points    | p         | 將在圓錐體內定位的點的數量    | angle\*range\*0.1|
+| rotation  | rot       | 圓錐體的旋轉角度         | 0       |
+| yoffset   | yo, y     | 圓錐體的 y 偏移量         | 0       |
 
 
-## Examples
+## 範例
 ```yaml
   Skills:
   - effect:particles @Cone{a=45;r=10;p=200}
