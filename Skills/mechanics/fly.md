@@ -7,14 +7,14 @@ attribute.
 Attributes
 ----------
 
-| Attribute | Aliases | Description          | Default Value |
+| Attribute | Aliases | Description  | Default Value |
 |-----------|---------|----------------------|---------------|
-| duration  | d       | Duration of the aura | 200           |
+| duration  | d   | Duration of the aura | 200   |
 
   
 
 Examples
 --------
 
-      Skills:
-      - fly{duration=100} @trigger ~onInteract
+  Skills:
+  - fly{duration=100} @trigger ~onInteract

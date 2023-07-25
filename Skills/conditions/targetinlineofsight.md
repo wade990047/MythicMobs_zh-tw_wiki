@@ -1,12 +1,12 @@
-## Description
+## 用途
 Tests if the target entity has line of sight to their target
 
 
-## Attributes
+## 細項設定
 > *This condition has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - targetinlineofsight{} true

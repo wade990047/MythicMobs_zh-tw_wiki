@@ -6,12 +6,12 @@ Applies a bone meal effect to the target blocks.
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
-| none      | none  | none        |
+| none  | none  | none|
 
 Examples
 --------
 
 ```yaml
-      Skills:
-      - bonemeal @selflocation{y=-1}
+  Skills:
+  - bonemeal @selflocation{y=-1}
 ```

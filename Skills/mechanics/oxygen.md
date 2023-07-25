@@ -4,7 +4,7 @@ Gives the target player an amount of oxygen.
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
-| amount    |       | the amount of oxygen to give the player |
+| amount|   | the amount of oxygen to give the player |
 
 **Examples**
 

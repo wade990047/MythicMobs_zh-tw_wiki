@@ -1,21 +1,21 @@
-## Description
+## 用途
 Sets the target raider to patrol the given location
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| location  |block, l, b| A [Location Targeter], whose targeted location will be the specified one |     |                                       
+| location  |block, l, b| A [Location Targeter], whose targeted location will be the specified one | |  
 
 
-## Examples
+## 範例
 ```yaml
   Skills:
   - setRaiderPatrolBlock{l=@TrackedLocation} @self
 ```
 
-## Aliases
+## 簡化寫法
 - [x] setRaiderBlock
 
 [Location Targeter]: /Skills/Targeters#single-location-targeters

@@ -1,19 +1,19 @@
-## Description
+## 用途
 This condition checks if the target player is crouching or not.
 
 
-## Attributes
+## 細項設定
 *This condition has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - crouching true
 ```
 
 
-## Aliases
+## 簡化寫法
 
 - [x] iscrouching
 - [x] sneaking

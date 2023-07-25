@@ -1,15 +1,15 @@
-## Description
+## 用途
 Matches a range against the target location's world's time.
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| time      | t         | A range of time to check                                             | 0       |
+| time  | t | A range of time to check| 0   |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - worldtime{t=0to6000} true

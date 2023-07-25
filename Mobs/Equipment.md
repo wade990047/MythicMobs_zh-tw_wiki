@@ -9,12 +9,12 @@ Equipment slots can also accept droptables, allowing for the creation of "sets" 
 Syntax
 ------
 
-    internal_mobname:
-      Type: <mobtype>
-      Equipment:
-      - <item> <slot>
-      - <item> <slot>
-      - ...
+internal_mobname:
+  Type: <mobtype>
+  Equipment:
+  - <item> <slot>
+  - <item> <slot>
+  - ...
 
 **&lt;item&gt;**  
 Can be either the name of a [MythicMobs item](/Items/Items#internal_name) or a vanilla item.
@@ -22,23 +22,23 @@ Can be either the name of a [MythicMobs item](/Items/Items#internal_name) or a v
 **&lt;slot&gt;**  
 Defines the slot on the mob that item should be carried on.
 
-| Slot    | Description                                                                                                 |
+| Slot| Description  |
 |---------|-------------------------------------------------------------------------------------------------------------|
-| HEAD    | The head slot. Accepts regular helmets, playerheads, and even blocktypes. |
+| HEAD| The head slot. Accepts regular helmets, playerheads, and even blocktypes. |
 | CHEST   | The chest slot. Will only render chestplates, but will carry any items. |
-| LEGS    | The leg slot. Will only render leggings, but will carry any items. |
-| FEET    | The feet slot. Will only render boots, but will carry any items. |
-| HAND    | The mainhand (right) hand slot. |
+| LEGS| The leg slot. Will only render leggings, but will carry any items. |
+| FEET| The feet slot. Will only render boots, but will carry any items. |
+| HAND| The mainhand (right) hand slot. |
 | OFFHAND | The offhand (left) hand slot. |
 
 Example
 --------
 
-    awesome_boss:
-      Type: pig_zombie
-      Equipment:
-      - awesome_boss_helmet HEAD
-      - diamond_sword HAND
+awesome_boss:
+  Type: pig_zombie
+  Equipment:
+  - awesome_boss_helmet HEAD
+  - diamond_sword HAND
 
 --------
 
@@ -62,7 +62,7 @@ The example below will spawn a zombie with a panda player head equipped in their
 PandaZombie:
   Type: ZOMBIE
   Options:
-    PreventSunburn: true
+PreventSunburn: true
   Equipment:
   - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY0NjNlNjRjZTI5NzY0ZGIzY2I0NjgwNmNlZTYwNmFmYzI0YmRmMGNlMTRiNjY2MGMyNzBhOTZjNzg3NDI2In19fQ==} HEAD
 ```
@@ -73,7 +73,7 @@ Now lets take this Panda Zombie and give it some custom armor with a name, lore,
 PandaZombie:
   Type: ZOMBIE
   Options:
-    PreventSunburn: true
+PreventSunburn: true
   Equipment:
   - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY0NjNlNjRjZTI5NzY0ZGIzY2I0NjgwNmNlZTYwNmFmYzI0YmRmMGNlMTRiNjY2MGMyNzBhOTZjNzg3NDI2In19fQ==;enchants=WATER_WORKER:1,OXYGEN:3} HEAD
   - DIAMOND_CHESTPLATE{name="Panda<&sq>s Will";lore="A Panda must be vigilant";enchants=PROTECTION_ENVIRONMENTAL:4,DURABILITY:3,MENDING:1,THORNS:2} CHEST
@@ -87,7 +87,7 @@ Lastly, remember that we can use the inline item data in the drops section. Kill
 PandaZombie:
   Type: ZOMBIE
   Options:
-    PreventSunburn: true
+PreventSunburn: true
   Equipment:
   - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY0NjNlNjRjZTI5NzY0ZGIzY2I0NjgwNmNlZTYwNmFmYzI0YmRmMGNlMTRiNjY2MGMyNzBhOTZjNzg3NDI2In19fQ==;enchants=WATER_WORKER:1,OXYGEN:3} HEAD
   - DIAMOND_CHESTPLATE{name="Panda<&sq>s Will";lore="A Panda must be vigilant";enchants=PROTECTION_ENVIRONMENTAL:4,DURABILITY:3,MENDING:1,THORNS:2} CHEST

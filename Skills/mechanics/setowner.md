@@ -1,4 +1,4 @@
-## Description
+## 用途
 Sets the "owner" attribute of the Mythic Mob to the given target. This is a special attribute used within MythicMobs, and different from the normal "vanilla" owner of a mob.  
 Does nothing if the caster is not a Mythic Mob, or the target is not a Player.  
 Works with the [@Owner Targeter](/Skills/Targeters/Owner), and the [Owner Condition](/skills/conditions/owner).  
@@ -6,11 +6,11 @@ Works with the [@Owner Targeter](/Skills/Targeters/Owner), and the [Owner Condit
 If the casting mob is a `Wolf`,`Cat` or `Parrot`, then the mechanic will _also_ set their Vanilla Owner as the targeted player.
 
 
-## Attributes
+## 細項設定
 >*This mechanic has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
 PetSheep:
   Mobtype: sheep

@@ -1,15 +1,15 @@
-## Description
+## 用途
 Tests if the target has a scoreboard tag
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| tag       | t         | The tag to check for                                                 |         |
+| tag   | t | The tag to check for| |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - hastag{t=KilledBoss1} true
@@ -21,5 +21,5 @@ Tests if the target has a scoreboard tag
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] hasScoreboardTag

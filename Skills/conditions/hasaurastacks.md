@@ -1,23 +1,23 @@
-## Description
+## 用途
 Tests if the target has the given range of stacks from an aura
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | auraName  | name, n, aura, buffname, buff, debuffname, debuff, b| The name of the aura to check for ||
-| stacks    | s         | The number/range of stacks to check for                              | 1       |
+| stacks| s | The number/range of stacks to check for | 1   |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - hasaurastacks{n=firedebuff;s=>3} true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] hasbuffstacks
 - [x] hasdebuffstacks
 - [x] aurastacks

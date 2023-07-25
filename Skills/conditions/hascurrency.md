@@ -1,20 +1,20 @@
-## Description
+## 用途
 If the target has the given amount of vault currency
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| amount    | a         | The amount of currency                                               |         |
+| amount| a | The amount of currency  | |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - hascurrency{a=1000} true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] hasmoney

@@ -12,13 +12,13 @@
 ```yaml
   Skills:
   - projectile{...;
-    onTick=[
-      - effect:particles @origin
-    ];
-    onEnd=[
-      - damage{a=10} @ENO{r=2}
-    ]
-    } @target
+onTick=[
+  - effect:particles @origin
+];
+onEnd=[
+  - damage{a=10} @ENO{r=2}
+]
+} @target
 ```
 
 

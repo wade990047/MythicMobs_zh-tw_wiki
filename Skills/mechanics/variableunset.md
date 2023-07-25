@@ -8,10 +8,10 @@ Unsets a [variable](/skills/variables).
 Attributes
 ----------
 
-| Attribute | Aliases | Description                                                                                                                                                                                                        | Default Value |
+| Attribute | Aliases | Description  | Default Value |
 |-----------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| variable  | var     | The name of the variable. Can optionally be prefixed with **scope.**                                                                                                                                               |               |
-| scope     | s       | The [scope](/skills/variables#variable_scopes) of the variable, e.g. where the variable will be located.                                                                                                           | SKILL         |
+| variable  | var | The name of the variable. Can optionally be prefixed with **scope.**   |   |
+| scope | s   | The [scope](/skills/variables#variable_scopes) of the variable, e.g. where the variable will be located.| SKILL |
 
 --------
 

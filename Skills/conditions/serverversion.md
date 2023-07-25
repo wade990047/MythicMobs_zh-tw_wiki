@@ -1,20 +1,20 @@
-## Description
+## 用途
 Checks is the server is running a specific minecraft version
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Alias       | Description                                                        | Default |
+| Attribute | Alias   | Description   | Default |
 |-----------|-------------|--------------------------------------------------------------------|---------|
-| version   | sv, v       | The version to check for                                           | 1.19.3  |
+| version   | sv, v   | The version to check for  | 1.19.3  |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - serverversion{v="v1.19.4"} true
 ```
 
-## Aliases
+## 簡化寫法
 - [x] server
 - [x] version

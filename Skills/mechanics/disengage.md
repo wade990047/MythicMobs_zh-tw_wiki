@@ -1,11 +1,11 @@
-## Description
+## 用途
 Disengages from the target, by making the mob leap away from it
 
-## Attributes
+## 細項設定
 *This mechanic has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
 ExampleMob:
   Skills:

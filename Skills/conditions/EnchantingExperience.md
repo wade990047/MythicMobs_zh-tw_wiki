@@ -1,20 +1,20 @@
-## Description
+## 用途
 Checks the experience points that the target player has.
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| level     | l         | The experience points to check for. Accepts ranges.                  | 0       |
+| level | l | The experience points to check for. Accepts ranges.  | 0   |
 
 
-## Examples
+## 範例
 ```yaml
   TargetConditions:
   - enchantingExperience{l=>100} true
 ```
 
-## Aliases
+## 簡化寫法
 - [x] enchantingExp
 - [x] enchantExperience
 - [x] enchantExp

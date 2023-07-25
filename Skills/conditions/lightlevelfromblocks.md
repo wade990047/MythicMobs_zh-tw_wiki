@@ -1,15 +1,15 @@
-## Description
+## 用途
 Tests the light level originating from light-emitting blocks at the target location
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| level     | l         | The light level range to match                                       | 0       |
+| level | l | The light level range to match  | 0   |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - lightlevelfromblocks{l=10} true

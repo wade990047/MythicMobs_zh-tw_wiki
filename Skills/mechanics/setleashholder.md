@@ -1,14 +1,14 @@
-## Description
+## 用途
 Sets the leash holder of the caster to the targeted entity
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| remove    | r, boolean, bool, b| If the lead should be removed instead of set                | false   |
+| remove| r, boolean, bool, b| If the lead should be removed instead of set| false   |
 
 
-## Examples
+## 範例
 ```yaml
   Skills:
   - setleashholder @NearestPlayer

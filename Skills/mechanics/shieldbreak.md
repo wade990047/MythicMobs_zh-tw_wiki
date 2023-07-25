@@ -6,9 +6,9 @@ Breaks the target player's shield block if they are blocking. Only works when ta
 Attributes
 ----------
 
-| Attribute | Aliases    | Description                                                                                                    | Default Value |
+| Attribute | Aliases| Description | Default Value |
 |-----------|------------|----------------------------------------------------------------------------------------------------------------|---------------|
-| duration  | d          | The duration in ticks that the shield will be disabled for after the block is broken | 100          |
+| duration  | d  | The duration in ticks that the shield will be disabled for after the block is broken | 100  |
 
   
 
@@ -17,5 +17,5 @@ Examples
 
 If the player is blocking, this would break the block and put the shield on cooldown for 200 ticks (or 10 seconds.)
 
-    Skills:
-    - shieldbreak{duration=200} @target
+Skills:
+- shieldbreak{duration=200} @target

@@ -6,9 +6,9 @@ Sets the ticks frozen in powdered snow. Freeze ticks are capped at 140 ticks for
 Attributes
 ----------
 
-| Attribute | Aliases | Description                   | Default |
+| Attribute | Aliases | Description   | Default |
 |-----------|---------|-------------------------------|---------|
-| ticks     | t       | Ticks frozen in powdered snow | 60      |
+| ticks | t   | Ticks frozen in powdered snow | 60  |
 
 
 

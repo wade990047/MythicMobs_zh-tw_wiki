@@ -10,5 +10,5 @@ when riding things. That's not a MythicMobs bug sadly.
 Examples
 --------
 
-      Skills:
-      - mounttarget @trigger ~onDamaged
+  Skills:
+  - mounttarget @trigger ~onDamaged

@@ -1,22 +1,22 @@
-## Description
+## 用途
 Checks how many players are in a radius.
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| amount    | a         | The given range value to check                                       | >0      |
-| radius    | range, r  | The given radius to check                                            | 32      |
+| amount| a | The given range value to check  | >0  |
+| radius| range, r  | The given radius to check   | 32  |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - playersinradius{a=>3;r=16}
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] pir
 - [x] playerInRadius

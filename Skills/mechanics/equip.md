@@ -1,15 +1,15 @@
-## Description
+## 用途
 Equips the mob with an item. Uses the exact same syntax as the
 [Equipment](/mobs/equipment) configuration.
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| item      | items, equipment, equip, e | The item config string to run on the mob.           |         |
+| item  | items, equipment, equip, e | The item config string to run on the mob.   | |
 
 
-## Examples
+## 範例
 This example would equip the casting mob with a diamond sword.
 ```yaml
 EquipDiamondSword:

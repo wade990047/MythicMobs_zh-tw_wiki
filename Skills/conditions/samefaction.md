@@ -1,17 +1,17 @@
-## Description
+## 用途
 This conditions checks if the target entity is in the same faction as the caster.
 
 
-## Attributes
+## 細項設定
 *This condition has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
   TargetConditions:
   - samefaction true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] factionsame

@@ -91,8 +91,8 @@ example_mob:
   Display: HealthyBoi
   Health: 1000
   HealthBar:
-    Enabled: true
-    Offset: 1.45
+Enabled: true
+Offset: 1.45
 ```
 
 #### BossBar
@@ -104,14 +104,14 @@ example_mob:
   Type: zombie
   Armor: 25
   BossBar:
-    Enabled: true
-    Title: Tanker
-    Range: 20
-    Color: RED
-    Style: NOTCHED_6
-    CreateFog: true
-    DarkenSky: true
-    PlayMusic: true
+Enabled: true
+Title: Tanker
+Range: 20
+Color: RED
+Style: NOTCHED_6
+CreateFog: true
+DarkenSky: true
+PlayMusic: true
 ```
 
 #### Faction
@@ -141,8 +141,8 @@ A list of available mob options can be found in the [Mob Options](Mobs/Options) 
 slow_persistent_mob:
   Type: husk
   Options:
-    MovementSpeed: 0.025
-    Despawn: PERSISTENT
+MovementSpeed: 0.025
+Despawn: PERSISTENT
 ```
 
 #### Modules
@@ -151,8 +151,8 @@ This field allows you to enable or disable modules, like [Threat Tables] and/or 
 example_mob:
   Type: husk
   Modules:
-    ThreatTables: false
-    ImmunityTables: false
+ThreatTables: false
+ImmunityTables: false
 ```
 
 #### AIGoalSelectors
@@ -161,15 +161,15 @@ Modifies and customizes the [AI goals] of the mob.
 dummy_mob:
   Type: zombie
   AIGoalSelectors:
-    - clear
+- clear
 ```
 ```yml
 passive_mob:
   Type: zombie
   AIGoalSelectors:
-    - clear
-    - randomstroll
-    - randomlookaround
+- clear
+- randomstroll
+- randomlookaround
 ```
 
 #### AITargetSelectors
@@ -178,13 +178,13 @@ Modifies and customizes the [AI targets] of the mob.
 neutral_mob:
   Type: zombie
   AIGoalSelectors:
-    - clear
-    - meleeattack
-    - randomstroll
-    - randomlookaround
+- clear
+- meleeattack
+- randomstroll
+- randomlookaround
   AITargetSelectors:
-    - clear
-    - attacker
+- clear
+- attacker
 ```
 
 #### Drops
@@ -195,10 +195,10 @@ See [Drops & DropTables](drops/Drops) for more information.
 example_mob:
   Type: zombie
   Options:
-    PreventOtherDrops: true
+PreventOtherDrops: true
   Drops:
-    - diamond 32 1
-    - netherite_ingot 12 0.5
+- diamond 32 1
+- netherite_ingot 12 0.5
 ```
 
 #### DamageModifiers
@@ -209,8 +209,8 @@ See [Damage Modifiers](Mobs/DamageModifiers) for more information.
 example_mob:
   Type: zombie
   DamageModifiers:
-    - ENTITY_ATTACK 0
-    - PROJECTILE 1.25
+- ENTITY_ATTACK 0
+- PROJECTILE 1.25
 ```
 
 #### Equipment
@@ -220,10 +220,10 @@ See [Equipment](Mobs/Equipment) for more information.
 example_mob:
   Type: zombie
   Options:
-    PreventRandomEquipment: true
+PreventRandomEquipment: true
   Equipment:
-    - diamond_sword HAND
-    - diamond_helmet{name=<green>COMMON</green> helmet} HEAD
+- diamond_sword HAND
+- diamond_helmet{name=<green>COMMON</green> helmet} HEAD
 ```
 
 #### KillMessages
@@ -233,8 +233,8 @@ example_mob:
   Type: zombie
   Display: Tanker
   KillMessages:
-    - <caster.name> yeeted <target.name>!!
-    - You're too weak <target.name>!!
+- <caster.name> yeeted <target.name>!!
+- You're too weak <target.name>!!
 ```
 
 #### LevelModifiers
@@ -244,8 +244,8 @@ example_mob:
   Type: zombie
   Display: Dummy
   LevelModifiers:
-    Damage: 2
-    Health: 0.25
+Damage: 2
+Health: 0.25
 ```
 
 #### Disguise
@@ -268,7 +268,7 @@ See [Skills](Skills/Skills) to get started on making your own skills.
 example_mob:
   Type: zombie
   Skills:
-    - swap{} @trigger ~onInteract
+- swap{} @trigger ~onInteract
 ```
 
 #### Trades
@@ -280,24 +280,24 @@ MerchantTest:
   Type: VILLAGER
   Display: '&6Merchant Test'
   Options:
-    Profession: CLERIC
-    Type: DESERT
-    Level: 2
+Profession: CLERIC
+Type: DESERT
+Level: 2
   Trades:
-    1:
-      Item1: 5 EMERALD
-      Item2: 5 DIAMOND
-      Result: DIAMOND_SWORD
-      MaxUses: 5
-    2:
-      Item1: 64 EMERALD
-      Result: mmoitems.SWORD.CUTLASS
-      MaxUses: 1
-    3:
-      Item1: 32 EMERALD
-      Item2: 1 PAPER
-      Result: 1 CUSTOM_ITEM
-      MaxUses: 1
+1:
+  Item1: 5 EMERALD
+  Item2: 5 DIAMOND
+  Result: DIAMOND_SWORD
+  MaxUses: 5
+2:
+  Item1: 64 EMERALD
+  Result: mmoitems.SWORD.CUTLASS
+  MaxUses: 1
+3:
+  Item1: 32 EMERALD
+  Item2: 1 PAPER
+  Result: 1 CUSTOM_ITEM
+  MaxUses: 1
 ```
 
 Examples
@@ -311,54 +311,54 @@ possibilities. All that you need to apply is whatever you want for you
 mob. The only required options/attributes are the internal-mobname and a
 mob-type. After that it's completely up to you.
 ```
-    super_zombie:
-     Type: zombie
-     Display: '&lSuper Zombie&r'
-     Health: 200
-     Damage: 14
-     Armor: 10
-     Faction: superb_zombies
-     Mount: super_zombie_undead_horse
-     Options:
-      PreventOtherDrops: true
-      PreventItemPickup: true
-      Despawn: false
-      KnockbackResistance: 0.25
-      MovementSpeed: 0.25
-     Modules:
-      ThreatTable: false
-      ImmunityTable: true
-     AIGoalSelectors:
-     - clear
-     - meleeattack
-     - randomstroll
-     AITargetSelectors:
-     - clear
-     - attacker
-     - players
-     Drops:
-     - diamond 1-3 1
-     - exp 50 1
-     - super_zombie_sword 1 1
-     DamageModifiers:
-     - ENTITY_ATTACK 0
-     - PROJECTILE 1.25
-     - MAGIC 1.75
-     Equipment:
-     - super_zombie_helmet:4
-     - super_zombie_sword:0
-     KillMessages:
-     - '<target.name> was superbly slain by a <mob.name>'
-     LevelModifiers:
-       MovementSpeed: 0.01
-       KnockbackResistance: 0.05
-       Health: 2
-       Damage: 1
-     Disguise: player ashijin setDisguiseName &6MythicMobs<&sq>s<&spGod
-     Skills:
-     - throw{v=5;vy=5} @rigger ~onAttack 0.5
-     - sound{s=entity.zombie.hurt;v=1;p=0} ~onDamaged
-     - e:particles{p=cloud;a=50;s=0.05} ~onDeath
+super_zombie:
+ Type: zombie
+ Display: '&lSuper Zombie&r'
+ Health: 200
+ Damage: 14
+ Armor: 10
+ Faction: superb_zombies
+ Mount: super_zombie_undead_horse
+ Options:
+  PreventOtherDrops: true
+  PreventItemPickup: true
+  Despawn: false
+  KnockbackResistance: 0.25
+  MovementSpeed: 0.25
+ Modules:
+  ThreatTable: false
+  ImmunityTable: true
+ AIGoalSelectors:
+ - clear
+ - meleeattack
+ - randomstroll
+ AITargetSelectors:
+ - clear
+ - attacker
+ - players
+ Drops:
+ - diamond 1-3 1
+ - exp 50 1
+ - super_zombie_sword 1 1
+ DamageModifiers:
+ - ENTITY_ATTACK 0
+ - PROJECTILE 1.25
+ - MAGIC 1.75
+ Equipment:
+ - super_zombie_helmet:4
+ - super_zombie_sword:0
+ KillMessages:
+ - '<target.name> was superbly slain by a <mob.name>'
+ LevelModifiers:
+   MovementSpeed: 0.01
+   KnockbackResistance: 0.05
+   Health: 2
+   Damage: 1
+ Disguise: player ashijin setDisguiseName &6MythicMobs<&sq>s<&spGod
+ Skills:
+ - throw{v=5;vy=5} @rigger ~onAttack 0.5
+ - sound{s=entity.zombie.hurt;v=1;p=0} ~onDamaged
+ - e:particles{p=cloud;a=50;s=0.05} ~onDeath
 ```
 -->
 [entity types]: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html

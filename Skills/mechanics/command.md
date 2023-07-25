@@ -1,4 +1,4 @@
-## Description
+## 用途
 Executes a command for each target supplied.
 
 Color codes and variables are allowed. For a list of color codes look
@@ -13,19 +13,19 @@ quotes and curly brackets are reserved for MythicMobs itself trying to
 read the syntax you supplied.
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| command   | c, cmd    | The command to execute                                               |         |
+| command   | c, cmd| The command to execute  | |
 | asCaster  | ac, caster, sudo, asmob| If true the command will execute from the caster instead of the console. | false   |
-| asOp      | op        | Whether to execute the command with all permissions                  | false   |
-| asTarget  | at, target, sudotarget| Will execute the command as the targeted entity          |  false  |
-| requireTarget | rt    | Only executes if the skill has a target                      | asTarget's value|
+| asOp  | op| Whether to execute the command with all permissions  | false   |
+| asTarget  | at, target, sudotarget| Will execute the command as the targeted entity  |  false  |
+| requireTarget | rt| Only executes if the skill has a target  | asTarget's value|
 
   
 
-## Examples
+## 範例
 
 ### Correctly written command-skills
 ```yaml
@@ -61,4 +61,4 @@ Tutorials
 ---------
 
 -   [Villager trades using cmd-mechanics by
-    Krowerom](https://www.youtube.com/watch?v=p71bl_W3a4I&feature=youtu.be)
+Krowerom](https://www.youtube.com/watch?v=p71bl_W3a4I&feature=youtu.be)

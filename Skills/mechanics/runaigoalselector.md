@@ -19,8 +19,8 @@ Example
 
 Skill.yml:
 
-    ChangePatchfinderGoalExample:
-      Skills:
-      - runaigoalselector{goal=clear}
-      - runaigoalselector{goal=fleesun}
-      - runaigoalselector{goal=randomstroll}
+ChangePatchfinderGoalExample:
+  Skills:
+  - runaigoalselector{goal=clear}
+  - runaigoalselector{goal=fleesun}
+  - runaigoalselector{goal=randomstroll}

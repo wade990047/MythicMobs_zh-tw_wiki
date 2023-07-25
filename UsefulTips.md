@@ -17,13 +17,13 @@ This is a common issue. To fix this, consider adding the following skill to your
 ```yaml
   Skills:
   - skill{s=[
-    - potion{t=BAD_OMEN;l=4;d=120000} ?~haspotioneffect{t=BAD_OMEN;l=3to4}
-    - potion{t=BAD_OMEN;l=3;d=120000} ?~haspotioneffect{t=BAD_OMEN;l=2}
-    - potion{t=BAD_OMEN;l=2;d=120000} ?~haspotioneffect{t=BAD_OMEN;l=1}
-    - potion{t=BAD_OMEN;l=1;d=120000} ?~haspotioneffect{t=BAD_OMEN;l=0}
-    - potion{t=BAD_OMEN;l=0;d=120000}
-    - command{c="say test"}
-    ]} @trigger ~onDeath ?~isPlayer ?wearing{m=WHITE_BANNER}
+- potion{t=BAD_OMEN;l=4;d=120000} ?~haspotioneffect{t=BAD_OMEN;l=3to4}
+- potion{t=BAD_OMEN;l=3;d=120000} ?~haspotioneffect{t=BAD_OMEN;l=2}
+- potion{t=BAD_OMEN;l=2;d=120000} ?~haspotioneffect{t=BAD_OMEN;l=1}
+- potion{t=BAD_OMEN;l=1;d=120000} ?~haspotioneffect{t=BAD_OMEN;l=0}
+- potion{t=BAD_OMEN;l=0;d=120000}
+- command{c="say test"}
+]} @trigger ~onDeath ?~isPlayer ?wearing{m=WHITE_BANNER}
 ```
 </details>
 

@@ -1,17 +1,17 @@
-## Description
+## 用途
 Checks if the target entity is saddled
 
 
-## Attributes
+## 細項設定
 >*This condition has no attributes*
 
 
-## Examples
+## 範例
 ```yml
   TargetConditions:
   - isSaddled true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] saddled

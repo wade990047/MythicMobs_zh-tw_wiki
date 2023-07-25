@@ -3,21 +3,21 @@ Goal: meleeAttack
 
 Causes the mob to move to and melee attack its target
 
-### Attributes
+### 細項設定
 
-| Attribute | Aliases | Description             | Default |
+| Attribute | Aliases | Description | Default |
 |-----------|---------|-------------------------|:-------:|
-| speed     | s       | Movement speed modifier |    1    |
+| speed | s   | Movement speed modifier |1|
 
 
 
 
-### Examples
+### 範例
 
 ```yaml
 ExampleMob:
   Type: Skeleton
   AIGoalSelectors:
-    - clear
-    - meleeattack{speed=1}
+- clear
+- meleeattack{speed=1}
 ```

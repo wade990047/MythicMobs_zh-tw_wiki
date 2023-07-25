@@ -6,11 +6,11 @@ Sets the tongue target for a frog caster to the target entity.
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
-| none      | none  | none        |
+| none  | none  | none|
 
 Examples
 --------
 ```yaml
-      Skills:
-      - setTongueTarget @trigger ~onInteract
+  Skills:
+  - setTongueTarget @trigger ~onInteract
 ```

@@ -1,21 +1,21 @@
-## Description
+## 用途
 Checks a global scoreboard value (the value associated with the fake player __GLOBAL__)
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| objective | obj, o    | The objective                                                        |         |
-| value     | val, v    | The value to match                                                   |         |
+| objective | obj, o| The objective   | |
+| value | val, v| The value to match  | |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - globalscore{o=KillCount;value=5} true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] scoreglobal

@@ -1,17 +1,17 @@
-## Description
+## 用途
  This condition tests if the target player is blocking with a shield. 
 
 
-## Attributes
+## 細項設定
 *This condition has no attributes*
 
-## Examples
+## 範例
 
 ```yaml
 Conditions:
 - blocking{} true
 ```
 
-## Aliases
+## 簡化寫法
 
 - [x] isblocking

@@ -1,5 +1,5 @@
-## Description 
-Creates and orbiting Atom effect at the location.            
+## 用途 
+Creates and orbiting Atom effect at the location.
 As of 5.3.2 supports only REDDUST particle.
 
 Image

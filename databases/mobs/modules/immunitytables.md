@@ -12,14 +12,14 @@ Enabling Immunity Tables
 Turning on Immunity Tables for a mob is easy. Just add
 **Modules.ImmunityTable:** true to your mob, like so:
 
-    BigHealthBoss:
-      Type: pig_zombie
-      Display: '&6Hungry Hungry Piggy Zombie'
-      Health: 20000
-      Modules:
-        ImmunityTable: true
-      Options:
-        NoDamageTicks: 10
+BigHealthBoss:
+  Type: pig_zombie
+  Display: '&6Hungry Hungry Piggy Zombie'
+  Health: 20000
+  Modules:
+ImmunityTable: true
+  Options:
+NoDamageTicks: 10
 
 That's it!
 

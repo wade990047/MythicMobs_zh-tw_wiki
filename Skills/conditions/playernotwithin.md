@@ -1,20 +1,20 @@
-## Description
+## 用途
 Checks if any players are within a radius of the target.
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| distance  | d         | The radius to check in                                               | 0       |
+| distance  | d | The radius to check in  | 0   |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - playernotwithin{d=10} true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] playersnotwithin

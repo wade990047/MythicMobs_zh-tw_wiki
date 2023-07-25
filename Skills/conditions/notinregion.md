@@ -1,15 +1,15 @@
-## Description
+## 用途
 Checks if the target location is **not** within the given WorldGuard region
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| region    | r, name, n| The region's name                                                    |         |
+| region| r, name, n| The region's name   | |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - notinregion{r=BossZone} true

@@ -1,16 +1,16 @@
-## Description
+## 用途
 If the target entity is standing on solid ground
 
-## Attributes
+## 細項設定
 > *This condition has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - onground{} true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] grounded

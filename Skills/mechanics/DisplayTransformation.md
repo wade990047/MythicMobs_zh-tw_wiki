@@ -1,16 +1,16 @@
-## Description
+## 用途
 Sets the targeted display entity's transformations
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| action    | a         | The action to use. Can be `SET`, `ADD`, `MULTIPLY`, `DIVIDE`         | SET     |
-| transformationtype | transformation, type, tt | The type of the transformation. Can be `TRANSLATION`, `SCALE`, `RIGHT_ROTATION`, `LEFT_ROTATION`                                                 | TRANSLATION |
-| value     | val       | The value of the transformation                                      | 0,0,0   |
+| action| a | The action to use. Can be `SET`, `ADD`, `MULTIPLY`, `DIVIDE` | SET |
+| transformationtype | transformation, type, tt | The type of the transformation. Can be `TRANSLATION`, `SCALE`, `RIGHT_ROTATION`, `LEFT_ROTATION`| TRANSLATION |
+| value | val   | The value of the transformation | 0,0,0   |
 
 
-## Examples
+## 範例
 ```yaml
 ExampleDisplayEntity:
   Type: block_display
@@ -19,6 +19,6 @@ ExampleDisplayEntity:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] settransformation
 - [x] transformation

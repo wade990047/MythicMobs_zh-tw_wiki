@@ -1,16 +1,16 @@
-## Description
+## 用途
 Tests if the target player or an item container has exactly the given number of the given material.
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| item      | i, material, m | The item to check for                                           | DIRT    |
-| amount    | a         | The amount to check for                                              | >0      |
+| item  | i, material, m | The item to check for  | DIRT|
+| amount| a | The amount to check for | >0  |
 
 
-## Examples
+## 範例
 
 ```yaml
   Conditions:

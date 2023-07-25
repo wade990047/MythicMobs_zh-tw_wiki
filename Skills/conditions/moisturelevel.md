@@ -1,4 +1,4 @@
-## Description
+## 用途
 Checks if the target block of farmland has the specified level of hydratation.
 
 - `0` means that the farmland is not hydratated
@@ -6,10 +6,10 @@ Checks if the target block of farmland has the specified level of hydratation.
 - `7` is for a fully hydratated farmland.
 
 
-## Attributes
-| Attribute | Alias       | Description                                                        | Default |
+## 細項設定
+| Attribute | Alias   | Description   | Default |
 |-----------|-------------|--------------------------------------------------------------------|---------|
-| l         |             | The level of hydratation to check for                              |         |
+| l | | The level of hydratation to check for | |
 
 Examples
 ---
@@ -22,5 +22,5 @@ Examples
   - moistureness{l=1to6} true
 ```
 
-## Aliases
+## 簡化寫法
   - [x] moistureness

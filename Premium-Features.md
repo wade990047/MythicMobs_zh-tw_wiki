@@ -10,10 +10,10 @@ Premium](http://www.mythicmobs.net/index.php?account/upgrades) comes with numero
 -   Access to premium-only mechanics, such as [raytracing](/skills/mechanics/raytrace) and [chain-missile](/skills/mechanics/chainmissile)!
 -   Ability to use custom damage types and damage modifiers
 -   Ability to use Math and [Placeholders](/Skills/Placeholders) in:
-    - Mob attributes (health, damage, etc)
-    - Most skills 
-    - Item attributes
-    - Drop table amounts        
+- Mob attributes (health, damage, etc)
+- Most skills 
+- Item attributes
+- Drop table amounts
 -   Ability to use [Skill Parameters](/skills/skillparametersystem)
 -   Ability to use on hit conditions & bounce in [projectile skills](/skills/mechanics/projectile)
 -   Ability to use conditional [AI goals/targeters](/Mobs/Custom-AI)

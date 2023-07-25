@@ -1,26 +1,26 @@
 Mechanic: Aura Remove
 =====================
 
-Removes an aura from the target.
+移除指定目標的光環
 
-Attributes
+## 細項設定
 ----------
 
-| Attribute | Aliases                  | Description          | Default Value |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|--------------------------|----------------------|---------------|
-| aura      | buff, debuff, name, b, n | The name of the aura |               |
-| stacks    | s                        | The amount of stacks | Max stacks    |
+| aura  | buff, debuff, name, b, n | 光環名稱 |   |
+| stacks| s| 堆疊數量 | Max stacks|
 
 ----------
 
-As of 4.12 MM:
+MM v4.12 版更新:
 
-You can now specify "ANY" to remove all auras from the target
+你可以指定名稱 "ANY" 來刪除目標的所有光環
 
-Examples
+## 範例
 --------
 ```yaml
-      Skills:
-      - auraremove{aura=Ice;stacks=10} @self ~onTimer:200
-      - ...
+  Skills:
+  - auraremove{aura=Ice;stacks=10} @self ~onTimer:200
+  - ...
 ```

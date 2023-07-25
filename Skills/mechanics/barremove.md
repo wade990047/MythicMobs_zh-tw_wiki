@@ -1,20 +1,20 @@
 Mechanic: Bar Remove
 ====================
 
-Removes a custom boss bar on the casting mob(cannot be player).
+在施法生物上移除一個自定義BOSS血條(不能是玩家)
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description              | Default Value |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|---------|--------------------------|---------------|
-| name      | n       | The name of the bossbar. | infobar       |
+| name  | n   | BOSS血條名稱 | infobar   |
 
   
 
-Examples
+範例
 --------
 
-      Skills:
-      - barRemove{name="MyBossBar"} @self ~onInteract
-      - ...
+  Skills:
+  - barRemove{name="MyBossBar"} @self ~onInteract
+  - ...

@@ -7,15 +7,15 @@ shulkers or sheeps.
 Attributes
 ----------
 
-| Attribute | Aliases | Description    | Default Value |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|---------|----------------|---------------|
-| color     | c       | The color name |               |
+| color | c   | The color name |   |
 
   
 
 Examples
 --------
 
-      Skills:
-      - setcolor{color=blue} @self ~onSpawn
-      - ...
+  Skills:
+  - setcolor{color=blue} @self ~onSpawn
+  - ...

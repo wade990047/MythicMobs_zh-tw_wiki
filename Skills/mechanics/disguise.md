@@ -10,9 +10,9 @@ disguises.
 Attributes
 ----------
 
-| Attribute | Aliases | Description                       | Default |
+| Attribute | Aliases | Description   | Default |
 |-----------|---------|-----------------------------------|---------|
-| disguise  | d, type | The disguise to apply to the mob. |         |
+| disguise  | d, type | The disguise to apply to the mob. | |
 
   
 
@@ -43,8 +43,8 @@ TestingDisguiseMechanic:
 
 This example would cause the mob to turn into a sheep.
 
-      Skills:
-      - disguiseOld{d=SHEEP}
+  Skills:
+  - disguiseOld{d=SHEEP}
 
 Configure custom disguises using Lib's Disguises for more granular detail.
 

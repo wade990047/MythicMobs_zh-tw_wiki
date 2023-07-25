@@ -6,10 +6,10 @@ Gives an item to the target. Supports Droptables.
 Attributes
 ----------
 
-| Attribute   | Aliases | Description       | Default Value |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-------------|---------|-------------------|---------------|
-| item        | i       | The item material (supports for MythicMobs' [Items](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Items/Items) and [Droptables](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/drops/Drops#drop-tables)) |               |
-| fakeLooting | fl      | Plays the pickup-item animation from the origin | false |
+| item| i   | The item material (supports for MythicMobs' [Items](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Items/Items) and [Droptables](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/drops/Drops#drop-tables)) |   |
+| fakeLooting | fl  | Plays the pickup-item animation from the origin | false |
 
 ------------
 
@@ -24,6 +24,6 @@ fakeLooting was added in 4.12 MM and it makes the item being given show up on th
 Examples
 --------
 
-    Skills:
-    - giveitem{i=diamond_sword} @PIR{r=20} ~onSpawn
-    - ...
+Skills:
+- giveitem{i=diamond_sword} @PIR{r=20} ~onSpawn
+- ...

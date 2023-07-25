@@ -28,18 +28,18 @@ The chance for the specified item to be dropped.
   - Must be a number between 0 and 1 
   - **Note:** allows percentage chances. (10% instead of 0.1).
 
-| **Special Drops**           | **Explanation**                                          | **Example**                             |
+| **Special Drops**   | **Explanation** | **Example**|
 |-----------------------------|----------------------------------------------------------|-----------------------------------------|
-| **champions-exp**           | Will drop experience points for the plugin *Champions*.  |                                         |
-| **skillapi-exp**            | Will drop experience points for the plugin *SkillAPI*.   |                                         |
-| **heroesexp**               | Will drop experience points for the plugin *Heroes*.     |                                         |
-| **mcmmo-exp**               | Will drop experience points for the plugin *MCMMO*.      |                                         |
-| **exp**                     | Will drop regular Minecraft experience points.           |                                         |
-| **money**                   | Will drop money for the plugin *Vault*.                  |                                         |
-| **mythicdrop &lt;item&gt;** | Will drop an &lt;item&gt; from the plugin *MythicDrops*. |                                         |
-| **phatloot &lt;item&gt;**   | Will drop an &lt;item&gt; from the plugin *PhatLoot*.    |                                         |
-| **cmd**                     | Will run a command in console                            | `- cmd{c="warp <trigger.name> spawn"}`  |
-| **mmoitems**                | Drops a mmoitems item                                    | `- mmoitems{type=SWORD;id=CUTLASS} 1 1` |
+| **champions-exp**   | Will drop experience points for the plugin *Champions*.  ||
+| **skillapi-exp**| Will drop experience points for the plugin *SkillAPI*.   ||
+| **heroesexp**   | Will drop experience points for the plugin *Heroes*. ||
+| **mcmmo-exp**   | Will drop experience points for the plugin *MCMMO*.  ||
+| **exp** | Will drop regular Minecraft experience points.   ||
+| **money**   | Will drop money for the plugin *Vault*.  ||
+| **mythicdrop &lt;item&gt;** | Will drop an &lt;item&gt; from the plugin *MythicDrops*. ||
+| **phatloot &lt;item&gt;**   | Will drop an &lt;item&gt; from the plugin *PhatLoot*.||
+| **cmd** | Will run a command in console| `- cmd{c="warp <trigger.name> spawn"}`  |
+| **mmoitems**| Drops a mmoitems item   | `- mmoitems{type=SWORD;id=CUTLASS} 1 1` |
 
 [For more about MMOItems, see here.](https://gitlab.com/phoenix-dvpmt/mmoitems/-/wikis/Item%20Drop%20Tables#adding-mmoitems-to-mythicmobs-drop-tables)
 
@@ -136,7 +136,7 @@ internal_droptablename:
 -   Works like: ```amount = amount + (luck * bonus_luck_items)```
 -   Requires that ```TotalItems```, ```MinItems```, or ```MaxItems``` are set on the table
 
-### Examples
+### 範例
 
 This mob will always drop a bunch of experience and some rotten flesh,
 but is also using a droptable which is described further below.
@@ -179,7 +179,7 @@ LuckyDroptable:
 It is also possible to use droptables to configure equipment setups. This type of droptables can be used either directly in the [Equipment element](/Mobs/Mobs#equipment) of the mob or by using the [Equip mechanic](/skills/mechanics/equip).
 The syntax itself is similar to the one of a "normal" droptable, except, in this case, it's necessary to specify an equipment slot.
 
-### Examples
+### 範例
 ```yaml
 # Droptable Config
 Example_EquipmentDropTable:

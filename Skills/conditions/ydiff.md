@@ -1,15 +1,15 @@
-## Description
+## 用途
 Checks the difference in y value (height) between the target entity and the caster.
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| difference| diff, d   | The y difference to check                                            |         |
+| difference| diff, d   | The y difference to check   | |
 
 
-## Examples
+## 範例
 ```yaml
   TargetConditions:
   - yDiff{diff=>5} true

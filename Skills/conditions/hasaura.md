@@ -1,21 +1,21 @@
-## Description
+## 用途
 Checks if the target entity has the given aura
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | auraName  | name, n, aura, buffname, buff, debuffname, debuff, b| The name of the aura to check for ||
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - hasaura{n=firedebuff} true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] hasbuff
 - [x] hasdebuff

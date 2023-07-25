@@ -8,9 +8,9 @@ The targeted entity also has to be in the air at the time!
 Attributes
 ----------
 
-| Attribute | Aliases | Description                              | Default Value |
+| Attribute | Aliases | Description | Default Value |
 |-----------|---------|------------------------------------------|---------------|
-| gliding   | g       | If the entity is forced to glide or not. | true          |
+| gliding   | g   | If the entity is forced to glide or not. | true  |
 
   
 
@@ -26,6 +26,6 @@ Examples
 This example will make the mob glide if it has elytra equipped and is in
 the air at the time.
 
-    MakeMobGlide:
-      Skills:
-      - setgliding{g=true;} @self
+MakeMobGlide:
+  Skills:
+  - setgliding{g=true;} @self

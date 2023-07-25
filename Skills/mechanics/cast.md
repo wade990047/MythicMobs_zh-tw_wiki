@@ -18,14 +18,14 @@ Attributes
 
 *Cast can also use most [Aura](/skills/mechanics/aura) attributes*
 
-| Attribute     | Aliases | Description                                                          | Default |
+| Attribute | Aliases | Description| Default |
 |---------------|---------|----------------------------------------------------------------------|---------|
-| onCast        | oc      | Skill to execute if the cast finishes successfully                   |         |
-| onInterrupted | oi      | Skill to execute if the cast is interrupted                          |         |
-| onNoTarget    | ont     | Skill to execute if no target is found                               |         |
-| skillname     | sn      | Display name of the spell in the cast bar                            |         |
-| showCastBar   | cb      | Whether to show the cast bar. Requires a compatible hologram plugin. | true    |
-| cancelOnMove  | com     | Whether to cancel the aura if the caster moves                       | false   |
+| onCast| oc  | Skill to execute if the cast finishes successfully   | |
+| onInterrupted | oi  | Skill to execute if the cast is interrupted  | |
+| onNoTarget| ont | Skill to execute if no target is found  | |
+| skillname | sn  | Display name of the spell in the cast bar| |
+| showCastBar   | cb  | Whether to show the cast bar. Requires a compatible hologram plugin. | true|
+| cancelOnMove  | com | Whether to cancel the aura if the caster moves   | false   |
 
   
 
@@ -36,14 +36,14 @@ Examples
 myCoolMob:
   Type: ZOMBIE
   Skills:
-    - cast{
-          skillName="&aFrost Blast";
-          duration=40;
-          onCast=FrostBlast-Cast;
-          onTick=FrostBlast-Tick;
-          onInterrupted=FrostBlast-Interrupted;
-          onNoTargets=FrostBlast-NoTargets;
-          cancelOnMove=true;
-          showCastBar=true
-        } @target ~onTimer:100
+- cast{
+  skillName="&aFrost Blast";
+  duration=40;
+  onCast=FrostBlast-Cast;
+  onTick=FrostBlast-Tick;
+  onInterrupted=FrostBlast-Interrupted;
+  onNoTargets=FrostBlast-NoTargets;
+  cancelOnMove=true;
+  showCastBar=true
+} @target ~onTimer:100
 ```

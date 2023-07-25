@@ -1,8 +1,8 @@
-## Description
+## 用途
 Creates a firework effect at the target.
 
 
-## Attributes
+## 細項設定
 
 | Attribute  | Aliases | Description | Default Value |
 | ------ | ------ | ------ | ------ |
@@ -23,7 +23,7 @@ Creates a firework effect at the target.
 ### Firework Colors
 It has been reported that the firework will display the opposite color than the one specified in the "color" output. If your firework effect seems to be having this problem, try to invert the color attribute.
 
-## Examples
+## 範例
 ```yaml
   Skills:
   - effect:firework{t=BALL;d=1;f=true;tr=true} @self ~onInteract

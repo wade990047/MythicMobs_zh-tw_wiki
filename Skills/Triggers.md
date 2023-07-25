@@ -5,38 +5,38 @@ Triggers (觸發器) 是用來決定一項技能他應該要在什麼樣的條�
 
 **可用的觸發器列表:**
 
-| 觸發器                                | 觸發條件                                            |
+| 觸發器   | 觸發條件   |
 |----------------------------------------|--------------------------------------------------------------|
-| onCombat                               | 預設                                             |
-| [onAttack](#onattack)                  | 當怪物攻擊到其他生物時                                 |
-| [onDamaged](#ondamaged)                | 當怪物受傷時                                      |
-| [onSpawn](#onspawn)                    | 當怪物重生/召喚時                                          |
-| [onDespawn](#ondespawn)                | 當怪物消失時(區塊清除、自然消失)                                    |
-| [onReady / onFirstSpawn](#onready)                    | 當怪物第一次從刷怪籠中生成     |
-| [onLoad](#onload)                      | 當怪物被讀取時 (重新啟動伺服器後的生成或加載) |
-| [onDeath](#ondeath)                    | 當怪物死亡時                                           |
-| [onTimer:*#*](#ontimerticks)           | 每 \# ticks 執行一次 (\# 輸入ticks 每 20ticks 為一秒)           |
-| [onInteract](#oninteract)              | 當怪物被右鍵互動時                                |
-| [onPlayerKill](#onplayerkill)          | 當怪物擊殺玩家時                                  |
-| [onEnterCombat](#onentercombat)        | 當怪物進入戰鬥狀態時 (需要啟用 threat tables(威脅表))    |
-| [onDropCombat](#ondropcombat)          | 當怪物離開戰鬥狀態時 (需要啟用 threat tables(威脅表))    |
-| [onChangeTarget](#onchangetarget)      | 當怪物變更攻擊目標時 (需要啟用 threat tables(威脅表))  |
-| [onExplode](#onexplode)                | 當怪物爆炸時 (只適用於苦力怕/TNT)     |
-| [onPrime](#onprime)                    | 當怪物預備爆炸時 (只適用於苦力怕/TNT)                 |
-| [onCreeperCharge](#oncreepercharge)    | 當苦力怕被充能時 (閃電打中苦力怕)  |
-| [onTeleport](#onteleport)              | 當怪物傳送時    |
-| [onSignal:*[signal]*](#onsignalsignal) | 當怪物接收到信號時                               |
-| [onShoot](#onshoot)                    | 當怪物射出導彈類攻擊時(箭矢、燃燒彈)                              |
-| [onTame](#ontame)                      | 當怪物被馴服時                                      |
-| [onBreed](#onbreed)                    | 當怪物繁殖時                        |
-| [onTrade](#ontrade)                    | 當村民完成一筆交易時(伺服器端必須要是 Paper)          |
-| [onChangeWorld](#onchangeworld)        | 當怪物切換世界時                                   |
-| [onBucket](#onbucket)                  | 當牛被擠牛奶時 / 水中生物被裝進鐵桶時 (蠑螈、河豚等等...)             |
+| onCombat  | 預設|
+| [onAttack](#onattack)  | 當怪物攻擊到其他生物時|
+| [onDamaged](#ondamaged)| 當怪物受傷時 |
+| [onSpawn](#onspawn)| 當怪物重生/召喚時 |
+| [onDespawn](#ondespawn)| 當怪物消失時(區塊清除、自然消失)   |
+| [onReady / onFirstSpawn](#onready)| 當怪物第一次從刷怪籠中生成 |
+| [onLoad](#onload)  | 當怪物被讀取時 (重新啟動伺服器後的生成或加載) |
+| [onDeath](#ondeath)| 當怪物死亡時  |
+| [onTimer:*#*](#ontimerticks)   | 每 \# ticks 執行一次 (\# 輸入ticks 每 20ticks 為一秒)   |
+| [onInteract](#oninteract)  | 當怪物被右鍵互動時   |
+| [onPlayerKill](#onplayerkill)  | 當怪物擊殺玩家時 |
+| [onEnterCombat](#onentercombat)| 當怪物進入戰鬥狀態時 (需要啟用 threat tables(威脅表))|
+| [onDropCombat](#ondropcombat)  | 當怪物離開戰鬥狀態時 (需要啟用 threat tables(威脅表))|
+| [onChangeTarget](#onchangetarget)  | 當怪物變更攻擊目標時 (需要啟用 threat tables(威脅表))  |
+| [onExplode](#onexplode)| 當怪物爆炸時 (只適用於苦力怕/TNT) |
+| [onPrime](#onprime)| 當怪物預備爆炸時 (只適用於苦力怕/TNT) |
+| [onCreeperCharge](#oncreepercharge)| 當苦力怕被充能時 (閃電打中苦力怕)  |
+| [onTeleport](#onteleport)  | 當怪物傳送時|
+| [onSignal:*[signal]*](#onsignalsignal) | 當怪物接收到信號時  |
+| [onShoot](#onshoot)| 當怪物射出導彈類攻擊時(箭矢、燃燒彈) |
+| [onTame](#ontame)  | 當怪物被馴服時 |
+| [onBreed](#onbreed)| 當怪物繁殖時|
+| [onTrade](#ontrade)| 當村民完成一筆交易時(伺服器端必須要是 Paper)  |
+| [onChangeWorld](#onchangeworld)| 當怪物切換世界時  |
+| [onBucket](#onbucket)  | 當牛被擠牛奶時 / 水中生物被裝進鐵桶時 (蠑螈、河豚等等...) |
 
 <!--
 ADD THIS TRIGGER BACK WHEN IT WORKS
 
-| onKill                       | When something kills a mob                                   |
+| onKill   | When something kills a mob  |
 -->
 
 如何使用觸發器
@@ -109,8 +109,8 @@ SkeletalWarrior:
 EXAMPLE_MOB:
   Type: CHICKEN
   Skills:
-    # 當怪物生成時，對當前世界的所有玩家發送訊息
-    - message{m=SPAWN} @World ~onSpawn
+# 當怪物生成時，對當前世界的所有玩家發送訊息
+- message{m=SPAWN} @World ~onSpawn
 ```
 
 #### ~onDeath
@@ -123,8 +123,8 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: CHICKEN
   Skills:
-    # 當怪物死亡時，對當前世界的所有玩家發送訊息
-    - message{m=DEATH} @World ~onDeath
+# 當怪物死亡時，對當前世界的所有玩家發送訊息
+- message{m=DEATH} @World ~onDeath
 ```
 ```yaml
 ImmortalCow:
@@ -132,13 +132,13 @@ ImmortalCow:
   Display: '&eImmortal Cow'
   Health: 20
   Options:
-    ReviveHealth: -1
+ReviveHealth: -1
   Skills:
   - skill{s=[
-    - cancelevent
-    - e:p{p=HEART;hs=0.5;vs=0.5;y=1.5}
-    - speak{m=Call an ambulance, but not for me!}
-    ];sync=true} @self ~onDeath
+- cancelevent
+- e:p{p=HEART;hs=0.5;vs=0.5;y=1.5}
+- speak{m=Call an ambulance, but not for me!}
+];sync=true} @self ~onDeath
 ```
 #### ~onAttack
 當怪物攻擊到目標時觸發.
@@ -149,8 +149,8 @@ EXAMPLE_MOB:
   Type: CHICKEN
   Damage: 1
   Skills:
-    # 當怪物攻擊到目標時，對當前世界的所有玩家發送訊息
-    - message{m=ATTACK} @World ~onAttack
+# 當怪物攻擊到目標時，對當前世界的所有玩家發送訊息
+- message{m=ATTACK} @World ~onAttack
 ```
 
 #### ~onDamaged
@@ -161,8 +161,8 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: CHICKEN
   Skills:
-    # 當怪物受到傷害時，對當前世界的所有玩家發送訊息
-    - message{m=DAMAGED} @World ~onDamaged
+# 當怪物受到傷害時，對當前世界的所有玩家發送訊息
+- message{m=DAMAGED} @World ~onDamaged
 ```
 
 #### ~onDespawn
@@ -171,8 +171,8 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: CHICKEN
   Skills:
-    # 當怪物消失時，對當前世界的所有玩家發送訊息
-    - message{m=DESPAWNED} @World ~onDespawn
+# 當怪物消失時，對當前世界的所有玩家發送訊息
+- message{m=DESPAWNED} @World ~onDespawn
 ```
 
 #### ~onExplode
@@ -183,8 +183,8 @@ mobGriefing(防爆) 必須要關閉才可以確保這項觸發器能夠正常運
 EXAMPLE_MOB:
   Type: CREEPER
   Skills:
-    # 當怪物爆炸時，對當前世界的所有玩家發送訊息
-    - message{m=EXPLODE} @World ~onExplode
+# 當怪物爆炸時，對當前世界的所有玩家發送訊息
+- message{m=EXPLODE} @World ~onExplode
 ```
 
 #### ~onTeleport
@@ -193,8 +193,8 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: ENDERMAN
   Skills:
-    # 當怪物傳送時，對當前世界的所有玩家發送訊息
-    - message{m=TELEPORT} @World ~onTeleport
+# 當怪物傳送時，對當前世界的所有玩家發送訊息
+- message{m=TELEPORT} @World ~onTeleport
 ```
 
 #### ~onTimer:[tick(s)]
@@ -207,10 +207,10 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: CHICKEN
   Skills:
-    # 每 0.05 秒，對當前世界的所有玩家發送訊息
-    - message{m=TIMER every tick (0.05 seconds)} @World ~onTimer:1
-    # 每 2 秒，對當前世界的所有玩家發送訊息
-    - message{m=TIMER every 40 ticks (2 seconds)} @World ~onTimer:40
+# 每 0.05 秒，對當前世界的所有玩家發送訊息
+- message{m=TIMER every tick (0.05 seconds)} @World ~onTimer:1
+# 每 2 秒，對當前世界的所有玩家發送訊息
+- message{m=TIMER every 40 ticks (2 seconds)} @World ~onTimer:40
 ```
 
 #### ~onPlayerKill
@@ -219,8 +219,8 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: CHICKEN
   Skills:
-    # 擊殺玩家後，對當前世界的所有玩家發送訊息
-    - message{m=PLAYER KILLED} @World ~onPlayerKill
+# 擊殺玩家後，對當前世界的所有玩家發送訊息
+- message{m=PLAYER KILLED} @World ~onPlayerKill
 ```
 
 #### ~onEnterCombat
@@ -229,10 +229,10 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: CHICKEN
   Modules:
-    ThreatTable: true
+ThreatTable: true
   Skills:
-    # 進入戰鬥狀態後，對當前世界的所有玩家發送訊息
-    - message{m=ENTERED COMBAT} @World ~onEnterCombat
+# 進入戰鬥狀態後，對當前世界的所有玩家發送訊息
+- message{m=ENTERED COMBAT} @World ~onEnterCombat
 ```
 
 #### ~onDropCombat
@@ -241,10 +241,10 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: CHICKEN
   Modules:
-    ThreatTable: true
+ThreatTable: true
   Skills:
-    # 離開戰鬥狀態後，對當前世界的所有玩家發送訊息
-    - message{m=DROPPED COMBAT} @World ~onDropCombat
+# 離開戰鬥狀態後，對當前世界的所有玩家發送訊息
+- message{m=DROPPED COMBAT} @World ~onDropCombat
 ```
 
 #### ~onChangeTarget
@@ -253,10 +253,10 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: CHICKEN
   Modules:
-    ThreatTable: true
+ThreatTable: true
   Skills:
-    # 當怪物切換目標時，對當前世界的所有玩家發送訊息
-    - message{m=Target Changed} @World ~onChangeTarget
+# 當怪物切換目標時，對當前世界的所有玩家發送訊息
+- message{m=Target Changed} @World ~onChangeTarget
 ```
 
 #### ~onInteract
@@ -265,8 +265,8 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: CHICKEN
   Skills:
-    # 當怪物和玩家有互動，對當前世界的所有玩家發送訊息
-    - message{m=INTERACTED} @World ~onInteract
+# 當怪物和玩家有互動，對當前世界的所有玩家發送訊息
+- message{m=INTERACTED} @World ~onInteract
 ```
 
 #### ~onSignal:[signal]
@@ -279,16 +279,16 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: CHICKEN
   Skills:
-    # 當與玩家與怪物互動後，對半徑64格內的所有生物發送信號(MOO_FOR_ME)
-    - signal{s=MOO_FOR_ME} @EIR{r=64} ~onInteract
+# 當與玩家與怪物互動後，對半徑64格內的所有生物發送信號(MOO_FOR_ME)
+- signal{s=MOO_FOR_ME} @EIR{r=64} ~onInteract
 ```
 
 ```yml
 DUMMY_MOB:
   Type: COW
   Skills:
-    # 當怪物接收到信號(MOO_FOR_ME)時，對當前世界的所有玩家發送訊息
-    - message{m=MOO} @World ~onSignal:MOO_FOR_ME
+# 當怪物接收到信號(MOO_FOR_ME)時，對當前世界的所有玩家發送訊息
+- message{m=MOO} @World ~onSignal:MOO_FOR_ME
 ```
 
 當然你也可以不要特別指定要接收到哪個信號
@@ -298,8 +298,8 @@ DUMMY_MOB:
 DUMMY_MOB:
   Type: COW
   Skills:
-    # 當怪物接收到信號時，對當前世界的所有玩家發送訊息
-    - message{m=MOO...?} @World ~onSignal
+# 當怪物接收到信號時，對當前世界的所有玩家發送訊息
+- message{m=MOO...?} @World ~onSignal
 ```
 
 
@@ -311,8 +311,8 @@ DUMMY_MOB:
 EXAMPLE_MOB:
   Type: SKELETON
   Skills:
-    # 當怪物射出子彈時，對當前世界的所有玩家發送訊息
-    - message{m=I SHOT AN ARROW} @World ~onShoot
+# 當怪物射出子彈時，對當前世界的所有玩家發送訊息
+- message{m=I SHOT AN ARROW} @World ~onShoot
 ```
 
 #### ~onBreed
@@ -323,8 +323,8 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: CHICKEN
   Skills:
-    # 當生物繁殖時，對當前世界的所有玩家發送訊息
-    - message{m=LET'S GET THIS BREAD} @World ~onBreed
+# 當生物繁殖時，對當前世界的所有玩家發送訊息
+- message{m=LET'S GET THIS BREAD} @World ~onBreed
 ```
 
 #### ~onTame
@@ -333,8 +333,8 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: WOLF
   Skills:
-    # 當玩家馴服生物時，對當前世界的所有玩家發送訊息
-    - message{m=I GOT TAMED} @World ~onTame
+# 當玩家馴服生物時，對當前世界的所有玩家發送訊息
+- message{m=I GOT TAMED} @World ~onTame
 ```
 
 #### ~onCreeperCharge
@@ -343,8 +343,8 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: CREEPER
   Skills:
-    # 當苦力怕被充能時，對當前世界的所有玩家發送訊息
-    - message{m=CHARGED} @World ~onCreeperCharge
+# 當苦力怕被充能時，對當前世界的所有玩家發送訊息
+- message{m=CHARGED} @World ~onCreeperCharge
 ```
 
 #### ~onPrime
@@ -353,8 +353,8 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: CREEPER
   Skills:
-    # 當實體預備爆炸時，對當前世界的所有玩家發送訊息
-    - message{m=OOO I'M GONNA EXPLODE} @World ~onPrime
+# 當實體預備爆炸時，對當前世界的所有玩家發送訊息
+- message{m=OOO I'M GONNA EXPLODE} @World ~onPrime
 ```
 
 #### ~onTrade
@@ -363,8 +363,8 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: VILLAGER
   Skills:
-    # 當村民與玩家交易時，對當前世界的所有玩家發送訊息
-    - message{m=TRADED} @World ~onTrade
+# 當村民與玩家交易時，對當前世界的所有玩家發送訊息
+- message{m=TRADED} @World ~onTrade
 ```
 
 #### ~onReady
@@ -373,9 +373,9 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: VILLAGER
   Skills:
-    # 當生物準備從刷怪籠生成時，對當前世界的所有玩家發送訊息
-    - message{m=READY TO SPAWN FROM A SPAWNER} @World ~onReady
-    - message{m=READY TO SPAWN FROM A SPAWNER} @World ~onFirstSpawn
+# 當生物準備從刷怪籠生成時，對當前世界的所有玩家發送訊息
+- message{m=READY TO SPAWN FROM A SPAWNER} @World ~onReady
+- message{m=READY TO SPAWN FROM A SPAWNER} @World ~onFirstSpawn
 ```
 
 #### ~onLoad
@@ -384,8 +384,8 @@ EXAMPLE_MOB:
 EXAMPLE_MOB:
   Type: VILLAGER
   Skills:
-    # 當生物在伺服器重啟後被讀取時，對當前世界的所有玩家發送訊息
-    - message{m=LOADED} @World ~onLoad
+# 當生物在伺服器重啟後被讀取時，對當前世界的所有玩家發送訊息
+- message{m=LOADED} @World ~onLoad
 ```
 
 #### ~onChangeWorld
@@ -407,8 +407,8 @@ ANormalCow:
   Type: Cow
   Skills:
   - skill{s=[
-    - message{m="HOW DARE YOU?!?"} @trigger
-    - sound{s=entity.creeper.primed}
-    - explosion{yield=5;delay=30}
-    ];cd=2} @self ~onMilk
+- message{m="HOW DARE YOU?!?"} @trigger
+- sound{s=entity.creeper.primed}
+- explosion{yield=5;delay=30}
+];cd=2} @self ~onMilk
 ```

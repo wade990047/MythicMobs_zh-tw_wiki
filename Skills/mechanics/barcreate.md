@@ -1,24 +1,22 @@
 Mechanic: Bar Create
 ====================
 
-Creates a custom boss bar on the casting mob(cannot be player).
+在施法生物上創建一個自定義BOSS血條(不能是玩家)
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description                                                                                                         | Default Value               |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|---------|---------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| name      | n       | The name of the bossbar.                                                                                            | infobar                     |
-| display   | d       | The text displayed on the bar.                                                                                      | &lt;skill.var.aura-name&gt; |
-| value     | v       | How filled the bossbar is. Must be between 0.0 and 1.0.                                                             | 1.0                         |
-| color     | c       | The color of the bossbar. Accepts the following: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE.                     | RED                         |
-| style     | s       | The style of the bossbar. Accepts the following: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20 . | SOLID                       |
+| name  | n   | BOSS血條名稱 | infobar |
+| display   | d   | BOSS血條顯示內容| &lt;skill.var.aura-name&gt; |
+| value | v   | BOSS血條的填充量，必須是 0.0 到 1.0 之間   | 1.0 |
+| color | c   | BOSS血條的顏色. 允許的值有: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE | RED |
+| style | s   | BOSS血條的類型. 允許的值有: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20  | SOLID   |
 
-  
-
-Examples
+範例
 --------
 
-      Skills:
-      - barCreate{name="MyBossBar";display="<caster.name> - <caster.hp>";value=1.0;color=BLUE;style=SEGMENTED_6} @self ~onSpawn
-      - ...
+  Skills:
+  - barCreate{name="MyBossBar";display="<caster.name> - <caster.hp>";value=1.0;color=BLUE;style=SEGMENTED_6} @self ~onSpawn
+  - ...

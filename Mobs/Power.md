@@ -6,7 +6,7 @@ Future builds will allow you to define a scaling factor on it. In current builds
 
 Mechanics that are affected by power levels + formulas:
 
-| Mechanic      | Power Levels Effect                                   |
+| Mechanic  | Power Levels Effect  |
 | ------------- | ----------------------------------------------------- |
 | [basedamage](/skills/mechanics/basedamage) | {multiplier=M} - damage = M * power |
 | [consume](/skills/mechanics/consume) | {damage=D} - damage = D * power |
@@ -27,8 +27,8 @@ ThornySkeleton:
   Type: SKELETON
   Health: 20
   LevelModifiers:
-    Health: 10
-    Power: 1
+Health: 10
+Power: 1
   Skills:
   - damage{a=5} @trigger ~onDamaged
 ```

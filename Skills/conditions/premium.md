@@ -1,17 +1,17 @@
-## Description
+## 用途
 Checks if MythicMobs Premium is running on the server
 
 
-## Attributes
+## 細項設定
 > *This condition has no attributes*
 
-## Examples
+## 範例
 ```yml
   Conditions:
   - premium true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] ispremium
 - [x] iscool

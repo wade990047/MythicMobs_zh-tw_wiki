@@ -92,7 +92,7 @@ If you have premium you can use multi line disguise names using the `setDynamicN
 
 ![image](uploads/e9f3926c7a8d74dfb1b8fa6d2cd2d67c/image.png)
 
-#### Examples
+#### 範例
 
 Examples of Disguises being used:
 

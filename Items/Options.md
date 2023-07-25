@@ -4,7 +4,7 @@ These options must be placed under the `Options:` tag inside your item configura
 example_item:
   Id: diamond
   Options:
-    SomeOption: value
+SomeOption: value
 ```
 
 Universal Options
@@ -50,7 +50,7 @@ Only applicable to playerhead type items:
   - [name] must be the IGN of the target player.
   - Player heads must use data value 3 for this to work.
   - Examples:
-    - Player: Herobrine
+- Player: Herobrine
 
 **SkinTexture: \[url\]**
 
@@ -70,9 +70,9 @@ Dyeable Items
 **Color: \[R,G,B\] OR \[DyeColor\]**
 
 -   Dyes the armor piece to a color according to Red, Green, Blue
-    settings. 0-255
+settings. 0-255
 -   Alternately can use a predefined color. Found
-    [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html).
+[here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html).
 -   Can pick colors using the Paint program on Windows. Open it up then choose "Edit Colors" to get your RGB value
 -   Only usable on leather armor type and banners.
 
@@ -107,7 +107,7 @@ ClothSlippers:
   Enchantments:
   - DURABILITY:1
   Options:
-    Color: 200,200,200
+Color: 200,200,200
 ```
 Lots of possible options included:
 ```yaml
@@ -115,7 +115,7 @@ TestHead:
   Id: 397
   Data: 3
   Options:
-    Player: Rickyling
+Player: Rickyling
 ```
 ```yaml
 dat_item_though:
@@ -129,8 +129,8 @@ dat_item_though:
   - ''
   Amount: 8
   Options:
-    Color: 200,200,200
-    Unbreakable: true
+Color: 200,200,200
+Unbreakable: true
   Enchantments:
   - DURABILITY:1
   - ARROW_FIRE:10
@@ -141,11 +141,11 @@ FireworkGoBoom:
   Id: FIREWORK_ROCKET
   Display: 'Rocket'
   Firework:
-    Colors:
-    - 255,0,255
-    - 0,0,0
-    FadeColors:
-    - 200,0,0
-    Flicker: true
-    Trail: true
+Colors:
+- 255,0,255
+- 0,0,0
+FadeColors:
+- 200,0,0
+Flicker: true
+Trail: true
 ```

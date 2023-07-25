@@ -1,12 +1,12 @@
-## Description 
+## 用途 
 Causes a storm effect (without rain) client side (Per Player) 
 
 Attributes
 ----------
 
-| Attribute | Aliases   | Description                                               | Default |
+| Attribute | Aliases   | Description  | Default |
 |-----------|-----------|-----------------------------------------------------------|---------|
-| Level      | l | A range from 0-1 | 1 |     
+| Level  | l | A range from 0-1 | 1 | 
 
 Example
 -------

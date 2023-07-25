@@ -70,8 +70,8 @@ You can also expand the syntax to be more readable if you prefer, but keeping th
 ```yaml
 Skills:
 - mechanic{option=value;
-           option=value;
-           option=value}
+   option=value;
+   option=value}
 ```
 
 Setting up a mechanic is as simple as identifying the mechanic you want to use and plugging in the options you want. Most options have a default value and are optional. So if you wanted to set someone on fire for 5 seconds, you'd use the ignite mechanic and set the "ticks" option to 100 (there are 20 ticks in a second):
@@ -89,8 +89,8 @@ Targeters are another core part of implementing skills. Targeters are "what you 
 Targeters go directly after the mechanic in your skill line, and are always prefixed with an @ symbol. Some can also have their own options, which also go in curley braces after the targeter.
 
 ```yaml
-    Skills:
-    - mechanic{option=value} @targeter{option1=value;option2=value;...}
+Skills:
+- mechanic{option=value} @targeter{option1=value;option2=value;...}
 ```
 
 Going back to our previous example, lets say you want it to set the mob's target on fire. You'd simply do this...

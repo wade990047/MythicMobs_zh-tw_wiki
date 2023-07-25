@@ -53,11 +53,11 @@ example_item:
   Id: leather_chestplate
   Display: <green>An Example Item</green>
   Lore:
-    - <rainbow>This line is a rainbow</rainbow>
-    - <red>This line should be red</red>
-    - This is a random generated number > <random.-1to50>
-    - <gradient:#5e4fa2:#f79459>A really nice gradient</gradient>
-    - There are some symbols, like <&sq>, that should never be put as is into a configuration. Use a placeholder!
+- <rainbow>This line is a rainbow</rainbow>
+- <red>This line should be red</red>
+- This is a random generated number > <random.-1to50>
+- <gradient:#5e4fa2:#f79459>A really nice gradient</gradient>
+- There are some symbols, like <&sq>, that should never be put as is into a configuration. Use a placeholder!
 ```
 
 #### CustomModelData
@@ -91,8 +91,8 @@ example_item:
   Id: leather_chestplate
   Display: <green>An Example Item</green>
   Attributes:
-    Chest:
-      Health: 25
+Chest:
+  Health: 25
 ```
 
 #### **Amount**
@@ -111,8 +111,8 @@ example_item:
   Id: leather_chestplate
   Display: <green>An Example Item</green>
   Options:
-    AppendType: true
-    Color: 255,0,0
+AppendType: true
+Color: 255,0,0
 ```
 
 #### **Enchantments**
@@ -124,10 +124,10 @@ example_item:
   Id: leather_chestplate
   Display: <green>An Example Item</green>
   Options:
-    Color: 255,0,0
+Color: 255,0,0
   Enchantments:
-    - PROTECTION_ENVIRONMENTAL:2
-    - THORNS:3
+- PROTECTION_ENVIRONMENTAL:2
+- THORNS:3
 ```
 
 #### **Hide**
@@ -138,15 +138,15 @@ example_item:
   Id: leather_chestplate
   Display: <green>An Example Item</green>
   Attributes:
-    Chest:
-      Health: 25
+Chest:
+  Health: 25
   Enchantments:
-    - THORNS:3
+- THORNS:3
   Options:
-    Color: 255,0,0
+Color: 255,0,0
   Hide:
-    - ATTRIBUTES
-    - ENCHANTS
+- ATTRIBUTES
+- ENCHANTS
 ```
 
 #### **PotionEffects**
@@ -157,9 +157,9 @@ example_item:
   Id: potion
   Display: <#f99cb3>Pink potion
   Options:
-    Color: 249,156,179
+Color: 249,156,179
   PotionEffects:
-    - CONFUSION 100 2
+- CONFUSION 100 2
 ```
 
 #### **BannerLayers**
@@ -169,9 +169,9 @@ See [Banner Layers](/Items/Banner-Layers).
 example_item:
   Id: yellow_banner
   BannerLayers:
-    - RED BASE
-    - WHITE CURLY_BORDER
-    - WHITE STRIPE_CENTER
+- RED BASE
+- WHITE CURLY_BORDER
+- WHITE STRIPE_CENTER
 ```
 
 #### **CanPlaceOn**
@@ -219,11 +219,11 @@ Let's convert this snbt:  `{name1:123,name2:"sometext1",name3:{subname1:456,subn
 example_item:
   Id: STICK
   NBT:
-    name1: int/123
-    name2: sometext1
-    name3:
-      subname1: int/456
-      subname2: sometext2
+name1: int/123
+name2: sometext1
+name3:
+  subname1: int/456
+  subname2: sometext2
 ```
 
 ```yml
@@ -231,37 +231,37 @@ example_item:
 example_item:
   Id: stick
   NBT:
-    MYTHIC_TYPE: example_item
+MYTHIC_TYPE: example_item
 ```
 
 ```yml
 example_item:
   Id: diamond_sword
   NBT:
-    CanDestroy:
-      - stone
-      - dirt
-    Base:
-      ATag: int/20
-      SomeOtherTag: something
-    SomeModifier:
-      Value: double/0.25
-      CanDoThis: boolean/true
-    Denizen NBT:
-      somedenizentag: a_string
+CanDestroy:
+  - stone
+  - dirt
+Base:
+  ATag: int/20
+  SomeOtherTag: something
+SomeModifier:
+  Value: double/0.25
+  CanDoThis: boolean/true
+Denizen NBT:
+  somedenizentag: a_string
 ```
 
 ```yml
 another_example_item:
   Id: diamond_sword
   NBT:
-    Base:
-      ATag: 20
-      SomeOtherTag: something
-    GemSlots:
-      RedGem: 0
-    Denizen NBT:
-      somedenizentag: a_string
+Base:
+  ATag: 20
+  SomeOtherTag: something
+GemSlots:
+  RedGem: 0
+Denizen NBT:
+  somedenizentag: a_string
 ```
 
 #### Armor Trim NBT
@@ -269,9 +269,9 @@ another_example_item:
 another_example_item: 
   Id: iron_chestplate
   NBT: 
-    Trim: 
-      material: minecraft:iron
-      pattern: minecraft:shaper
+Trim: 
+  material: minecraft:iron
+  pattern: minecraft:shaper
 ```
 
 ### **ItemVersion**
@@ -291,7 +291,7 @@ yet_another_example_item:
   Id: diamond_sword
   ItemVersion: 1
   Lore:
-    - "Really really cool sword."
+- "Really really cool sword."
 ```
 
 ```yml
@@ -299,7 +299,7 @@ yet_another_example_item:
   Id: diamond_sword
   ItemVersion: 2
   Lore:
-    - "I hated the old lore so I updated it."
+- "I hated the old lore so I updated it."
 ```
 
 The second sword will replace the first sword with the updated lore whenever a player interacts with it in their inventory.
@@ -313,10 +313,10 @@ example_item:
   Id: firework
   Firework:
   Colors:
-    - 255,0,255
-    - 0,0,0
+- 255,0,255
+- 0,0,0
   FadeColors:
-    - 200,0,0
+- 200,0,0
   Flicker: true
   Trail: true
 ```

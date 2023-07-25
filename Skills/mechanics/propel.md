@@ -2,14 +2,14 @@
 Propels the caster of the mechanic towards the target.
 
 
-## Attributes
+## 細項設定
 
-| Attribute      | Aliases         | Description                                        | Default Value |
+| Attribute  | Aliases | Description   | Default Value |
 |----------------|-----------------|----------------------------------------------------|---------------|
-| velocity       | magnitude, v    | The velocity at which the mob will be propelled.   | 1             |
+| velocity   | magnitude, v| The velocity at which the mob will be propelled.   | 1 |
 
 
-## Examples
+## 範例
 ```yaml
 ExampleMob:
   Type: ZOMBIE

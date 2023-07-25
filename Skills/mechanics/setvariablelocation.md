@@ -6,7 +6,7 @@ Sets a value of type string. The value will depend on the location passed to the
 
 | Attribute | Alias | Description | Defaults |
 | --------- | ----- | ----------- | -------- |
-| value      | val, v  | The target location | @self
+| value  | val, v  | The target location | @self
 
 Examples
 --------

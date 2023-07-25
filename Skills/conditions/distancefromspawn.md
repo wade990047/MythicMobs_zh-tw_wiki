@@ -1,15 +1,15 @@
-## Description
+## 用途
 Whether the distance from the world's spawn point to the target is within the given range
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| distance  |   d       | The distance to match                                                |         |
+| distance  |   d   | The distance to match   | |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - distancefromspawn{d=<100} true

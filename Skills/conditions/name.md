@@ -1,20 +1,20 @@
-## Description
+## 用途
 Checks against the name of the target entity
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| name      | n         | The name to check against                                            | Ashijin |
+| name  | n | The name to check against   | Ashijin |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - name{n=Ashijin}
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] castername

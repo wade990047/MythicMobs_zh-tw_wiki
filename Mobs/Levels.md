@@ -14,18 +14,18 @@ mechanic](/skills/mechanics/setlevel).
 This page will only be covering the basics, a future guides/examples
 section may include more in-depth tutorials later on.
 
-    Zombie:
-      MobType: zombie
-      Health: 100
-      Damage: 10
-      Display: '&5Zombie Lvl - <caster.level>'
-      Options:
-        MovementSpeed: 0.3
-      Drops:
-      - myDroptable
-      LevelModifiers:
-        Health: 5
-        Damage: 0.5
+Zombie:
+  MobType: zombie
+  Health: 100
+  Damage: 10
+  Display: '&5Zombie Lvl - <caster.level>'
+  Options:
+MovementSpeed: 0.3
+  Drops:
+  - myDroptable
+  LevelModifiers:
+Health: 5
+Damage: 0.5
 
 LevelModifiers
 --------------
@@ -37,29 +37,29 @@ be added on top of their base stats.
 Level modifiers may not work if you didn't specify base values
 for the affected attributes in the mob configuration.
 
-      * **Health: [number]**
-      * **Damage: [number] ((The damage value will never influence the damage dealt by potions (witches) or arrows (skeletons) ))**
-      * **KnockbackResistance: [number]**
-      * [Power](/Mobs/Power)**: [number]**
-      * **Armor: [number]**
-      * **MovementSpeed: [number]**
-      * **AttackSpeed: [number]**
+  * **Health: [number]**
+  * **Damage: [number] ((The damage value will never influence the damage dealt by potions (witches) or arrows (skeletons) ))**
+  * **KnockbackResistance: [number]**
+  * [Power](/Mobs/Power)**: [number]**
+  * **Armor: [number]**
+  * **MovementSpeed: [number]**
+  * **AttackSpeed: [number]**
 
 World Scaling
 -------------
 
 Mob levels (for random-spawned mobs) can automatically be set by the plugin by specifying world scaling settings in the config.yml located in */MythicMobs*/. Setting it up is simple. By default the section for scaling in your config.yml should look something like this:
 
-      Scaling:
-        Default:
-          Enabled: false
-          PerBlocksFromSpawn: 500
-        world2:
-          Enabled: false
-          PerBlocksFromSpawn: 250
-        world2_nether:
-          Enabled: false
-          PerBlocksFromSpawn: 150
+  Scaling:
+Default:
+  Enabled: false
+  PerBlocksFromSpawn: 500
+world2:
+  Enabled: false
+  PerBlocksFromSpawn: 250
+world2_nether:
+  Enabled: false
+  PerBlocksFromSpawn: 150
 
 The above examples shows different worlds with different levels of scaling. Using "world2" as an example, the levels for randomspawnmed mobs would look something like this:
 

@@ -3,22 +3,22 @@ Goal: crossbowAttack
 
 Attack with a crossbow. Only Piglins and Pillagers can use crossbowAttack goal as long as they're holding a crossbow.
 
-### Attributes
+### 細項設定
 
-| Attribute      | Aliases  | Description                        | Default |
+| Attribute  | Aliases  | Description| Default |
 |----------------|----------|------------------------------------|:-------:|
-| speed          | s        | Movement speed modifier            |    1    |
-| attackradius   | radius,r | The attack radius of this ai goal. |    8    |
+| speed  | s| Movement speed modifier|1|
+| attackradius   | radius,r | The attack radius of this ai goal. |8|
 
 
-### Examples
+### 範例
 
 ```yaml
 ExampleMob:
   Type: Piglins
   Equipment:
-    - crossbow HAND
+- crossbow HAND
   AIGoalSelectors:
-    - clear
-    - crossbowAttack{speed=1;radius=15}
+- clear
+- crossbowAttack{speed=1;radius=15}
 ```

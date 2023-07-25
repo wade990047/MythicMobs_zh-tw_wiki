@@ -18,7 +18,7 @@ BigScaryBoss:
   Display: '&6Zombie'
   Health: 20000
   Modules:
-    ThreatTable: true
+ThreatTable: true
 ```
 
 That's it!

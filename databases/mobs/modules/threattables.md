@@ -38,12 +38,12 @@ Enabling Threat Tables
 Turning on Threat Tables for a mob is easy. Just add
 **Modules.ThreatTable:** true to your mob, like this:
 
-    BigScaryBoss:
-      Type: zombie
-      Display: '&6Zombie'
-      Health: 20000
-      Modules:
-        ThreatTable: true
+BigScaryBoss:
+  Type: zombie
+  Display: '&6Zombie'
+  Health: 20000
+  Modules:
+ThreatTable: true
 
 That's it!
 

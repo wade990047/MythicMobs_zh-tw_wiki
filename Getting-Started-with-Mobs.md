@@ -31,12 +31,12 @@ tutorial_pirate:
   # Customization Options for mobs:
   # More options on: https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/Mobs/Options
   Options:
-    # - If true, always show the display name as nametag.
-    AlwaysShowName: true
-    # - If true, disable vanilla drops.
-    PreventOtherDrops: true
-    # - If true, the mob won't burn in sunlight.
-    PreventSunburn: true
+# - If true, always show the display name as nametag.
+AlwaysShowName: true
+# - If true, disable vanilla drops.
+PreventOtherDrops: true
+# - If true, the mob won't burn in sunlight.
+PreventSunburn: true
 
   # Sets the mob faction, useful for AI and combat. 
   Faction: PIRATE
@@ -83,9 +83,9 @@ Equips an Iron Sword on the Main Hand and a Shield on the Offhand.
 
 ```
   Options:
-    AlwaysShowName: true
-    PreventOtherDrops: true
-    PreventSunburn: true
+AlwaysShowName: true
+PreventOtherDrops: true
+PreventSunburn: true
 ```
 Options to customize the mob, this setup makes:
 - Display name always show.
@@ -118,9 +118,9 @@ tutorial_pirate:
   - IRON_SWORD HAND
   - SHIELD OFFHAND
   Options:
-    AlwaysShowName: true
-    PreventOtherDrops: true
-    PreventSunburn: true
+AlwaysShowName: true
+PreventOtherDrops: true
+PreventSunburn: true
   Faction: PIRATE
   Skills:
   - message{msg="I will crush your bones!"} @PIR{r=10} ~onSpawn

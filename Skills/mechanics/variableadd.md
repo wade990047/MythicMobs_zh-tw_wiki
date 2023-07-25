@@ -7,16 +7,16 @@ scope. Only works with numeric variable types.
 Attributes
 ----------
 
-| Attribute | Aliases | Description                        | Default Value |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|---------|------------------------------------|---------------|
-| var       | name, key | The scope and name of the varibale | None |
-| amount    | a       | The amount to add | 1             |
+| var   | name, key | The scope and name of the varibale | None |
+| amount| a   | The amount to add | 1 |
 
   
 
 Examples
 --------
 
-      Skills:
-      - variableadd{var=skill.testVar;amount=1} ~onInteract
-      - ...
+  Skills:
+  - variableadd{var=skill.testVar;amount=1} ~onInteract
+  - ...

@@ -1,4 +1,4 @@
-## Description
+## 用途
 Checks if the target location is near any claims of any supported plugins.  
 
 Supported Plugins:
@@ -8,10 +8,10 @@ Supported Plugins:
 - CrashClaim
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| radius    | r         | The given range to check                                             | 16      |
+| radius| r | The given range to check| 16  |
 
 
 ## Example
@@ -21,5 +21,5 @@ Supported Plugins:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] nearClaims

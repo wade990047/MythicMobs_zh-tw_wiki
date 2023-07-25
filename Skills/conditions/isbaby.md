@@ -1,11 +1,11 @@
-## Description
+## 用途
 Checks if the target entity is a baby (e.g. baby cow)
 
 
-## Attributes
+## 細項設定
 *This condition has no attributes*
 
-## Examples
+## 範例
 ```yaml
   TargetConditions:
   - isbaby{} true

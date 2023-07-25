@@ -1,12 +1,12 @@
-## Description
+## 用途
 If the target player has empty inventory space
 
 
-## Attributes
+## 細項設定
 *This mechanic has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - hasinventoryspace{} true

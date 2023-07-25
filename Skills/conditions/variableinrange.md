@@ -1,15 +1,15 @@
-## Description
+## 用途
 Checks if the given numeric variable is within a certain range.
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| variable  | name, n, var, key, k | Variable to match                                         |         |
-| value     | val, v, range, r     | A number range to match                                   |         | 
+| variable  | name, n, var, key, k | Variable to match| |
+| value | val, v, range, r | A number range to match  | | 
 
 
-## Examples
+## 範例
 
 ```yaml
   Conditions:
@@ -20,6 +20,6 @@ Checks if the given numeric variable is within a certain range.
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] varinrange
 - [x] varrange

@@ -1,12 +1,12 @@
-## Description
+## 用途
 Checks if the owner of the target mob is online
 
 
-## Attributes
+## 細項設定
 > *This condition has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - ownerisonline{} true

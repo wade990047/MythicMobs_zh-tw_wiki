@@ -1,20 +1,20 @@
-## Description
+## 用途
 Checks if the target is within the given WorldGuard region.
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| region    | r, name, n| The region to check                                                  |         |
+| region| r, name, n| The region to check | |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - region{r=someregion} true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] inregion

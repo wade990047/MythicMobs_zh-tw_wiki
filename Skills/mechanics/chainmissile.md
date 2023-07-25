@@ -8,8 +8,8 @@ This mechanic inherits all attributes from the [missile](/skills/mechanics/missi
 
 | Attribute | Alias | Description | Default Value |
 | --------- | ----- | ----------- | ------------- |
-| bounces   | b     | How many times the chain should bounce | 2 |
-| radius    | r     | How far the skill will bounce to a new target | 5 |
+| bounces   | b | How many times the chain should bounce | 2 |
+| radius| r | How far the skill will bounce to a new target | 5 |
 | returnToCaster | rtc | If the missile should return to the caster | false | 
 | bounceConditions | | The conditions for the skill to bounce, similar to the [chain](/skills/mechanics/chain) mechanic | NONE | 
 

@@ -22,11 +22,11 @@ After having done that, the configured mob will override any vanilla entity whos
 Apart from that, everything that works on a normal mythicmob can also be used in a Vanilla Override, so you can have, for instance, overrides with Disguises, with custom Damage Modifiers or with Skills!
 
 
-## Examples
+## 範例
 ```yml
 ZOMBIE:
   Options:
-    PreventSunburn: true
+PreventSunburn: true
 ```
 ```yml
 CREEPER:
@@ -34,7 +34,7 @@ CREEPER:
   Display: '&bJohn'
   Disguise: Dolphin
   Options:
-    MovementSpeed: 0.5
+MovementSpeed: 0.5
   Skills:
   - message{m="Oh no! I have died!"} @PlayersInRadius{r=30} ~onDeath
 ```

@@ -6,9 +6,9 @@ Traps the player within a border around the caster.
 Attributes
 ----------
 
-| Attribute     | Aliases | Description                                                                   | Default Value |
+| Attribute | Aliases | Description | Default Value |
 |---------------|---------|-------------------------------------------------------------------------------|---------------|
-| Range | r       | The border radius                                                   | 1             |
+| Range | r   | The border radius  | 1 |
 
   
 

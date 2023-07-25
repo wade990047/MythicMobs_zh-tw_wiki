@@ -7,10 +7,10 @@ increasing based on the distance of targets from the caster.
 Attributes
 ----------
 
-| Attribute | Aliases | Description                                                             | Default Value |
+| Attribute | Aliases | Description   | Default Value |
 |-----------|---------|-------------------------------------------------------------------------|---------------|
-| velocity  | v       | The base velocity of the pull.                                          | 1             |
-| toOrigin  | to      | Wether or not the target should pulled towards the origin of the skill. | false         |
+| velocity  | v   | The base velocity of the pull. | 1 |
+| toOrigin  | to  | Wether or not the target should pulled towards the origin of the skill. | false |
 
   
 
@@ -25,9 +25,9 @@ mob if it is possible based on the base velocity.
 Examples
 --------
 ```yaml
-    DeathGrip:
-      Skills:
-      - pull{velocity=10} @target
+DeathGrip:
+  Skills:
+  - pull{velocity=10} @target
 
-      - pull{v=6;to=true} @PIR{r=10}
+  - pull{v=6;to=true} @PIR{r=10}
 ```

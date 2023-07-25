@@ -21,10 +21,10 @@ would)
 examples:
 
 -   **/mm spawners cut g:BoneCastle** - cuts all spawners in the
-    BoneCastle group
+BoneCastle group
 -   **/mm spawners cut r:200** - cuts all spawners in a 200 block radius
 -   **/mm spawners cut Elementals\_**\* - cuts all spawners with names
-    starting with *Elementals\_*
+starting with *Elementals\_*
 -   \*\*/mm spawners cut \*\*\* - cuts ALL spawners in the world
 
 **/mm spawners paste** moves the spawners. You can do it multiple times
@@ -46,15 +46,15 @@ Creates a Mythic Armor\_Stand. Do with it what you will.
 
 ARMOR\_STAND options:
 
--    Options.HasArms: (true/false)
--    Options.HasGravity: (true/false)
--    Options.Small: (true/false)
--    Options.Invisible: (true/false)
--    Options.ItemHead: \[MythicItem Name\]
--    Options.ItemBody: \[MythicItem Name\]
--    Options.ItemLegs: \[MythicItem Name\]
--    Options.ItemFeet: \[MythicItem Name\]
--    Options.ItemHand: \[MythicItem Name\]
+-Options.HasArms: (true/false)
+-Options.HasGravity: (true/false)
+-Options.Small: (true/false)
+-Options.Invisible: (true/false)
+-Options.ItemHead: \[MythicItem Name\]
+-Options.ItemBody: \[MythicItem Name\]
+-Options.ItemLegs: \[MythicItem Name\]
+-Options.ItemFeet: \[MythicItem Name\]
+-Options.ItemHand: \[MythicItem Name\]
 
 ##### GUARDIAN
 
@@ -83,7 +83,7 @@ will still work.**
 #### AI Controls
 
 -   AI Controls are now backwards compatible with all supported Bukkit
-    versions.
+versions.
 -   Custom AI should now work on the Spigot 1.8 compatibility builds.
 
 #### Skills
@@ -92,8 +92,8 @@ will still work.**
 
 <!-- -->
 
-    Skills:
-    - title [radius]:[fadeInTicks]:[displayTicks]:[fadeOutTicks]:"Title":"Subtitle"
+Skills:
+- title [radius]:[fadeInTicks]:[displayTicks]:[fadeOutTicks]:"Title":"Subtitle"
 
 #### API
 
@@ -117,7 +117,7 @@ such as BABY\_ZOMBIE will still work.&lt;&lt;/color&gt;&gt;**
 #### Bug Fixes/Other
 
 -   Fixed a critical bug where mob timer abilities would sometimes
-    continue firing after death or despawning
+continue firing after death or despawning
 -   Fixed a console error involving mobs that did not have equipment
 -   Fixed a console bug thrown by mobs without certain options defined
 -   Fixed an NPE error on mob spawn for mobs without Skills
@@ -139,15 +139,15 @@ such as BABY\_ZOMBIE will still work.&lt;&lt;/color&gt;&gt;**
 #### Bug Fixes/Other
 
 -   Improved error-checking for mobs and spawners to prevent certain
-    startup errors.
+startup errors.
 -   Fixed Creeper-specific options not being applied.
 -   Fixed effects targeting spawners to target the center of blocks
 -   Fixed a bug with preventSuicide creeper option not working in most
-    cases
+cases
 -   Fixed an alias for MagmaCube not working properly
 -   Fixed a bug preventing Slime and MagmaCube options from applying
 -   Fixed a bug preventing options that apply to after-death events from
-    functioning
+functioning
 -   Fixed (hopefully) mob custom AI not persisting through chunk reloads
 
 ### v1.1.0
@@ -166,15 +166,15 @@ such as BABY\_ZOMBIE will still work.&lt;&lt;/color&gt;&gt;**
 -   Ability to clear, add to and modify a mob's AI Pathfinder Goals
 -   Ability to clear, add to and modify a mob's AI TargetSelector Goals
 -   Available AI goals can be found
-    [here](http://xikage.elseland.net/mythicmobs/doku.php/databases/mobs/aigoals).
+[here](http://xikage.elseland.net/mythicmobs/doku.php/databases/mobs/aigoals).
 -   **Tutorial is available
-    [here](http://xikage.elseland.net/mythicmobs/doku.php/databases/mobs/customai).**
+[here](http://xikage.elseland.net/mythicmobs/doku.php/databases/mobs/customai).**
 
 ##### Mob Factions
 
 -   Mobs can now be marked with a **Faction** attribute
 -   Mob AI controls include new custom Pathfinder goals to make mobs
-    attack other mobs that are not in the same faction
+attack other mobs that are not in the same faction
 -   Mobs in the same faction will never attack each-other.
 
 ##### Threat Tables
@@ -183,7 +183,7 @@ such as BABY\_ZOMBIE will still work.&lt;&lt;/color&gt;&gt;**
 -   Added Mob option **UseThreatTable**, defaults to **false**.
 -   Added config.yml option for disabling Threat Tables entirely.
 -   Added onEnterCombat, onDropCombat, and onTargetChange triggers for
-    mobs with threat tables enabled.
+mobs with threat tables enabled.
 
 Mobs with Threat Tables enabled will behave more like mobs in RPG games.
 Each player in combat with the mob has a threat value based on their
@@ -207,12 +207,12 @@ Added lots of new options...
 ##### Creeper
 
 -   **Options.SuperCharged: \[true/false\]** - *Sets if the creeper is
-    supercharged.*
+supercharged.*
 
 ##### Ocelots
 
 -   **Options.Tameable: \[true/false\]** - *Determines whether the mob
-    can be tamed.*
+can be tamed.*
 
 ##### Pig
 
@@ -221,29 +221,29 @@ Added lots of new options...
 ##### Pig Zombies + Variants
 
 -   **Options.Angry: \[true/false\]** - *Determines whether the mob
-    starts out as angry or not.*
+starts out as angry or not.*
 
 ##### Silverfish
 
 -   **Options.PreventBlockInfection: \[true/false\]** - *Prevents block
-    infection, should actually work now...*
+infection, should actually work now...*
 
 ##### Snowman
 
 -   **Options.PreventSnowFormation: \[true/false\]** - *Keeps the mob
-    from forming snow.*
+from forming snow.*
 
 ##### Wolf
 
 -   **Options.Angry: \[true/false\]** - *Determines whether the mob
-    starts out as angry or not.*
+starts out as angry or not.*
 -   **Options.Tameable: \[true/false\]** - *Determines whether the mob
-    can be tamed.*
+can be tamed.*
 
 ##### Zombies + Variants
 
 -   **Options.ReinforcementsChance**: can be a number between 0 and 1.0
-    with 1 being a 100% chance to spawn reinforcements on taking damage.
+with 1 being a 100% chance to spawn reinforcements on taking damage.
 
 #### Effects
 
@@ -256,26 +256,26 @@ Added lots of new options...
 
 -   Added **\~onInteract** - Fires when a player right-clicks the mob
 -   Added **\~onEnterCombat** - Fires when a mob enters combat.
-    *(Requires ThreatTables to be enabled)*
+*(Requires ThreatTables to be enabled)*
 -   Added **\~onDropCombat** - Fires when a mob drops combat. *(Requires
-    ThreatTables to be enabled)*
+ThreatTables to be enabled)*
 -   Added **\~onTargetChange** - Fires when a mob changes targets.
-    *(Requires ThreatTables to be enabled)*
+*(Requires ThreatTables to be enabled)*
 
 ##### New Skills
 
 -   Added **AIRunGoalSelector** skill - Modifys the mob's AI Goal
-    Selector with the given string
+Selector with the given string
 
 \- airungoalselector 'AI STRING'
 
 -   Added **AIRunTargetSelector** skill - Modifys the mob's AI Target
-    Selector with the given string
+Selector with the given string
 
 \- airuntargetselector 'AI STRING'
 
 -   Added **Disguise** skill - Changes the mob's disguise, uses the same
-    format as the Disguise option
+format as the Disguise option
 
 \- disguise \[disguise\_string\]
 
@@ -284,7 +284,7 @@ Added lots of new options...
 \- jump \[vertical\_strength\]:&lt;horizontal\_strength&gt;
 
 -   Added **Leap** skill - Makes the mob leap through the air to its
-    target.
+target.
 
 \- leap
 
@@ -296,13 +296,13 @@ Added lots of new options...
 ##### Skill Changes
 
 -   Damage skill will now target non-player entities if the mob's target
-    is that entity.
+is that entity.
 -   DamageAll will now behave as expected if radius is 0.
 
 #### Spawners
 
 -   Added **/mm s resettimers \[name\]** command to reset cooldown and
-    warmup timers
+warmup timers
 
 #### API
 
@@ -311,14 +311,14 @@ Added lots of new options...
 #### Bug Fixes/Other
 
 -   Fixed a bug where MythicMobs would not always activate skills when
-    attacking other MythicMobs.
+attacking other MythicMobs.
 -   Fixed bug with \~onAttack skills causing recursion when using
-    damage-causing abilities
+damage-causing abilities
 -   Fixed a bug that caused the onExplode trigger to not always work
 -   Fixed some bugs with the preventSuicide option not retaining mob
-    data after preventing a the mob's death
+data after preventing a the mob's death
 -   Fixed a bug with projectile skill causing projectiles to not always
-    do the configured damage
+do the configured damage
 -   Fixed a couple NullPointerExceptions
 
 ### v1.0.0 Release
@@ -327,9 +327,9 @@ Added lots of new options...
 
 -   Added zombievillager, babyzombievillager disguises
 -   Disguises will now obey any display-related options that are
-    configured for the mob.
+configured for the mob.
 -   It does not include any options that include mob power or
-    functionality (except horse armor)
+functionality (except horse armor)
 -   This includes the Horse, Ocelot, Sheep, and Villager disguises
 
 #### Horses
@@ -339,9 +339,9 @@ Added lots of new options...
 #### Bugs/Other
 
 -   ShootPotion now uses ticks instead of seconds, in order to be more
-    consistent with other similar skills
+consistent with other similar skills
 -   Fixed a bug with the ActivateSpawner skill not working with spawner
-    groups
+groups
 -   Fixed a bug with the new SafeSpawnLocation algorithm
 
 ### v1.0.0-RC3
@@ -355,41 +355,41 @@ Added lots of new options...
 Most spawner commands can now accept wildcards in the spawner name:
 
 -   Wildcards can be ? for a *single-character* wildcard, \* for *any
-    number* of wildcard characters.
+number* of wildcard characters.
 -   i.e. Running the command **/mm s set T\* leashrange 32** will set
-    the leash range to 32 on all spawners starting with T
+the leash range to 32 on all spawners starting with T
 -   i.e. Running the command **/mm s set ?at leashrange 32** will set it
-    on spawners named Cat, Rat, Fat, but not one named Matt
+on spawners named Cat, Rat, Fat, but not one named Matt
 -   if you run a spawner command with \* as the name it will be run on
-    ALL spawners.
+ALL spawners.
 
 #### Bugs/Other
 
 -   More performance optimizations
 -   Added error checking for a couple systems
 -   Better compatibility with various Forge modpacks and modded Bukkit
-    servers
+servers
 -   Fixed a bug with timer skills occasionally throwing a
-    ConcurrentModificationException in the console
+ConcurrentModificationException in the console
 -   Fixed a bug with RandomSpawns rarely throwing a NullPointerException
-    in the console
+in the console
 -   Fixed RemoveMobs skill to unregister mobs from plugin before
-    removing them
+removing them
 -   Fixed a rare bug with the MovementSpeed mob option
 -   Fixed spawners to spawn mobs in the center of the target block
 -   Fixed spawners so that they will measure a mob's height and choose
-    an appropriate spawn location rather than spawning mobs in areas too
-    short for them to survive
+an appropriate spawn location rather than spawning mobs in areas too
+short for them to survive
 -   Fixed a bug where negative Damage Modifiers were not healing the mob
-    as intended
+as intended
 -   Fixed Damage ability to correctly register from the using mob
 -   Fixed health ranges in skills not working when smaller health amount
-    is put first
+is put first
 -   Fixed spawners spawning mobs underground in some scenarios
 -   Fixed player disguises to allow color codes in the names
 -   Fixed a bug where damage skills that ignore armor could "multi-kill"
-    players that had already just died, causing them to drop their items
-    when a plugin such as DeathControl should have prevented it.
+players that had already just died, causing them to drop their items
+when a plugin such as DeathControl should have prevented it.
 
 ### v1.0.0-RC2
 
@@ -398,27 +398,27 @@ Most spawner commands can now accept wildcards in the spawner name:
 -   More performance optimizations!
 -   Updated to support Bukkit 1.7.10
 -   Added Debugging Mode, activated using **/mm debugmode true**.
-    Currently debug mode disables random spawning, mob spawners, and a
-    few other "random" things that would make high-level debugging
-    otherwise impossible due to console spam.
+Currently debug mode disables random spawning, mob spawners, and a
+few other "random" things that would make high-level debugging
+otherwise impossible due to console spam.
 -   Added TestEffect and TestSkill utility commands that allow you to
-    run effect strings and skill strings from within the game with you
-    as the "mob" and your target block as the default target. (example:
-    **/mm u testeffect *target lightning*** would run the lightning
-    effect on your target)
+run effect strings and skill strings from within the game with you
+as the "mob" and your target block as the default target. (example:
+**/mm u testeffect *target lightning*** would run the lightning
+effect on your target)
 
 #### Disguises
 
 -   Player disguise can now specify skin and player name independently
-    using the syntax **Disguise: player:playername:skinname**. This
-    requires LibsDisguises build 314 or greater.
+using the syntax **Disguise: player:playername:skinname**. This
+requires LibsDisguises build 314 or greater.
 -   Added **Enderman:&lt;held\_item\_name&gt;** disguise
 -   Added **Skeleton** disguise
 
 #### Skills
 
 -   The ActivateSpawner skill can now accept a spawner group to activate
-    in the format **g:groupname**
+in the format **g:groupname**
 
 #### Effects
 
@@ -438,24 +438,24 @@ This can also target spawner groups using the format
 #### API
 
 -   Added getMobLevel(), getNumberOfPlayerKills() methods to
-    MythicMobDeathEvent
+MythicMobDeathEvent
 
 #### Bug Fixes/Other
 
 -   Fixed a crippling bug with spawners that had a radius of 0.
 -   Fixed a bug with spawn radius logic.
 -   Fixed the following spawner commands to be usable from the console
-    or command blocks: activate, info, and set.
+or command blocks: activate, info, and set.
 -   Fixed a bug where mobs were throwing the death event and granting
-    players XP after being removed by the **/mm m kill** and **/mm m
-    killall** commands
+players XP after being removed by the **/mm m kill** and **/mm m
+killall** commands
 -   Fixed a bug where mobs were still registered as active for a short
-    time after dying
+time after dying
 -   Fixed a bug where passive mobs were not being unregistered from
-    spawners when removed by commands
+spawners when removed by commands
 -   Fixed dropped\_item disguise, usage i.e. Disguise: item:diamond
 -   Fixed several bugs preventing mobs from sometimes not despawning
-    after a server restart when Despawn was set to true
+after a server restart when Despawn was set to true
 -   Fixed a bug with compatibility mode causing multiple mounts to spawn
 
 ### v1.0.0-RC1
@@ -463,7 +463,7 @@ This can also target spawner groups using the format
 #### New Mob Options
 
 -   **PreventMobKillDrops: (true/false)** - *Prevents mobs killed by
-    that MythicMob from dropping loot*
+that MythicMob from dropping loot*
 
 #### New Disguises
 
@@ -472,17 +472,17 @@ This can also target spawner groups using the format
 #### Bug Fixes/Other
 
 -   Fixed error with Target distance conditions caused by players
-    teleporting to another world
+teleporting to another world
 -   Fixed bug where spawners with radius set to 0 would not spawn mob on
-    top of the spawner as intended
+top of the spawner as intended
 -   Fixed a number of possible holes that could have potentially lead to
-    mobs losing their disguises
+mobs losing their disguises
 -   Updated CachedMobs file to save mob's level for better consistency
-    between server restarts when using mob levels
+between server restarts when using mob levels
 -   Fixed an error caused by having question marks in mob names
 -   Fixed the Wither Skeleton disguise
 -   Fixed spawn radius not being set correctly and throwing errors upon
-    new spawner creation
+new spawner creation
 
 ### Beta Release v0.12.0
 
@@ -507,8 +507,8 @@ SandSkeletonDrops:
 ##### Item Lore Improvements
 
 -   You can now specify a number range in item lores, such as
-    **{5-10}**, that will come out as a random number in that range when
-    the item is generated.
+**{5-10}**, that will come out as a random number in that range when
+the item is generated.
 
 #### New Configs
 
@@ -543,7 +543,7 @@ AngryPig:
   Health: 30
   Damage: 5
   Options:
-    Disguise: pig
+Disguise: pig
 <`&gt;
 
 ##### EffectsLib
@@ -561,7 +561,7 @@ Mobs can give McMMO experience as a drop in drop tables using the format
 #### New Skills
 
 -   CommandRing - *Executes a command for all players within a "ring"
-    around the mob*
+around the mob*
 
 \- cmdring min\_radius:max\_radius:'command'
 
@@ -577,21 +577,21 @@ Mobs can give McMMO experience as a drop in drop tables using the format
 #### New Spawner Options
 
 -   HealOnLeash (true/false) - *If true, mobs will heal to full upon
-    being leashed by a spawner*
+being leashed by a spawner*
 -   SpawnRadius - *Spawn Radius already existed, but it should actually
-    work now!*
+work now!*
 
 #### New Effects
 
 -   ParticleRing - *Creates a ring of particle effects consisting of
-    **ring\_points** points around the target with radius
-    **ring\_radius***
+**ring\_points** points around the target with radius
+**ring\_radius***
 
 \- effect boss particlering
 particle\_name:ring\_radius:ring\_points:horizontalspread:verticalspread:count:&lt;speed&gt;:&lt;y-offset&gt;
 
 -   ParticleSquare - *Creates a square of particles around the target
-    with radius **square\_radius***
+with radius **square\_radius***
 
 \- effect boss particlesquare
 particle\_name:square\_radius:horizontalspread:verticalspread:count:&lt;speed&gt;:&lt;y-offset&gt;
@@ -606,44 +606,44 @@ particle\_name:square\_radius:horizontalspread:verticalspread:count:&lt;speed&gt
 -   lightlevelbelow \[integer\]
 -   mobtype \[list,of,bukkit,mob,types\]
 -   playerkills \[number\_range\] - *matches the number of players the
-    mob has killed*
+mob has killed*
 
 #### Bug Fixes/Other
 
 -   MobType is now case-insensitive
 -   You can now use the notation **mobname:level** when creating
-    spawners
+spawners
 -   Rewrote a large part of the item and drop-table systems for better
-    performance and to add new features
+performance and to add new features
 -   Added support for splitting Heroes XP based on Heroes' party system
 -   Fixed variables not being processed in $mobname inside of message
-    skills
+skills
 -   Fixed mob tracker to correctly track mobs with their level in their
-    display name after a server restart.
+display name after a server restart.
 -   Fixed moblevel attribute not saving on spawners
 -   Fixed a ConcurrentModificationException error being thrown by
-    certain Timer skills
+certain Timer skills
 -   Fixed errors with the Rally skill when the mob didn't have a proper
-    target
+target
 -   Fixed a bug with null lore in certain items
 -   Fixed a recursion bug involving mounts and compatibility mode
-    spawning multiple mounts
+spawning multiple mounts
 -   Fixed a bug in the Summon skill's positioning logic
 -   Fixed a bug with Mythic Spawners where the Warmup timer did not
-    persist through reloads
+persist through reloads
 -   Fixed height condition
 -   Fixed level condition
 -   Fixed an error thrown when a mob type isn't specified in the **/mm
-    mob spawn command**
+mob spawn command**
 -   Fixed null pointer error thrown in ChunkUnloadEvent
 -   Fixed null pointer error thrown in EntityDeathEvents
 -   Fixed dashes displaying properly in mob strings
 -   Fixed spawning mobs at specific location using command not working
-    in some cases
+in some cases
 -   Delayed skills will now execute after a mob dies if the \~onDeath
-    trigger was used. **This does mean it is possible to put strain on
-    your server with an infinite loop if you have an \~onDeath skill
-    call itself, so doing that isn't a good idea.**
+trigger was used. **This does mean it is possible to put strain on
+your server with an infinite loop if you have an \~onDeath skill
+call itself, so doing that isn't a good idea.**
 
 ### Beta Release v0.11.1
 
@@ -669,11 +669,11 @@ cases.
 -   Fixed DropsPerLevel not working
 -   Fixed an error being thrown by mob levels in random spawns
 -   Fixed projectiles hitting mobs when fired from a dispenser throwing
-    an error
+an error
 -   Fixed the GCD and SetStance skills
 -   Fixed the Equip skill
 -   Fixed the biome and world conditions matching similar-but-different
-    biomes and worlds
+biomes and worlds
 -   Reduced the overhead of update checking significantly
 
 ### Alpha Release v0.11.0
@@ -683,12 +683,12 @@ cases.
 ##### Skill Conditions
 
 -   Conditions can now be specified for meta-skills. Skills with
-    conditions will only be used if the conditions are all true. Skills
-    can use all the same conditions as spawners and random spawning
-    (although ones that don't necessarily make sense for skills will not
-    work so well).
+conditions will only be used if the conditions are all true. Skills
+can use all the same conditions as spawners and random spawning
+(although ones that don't necessarily make sense for skills will not
+work so well).
 -   Conditions are specified in the Conditions tag in meta-skills like
-    so:
+so:
 
 &lt;`>
 SmashAttack:
@@ -703,10 +703,10 @@ SmashAttack:
 ##### Mob Levels
 
 -   Added **Mob Levels**. Mobs can now be spawned with a level, and will
-    scale based on configurable settings using the **LevelModifiers**
-    options. Drops will also be scalable using the DropsPerLevel tag,
-    and I may also add a way to have certain drops only drop if the mob
-    is above a certain level.
+scale based on configurable settings using the **LevelModifiers**
+options. Drops will also be scalable using the DropsPerLevel tag,
+and I may also add a way to have certain drops only drop if the mob
+is above a certain level.
 
 Spawners can spawn mobs of different levels by setting the spawners'
 **moblevel** attribute. Mobs can also be spawned with commands by
@@ -724,12 +724,12 @@ SkeletalKnight:
   DropsPerLevel:
   - GOLD_NUGGET 1 0.5
   LevelModifiers:
-    Health: 5
-    Damage: 0.5
+Health: 5
+Damage: 0.5
 <`&gt;
 
 -   **Important Note:** The **LevelModifiers.Health** attribute is
-    REQUIRED to use mob scaling. All other modifiers are optional.
+REQUIRED to use mob scaling. All other modifiers are optional.
 
 ##### Special Characters
 
@@ -752,22 +752,22 @@ and some other random HTML characters to find...
 #### New Skills
 
 -   **GCD** *Sets the mob's **Global Cooldown** variable for \# ticks,
-    usable with the **offgcd** skill condition.*
+usable with the **offgcd** skill condition.*
 
 \- gcd \[ticks\]
 
 -   **SetName** *Changes the mob's display name. Can use all the same
-    variables as the message skill.*
+variables as the message skill.*
 
 \- setname '$mobname ($level) $mobhp/$mobmaxhp'
 
 -   **SetStance** *Sets the mob's **stance** variable, usable with the
-    **stance** skill condition.*
+**stance** skill condition.*
 
 \- setstance \[string\]
 
 -   **Rally** *Causes all nearby entities of the specified types to
-    attack the mob's target. Types can also be the name of a MythicMob.*
+attack the mob's target. Types can also be the name of a MythicMob.*
 
 \- rally \[horizontal\_radius\]:\[vertical\_radius\]
 &lt;mobtype1&gt;,&lt;mobtype2&gt;
@@ -776,15 +776,15 @@ and some other random HTML characters to find...
 
 -   biome \[biome1\],&lt;biome2&gt;,&lt;biome3&gt;, ...
 -   offgcd *whether or not the mob's global cooldown variable is up,
-    which can be triggered with the **gcd** skill*
+which can be triggered with the **gcd** skill*
 -   height \[number\_range\]
 -   heightabove \[integer\]
 -   heightbelow \[integer\]
 -   level \[number\_range\]
 -   onblock \[material\_type\] *must use material name as defined in
-    Bukkit*
+Bukkit*
 -   stance \[string\] *variable usable with the **setstance** skill,
-    default stance is **default***
+default stance is **default***
 -   targetinlineofsight
 -   targetnotinlineofsight
 -   targetwithin \[integer\]
@@ -800,14 +800,14 @@ such as 1-20*
 ##### New Effect Position
 
 -   **playersinradius:\#** - *Causes the effect on all players within \#
-    blocks*
+blocks*
 
 ##### New Effects
 
 -   **particleline** - *Creates a line of particles between the boss and
-    the target location with the given parameters. Won't really do
-    anything if the target location is set to boss, since the boss
-    targeting himself doesn't make much of a line.*
+the target location with the given parameters. Won't really do
+anything if the target location is set to boss, since the boss
+targeting himself doesn't make much of a line.*
 
 \- effect target particleline
 particleName:horizontalSpread:verticalSpread:amount:&lt;speed&gt;:&lt;y-offset&gt;:&lt;particleSpacing&gt;
@@ -817,7 +817,7 @@ particleName:horizontalSpread:verticalSpread:amount:&lt;speed&gt;:&lt;y-offset&g
 
 -   Fixed a bug where abilities would trigger sooner than intended
 -   Fixed an issue on 1.7.9 where zombies would sometimes spawn as baby
-    zombies
+zombies
 
 ### Beta Release v0.10.8
 
@@ -841,12 +841,12 @@ increasing performance.
 I've added the following two options to config.yml:
 
 -   **general.clock-interval** - *Controls the speed (in ticks) of
-    MythicMobs' internal clock. Defaults to 1 (every tick). Changing
-    this requires a plugin restart. Recommend increasing this in
-    increments of 5.*
+MythicMobs' internal clock. Defaults to 1 (every tick). Changing
+this requires a plugin restart. Recommend increasing this in
+increments of 5.*
 -   **general.scanner-interval** - *Controls how often (in seconds)
-    MythicMobs will scan the world to reconcile or despawn Mythic Mobs
-    that have forgotten who they are. Defaults to 20 seconds.*
+MythicMobs will scan the world to reconcile or despawn Mythic Mobs
+that have forgotten who they are. Defaults to 20 seconds.*
 
 **clock-interval** will NOT affect how often timers, spawners, etc. go
 off contrary to what I may have previously said in comments, as I have
@@ -861,31 +861,31 @@ As a reminder there are also the following options in config.yml people
 can tweak for performance:
 
 -   **general.spawns-interval** - *Controls the speed (in seconds) of
-    MythicMobs spawners. Changing this will affect the speed of
-    spawners' Cooldown and Warmup attributes.*
+MythicMobs spawners. Changing this will affect the speed of
+spawners' Cooldown and Warmup attributes.*
 -   **general.save-interval** - *Controls the speed (in minutes) that
-    MythicMobs will save. Defaults to 5.*
+MythicMobs will save. Defaults to 5.*
 
 #### New Mob Type
 
 -   Added **chickenjockey** mob type. Jockey chickens will not do
-    anything special on their own, but if a zombie rides them they will
-    attack players.
+anything special on their own, but if a zombie rides them they will
+attack players.
 
 #### New Mob Options
 
 -   added FuseTicks option - Creepers only. Sets the number of ticks it
-    takes a creeper to explode.
+takes a creeper to explode.
 -   added ExplosionRadius option - Creepers only. Sets the radius/power
-    of the creeper's explosion.
+of the creeper's explosion.
 
 #### Bug Fixes / Other
 
 -   Fixed Heroes EXP, SkillAPI Exp and Vault currency not always being
-    granted properly
+granted properly
 -   Fixed a rare error message with timer skills
 -   Fixed a bug where MythicMobs' mob scanner was going off much more
-    often than intended.
+often than intended.
 -   Various other performance-related tweaks
 
 ### Beta Release v0.10.2
@@ -897,15 +897,15 @@ can tweak for performance:
 #### Bug Fixes / Other
 
 -   Changed Timer-based skills to use the mob's target as the skill
-    target
+target
 -   Fixed amounts and chance to work with all drop types in drop tables
 -   Changed amounts in drop tables to allow ranges \#-\# on all drop
-    types
+types
 -   Fixed debugging not working on startup
 -   Fixed a bug involving effects on mob targets
 -   Fixed item attributes causing irrelevant errors on startup
 -   Fixed mobs not dropping aggro on targets that have already been
-    killed
+killed
 -   Fixed creeper explosion damage not being changed properly
 -   Fixed creepers not obeying anti-block-explosion protection
 
@@ -922,13 +922,13 @@ than adding +0.1 Movement Speed, which is kind of arbitrary.**
 -   Added support for 1.7.5
 -   Added support for 1.6.4
 -   Added **Skill Triggers**. You can now specify an event trigger in a
-    skill using the syntax **\~eventname** before or in place of the
-    health modifier. Some triggers ignore the health modifier when it
-    makes sense (mainly as onSpawn, onDeath) and a health modifier is
-    not required for these. If you do not specify an event, skills will
-    continue to work as they did before, *meaning they will fire
-    onSpawn, onDeath, onAttack and onDamaged* like they do currently.
-    Current triggers include:
+skill using the syntax **\~eventname** before or in place of the
+health modifier. Some triggers ignore the health modifier when it
+makes sense (mainly as onSpawn, onDeath) and a health modifier is
+not required for these. If you do not specify an event, skills will
+continue to work as they did before, *meaning they will fire
+onSpawn, onDeath, onAttack and onDamaged* like they do currently.
+Current triggers include:
 
 \* onSpawn - *called when the mob spawns* \* onDeath - *called when the
 mob dies* \* onAttack - *called when the mob deals damage* \* onDamaged
@@ -945,25 +945,25 @@ LightningCreeper:
   Health: 40
   Damage: 8
   Options:
-    PreventSuicide: true
+PreventSuicide: true
   Skills:
   - lightningall 6:5 ~onExplode >0 1
   - lightningall 10:1 ~onTimer:40 >0 1
 <`&gt;
 
 -   Added **SpawnMethod** attribute to RandomSpawns. Can be **add** or
-    **replace**. Defaults to **add**. Add works exactly how random
-    spawning works now, by adding new spawns to the world. "replace"
-    gives mobs spawning a chance to replace other mobs.'
+**replace**. Defaults to **add**. Add works exactly how random
+spawning works now, by adding new spawns to the world. "replace"
+gives mobs spawning a chance to replace other mobs.'
 -   Added SkillAPI Support. You can now use **skillapi-exp \[amount\]**
-    as a drop if you have SkillAPI installed.
+as a drop if you have SkillAPI installed.
 -   Added MythicDrops Support. You can now use **mythicdrop
-    &lt;tier&gt;** as a drop if you have MythicDrops installed.
+&lt;tier&gt;** as a drop if you have MythicDrops installed.
 
 #### New Mob Options
 
 -   added PreventSuicide option (default false) - Prevents a creeper mob
-    from dying upon exploding.
+from dying upon exploding.
 
 #### New Spawning Conditions
 
@@ -976,24 +976,24 @@ LightningCreeper:
 
 -   Fixed some bugs with Item attributes
 -   Certain item attributes now apply as a percent modifier rather than
-    as a static value, where it makes sense
+as a static value, where it makes sense
 -   Implemented additional checks to prevent mobs from losing their
-    drops and skills
+drops and skills
 -   Possibly fixed passive mobs not despawning when Despawn is set to
-    true
+true
 -   Creepers' explosion yield is now based on their Damage value if one
-    is defined
+is defined
 -   Fixed a bug where certain types of mobs wouldn't spawn using random
-    spawning
+spawning
 -   Fixed mobs being able to be spawned via command blocks
 -   Hopefully fixed a bug where more random spawns were spawning than
-    intended (unable to verify myself)
+intended (unable to verify myself)
 -   Fixed a bug where decimals were not being taken into account in
-    cooldowns
+cooldowns
 -   Fixed a bug where skill cooldowns less than 1 were not registering
-    at all
+at all
 -   Fixed a bug where certain items in drop tables would multiply every
-    time a mob was killed
+time a mob was killed
 -   Various other bug fixes
 
 ### Beta Release v0.9.0
@@ -1001,7 +1001,7 @@ LightningCreeper:
 #### New Features
 
 -   Mob Stacks - If one mount isn't enough, you can now stack mobs by
-    creating a mob stack:
+creating a mob stack:
 
 &lt;`>
 SheepStack:
@@ -1009,18 +1009,18 @@ SheepStack:
 <`&gt;
 
 -   Spawner Group commands - most spawner commands now accept
-    **g:groupname** instead of a mob spawner name, and will change all
-    spawners associated with that group.
+**g:groupname** instead of a mob spawner name, and will change all
+spawners associated with that group.
 -   Skills can now use a percentage for the health modifier, i.e.
-    **=50%** or **&lt;25%** etc
+**=50%** or **&lt;25%** etc
 -   Health modifiers now scale with the mob's max health, including
-    health granted by gear and health added by mob level scaling (coming
-    in a future build). This means if a mob has a max health of 200, and
-    a skill is set to fire at =100, then if the mob has 400 health from
-    gear or scaling the skill will fire at 200 health. This is necessary
-    for mob levels and scaling in the future.
+health granted by gear and health added by mob level scaling (coming
+in a future build). This means if a mob has a max health of 200, and
+a skill is set to fire at =100, then if the mob has 400 health from
+gear or scaling the skill will fire at 200 health. This is necessary
+for mob levels and scaling in the future.
 -   You can now use multiple health modifiers per skill, in a
-    comma-separated list. So the following skill string is valid:
+comma-separated list. So the following skill string is valid:
 
 &lt;`>
 - skill dosomething =75%,=50%,<200
@@ -1028,7 +1028,7 @@ SheepStack:
 
 -   Added WorldGuard Support
 -   Added **ShowHealth** option to all mobs, and two new config values
-    to config.yml - **show-health-radius** and **show-health-format**
+to config.yml - **show-health-radius** and **show-health-format**
 
 Will display a message to all players within the radius every 10% of the
 mob's health if ShowHealth is set to true. Format can include color
@@ -1037,7 +1037,7 @@ codes and variables $mobname, $mobhp, $mobmaxhp, and $percent.
 #### New Spawner Attributes
 
 -   You can now change the spawner's mob type by setting the **mobtype**
-    attribute
+attribute
 
 #### New Spawning Conditions
 
@@ -1067,11 +1067,11 @@ also:
 #### Bug Fixes / Other
 
 -   Mobs should use abilities immediately at the intended health level
-    instead of one hit after.
+instead of one hit after.
 -   Fixed a bug with the spawners/listnear command involving
-    multi-worlds
+multi-worlds
 -   Fixed a bug where the Message skill would not display mob health
-    correctly.
+correctly.
 -   The RepeatAllSkills option should now work as intended.
 -   Fixed Ranges in Health modifiers so they work properly.
 -   Some refactoring and optimizations here and there.
@@ -1095,7 +1095,7 @@ also:
 #### New Features
 
 -   Mobs can now have mounts (limit 1 for now)! Using the Riding:
-    attribute with the name of another MythicMob, i.e.
+attribute with the name of another MythicMob, i.e.
 
 &lt;`>
 Herobrine:
@@ -1116,7 +1116,7 @@ Lots of compatibility with other plugins!
 #### New Skills
 
 -   **BarTimer** *Creates a bar with the specified message, for \#
-    seconds. **REQUIRES BarAPI***
+seconds. **REQUIRES BarAPI***
 
 \- bartimer \[radius\]:\[seconds\]:'Message' &lt;health&gt;
 &lt;chance&gt;
@@ -1124,27 +1124,27 @@ Lots of compatibility with other plugins!
 #### New Drop Types
 
 -   added **heroesexp \#** - grants \# XP for Heroes to the killer.
-    Requires Heroes.
+Requires Heroes.
 -   added **phatloot \[phatloot\_name\]** - The boss will generate loot
-    from the supplied PhatLoot and drop the items. Requires PhatLoots.
+from the supplied PhatLoot and drop the items. Requires PhatLoots.
 -   added **money \#** - Grants money using Vault. Requires Vault and a
-    corresponding economy plugin.
+corresponding economy plugin.
 
 #### New Mob Options
 
 -   added AlwaysShowName option (default false) - Whether to always show
-    the mob's display name, or only when it's being looked at.
+the mob's display name, or only when it's being looked at.
 -   added PreventItemPickup option (default true) - Prevents mobs such
-    as zombies from picking up player's dropped items.
+as zombies from picking up player's dropped items.
 -   added PreventBlockInfection option (default true) - Prevents
-    Silverfish from infecting stone blocks.
+Silverfish from infecting stone blocks.
 -   added HorseTamed option (default true) - Causes horses to be tamed
-    or not.
+or not.
 
 #### Item Improvements
 
 -   $player and $boss can now be used in item lores, and will show the
-    mob's name and the killer's name when the item drops.
+mob's name and the killer's name when the item drops.
 
 #### Bug Fixes
 
@@ -1160,20 +1160,20 @@ nothing else**
 #### API
 
 -   Added MythicMobSkillEvent(). Fired whenever a mob executes a Mythic
-    Mob skill. This will be called even if the skill does not exist in
-    Mythic Mobs, so it can be used to create custom skills.
+Mob skill. This will be called even if the skill does not exist in
+Mythic Mobs, so it can be used to create custom skills.
 
 #### New Features
 
 -   Mythic Spawners can now use spawning conditions just like Random
-    Spawns
+Spawns
 -   Spawner conditions are added and removed using a few new in-game
-    commands, and can be viewed under **/mm s info**
+commands, and can be viewed under **/mm s info**
 
 #### New Commands
 
 -   **/mm spawner addcondition \[spawner\_name\] \[condition\]
-    \[value\]**
+\[value\]**
 -   **/mm spawner removecondition \[spawner\_name\] \[condition\]**
 
 #### New Spawning Conditions
@@ -1182,7 +1182,7 @@ Should all be self-explanatory... I think. Will add to the plugin manual
 soon.
 
 -   lunarphase \[phase\] *(\[phase\] can be a comma-separated list of
-    in-game days corresponding to the lunar phase, 0 thru 7)*
+in-game days corresponding to the lunar phase, 0 thru 7)*
 -   outside \[true/false\]
 -   playerwithin \[distance\]
 -   playernotwithin \[distance\]
@@ -1198,11 +1198,11 @@ cause a lot of confusion, so I ended up changing a few things. **This
 WILL break item configs, so sorry, but it's a beta!**
 
 -   Equipment uses relatively the same format, **- MythicItem:slot
-    &lt;amount&gt; &lt;chance&gt;**
+&lt;amount&gt; &lt;chance&gt;**
 -   Drops for MythicItems use a slightly new format: **- MythicItem
-    &lt;amount&gt; &lt;chance&gt;**
+&lt;amount&gt; &lt;chance&gt;**
 -   Drop tables using items now use this format: **-
-    \[item\_id\]:&lt;data\_value&gt; &lt;amount&gt; &lt;chance&gt;**
+\[item\_id\]:&lt;data\_value&gt; &lt;amount&gt; &lt;chance&gt;**
 -   Experience now uses the format **- exp &lt;amount&gt;**
 
 Chance is an integer between 0 and 1, with 1 being a 100% chance. Amount
@@ -1219,9 +1219,9 @@ SkeletonKingDrops:
 #### Bug Fixes
 
 -   Fixed bug in 0.6.5 that prevents you from creating spawners...
-    (oops)
+(oops)
 -   Fixed bugs with copied spawners sharing mob tables and not spawning
-    new mobs
+new mobs
 -   Fixed another bug with exp drops
 -   Fixed item amount ranges not being random
 -   Fixed a bug with the outside condition not always working
@@ -1231,34 +1231,34 @@ SkeletonKingDrops:
 #### API
 
 -   Added MythicMobDeathEvent() for people looking to hook for
-    compatibility.
+compatibility.
 -   More API stuff to come in the future, pushed this out with bug fixes
-    since it was done.
+since it was done.
 
 #### New Features
 
 -   You can now use **exp \#** under Drops to add exp to a mob without
-    using a drop table.
+using a drop table.
 
 #### Bug Fixes
 
 -   Hopefully fixed a bug with MythicMob items not playing nicely with
-    other plugins, even if you don't add any attributes under "Options"
-    on items.
+other plugins, even if you don't add any attributes under "Options"
+on items.
 -   Adding attributes to items may still cause them to behave oddly.
-    This is because Bukkit has no API for that stuff yet.
+This is because Bukkit has no API for that stuff yet.
 -   Fixed some errors with loot drops.
 -   Fixed a bug with mobs not dropping the configured amount of exp
 -   Fixed some bugs with effects not always firing properly
 -   Fixed a bug where spawners would break when using multiple worlds,
-    if a world was reloaded.
+if a world was reloaded.
 -   Various other bug fixes
 
 #### Known Issues
 
 -   Amount ranges in Drop Tables do not function as intended
 -   Spawners may sometimes spawn an extra mob sometimes after a world
-    has been unloaded and reloaded.
+has been unloaded and reloaded.
 
 ### Beta Release v0.6.0
 
@@ -1273,24 +1273,24 @@ the block you're looking at, for use with the pushbutton skill.
 #### New Skills
 
 -   **PushButton** *Pushes a button at the specified coordinates, to
-    activate redstone*
+activate redstone*
 
 \- pushbutton x:y:z
 
 #### New Spawner Attributes
 
 -   LeashRange - Sets a leash range for mob spawners. Mobs that go
-    further than the leash range from the spawner will be teleported
-    back to the spawner.
+further than the leash range from the spawner will be teleported
+back to the spawner.
 
 #### Bug Fixes / Other
 
 -   Mobs will now use more skills against other mobs, such as wolves
 -   Fixed more mob-dupe issues with mob spawners and unloaded chunks.
 -   Switched to a better caching format. **You may want to delete and
-    regenerate your SavedData/CachedMobs.yml**
+regenerate your SavedData/CachedMobs.yml**
 -   Skill cooldowns and delays should line up smoother and more
-    predictably now.\\
+predictably now.\\
 -   Various other bug fixes and optimizations
 
 ### Beta Release v0.5.3
@@ -1298,15 +1298,15 @@ the block you're looking at, for use with the pushbutton skill.
 #### Bug Fixes
 
 -   Items can now be referenced in most cases by name to prepare for a
-    future where item IDs do not exist
+future where item IDs do not exist
 -   Fixed a bug where Item Data values were not working (fixes issues
-    with player heads)
+with player heads)
 -   Fixed a few issues that could cause mob spawners to break when the
-    chunk unloads.
+chunk unloads.
 -   Fixed mobs not using abilities when attacking with bows
 -   Fixed some other bugs associated with spawners and unloaded chunks
 -   Maybe fixed an issue with slimes splitting when they shouldn't?
-    (needs more testing)
+(needs more testing)
 
 ### Beta Release v0.5.0
 
@@ -1345,7 +1345,7 @@ just the in-game commands and the information they give you.
 
 -   Added lots of catches for commands to prevent bugs
 -   Several fixes to prevent certain mob types (such as Iron Golems)
-    that don't despawn from losing their Mythic Mobs skills
+that don't despawn from losing their Mythic Mobs skills
 -   Various bug fixes
 
 ### Beta Release v0.4.0
@@ -1358,8 +1358,8 @@ just the in-game commands and the information they give you.
 Documentation will come in the future.*
 
 -   Damage Modifiers - Allows you to modify how much damage a mob will
-    take from certain sources. Will multiply damage from the set source
-    by the number you specify.
+take from certain sources. Will multiply damage from the set source
+by the number you specify.
 -   Item Commands (**/mm items**)
 
 The following sheep would take no damage from fire, and 20% damage from
@@ -1367,9 +1367,9 @@ lava: &lt;`>
 FireResistantSheep:
   Mobtype: sheep
   DamageModifiers:
-    - LAVA 0.2
-    - FIRE 0
-    - FIRE_TICK 0
+- LAVA 0.2
+- FIRE 0
+- FIRE_TICK 0
 <`&gt;
 
 Uses the built-in damage causes. These can be found here:
@@ -1387,18 +1387,18 @@ command:
 Added lots of new options for mobs. See included examples...
 
 -   **PreventOtherDrops** - *True/False. Defaults to False. Stops items
-    from dropping that aren't configured to drop in Mythic Mobs*
+from dropping that aren't configured to drop in Mythic Mobs*
 -   **PreventLeashing** - *True/False. Defaults to True. Prevents Mythic
-    Mobs from having a leash put on them.*
+Mobs from having a leash put on them.*
 -   **PreventRenaming** - *True/False. Defaults to True. Prevents Mythic
-    Mobs from having their name changed by a name tag.*
+Mobs from having their name changed by a name tag.*
 -   **RepeatAllSkills** - *True/False. Defaults to False. Setting to
-    True will make mobs repeat skills when using a skill with =HEALTH,
-    if the mob heals back above that health amount .*
+True will make mobs repeat skills when using a skill with =HEALTH,
+if the mob heals back above that health amount .*
 -   **PreventSlimeSplit** - *True/False. Defaults to False. Prevents
-    Mythic Mob Slimes and MagmaCubes from splitting on death.*
+Mythic Mob Slimes and MagmaCubes from splitting on death.*
 -   **PreventTeleporting** - *True/False. Defaults to False. Prevents
-    Mythic Mobs from teleporting. Mainly meant for Endermen.*
+Mythic Mobs from teleporting. Mainly meant for Endermen.*
 
 Will add a complete list of mob options soon with the documentation.
 
@@ -1417,7 +1417,7 @@ work exactly the same.
 #### New Effects
 
 -   **particles** - *Creates a particle effect at the target location
-    with the given parameters.*
+with the given parameters.*
 
 \- effect boss particles
 particleName:horizontalSpread:verticalSpread:amount:&lt;speed&gt;:&lt;y-offset&gt;
@@ -1464,17 +1464,17 @@ EpicBoss Gold Edition. Documentation of these can be found here:*
 <http://www.epicboss.empirehostings.net/Support/showthread.php?tid=4551>
 
 -   **Ignite** *sets players in radius on fire for so many ticks. if
-    radius = 0, only hits the attacking player*
+radius = 0, only hits the attacking player*
 
 \- ignite radius:ticks
 
 -   **Equip** *makes the boss equip an item defined in your items
-    folder*
+folder*
 
 \- equip itemname:slot
 
 -   **Explosion** *creates explosions on players in radius on fire for
-    so many ticks. if radius = 0, only hits the attacking player*
+so many ticks. if radius = 0, only hits the attacking player*
 
 \- explosion
 radius:power:&lt;fire(true/balse)&gt;:&lt;destroyblocks(true/false)&gt;
@@ -1503,7 +1503,7 @@ have to change the following things:
 
 -   Random Spawning system
 -   Random Spawning Conditions (only one added so far is the "outside"
-    condition, included in an example file)
+condition, included in an example file)
 
 #### New Skills
 
@@ -1584,7 +1584,7 @@ Gold Edition. Documentation of these can be found here:
 Differences in MythicMobs from EBGE include:
 
 -   The health and chance fields in skills are OPTIONAL, if you leave
-    them out they will fire 100% of the time
+them out they will fire 100% of the time
 -   Boss attributes are called "options" instead of "tags"
 
 #### Skills

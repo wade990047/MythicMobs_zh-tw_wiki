@@ -8,10 +8,10 @@ The effect purely cosmetic and it plays the lightning sound effect, but will not
 
 **Attributes:**
 
-| Attribute       | Alias     | Description                                              | Default Value |
+| Attribute   | Alias | Description | Default Value |
 | --------------- | --------- | -------------------------------------------------------- | ------------- |
-| localized       | l         | should lightning only be seen/heard by players in radius | false         |
-| localizedradius | lr, r     | the radius of the localized effect                       | 128           |
+| localized   | l | should lightning only be seen/heard by players in radius | false |
+| localizedradius | lr, r | the radius of the localized effect   | 128   |
 
 ---
 

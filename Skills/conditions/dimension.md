@@ -1,21 +1,21 @@
-## Description
+## 用途
 Checks if the target is within a certain dimension.  
 A list of valid dimensions can be found in the [Spigot Enviroment javadoc](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.Environment.html).
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| dimension | d, environment, env | A list of dimensions to check                              | THE_END |
+| dimension | d, environment, env | A list of dimensions to check | THE_END |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - dimension{d=NORMAL} true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] environment

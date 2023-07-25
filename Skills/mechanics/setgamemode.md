@@ -7,15 +7,15 @@ not a player. Requires the `sync=true` attribute.
 Attributes
 ----------
 
-| Attribute | Aliases | Description                           | Default Value |
+| Attribute | Aliases | Description   | Default Value |
 |-----------|---------|---------------------------------------|---------------|
-| mode      | m       | The gamemode to change the target to. | SURVIVAL      |
+| mode  | m   | The gamemode to change the target to. | SURVIVAL  |
 
   
 
 Examples
 --------
 
-      Skills:
-      - setgamemode{m=CREATIVE;sync=true} @PlayersInRadius{r=10} ~onSpawn
-      - ...
+  Skills:
+  - setgamemode{m=CREATIVE;sync=true} @PlayersInRadius{r=10} ~onSpawn
+  - ...

@@ -9,16 +9,16 @@ If the schematic defined in the mechanic is not found inside mm's `Schematics` f
 Attributes
 ----------
 
-| Attribute | Aliases | Description                                                   | Default Value |
+| Attribute | Aliases | Description  | Default Value |
 |-----------|---------|---------------------------------------------------------------|---------------|
-| schematic |  s       | Which schematic to load. |               |
-| pasteAir | air,a       | Should air be pasted? |               |
-| xOffset | x,xo      | The X offset of pasting the Schematic from the target.   | 0             |
-| yOffset | y,yo      | The Y offset of pasting the Schematic from the target.   | 0             |
-| zOffset | z,zo      | The Z offset of pasting the Schematic from the target.   | 0             |
-| chestDropTable | chests,cdt      | Which MythicMob Drop Tables to supply the chests within the Schematic with.   | ""             |
-| trappedchestDropTable | trapchests,tcdt      | Which MythicMob Drop Tables to supply the Trapped Chests within the Schematic with.   | ""             |
-| blocksPerTick  |    | The number of blocks that are placed every tick          |               |
+| schematic |  s   | Which schematic to load. |   |
+| pasteAir | air,a   | Should air be pasted? |   |
+| xOffset | x,xo  | The X offset of pasting the Schematic from the target.   | 0 |
+| yOffset | y,yo  | The Y offset of pasting the Schematic from the target.   | 0 |
+| zOffset | z,zo  | The Z offset of pasting the Schematic from the target.   | 0 |
+| chestDropTable | chests,cdt  | Which MythicMob Drop Tables to supply the chests within the Schematic with.   | "" |
+| trappedchestDropTable | trapchests,tcdt  | Which MythicMob Drop Tables to supply the Trapped Chests within the Schematic with.   | "" |
+| blocksPerTick  || The number of blocks that are placed every tick  |   |
 | pasteID   | pid, id | The paste's id. Can be used to undo the paste via the [undoPaste] mechanic |   |
   
 

@@ -5,22 +5,22 @@ Goal: rangedAttack
 
 A basic ranged attack that ranged entities can use.
 
-### Attributes
+### 細項設定
 
-| Attribute      | Aliases  | Description                        | Default |
+| Attribute  | Aliases  | Description| Default |
 |----------------|----------|------------------------------------|:-------:|
-| speed          | s        | Movement speed modifier            |    1    |
-| attackspeedmax | smax     | The maximum attack speed           |   60    |
-| attackspeedmin | amin     | The minimum attack speed           |   20    |
-| attackradius   | radius,r | The attack radius of this ai goal. |   15    |
+| speed  | s| Movement speed modifier|1|
+| attackspeedmax | smax | The maximum attack speed   |   60|
+| attackspeedmin | amin | The minimum attack speed   |   20|
+| attackradius   | radius,r | The attack radius of this ai goal. |   15|
 
 
-### Examples
+### 範例
 
 ```yaml
 ExampleMob:
   Type: Skeleton
   AIGoalSelectors:
-    - clear
-    - rangedAttack{speed=1;smax=60;amin=20;radius=15}
+- clear
+- rangedAttack{speed=1;smax=60;amin=20;radius=15}
 ```

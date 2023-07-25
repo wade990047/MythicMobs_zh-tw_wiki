@@ -9,10 +9,10 @@ at far as possible towards the target.
 Attributes
 ----------
 
-| Attribute | Aliases | Description                               | Default Value |
+| Attribute | Aliases | Description  | Default Value |
 |-----------|---------|-------------------------------------------|---------------|
-| velocity  | v       | The max velocity of the leap              | 100           |
-| noise     |         | Added variance to where the mob will land | 1             |
+| velocity  | v   | The max velocity of the leap  | 100   |
+| noise | | Added variance to where the mob will land | 1 |
 
   
 
@@ -29,11 +29,11 @@ Examples
 This skill would cause the mob to leap towards the target at high
 speeds, then slam into the ground and cause an explosion.
 
-    CrushingLeap:
-      Cooldown: 10
-      Skills:
-      - leap{velocity=200} @target
-      - delay 20
-      - jump{velocity=-100}
-      - effect:explosion @self
-      - damage{amount=20} @EntitiesInRadius{r=5}
+CrushingLeap:
+  Cooldown: 10
+  Skills:
+  - leap{velocity=200} @target
+  - delay 20
+  - jump{velocity=-100}
+  - effect:explosion @self
+  - damage{amount=20} @EntitiesInRadius{r=5}

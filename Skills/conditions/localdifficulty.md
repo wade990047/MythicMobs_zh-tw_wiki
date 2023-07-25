@@ -1,14 +1,14 @@
-## Description
+## 用途
 Tests the difficulty scale at the target location.
  
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| difficulty| diff, d   | The difficulty range to check                                        |         |
+| difficulty| diff, d   | The difficulty range to check   | |
 
  
-## Examples
+## 範例
 ```yaml
   Conditions:
   - localdifficulty{d=>0}

@@ -6,9 +6,9 @@ Changes the skybox of the target.
 
 **Attributes:**
 
-| Attribute        | Alias | Description                                                   |
+| Attribute| Alias | Description  |
 | ---------------- | ----- | ------------------------------------------------------------- |
-| skybox           | sky, s, type, t, environment, env, e | What skybox should be shown to the player | 
+| skybox   | sky, s, type, t, environment, env, e | What skybox should be shown to the player | 
 
 **Availd value for Skybox:**
 

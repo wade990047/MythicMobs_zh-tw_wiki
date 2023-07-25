@@ -17,20 +17,20 @@ utilize power levels simply do not use them in the level modifiers.
 **Mechanics that are affected by power levels + formulas:**
 
 -   [basedamage](/skills/mechanics/basedamage){multiplier=M} - damage =
-    M \* power
+M \* power
 -   [consume](/skills/mechanics/consume){damage=D} - damage = D \* power
 -   [consume](/skills/mechanics/consume){heal=H} - heal = H \* power
 -   [damage](/skills/mechanics/damage){amount=A} - damage = A \* power
 -   [leap](/skills/mechanics/leap){velocity=V} - velocity = V \* ( 1 +
-    power \* 0.1 )
+power \* 0.1 )
 -   [projectile](/skills/mechanics/projectile){velocity=V} - velocity =
-    V \* power
+V \* power
 -   [projectile](/skills/mechanics/projectile){maxrange=MR} - maxrange =
-    MR \* power
+MR \* power
 -   [missile](/skills/mechanics/missile){velocity=V} - velocity = V \*
-    power
+power
 -   [missile](/skills/mechanics/missile){maxrange=MR} - maxrange = MR \*
-    power
+power
 
 Examples
 --------
@@ -39,11 +39,11 @@ In this example, a Level 2 ThornySkeleton would do 10 damage instead of
 5 because it gains +1 power per level (base power of 1 + 1 per level =
 2, 5\*2 = 10). A level 3 ThornySkeleton would do 15 damage, and so on.
 
-    ThornySkeleton:
-      Type: SKELETON
-      Health: 20
-      LevelModifiers:
-        Health: 10
-        Power: 1
-      Skills:
-      - damage{a=5} @trigger ~onDamaged
+ThornySkeleton:
+  Type: SKELETON
+  Health: 20
+  LevelModifiers:
+Health: 10
+Power: 1
+  Skills:
+  - damage{a=5} @trigger ~onDamaged

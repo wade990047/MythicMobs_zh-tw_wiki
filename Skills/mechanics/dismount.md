@@ -8,5 +8,5 @@ attributes or options.
 Examples
 --------
 
-      Skills:
-      - dismount ~onDamaged
+  Skills:
+  - dismount ~onDamaged

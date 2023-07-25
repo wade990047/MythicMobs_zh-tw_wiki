@@ -17,9 +17,9 @@ Example of droping down a line and indenting:
 ```
   Skills:
   - damage{a=1} @PIR{r=10;conditions=[
-                              - hasaura{aura=Plagued} false
-                              - haspotioneffect{type=WITHER;d=1to999999;l=0to254} true 
-                              ]} ~onTimer:20
+ - hasaura{aura=Plagued} false
+ - haspotioneffect{type=WITHER;d=1to999999;l=0to254} true 
+ ]} ~onTimer:20
 ```
 Note that there is still a space after the true at the end of the second condition.
 
@@ -35,13 +35,13 @@ These inline target conditions will work on every targeter that you use, anywher
 ```
   Skills:
   - skill{s=LMG_ActivateAGreen} @MIR{r=50;
-                                     t=LaserMinigameButtons;
-                                     conditions=[
-                                         - variableequals{var=target.myTeam;value="GREEN"} true
-                                         - variableequals{var=target.amActive;value=0} true 
-                                         ];
-                                     limit=1;
-                                     sort=RANDOM}
+t=LaserMinigameButtons;
+conditions=[
+- variableequals{var=target.myTeam;value="GREEN"} true
+- variableequals{var=target.amActive;value=0} true 
+];
+limit=1;
+sort=RANDOM}
 ```
 In this example we are inside of a meta-skill of a minigame. The targeter is checking all mobs of the type LaserMinigameButtons to see if they are on the green team, and checking that they are not activated. it is limited to 1 entity, and sorted randomly. You'll notice that since we are checking the target if its variables are equal to something, that we use the target scope inside the variableequals conditions. With this example, if will only ever select a LaserMinigameButton that has both the variable ``myTeam`` set to ``GREEN`` and the variable ``amActive`` set to ``0``. We can also set it up to be all in one line like mentioned above, and it would look like this: 
 ```

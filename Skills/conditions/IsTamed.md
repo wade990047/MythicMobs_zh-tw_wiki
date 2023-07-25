@@ -1,12 +1,12 @@
-## Description
+## 用途
 Checks if the entity is tamed.
 
 
-## Attributes
+## 細項設定
 >*This condition has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
   TargetConditions:
   - istamed true

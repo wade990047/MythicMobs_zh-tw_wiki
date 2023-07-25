@@ -8,14 +8,14 @@ Gives a copy of the caster's slot to the target.
 Attributes
 ----------
 
-| Attribute   | Aliases | Description       | Default Value |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-------------|---------|-------------------|---------------|
-| slot        | s       | The caster's slot | None |
-| fakeLooting | fl      | plays the pickup-item animation from the origin | false |
+| slot| s   | The caster's slot | None |
+| fakeLooting | fl  | plays the pickup-item animation from the origin | false |
 
 **Valid Slots:**
 
-| HEAD | CHEST | LEGS | FEET | HAND | OFFHAND |       
+| HEAD | CHEST | LEGS | FEET | HAND | OFFHAND |   
 | ---- | ----- | ---- | ---- | ---- | ------- |  
 ---
 
@@ -34,7 +34,7 @@ fakeLooting was added in 4.12 and it makes the item being given show up on the s
 Examples
 --------
 
-    Skills:
-    - giveitemfromslot{slot=HAND;fakelooting=true} @server ~onTimer:10
+Skills:
+- giveitemfromslot{slot=HAND;fakelooting=true} @server ~onTimer:10
 
 Give caster's main hand item to all players on the server, and plays the pickup animation.

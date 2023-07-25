@@ -8,16 +8,16 @@ Doesn't work on **Minecraft below 1.13**(excluding 1.13).
 Attributes
 ----------
 
-| Attribute | Aliases           | Description | Default Value  |
+| Attribute | Aliases   | Description | Default Value  |
 |-----------|-------------------|-------------|----------------|
-| amount    | a                 |             | 1              |
-| maxabsorb | maxshield, ma, ms |             | Amount's value |
+| amount| a | | 1  |
+| maxabsorb | maxshield, ma, ms | | Amount's value |
 
   
 
 Examples
 --------
 
-      Skills:
-      - shield{amount=50;maxShield=100} @self ~onSpawn
-      - ...
+  Skills:
+  - shield{amount=50;maxShield=100} @self ~onSpawn
+  - ...

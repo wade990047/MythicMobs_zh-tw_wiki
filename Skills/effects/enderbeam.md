@@ -6,10 +6,10 @@ Creates the effect of an Ender Crystal towards the target.
 
 **Attributes:**
 
-| Attribute | Alias  | Description                                       | Default Value |
+| Attribute | Alias  | Description  | Default Value |
 | --------- | ------ | ------------------------------------------------- | ------------- |
-| duration  | d      | The time (in ticks) that the effect is active     | 60            |
-| yoffset   | y, yo  | 	The default vertical offset from the casting mob | 0             |
+| duration  | d  | The time (in ticks) that the effect is active | 60|
+| yoffset   | y, yo  | 	The default vertical offset from the casting mob | 0 |
 
 ---
 

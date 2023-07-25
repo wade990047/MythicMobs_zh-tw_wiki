@@ -1,16 +1,16 @@
-## Description
+## 用途
 Checks if the evaluated player is flying. Only really works for creative-type fly. To check if an entity is gliding via the use of an elytra, use the [Gliding condition](/skills/conditions/gliding).
 
-## Attributes
+## 細項設定
 *This condition has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
   TargetConditions:
   - isFlying true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] flying

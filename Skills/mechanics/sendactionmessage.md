@@ -17,14 +17,14 @@ Note: Versions 2.3.0 onwards- The @trigger targeter is buggy for
 Attributes
 ----------
 
-| Attribute | Aliases | Description                                        | Default |
+| Attribute | Aliases | Description   | Default |
 |-----------|---------|----------------------------------------------------|---------|
-| message   | m       | The message to send. Must be surrounded by quotes. |         |
+| message   | m   | The message to send. Must be surrounded by quotes. | |
 
 Examples
 --------
 
-    Skills:
-    - actionmessage{m="<mob.name>&f is casting a spell!"} @PlayersInRadius{r=30}
-    - actionmessage{m="&lHello! &cI'm &athe &9&lactionmessage-bar&r! &e:)"} @trigger ~onInteract
-    - am{m="<mob.name>&f is using the *skill alias!*"} @PlayersInRadius{r=30}
+Skills:
+- actionmessage{m="<mob.name>&f is casting a spell!"} @PlayersInRadius{r=30}
+- actionmessage{m="&lHello! &cI'm &athe &9&lactionmessage-bar&r! &e:)"} @trigger ~onInteract
+- am{m="<mob.name>&f is using the *skill alias!*"} @PlayersInRadius{r=30}

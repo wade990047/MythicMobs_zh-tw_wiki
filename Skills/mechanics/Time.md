@@ -1,15 +1,15 @@
-## Description
+## 用途
 Sets the world's time. Depending on the attributes used, the change in time can be absolute or relative to the target player.
 
 Time mechanics must be synced to function. "sync=true;"
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| mode      | m         | The mode used in the time mechanic. Can be ADD/SET/RESET             | ADD     |
-| amount    | ticks, t, amt | The amount of ticks by which the time will be changed            | 20      |
-| personal  |           | Sets whether to change the global time or the player's client time   | false   |
-| relative  |           | Sets whether to keep the player's time synchronized to its world time with an offset                                                                                         | true    |
+| mode  | m | The mode used in the time mechanic. Can be ADD/SET/RESET | ADD |
+| amount| ticks, t, amt | The amount of ticks by which the time will be changed| 20  |
+| personal  |   | Sets whether to change the global time or the player's client time   | false   |
+| relative  |   | Sets whether to keep the player's time synchronized to its world time with an offset  | true|
 
 #### Mode Attribute
 The different values the mode attribute can be all have different effects
@@ -17,7 +17,7 @@ The different values the mode attribute can be all have different effects
 - **`SET`** - Sets the current time of the world
 - **`RESET`** - Re-syncs the target's world time with the server world time, if it is not already synced
 
-## Examples
+## 範例
 ```yaml
 #MOB
 ExampleMob:
@@ -30,13 +30,13 @@ ExampleMob:
 MidnightAura:
   Skills:
   - aura{auraName=midnight;i=1;ms=1;rd=true;
-    onTick=[
-      - time{mode=SET;a=18000;personal=true;relative=false;sync=true} @self
-    ];
-    onEnd=[
-      - time{mode=RESET;sync=true} @self
-    ]} @self
+onTick=[
+  - time{mode=SET;a=18000;personal=true;relative=false;sync=true} @self
+];
+onEnd=[
+  - time{mode=RESET;sync=true} @self
+]} @self
 ```
 
-## Aliases
+## 簡化寫法
 - [x] setTime

@@ -6,7 +6,7 @@ Sets the projectile's model number. (DISPLAY bullet types only)
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
-| model     |       | The model to set the projectile to       |
+| model |   | The model to set the projectile to   |
 
 Examples
 --------

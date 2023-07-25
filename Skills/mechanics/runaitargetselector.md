@@ -18,8 +18,8 @@ Example
 
 Skill.yml:
 
-    ChangePatchfinderGoalExample:
-      Skills:
-      - runaitargetselector{target=clear}
-      - runaitargetselector{target=players}
-      - runaitargetselector{target=monsters}
+ChangePatchfinderGoalExample:
+  Skills:
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=players}
+  - runaitargetselector{target=monsters}

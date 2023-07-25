@@ -6,10 +6,10 @@ Teleports the caster to the targeted location/entity. The end point of the telep
 Attributes
 ----------
 
-| Attribute | Aliases | Description                                    | Default Value |
+| Attribute | Aliases | Description   | Default Value |
 |-----------|---------|------------------------------------------------|---------------|
-| spreadh   | sh      | The horizontal spread of the landing location. | 0             |
-| spreadv   | sv      | The vertical spread of the landing location.   | 0             |
+| spreadh   | sh  | The horizontal spread of the landing location. | 0 |
+| spreadv   | sv  | The vertical spread of the landing location.   | 0 |
 
   
 

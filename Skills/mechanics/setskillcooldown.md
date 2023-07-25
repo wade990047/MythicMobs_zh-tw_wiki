@@ -6,8 +6,8 @@ Sets the given metakill's cooldown to the given value (in seconds)
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
-| skill     |       | The metaskillset of which you want to set the cooldown       |
-| seconds   |       | The duration of the cooldown |
+| skill |   | The metaskillset of which you want to set the cooldown   |
+| seconds   |   | The duration of the cooldown |
 
 Examples
 --------

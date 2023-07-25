@@ -6,6 +6,6 @@ Removes the wolf's owner
 Examples
 --------
 
-      Skills:
-      - removeowner @MIR{t=MythicWolf} ~onInteract
-      - ...
+  Skills:
+  - removeowner @MIR{t=MythicWolf} ~onInteract
+  - ...

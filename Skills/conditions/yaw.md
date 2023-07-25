@@ -1,15 +1,15 @@
-## Description
+## 用途
 Checks the yaw of the target entity against a range.
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| yaw       | y         | The yaw to check for                                                 | 0       |
+| yaw   | y | The yaw to check for| 0   |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - yaw{y=90to180} true

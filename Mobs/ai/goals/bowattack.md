@@ -4,20 +4,20 @@ Goal: bowAttack
 
 An advanced ranged attack that can often cause the shooter to strafe backwards or clockwise.
 
-### Attributes
+### 細項設定
 
-| Attribute      | Aliases  | Description             | Default |
+| Attribute  | Aliases  | Description | Default |
 |----------------|----------|-------------------------|:-------:|
-| speed          | s        | Movement speed modifier |    1    |
-| attackspeedmin | amin     | Minimum attack interval |   20    |
-| attackradius   | radius,r |                         |   15    |
+| speed  | s| Movement speed modifier |1|
+| attackspeedmin | amin | Minimum attack interval |   20|
+| attackradius   | radius,r | |   15|
 
-### Examples
+### 範例
 
 ```yaml
 ExampleMob:
   Type: Skeleton
   AIGoalSelectors:
-    - clear
-    - bowattack{speed=1;amin=20;radius=15}
+- clear
+- bowattack{speed=1;amin=20;radius=15}
 ```

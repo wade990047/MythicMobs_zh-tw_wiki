@@ -1,17 +1,17 @@
-## Description
+## 用途
 If the target entity is gliding
 
 
-## Attributes
+## 細項設定
 *This condition has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - gliding{} true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] isgliding

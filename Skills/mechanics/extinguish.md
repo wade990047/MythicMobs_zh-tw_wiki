@@ -4,7 +4,7 @@ Removes any fire ticks from the target entity
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
-| none      | none  | none        |
+| none  | none  | none|
 
 **Examples**
 

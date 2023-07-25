@@ -10,9 +10,9 @@ BigHealthBoss:
   Display: '&6Hungry Hungry Piggy Zombie'
   Health: 20000
   Modules:
-    ImmunityTable: true
+ImmunityTable: true
   Options:
-    NoDamageTicks: 10
+NoDamageTicks: 10
 ```
 
 That's it!

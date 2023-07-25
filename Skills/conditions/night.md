@@ -1,12 +1,12 @@
-## Description
+## 用途
 Checks if the time is night, from 14000 to 22000 in-game time
 
 
-## Attributes
+## 細項設定
 > *This condition has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - night{} true

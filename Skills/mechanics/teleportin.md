@@ -9,16 +9,16 @@ Will teleport the target relative to the caster's yaw. The direction attribute m
 Attributes
 ----------
 
-| Attribute             | Aliases   | Description                                                                   | Default Value |
+| Attribute | Aliases   | Description | Default Value |
 |-----------------------|-----------|-------------------------------------------------------------------------------|---------------|
-| vector | direction,dir,d,v | The direction to where the mob will be teleported                                 | |
+| vector | direction,dir,d,v | The direction to where the mob will be teleported| |
 | yaw | y | Yaw modifier | 0 | 
 | targetasorigin | tao | Will use the target's location as the origin instead of the caster's | false |
-                
+
 Examples
 --------
 
 Will teleport the player that triggered the skill to the right of the caster.
 
-    Skills:
-    - teleportin{vector=0,0,1} @trigger ~onInteract
+Skills:
+- teleportin{vector=0,0,1} @trigger ~onInteract

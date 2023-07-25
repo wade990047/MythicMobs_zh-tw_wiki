@@ -6,7 +6,7 @@ Terminates the projectile this mechanic has been called from, activating its onE
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
-| none      | none  | none        |
+| none  | none  | none|
 
 Examples
 --------

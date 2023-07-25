@@ -1,15 +1,15 @@
-## Description
+## 用途
 Checks if the target's Y location is within a range
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| height    | h         | The range of the Y location of the target                            |         |
+| height| h | The range of the Y location of the target| |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - height{h=<50} true

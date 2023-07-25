@@ -6,12 +6,12 @@ Shoots a shulker bullet at the target entity, giving them levitation on hit.
 Attributes
 ----------
 
-| Attribute | Aliases | Description                                  | Default Value |
+| Attribute | Aliases | Description | Default Value |
 |-----------|---------|----------------------------------------------|---------------|
-| interval  | i       | how often in ticks this mechanic updates     | 4             |
-| onTick    | oT      | the skill this mechanic calls each interval  | NONE          |
-| onHit     | oH      | the skill this mechanic calls when it hits the target | NONE |
-| onEnd     | oE      | the skill this mechanic calls when it ends   | NONE          |
+| interval  | i   | how often in ticks this mechanic updates | 4 |
+| onTick| oT  | the skill this mechanic calls each interval  | NONE  |
+| onHit | oH  | the skill this mechanic calls when it hits the target | NONE |
+| onEnd | oE  | the skill this mechanic calls when it ends   | NONE  |
 
 ------------
 

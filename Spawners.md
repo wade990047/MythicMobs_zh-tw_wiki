@@ -49,10 +49,10 @@ SpawnerName:
 ```
 Options
 -------
-| Option             | Description                      |Usage                       |Default|
+| Option | Description  |Usage   |Default|
 |--------------------------|-----------------------|-----------------------|-----------------------|
 |**mobtype: &lt;mobtype&gt;** or **mobname: &lt;mobtype&gt;:**|This is mob type that the spawner will spawn. Can only be set to an internal MythicMobs mob. Allows for an array of mobs with weightings.|/mm s set [name] mobtype 25%Mob1,25%Mob2,50%mMob2| N/A |
-|**world: &lt;worldname&gt;:**|    This is the filename of the world where the spawner is located|    /mm s set \<name\> world \<world\>|Creation World|
+|**world: &lt;worldname&gt;:**|This is the filename of the world where the spawner is located|/mm s set \<name\> world \<world\>|Creation World|
 |**spawnergroup: &lt;group name&gt;**|This sets the group name for the spawn. For larger configurations, such as if you are populating a dungeon, you can group all spawners and then change the settings for them all at the same time.|/mm s set g:\<group\> \<setting\> \<value\>|N/A|
 |**X: / Y: / Z:**|Coordinates of the spawner||Creation Location|
 |**radius: &lt;number&gt;**|This is the radius around the spawner at which the mob can spawn.| /mm s set \<name\> radius \<radius\>|0|
@@ -73,7 +73,7 @@ Options
 |**showflames: &lt;true/false&gt;**|Set this to true to show flames around the spawner.|/mm s set \<name\> showflames <true/false>|false|
 |**breakable: &lt;true/false&gt;**|Determines if the spawner is broken with the block it is placed on||false|
 |**conditions:**|the conditions to be met for the spawner to activate.|/mm s addcondition \<name\> \<condition\> \<action\>|None|
-| **SpawnConditions**| the conditions to be met by the position a mob is being attempted to be spawned at |      | None |
+| **SpawnConditions**| the conditions to be met by the position a mob is being attempted to be spawned at |  | None |
 |**activemobs: &lt;number&gt;**|Used to keep track of mobs connected to (spawned by) the spawner.|*it does not require any user setting*.||
 
 **Note on timing of spawns:** ```Timing: warmup-> mob spawns-> cooldown-> mob spawns*>```

@@ -1,15 +1,15 @@
-## Description
+## 用途
 This condition checks if the target player has a permission. 
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| permission| p         | The permission to check for.                                         |         |
+| permission| p | The permission to check for.| |
 
 
-## Examples
+## 範例
 
 ```yaml
   Conditions:
@@ -25,5 +25,5 @@ This condition checks if the target player has a permission.
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] permission

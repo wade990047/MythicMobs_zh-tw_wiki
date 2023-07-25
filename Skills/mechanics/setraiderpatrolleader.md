@@ -1,20 +1,20 @@
-## Description
+## 用途
 Sets if the target raider should be a raider patrol leader or not
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-|  leader   | l, bool, b| Should the target raider be a leader                                 |   true  |
+|  leader   | l, bool, b| Should the target raider be a leader|   true  |
 
 
-## Examples
+## 範例
 ```yaml
   Skills:
   - setRaiderPatrolLeader{leader=true} @target
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] setRaiderLeader

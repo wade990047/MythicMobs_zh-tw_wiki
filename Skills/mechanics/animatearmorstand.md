@@ -1,30 +1,30 @@
 Mechanic: Animate ArmorStand
 ============================
 
-Animates an armorstand.
+設定盔甲座動畫
 
-Attributes
+細項設定
 ----------
 
-| Attribute   | Aliases | Description                                                                             | Default Value |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-------------|---------|-----------------------------------------------------------------------------------------|---------------|
-| duration    | d       | How long the animation takes                                                            | 1             |
-| smart       |         | Will help you to make your animations smoother if true                                  | true          |
-| ignoreempty |         | Will ignore unspecified body parts and not animate them                                 | true          |
-| usedegrees  |         | Interprets the input' values as degrees (0-360) and as radians (0-6.28) if set to false | true          |
-| head | h  | Part of an armorstand to animate | null |
-| body | b | Part of an armorstand to animate | null |
-| leftarm | la | Part of an armorstand to animate | null |
-| rightarm | ra | Part of an armorstand to animate | null |
-| leftleg | ll | Part of an armorstand to animate | null |
-| rightleg | rl | Part of an armorstand to animate | null |
+| duration| d   | 動畫的持續時間(單位:ticks)  | 1 |
+| smart   | | 是否幫助你的動畫更加流暢 | true  |
+| ignoreempty | | 使否忽略未指定的身體部位並且不為它們設置動畫| true  |
+| usedegrees  | | 如果設置為 false，則將輸入值度數 (0-360) 轉換為弧度 (0-6.28) | true  |
+| head | h  | 用於製作動畫的盔甲座的一部分 | null |
+| body | b | 用於製作動畫的盔甲座的一部分 | null |
+| leftarm | la | 用於製作動畫的盔甲座的一部分 | null |
+| rightarm | ra | 用於製作動畫的盔甲座的一部分 | null |
+| leftleg | ll | 用於製作動畫的盔甲座的一部分 | null |
+| rightleg | rl | 用於製作動畫的盔甲座的一部分 | null |
 
   
 
-Examples
+範例
 --------
 ```yaml
-    Skills:
-    - animatearmorstand{d=10;leftarm=90,0,0;rightarm=270,0,0;ignoreempty=false}
-    - ...
+Skills:
+- animatearmorstand{d=10;leftarm=90,0,0;rightarm=270,0,0;ignoreempty=false}
+- ...
 ```

@@ -9,5 +9,5 @@ This won't work on a few non-mob entities like boats or armor stands!
 Examples
 --------
 
-      Skills:
-      - suicide ~onDamaged 0.1
+  Skills:
+  - suicide ~onDamaged 0.1

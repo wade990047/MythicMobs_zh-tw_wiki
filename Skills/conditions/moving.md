@@ -1,20 +1,20 @@
-## Description
+## 用途
 Checks ff the target has a velocity greater than zero
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| exact     | e         | If the check should be exact or approximated                         | true    |
+| exact | e | If the check should be exact or approximated | true|
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - moving{} true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] ismoving

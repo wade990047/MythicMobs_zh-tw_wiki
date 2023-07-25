@@ -15,12 +15,12 @@ A lot of effects don't have any options. To call them, you just call the
 skill **effect:name**, for example:
 
 ```yaml
-    Skills:
-    - effect:flames @target
-    - effect:lightning @self
-    - effect:ender @PlayersInRadius{r=20}
-    - effect:ender @PlayersInRadius{r=20}
-    - effect:particles{particle=reddust;color=#EE22CC;amount=10;speed=1;hS=0.15;vS=.15;audience=Target} @target
+Skills:
+- effect:flames @target
+- effect:lightning @self
+- effect:ender @PlayersInRadius{r=20}
+- effect:ender @PlayersInRadius{r=20}
+- effect:particles{particle=reddust;color=#EE22CC;amount=10;speed=1;hS=0.15;vS=.15;audience=Target} @target
 ```
 
 ### Audience 
@@ -35,51 +35,51 @@ The audience types are:
 
 Of particular relevance is the `audience=@Targeter` attribute, that allows any entity targeter to be used as the audience of the effect
 ```yaml
-    Skills:
-    - effect:particles{particle=reddust;y=2;audience=@Owner} @self
+Skills:
+- effect:particles{particle=reddust;y=2;audience=@Owner} @self
 ```
 
 ### Effects
 
-| Effect Mechanic      | Description                                                           |
+| Effect Mechanic  | Description |
 |----------------------|-----------------------------------------------------------------------|
-| [Atom][]             | Creates electron-esque orbitals.                       |
-| [Black Screen][]     | Blacks out the target's screen for the duration                       |
-| [Block Mask][]       | Temporarily masks a block as a different block                        |
-| [Block Unmask][]     | Unmasks blocks that have been masked                                  |
-| [Block Wave][]       | Creates a wave of blocks at the target location                       |
-| [Bloody Screen][]    | Makes the target's screen glow red                                    |
-| [Ender][]            | Causes the "Ender" effect                                             |
-| [Ender Beam][]       | Creates the enderbeam effects at the target (similar to End Crystals)                           |
-| [Explosion][]        | Causes an explosion effect                                            |
-| [Firework][]         | Causes a firework explosion (currently not working in most builds)                 |
-| [Flames][]           | Causes the Mob Spawner flame effect                                   |
-| [Geyser][]           | Creates a "geyser" of water or lava                                   |
-| [Glow][]             | Gives the target the glow effect with different colors (req. GlowAPI) |
-| [GuardianBeam][]     | Draw a guardian beam between the origin and the target                |
-| [Item Spray][]       | Sprays temporary items around the target                              |
-| [Lightning][]        | Causes a fake lightning strike                                        |
-| [Particles][]        | Creates particle effects around the target                            |
-| [Particle Box][]     | Draws a box of particles around the target                            |
-| [Particle Equation][]    | Generates particles based on equations                        |
-| [Particle Line][]    | Draws a line of particle effects to the target                        |
-| [Particle Line Helix][]    | Draws a line based helix effect                        |
-| [Particle Line Ring][]    | Draws a particle ring connected by lines                        |
-| [Particle Orbital][] | Draws orbiting particle effects around the target                     |
-| [Particle Ring][]    | Draws a ring of particles around the target                           |
-| [Particle Sphere][]  | Draws a sphere of particles around the target                         |
-| [Particle Tornado][] | Draws a persistent "tornado" of particles at the target               |
-| [Play Animation][]   | Forces the entity to play an animation                                |
-| [Recoil][]           | Kicks the target's screen                                             |
-| [Skybox][]           | Alters the target's skybox                                            |
-| [Smoke][]            | Creates a puff of smoke                                               |
-| [Smoke Swirl][]      | Creates a persistent "swirl" of smoke                                 |
-| [Sound][]            | Plays a sound effect from both vanilla Minecraft and resource packs   |               
-| [Spin][]             | Causes the mob to spin                                                |
-| [StopSound][]        | Stops a sound effect from playing                                     |
-| [SummonAreaEffectCloud][]        | Summons a cloud of particles at the target                                     |
-| [ThunderLevel][]     | Creates a rainless storm for players client side (per Player)                           |
-| [TotemOfUndying][]     | Plays the effect of a player resurrecting                           |
+| [Atom][] | Creates electron-esque orbitals.   |
+| [Black Screen][] | Blacks out the target's screen for the duration   |
+| [Block Mask][]   | Temporarily masks a block as a different block|
+| [Block Unmask][] | Unmasks blocks that have been masked |
+| [Block Wave][]   | Creates a wave of blocks at the target location   |
+| [Bloody Screen][]| Makes the target's screen glow red   |
+| [Ender][]| Causes the "Ender" effect|
+| [Ender Beam][]   | Creates the enderbeam effects at the target (similar to End Crystals)   |
+| [Explosion][]| Causes an explosion effect   |
+| [Firework][] | Causes a firework explosion (currently not working in most builds) |
+| [Flames][]   | Causes the Mob Spawner flame effect  |
+| [Geyser][]   | Creates a "geyser" of water or lava  |
+| [Glow][] | Gives the target the glow effect with different colors (req. GlowAPI) |
+| [GuardianBeam][] | Draw a guardian beam between the origin and the target|
+| [Item Spray][]   | Sprays temporary items around the target |
+| [Lightning][]| Causes a fake lightning strike   |
+| [Particles][]| Creates particle effects around the target|
+| [Particle Box][] | Draws a box of particles around the target|
+| [Particle Equation][]| Generates particles based on equations|
+| [Particle Line][]| Draws a line of particle effects to the target|
+| [Particle Line Helix][]| Draws a line based helix effect|
+| [Particle Line Ring][]| Draws a particle ring connected by lines|
+| [Particle Orbital][] | Draws orbiting particle effects around the target |
+| [Particle Ring][]| Draws a ring of particles around the target   |
+| [Particle Sphere][]  | Draws a sphere of particles around the target |
+| [Particle Tornado][] | Draws a persistent "tornado" of particles at the target   |
+| [Play Animation][]   | Forces the entity to play an animation   |
+| [Recoil][]   | Kicks the target's screen|
+| [Skybox][]   | Alters the target's skybox   |
+| [Smoke][]| Creates a puff of smoke  |
+| [Smoke Swirl][]  | Creates a persistent "swirl" of smoke|
+| [Sound][]| Plays a sound effect from both vanilla Minecraft and resource packs   |   
+| [Spin][] | Causes the mob to spin   |
+| [StopSound][]| Stops a sound effect from playing|
+| [SummonAreaEffectCloud][]| Summons a cloud of particles at the target|
+| [ThunderLevel][] | Creates a rainless storm for players client side (per Player)   |
+| [TotemOfUndying][] | Plays the effect of a player resurrecting   |
 
 <!--
 ### EffectLib Effects
@@ -88,11 +88,11 @@ These effects require the plugin "EffectLib" to be installed to use.
 
 **Note: EffectLib was dropped in MM ver 4.11, so the below effects no longer work.**
 
-| Effect Mechanic     | Description                                           |
+| Effect Mechanic | Description  |
 |---------------------|-------------------------------------------------------|
-| [Atom][]            | Creates a representation of an atom around the target |
-| [Particle Vortex][] | Draws a "vortex" of particles around the target       |
-| [DNA][]             |                                                       |
+| [Atom][]| Creates a representation of an atom around the target |
+| [Particle Vortex][] | Draws a "vortex" of particles around the target   |
+| [DNA][] |  |
 Edit: (Dant35tra5t) Atom is working for some reason. Putting it in main list.
 -->
 

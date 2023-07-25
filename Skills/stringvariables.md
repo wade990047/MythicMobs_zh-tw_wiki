@@ -4,14 +4,14 @@ Placeholders
 These are all of the placeholders and special characters you can use in
 skills and mechanics that use strings.
 
-##### Examples
+##### 範例
 
 This will make a mob (name in teal (&b)) send a message to all players
 in a radius of 20 blocks around in itself, stating that it was slain by
 player x (&lt;trigger.name&gt; in green (&a))
 
-    Skills:
-    - message{m="&b<mob.name>&r was slain by the warrior skills of &a<trigger.name>&r"} @PIR{r=20} ~onDeath
+Skills:
+- message{m="&b<mob.name>&r was slain by the warrior skills of &a<trigger.name>&r"} @PIR{r=20} ~onDeath
 
 Skill Placeholders
 ------------------
@@ -114,12 +114,12 @@ Skill Placeholders
 </tbody>
 </table>
 
-| **Variable Placeholders (v4.6)** | **Function**                                                            |
+| **Variable Placeholders (v4.6)** | **Function**  |
 |----------------------------------|-------------------------------------------------------------------------|
-| &lt;caster.var.\[name\]&gt;      | Returns the value of the variable \[name\] on the caster.               |
-| &lt;skill.var.\[name\]&gt;       | Returns the value of the variable \[name\] on the current skill tree.   |
-| &lt;skill.var.damage-amount&gt;  | Returns the amount of damage taken in the onDamaged trigger             |
-| &lt;skill.var.damage-type&gt;    | Returns the type of damage taken as specified in a mechanic, aura, etc. |
+| &lt;caster.var.\[name\]&gt;  | Returns the value of the variable \[name\] on the caster.   |
+| &lt;skill.var.\[name\]&gt;   | Returns the value of the variable \[name\] on the current skill tree.   |
+| &lt;skill.var.damage-amount&gt;  | Returns the amount of damage taken in the onDamaged trigger |
+| &lt;skill.var.damage-type&gt;| Returns the type of damage taken as specified in a mechanic, aura, etc. |
 
 <table>
 <thead>
@@ -246,46 +246,46 @@ Skill Placeholders
 Misc Placeholders
 -----------------
 
-| **Placeholder**       | **Function**                                        |
+| **Placeholder**   | **Function**   |
 |-----------------------|-----------------------------------------------------|
-| **Misc Placeholders** |                                                     |
-| &lt;drops.xp&gt;      | Returns the xp dropped via Heroes or SkillAPI mods  |
+| **Misc Placeholders** ||
+| &lt;drops.xp&gt;  | Returns the xp dropped via Heroes or SkillAPI mods  |
 | &lt;drops.money&gt;   | Returns the money dropped through the vault plug-in |
 
 Special Placeholders
 --------------------
 
-| **Placeholder**                        | **Function**                                                              |
+| **Placeholder**| **Function**|
 |----------------------------------------|---------------------------------------------------------------------------|
-| &lt;caster.score.objective&gt;         | Returns the score of the caster from "objective" **(2.3)**                |
-| &lt;target.score.objective&gt;         | Returns the targeters score from "objective" **(2.3)**                    |
-| &lt;trigger.score.objective&gt;        | Returns the score of the trigger from "objective" **(2.3)**               |
-| &lt;global.score.objective&gt;         | Returns the global score from "objective" **(2.3)**                       |
-| &lt;score.objective.dummyname&gt;      | Returns the score of "dummyname" (fake player) from "objective" **(2.3)** |
-| &lt;random.\#-\#&gt; <sup>(v4.6)</sup> | Returns a random number in the specified range                            |
+| &lt;caster.score.objective&gt; | Returns the score of the caster from "objective" **(2.3)**|
+| &lt;target.score.objective&gt; | Returns the targeters score from "objective" **(2.3)**|
+| &lt;trigger.score.objective&gt;| Returns the score of the trigger from "objective" **(2.3)**   |
+| &lt;global.score.objective&gt; | Returns the global score from "objective" **(2.3)**   |
+| &lt;score.objective.dummyname&gt;  | Returns the score of "dummyname" (fake player) from "objective" **(2.3)** |
+| &lt;random.\#-\#&gt; <sup>(v4.6)</sup> | Returns a random number in the specified range|
 
 Special Characters
 ------------------
 
-| **Placeholder** | **Function**                          |
+| **Placeholder** | **Function**  |
 |-----------------|---------------------------------------|
-| &lt;&co&gt;     | Returns a colon (:)                   |
-| &lt;&sq&gt;     | Returns an apostrophe (')             |
-| &lt;&da&gt;     | Returns a dash (-)                    |
-| &lt;&bs&gt;     | Returns a backslash (\\)              |
-| &lt;&fs&gt;     | Returns a forward slash (/)           |
-| &lt;&sp&gt;     | Returns a space                       |
-| &lt;&cm&gt;     | Returns a comma (,)                   |
-| &lt;&sc&gt;     | Returns a semicolon (;)               |
-| &lt;&eq&gt;     | Returns an equals symbol \[=\]        |
-| &lt;&ss&gt;     | Returns a section symbol (§)          |
-| &lt;&dq&gt;     | Returns double quotes (")             |
-| &lt;&rb&gt;     | Returns a right bracket (\])          |
-| &lt;&lb&gt;     | Returns a left bracket (\[)           |
-| &lt;&rc&gt;     | Returns a right curly bracket (})     |
-| &lt;&lc&gt;     | Returns a left curly bracket ({)      |
-| &lt;&nl&gt;     | Forces a new line                     |
-| &lt;&heart&gt;  | Returns a heart **(2.1.7)**           |
+| &lt;&co&gt; | Returns a colon (:)   |
+| &lt;&sq&gt; | Returns an apostrophe (') |
+| &lt;&da&gt; | Returns a dash (-)|
+| &lt;&bs&gt; | Returns a backslash (\\)  |
+| &lt;&fs&gt; | Returns a forward slash (/)   |
+| &lt;&sp&gt; | Returns a space   |
+| &lt;&cm&gt; | Returns a comma (,)   |
+| &lt;&sc&gt; | Returns a semicolon (;)   |
+| &lt;&eq&gt; | Returns an equals symbol \[=\]|
+| &lt;&ss&gt; | Returns a section symbol (§)  |
+| &lt;&dq&gt; | Returns double quotes (") |
+| &lt;&rb&gt; | Returns a right bracket (\])  |
+| &lt;&lb&gt; | Returns a left bracket (\[)   |
+| &lt;&rc&gt; | Returns a right curly bracket (}) |
+| &lt;&lc&gt; | Returns a left curly bracket ({)  |
+| &lt;&nl&gt; | Forces a new line |
+| &lt;&heart&gt;  | Returns a heart **(2.1.7)**   |
 | &lt;&skull&gt;  | Returns a skull and bones **(2.1.7)** |
 
 Color Codes
@@ -294,16 +294,16 @@ Color Codes
 These color codes work anywhere in mob- and skill-files. They will even
 properly format tellraw-commands used in command skills!
 
-| **Code** | **Color**   | **Code** | **Color**      |
+| **Code** | **Color**   | **Code** | **Color**  |
 |----------|-------------|----------|----------------|
-| &0       | Black       | &B       | Aqua           |
-| &1       | Dark Blue   | &C       | Red            |
-| &2       | Dark Green  | &D       | Light Purple   |
-| &3       | Dark Aqua   | &E       | Yellow         |
-| &4       | Dark Red    | &F       | White          |
-| &5       | Dark Purple | &K       | Magic          |
-| &6       | Gold        | &L       | Bold           |
-| &7       | Gray        | &M       | Strike through |
-| &8       | Dark Gray   | &N       | Underline      |
-| &9       | Blue        | &O       | Italic         |
-| &A       | Green       | &R       | Reset          |
+| &0   | Black   | &B   | Aqua   |
+| &1   | Dark Blue   | &C   | Red|
+| &2   | Dark Green  | &D   | Light Purple   |
+| &3   | Dark Aqua   | &E   | Yellow |
+| &4   | Dark Red| &F   | White  |
+| &5   | Dark Purple | &K   | Magic  |
+| &6   | Gold| &L   | Bold   |
+| &7   | Gray| &M   | Strike through |
+| &8   | Dark Gray   | &N   | Underline  |
+| &9   | Blue| &O   | Italic |
+| &A   | Green   | &R   | Reset  |

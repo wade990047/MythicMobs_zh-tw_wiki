@@ -14,8 +14,8 @@ The formula for this is `v * 16 = max volume distance`. For example if you use â
 **Example**:
 -----------
 
-    Skills:
-    - blockbreaksound @targetlocation
+Skills:
+- blockbreaksound @targetlocation
 
 **Extra Information**:
 ----------------------

@@ -8,5 +8,5 @@ have any attributes nor options.
 Examples
 --------
 
-      Skills:
-      - ejectpassenger ~onDamaged
+  Skills:
+  - ejectpassenger ~onDamaged

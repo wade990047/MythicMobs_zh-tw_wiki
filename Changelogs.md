@@ -815,10 +815,10 @@ or with more options...
 ```
 Mob:
   Model:
-    Id: [model id]
-    ViewRadius: 64
-    Drive: true
-    DamageTint: true
+Id: [model id]
+ViewRadius: 64
+Drive: true
+DamageTint: true
 ```
 etc...
 

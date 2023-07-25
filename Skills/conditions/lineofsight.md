@@ -1,16 +1,16 @@
-## Description
+## 用途
 Tests if the target is within line of sight of the caster
 
 
-## Attributes
+## 細項設定
 > *This condition has no attributes*
 
-## Examples
+## 範例
 ```yaml
   TargetConditions:
   - lineofsight
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] inlineofsight

@@ -9,7 +9,7 @@ basicflypot:
   Id: potion
   Display: '&f&lBasic&6 Potion of &b&lFlight&r'
   Options:
-    Color: 89,255,230
+Color: 89,255,230
   Lore:
   - '&9Flight (1:00)'
   Enchantments:

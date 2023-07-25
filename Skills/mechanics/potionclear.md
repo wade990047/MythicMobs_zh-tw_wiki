@@ -4,7 +4,7 @@ Clears all potion effects from the target entity
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
-| types      | type  | The type or list of types of potion effect to clear.        |
+| types  | type  | The type or list of types of potion effect to clear.|
 
 Not providing a type will clear all effects.
 

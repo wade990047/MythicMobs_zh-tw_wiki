@@ -1,16 +1,16 @@
-## Description
+## 用途
 Tests if the target is within the given list of biome types
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Alias | Description                       | Default |
+| Attribute | Alias | Description   | Default |
 |-----------|-------|-----------------------------------|---------|
-| type      | t     | A list of biomes to check         | ocean   |
-| exact     | e     | Whether to match the type exactly | true    |
+| type  | t | A list of biomes to check | ocean   |
+| exact | e | Whether to match the type exactly | true|
 
 
-## Examples
+## 範例
 
 ```yaml
 Conditions:
@@ -38,5 +38,5 @@ Conditions:
 - underground
 - mountain
 
-## Aliases
+## 簡化寫法
 - [x] biomecategory

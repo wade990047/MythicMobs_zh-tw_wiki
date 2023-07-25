@@ -6,9 +6,9 @@ Causes the casting mob to summon a specified MythicMob and mount it.
 Attributes
 ----------
 
-| Attribute | Aliases | Description                      | Default Value |
+| Attribute | Aliases | Description  | Default Value |
 |-----------|---------|----------------------------------|---------------|
-| type      | t       | The type of MythicMob to summon. |               |
+| type  | t   | The type of MythicMob to summon. |   |
 
   
 
@@ -25,6 +25,6 @@ Examples
 This example would summon a Mythic Mob of the type "UndeadMount" and
 make the caster mount it.
 
-      CallSkeletalHorse:
-        Skills:
-        - mount{type=UndeadMount}
+  CallSkeletalHorse:
+Skills:
+- mount{type=UndeadMount}

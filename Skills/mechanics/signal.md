@@ -15,9 +15,9 @@ trigger (~onSignal:*ping*) or by the new
 Attributes
 ----------
 
-| Attribute | Aliases | Description        | Default Value |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|---------|--------------------|---------------|
-| signal    | s       | The signal to send | ping          |
+| signal| s   | The signal to send | ping  |
 
   
 
@@ -30,19 +30,19 @@ positions, upon being damaged.
 
 Mobfile:
 ```yml
-    Master:
-      Type: zombie
-      Skills:
-      - summon{m=Minion} @self ~onSpawn
-      - signal{s=ATTACK} @MobsInRadius{r=10;t=Minion} ~onDamaged
-    Minion:
-      Type: baby_zombie
-      Skills:
-      - skill{s=ShootAttacker} @NearestPlayer ~onSignal:ATTACK
+Master:
+  Type: zombie
+  Skills:
+  - summon{m=Minion} @self ~onSpawn
+  - signal{s=ATTACK} @MobsInRadius{r=10;t=Minion} ~onDamaged
+Minion:
+  Type: baby_zombie
+  Skills:
+  - skill{s=ShootAttacker} @NearestPlayer ~onSignal:ATTACK
 ```
 Skillfile:
 ```yml
-    ShootAttacker:
-      Skills:
-      - shoot{t=arrow}
+ShootAttacker:
+  Skills:
+  - shoot{t=arrow}
 ```

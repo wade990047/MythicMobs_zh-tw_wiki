@@ -1,269 +1,262 @@
-Skill Mechanics
+技能機制
 ===============
 
-Skill Mechanics (or base skills) are simple skills that are built into
-MythicMobs. You can call these basic skills by themselves in your mob's
-Skill List, or you can create your own meta-skill by combining these
-mechanics together.
+技能機制(基本技能)是內建的技能基礎，你可以在你的怪物中單獨調用這些基本技能。
 
-Some Mechanics are able to target Entities, Locations, or both! Some
-don't target anything. You control what your skill targets using a
-[Targeter][].
+你可以通過組合這些基本技能來創建自己的技能組合。
 
-Learn about the new Skill Parameter system added in MM 4.12 [here!][]
+有些技能能夠將實體、位置設為目標，有些不能設定任何目標。你可以用[目標選擇器][]控制你的技能目標
 
-Mechanics
+了解 MM v4.12 中新添加的技能參數系統 [這裡!][]
+
+基本技能
 ---------
 
-These skills usually target entities (players or other mobs), but some
-are able to target locations as well.
+這些技能通常針對實體（玩家或其他生物），但有些技能也能夠將位置設為目標。
 
-| Mechanic                  | Description                                                                              |
-|---------------------------|------------------------------------------------------------------------------------------|
-| [ActivateSpawner][]       | Activates a MythicMobs spawner at the targeted location                                  |
-| [AddTrade][]              | Changes the trades of a villager                                                          |
-| [AnimateArmorStand][]     | Animates an armorstand                                                                   |
-| [ArrowVolley][]           | Fires a volley of arrows                                                                 |
-| [Attribute][]             | Sets an attribute on the target entity, if attributable                                                                 |
-| [AttributeModifier][]     | Adds an attribute modifier to the attributable target                                                                 |
-| [AuraRemove][]            | Removes an aura from the target entity                                                   |
-| [BarCreate][]             | Creates a custom boss bar on the casting mob                                             |
-| [BarRemove][]             | Removes a custom boss bar on the casting mob                                             |
-| [BarSet][]                | Modifies a custom boss bar on the casting mob                                            |
-| [BlockDestabilize][]      | Causes the targeted blocks to fall, as if affected by gravity                                                          |
-| [BlockPhysics][]          | Triggers a block physics update at the target location                                          |
-| [BoneMeal][]              | Applies a bone meal effect to the target blocks                                          |
-| [BossBorder][]            | Creates an inescapable border around the mob                                |
-| [BreakBlock][]            | Breaks the block at the target location                                                  |
-| [BreakBlockAndGiveItem][] | Breaks the block at the target location and gives an item/droptable                      |
-| [ClearExperienceLevels][] | Clears the experience levels for the targeted players                                                     |
-| [GiveExperienceLevels][]  | Gives experience levels to the targeted players                                                     |
-| [TakeExperienceLevels][]  | Takes experience levels to the targeted players                                                     |
-| [CloseInventory][]        | Closes the target player's inventory                                                     |
-| [Command][]               | Executes a command for each target                                                       |
-| [Consume][]               | Deals damage and restores health per target hit                                          |
-| [ConsumeSlot][]           | Remove an item from a specific slot of the player's inventory                            |
-| [Disengage][]             | Causes the caster to leap backwards away from the target entity                          |
-| [Disguise][]              | Changes the caster's disguise                                                            |
-| [DisguiseModify][]        | Modifies the caster's already applied disguise                                                            |
-| [DisguiseTarget][]        | Changes the target's disguise                                                            |
-| [Undisguise][]            | Remove the caster's disguise                                                             |
-| [Dismount][]              | Makes the caster dismount whatever they're riding                                        |
-| [DisplayTransformation][] | Sets the targeted display entity's transformations                                        |
-| [ClearThreat][]           | Makes a mob clear its threat table                                                       |
-| [CurrencyGive][]          | Give money to a player. Requires Vault and a currency plugin                             |
-| [CurrencyTake][]          | Take money from a player. Requires Vault and a currency plugin                           |
-| [Damage][]                | Damages the target for an amount                                                         |
-| [BaseDamage][]            | Damages the target for a percent of the mob's damage stat                                |
-| [DamagePercent][]         | Damages the target for a percent of their health                                         |
-| [DisguiseAsBlock][]       |                                                                                          |
-| [Decapitate][]            | Drops a player head item based on target                                                 |
-| [Doppleganger][]          | Copies the appearance of the target player                                               |
-| [DropItem][]              | Drops an item or droptable at the target location                                        |
-| [EjectPassenger][]        | Ejects anything riding the caster                                                        |
-| [Equip][]                 | Causes the casting mob to equip an item                                                  |
-| [Explosion][]             | Causes an explosion                                                                      |
-| [Extinguish][]            | Removes fire ticks from the target entity                                                |
-| [FawePaste][]             | Pastes a Schematic using FAWE (Fast Async World Edit)                                    |
-| [Feed][]                  | Feeds the target player                                                                  |
-| [FillChest][]             | Fills a chest with items, or a droptable                                                 |
-| [Fly][]                   | Applies an [aura][] that allows the targeted player to fly                               |
-| [ForcePull][]             | Teleports the target to the caster                                                       |
-| [Freeze][]                | Freezes the target for the given number of ticks using the Powdered Snow freezing effect |
-| [Glow][]                  | Makes the target glow                                                                    |
-| [GiveItem][]              | Gives an item to the target                                                              |
-| [GiveItemFromSlot][]      | Gives an item to the target from the item in the given slot of caster                    |
-| [GoTo][]                  | Move toward the location of the targeter (entity or location)                            |
-| [Heal][]                  | Heals the target                                                                         |
-| [HealPercent][]           | Heals the target for a percentage of its max-health                                      |
-| [Hide][]                  | Hides the caster from the targeted player(s) for a set duration.                         |
-| [Hologram][]              | Summons a hologram to the targeted location                                              |
-| [Ignite][]                | Sets the target on fire                                                                  |
-| [JSONMessage][]           | Sends a JSON-format message to the target player(s)                                      |
-| [Jump][]                  | Causes the caster to jump                                                                |
-| [Leap][]                  | Causes the caster to leap towards the target                                             |
-| [Lightning][]             | Strikes lightning at the target                                                          |
-| [Look][]                  | Causes the caster to look at the target                                                  |
-| [Lunge][]                 | Causes the caster to lunge forward at the target                                         |
-| [Message][]               | Sends a message to the target player(s)                                                  |
-| [ModifyGlobalScore][]     | Modifies a scoreboard value of the fake player: \_\_GLOBAL\_\_                           |
-| [ModifyTargetScore][]     | Modifies a scoreboard value of the target                                                |
-| [ModifyMobScore][]     | Modifies a scoreboard value of the casting mob                                                |
-| [ModifyScore][]           | Modifies the score of a dummy player                                                     |
-| [Mount][]                 | Summons a mob for the caster and mounts it                                               |
-| [MountMe][]               | Forces the targeted entity to mount the caster                                           |
-| [MountTarget][]           | Mounts the target                                                                        |
-| [Oxygen][]                | Gives oxygen to a player target                                                          |
-| [PickUpItem][]            | Pick up the targeted item                                                                |
-| [PlayBlockBreakSound][]   | Plays a block breaking sound                                                             |
-| [PlayBlockFallSound][]    | Plays a block falling sound                                                              |
-| [PlayBlockHitSound][]     | Plays a block hit sound                                                                  |
-| [PlayBlockPlaceSound][]   | Plays a block place sound                                                                |
-| [PlayBlockStepSound][]    | Plays a block step sound                                                                 |
-| [PoseArmorStand][]        | Changes the pose of the target ArmorStand                                                |
-| [Potion][]                | Applies a potion effect to the target                                                    |
-| [PotionClear][]           | Removes all potion effects from target entity                                            |
-| [Prison][]                | Imprisons the target inside a block                                                      |
-| [Propel][]                | Propels the caster towards the target                                                      |
-| [Pull][]                  | Pulls the target towards the mob                                                         |
-| [PushButton][]            | Pushes a button at the target location                                                   |
-| [RayTrace][]              | Traces a straight line to the target                                                     |
-| [RayTraceTo][]            | Executes a skill with the result of a raytrace to the target location                    |
-| [Rally][]                 | Causes other nearby mobs to attack the target                                            |
-| [RandomMessage][]         | Sends a random message to the target player                                              |
-| [Remount][]               | Remounts the mob the caster originally spawned riding, if it is still alive              |
-| [Remove][]                | Removes the target mob                                                                   |
-| [RemoveHeldItem][]        | Removes some of the item the target player is holding                                    |
-| [RemoveOwner][]           | Removes the ownership of the target mob                                                  |
-| [RunAIGoalSelector][]     | Change the target's AIGoalSelectors                                                      |
-| [RunAITargetSelector][]   | Change the target's AITargetSelectors                                                    |
-| [Saddle][]                | Equips or remove a saddle on the target entity                                          |
-| [SendActionMessage][]     | Sends an Actionbar Message to the target player                                          |
-| [SendResourcePack][]      | Sends a Resource Pack to the target player                                               |
-| [SendTitleMessage][]      | Sends a Title/Subtitle Message to the target player                                      |
-| [SendToast][]             | Sends an achievement toast to the target player                                          |
-| [SetAI][]                 | Disables/enables the AI of the target mob                                                |
-| [SetBlockType][]          | Change block type at target location                                                     |
-| [SetCollidable][]         | Sets if the target should have a collidable hitbox or not                                                     |
-| [SetDragonPodium][]       | Sets the position of the dragon's podium at the target location                                                     |
-| [SetGameMode][]           | Sets the Game Mode of the target player                                                  |
-| [SetGliding][]            | Makes the target glide if they have elytra                                               |
-| [SetGlobalScore][]        | Sets a scoreboard value on the fake player: \_\_GLOBAL\_\_                               |
-| [SetGravity][]            | Sets whether gravity affects the target entity                                           |
-| [SetHealth][]             | Sets the health of the target entity                                                     |
-| [SetLeashHolder][]              | Changes the holder of a mobs lead                                                          |
-| [SetLevel][]              | Changes the casting mob's level                                                          |
-| [SetMaterialCooldown][]              | sets a cooldown for usable materials like ender pearls, chorus fruit, etc                                                          |
-| [SetMaxHealth][]          | Sets the max health of the target entity                                                 |
-| [SetMobColor][]           | Changes the color of the target if it is a colorable mob                                 |
-| [SetMobScore][]           | Sets a scoreboard value on the casting mob                                               |
-| [SetName][]               | Changes the target entity's name                                                         |
-| [SetRaiderPatrolBlock][]  | Sets the target raider to patrol a location                                                         |
-| [SetRaiderPatrolLeader][] | Sets the raider patrol leader                                                         |
-| [SetFaction][]            | Changes the target entity's faction                                                      |
-| [SetNoDamageTicks][]      | Sets the nodamageticks of the target                                                     |
-| [SetOwner][]              | Makes the target the owner of the casting mob                                            |
-| [SetParent][]             | Makes the target the parent of the casting mob                                            |
-| [SetProjectileDirection][]| Sets the calling projectile's movement direction to the given target                                            |
-| [SetProjectileBulletModel][]    | Sets the model of the projectile. (DISPLAY bullets only)                                                                                                   |
-| [SetRotation][]           | Sets the rotation of the target                                                          |
-| [SetTarget][]             | Sets the caster's target                                                                 |
-| [SetTargetScore][]        | Sets the score of the target                                                             |
-| [SetTongueTarget][]       | Sets the tongue target for a frog caster to the target entity                            |
-| [SetScore][]              | Sets the scoreboard value of a dummy player                                              |
-| [SetSpeed][]              | Sets the target entity's speed attribute                                                 |
-| [SetStance][]             | Sets the stance of the target mob                                                        |
-| [Shield][]                | Applies an absorb shield to the target entity                                            |
-| [ShieldBreak][]           | Forces the player to lower their shield and puts it on cooldown                          |
-| [ShieldPercent][]         | Applies an absorb shield to the target entity for a percentage of their max health       |
-| [ShootFireball][]         | Shoots a fireball at the target                                                          |
-| [ShootPotion][]           | Throws a potion at the target                                                            |
-| [ShootSkull][]            | Shoots a wither skull at the target                                                      |
-| [ShootShulkerBullet][]    | Shoots a shulker bullet at the target entity                                             |
-| [ShowEntity][]            | Shows the hidden caster to the targeted players                                          |
-| [Signal][]                | Sends a signal to a mob                                                                  |
-| [Speak][]                 | Causes the mob to speak in chat, with options for speech bubbles                         |
-| [Spring][]                | Creates a temporary spring of liquid at the target                                       |
-| [Stun][]                  | Stuns the target entity                                                                  |
-| [StopUsingItem][]         | Stops the targeted entity from using an item                                             |
-| [Suicide][]               | Causes the caster to die                                                                 |
-| [Summon][]                | Summons other mobs at the target                                                         |
-| [SummonPassenger][]                | Summons a mob to ride the target.                                                         |
-| [Swap][]                  | Swaps locations with the target                                                          |
-| [AddTag][]                | Adds a scoreboard tag to the target                                                      |
-| [RemoveTag][]             | Removes a scoreboard tag from the target                                                 |
-| [TakeItem][]              | Removes an item from the targeted player's inventory                                     |
-| [Teleport][]              | Teleports to the target                                                                  |
-| [TeleportY][]              | Teleports to the target vertically                                                                 |
-| [TeleportIn][]            | Teleports the target relative to the caster's yaw                                        |
-| [TeleportTo][]            | Teleports the target to a specified location                                             |
-| [Time][]                  | Changes the time                                                                                |
-| [Threat][]                | Modifies the mob's threat towards the target                                             |
-| [Throw][]                 | Throws the target entity                                                                 |
-| [ToggleLever][]           | Toggles a lever at the target location                                                   |
-| [ToggleSitting][]         | Toggles the sitting state for cats, dogs, foxes, and parrots.               |
-| [TrackLocation][]         | Sets the mob's tracked location to the targeted location                    |
-| [UndoPaste][]             | Undoes a previously made paste                                              |
-| [Velocity][]              | Modifies the velocity of the target entity(s)                               |
-| [Weather][]               | Modifies the weather in the target world                                    |
-| [WolfSit][]               | Forces a targeted wolf to sit.                                              |
+| 技能名稱  | 用途|
+|---------------------------|----------------------------------------------------------------------------|
+| [ActivateSpawner][]   | 在目標位置激活 MythicMobs 刷怪籠 |
+| [AddTrade][]  | 改變村民的交易內容|
+| [AnimateArmorStand][] | 設定盔甲座動畫 |
+| [ArrowVolley][]   | 同時發射許多箭矢   |
+| [Attribute][] | 設置目標實體的屬性(如果含有可設定項)   |
+| [AttributeModifier][] | 向可設定屬性的目標添加屬性倍率器  |
+| [AuraRemove][]| 移除指定目標的光環(Aura)  |
+| [BarCreate][] | 在施法生物上創建一個自定義BOSS血條|
+| [BarRemove][] | 在施法生物上移除一個自定義BOSS血條   |
+| [BarSet][]| 在施法生物上編輯一個自定義BOSS血條|
+| [BlockDestabilize][]  | 使目標方塊掉落(方塊類型需受重力影響)|
+| [BlockPhysics][]  | 在目標位置觸發方塊更新 |
+| [BoneMeal][]  | 對目標方塊使用骨粉 |
+| [BossBorder][]| 在生物周圍創建一個無法逃脫的結界   |
+| [BreakBlock][]| 破壞目標位置的方塊 |
+| [BreakBlockAndGiveItem][] | 破壞目標位置的方塊並掉落指定物品|
+| [ClearExperienceLevels][] | 清除目標玩家經驗等級   |
+| [GiveExperienceLevels][]  | 給予目標玩家經驗等級   |
+| [TakeExperienceLevels][]  | 減少目標玩家經驗等級|
+| [CloseInventory][]| 關閉目標玩家的物品欄|
+| [Command][]   | 讓目標執行指令  |
+| [Consume][]   | 擊中目標後造成傷害並恢復自身生命值|
+| [ConsumeSlot][]   | 從玩家物品欄的特定位置移除物品|
+| [Disengage][] | 使施法者向後跳躍遠離目標實體  |
+| [Disguise][]  | 改變施法者的偽裝樣貌  |
+| [DisguiseModify][]| 修改施法者已經應用的偽裝樣貌  |
+| [DisguiseTarget][]| 改變目標的偽裝樣貌  |
+| [Undisguise][]| 移除施法者的偽裝樣貌   |
+| [Dismount][]  | 使施法者取消騎乘，無論他們騎著什麼   |
+| [DisplayTransformation][] | 設置目標顯示的轉換同型實體  |
+| [ClearThreat][]   | 清除怪物威脅表  |
+| [CurrencyGive][]  | 給予玩家金錢. 需要 Vault 及經濟配合插件|
+| [CurrencyTake][]  | 拿走玩家金錢. 需要 Vault 及經濟配合插件   |
+| [Damage][]| 對目標造成傷害|
+| [BaseDamage][]| 以怪物的傷害為基礎，造成指定倍率的傷害   |
+| [DamagePercent][] | 以目標的當前血量為基礎，造成指定比例的傷害   |
+| [Decapitate][]| 掉落目標頭顱|
+| [Doppleganger][]  | 複製目標玩家的樣貌  |
+| [DropItem][]  | 在目標位置掉落指定物品   |
+| [EjectPassenger][]| 將任何騎在自己身上的實體給甩下  |
+| [Equip][] | 讓施術者裝備指定物品|
+| [Explosion][] | 爆炸|
+| [Extinguish][]| 將生物的燃燒狀態移除   |
+| [FawePaste][] | 貼上 FAWE 的選取建築 (插件:Fast Async World Edit)   |
+| [Feed][]  | 回復目標玩家飽食度|
+| [FillChest][] | 將箱子填充指定物品|
+| [Fly][]   | 施加[光環][]，使目標玩家能夠飛行  |
+| [ForcePull][] | 將目標傳送至施法者 |
+| [Freeze][]| 對目標使用粉雪凍結效果並凍結指定的時間 |
+| [Glow][]  | 讓目標發光 |
+| [GiveItem][]  | 給予目標指定物品|
+| [GiveItemFromSlot][]  | 給予目標施法者指定欄位的物品   |
+| [GoTo][]  | 向目標位置(實體或位置)移動   |
+| [Heal][]  | 回復目標血量   |
+| [HealPercent][]   | 以最大血量為基礎的比例回復目標血量|
+| [Hide][]  | 時間內對目標玩家隱藏施法者 |
+| [Hologram][]  | 在目標位置設置一個漂浮文字 |
+| [Ignite][]| 點燃目標|
+| [JSONMessage][]   | 對目標玩家送出一則 JSON 格式的訊息 |
+| [Jump][]  | 讓施法者向上跳  |
+| [Leap][]  | 讓施法者向前衝刺|
+| [Lightning][] | 對目標打雷|
+| [Look][]  | 讓施法者看著目標 |
+| [Lunge][] | 使施法者向前沖向目標   |
+| [Message][]   | 對目標玩家發送訊息|
+| [ModifyGlobalScore][] | 修改全域的記分版值： \_\_GLOBAL\_\_   |
+| [ModifyTargetScore][] | 修改玩家的記分板值   |
+| [ModifyMobScore][]| 修改怪物的記分板值  |
+| [ModifyScore][]   | 修改Dummy的記分板值|
+| [Mount][] | 為施法者生成一隻生物並騎上他 |
+| [MountMe][]   | 強制目標生物騎上自己  |
+| [MountTarget][]   | 騎上目標  |
+| [Oxygen][]| 幫目標玩家補充氧氣|
+| [PickUpItem][]| 撿起目標物品  |
+| [PlayBlockBreakSound][]   | 播放方塊破壞的聲音   |
+| [PlayBlockFallSound][]| 播放方塊墜落的聲音|
+| [PlayBlockHitSound][] | 播放跌落方塊的聲音|
+| [PlayBlockPlaceSound][]   | 播放放置方塊的聲音  |
+| [PlayBlockStepSound][]| 播放踩上方塊的聲音   |
+| [PoseArmorStand][]| 設定盔甲座的姿勢   |
+| [Potion][]| 給予目標藥水效果   |
+| [PotionClear][]   | 清除目標藥水效果  |
+| [Prison][]| 將目標囚禁在方塊內 |
+| [Propel][]| 將施法者推向目標|
+| [Pull][]  | 將目標拉向生物|
+| [PushButton][]| 在目標位置按下按鈕  |
+| [RayTrace][]  | 沿著直線到達目標|
+| [Rally][] | 使附近的其他生物一起攻擊目標   |
+| [RandomMessage][] | 對目標玩家發送隨機訊息 |
+| [Remount][]   | 重新騎乘施法者最初騎乘的生物(如果它還活著)  |
+| [Remove][]| 移除目標生物 |
+| [RemoveHeldItem][]| 移除玩家手上的物品  |
+| [RemoveOwner][]   | 移除生物的擁有者資料 |
+| [RunAIGoalSelector][] | 執行目標的 AIGoalSelectors |
+| [RunAITargetSelector][]   | 執行目標的 AITargetSelectors   |
+| [Saddle][]| 裝備/移除目標實體馬鞍|
+| [SendActionMessage][] | 對目標玩家送出提示欄訊息|
+| [SendResourcePack][]  | 對目標玩家送出材質包更新 |
+| [SendTitleMessage][]  | 對目標玩家送出標題與副標題訊息|
+| [SendToast][] | 對目標玩家送出成就框訊息 |
+| [SetAI][] | 關閉/啟用 目標生物的AI   |
+| [SetBlockType][]  | 更改目標位置的方塊類型   |
+| [SetCollidable][] | 設置目標是否應該有可碰撞的碰撞箱|
+| [SetDragonPodium][]   | 將終界龍的平台位置設置在目標位置|
+| [SetGameMode][]   | 設置目標玩家的遊戲模式 |
+| [SetGliding][]| 如果目標有鞘翅，則使目標滑翔  |
+| [SetGlobalScore][]| 設置全域記分板分數: \_\_GLOBAL\_\_  |
+| [SetGravity][]| 設置重力是否影響目標實體  |
+| [SetHealth][] | 設置目標實體的血量   |
+| [SetLeashHolder][]| 更改栓繩的持有者|
+| [SetLevel][]  | 更改施法者的生物等級|
+| [SetMaterialCooldown][]   | 設定可使用物品的冷卻時間 如:終界珍珠、歌萊果等等|
+| [SetMaxHealth][]  | 設置目標實體的最大血量|
+| [SetMobColor][]   | 設置生物的顯示顏色(如果可變更顏色)|
+| [SetMobScore][]   | 設置施法者生物的記分板分數  |
+| [SetName][]   | 改變目標實體的名稱|
+| [SetRaiderPatrolBlock][]  | 設置突襲者的巡邏位置   |
+| [SetRaiderPatrolLeader][] | 設定目標為突襲的隊長   |
+| [SetFaction][]| 改變目標實體的派系   |
+| [SetNoDamageTicks][]  | 設置目標的 NoDamageTicks|
+| [SetOwner][]  | 設定目標為施法者的擁有者   |
+| [SetParent][] | 設定目標為施法者的父母 |
+| [SetProjectileDirection][]| 設定投射物的方向   |
+| [SetProjectileBulletModel][]| 設定投射物的子彈模型. (只會顯示子彈)|
+| [SetRotation][]   | 設定目標的轉向|
+| [SetTarget][] | 設定目標  |
+| [SetTargetScore][]| 設定目標的記分板分數   |
+| [SetTongueTarget][]   | 將青蛙的舌頭目標設置為目標|
+| [SetScore][]  | 設定 Dummy 的記分板分數 |
+| [SetSpeed][]  | 設定目標實體的移動速度   |
+| [SetStance][] | 設置目標生物的姿態   |
+| [Shield][]| 對目標實體新增吸收傷害血量   |
+| [ShieldBreak][]   | 強制玩家取消護盾狀態並使其進入冷卻狀態  |
+| [ShieldPercent][] | 對目標實體新增以最大血量為基礎，取比例的吸收傷害血量   |
+| [ShootFireball][] | 射出燃燒彈|
+| [ShootPotion][]   | 丟出藥水  |
+| [ShootSkull][]| 射出凋零骷髏頭顱 |
+| [ShootShulkerBullet][]| 設出界伏蚌的子彈   |
+| [ShowEntity][]| 顯示對目標玩家隱形的實體|
+| [Signal][]| 對目標怪物發送信號|
+| [Speak][] | 使怪物在聊天中說話，並提供語言氣泡的選項   |
+| [Spring][]| 在目標位置產生臨時液體  |
+| [Stun][]  | 使目標實體暈眩|
+| [StopUsingItem][] | 停止目標實體正在使用的物品|
+| [Suicide][]   | 使施法者死亡   |
+| [Summon][]| 對目標召喚其他生物   |
+| [SummonPassenger][]   | 召喚生物騎在目標身上|
+| [Swap][]  | 和目標交換位置|
+| [AddTag][]| 對目標新增一個記分板標籤|
+| [RemoveTag][] | 對目標移除一個記分板標籤   |
+| [TakeItem][]  | 從目標玩家的物品欄中移除物品   |
+| [Teleport][]  | 傳送到目標|
+| [TeleportY][] | 傳送到目標的垂直位置   |
+| [TeleportIn][]| 相對於施法者的偏移量傳送目標  |
+| [TeleportTo][]| 傳送目標到指定位置   |
+| [Time][]  | 更改世界時間  |
+| [Threat][]| 編輯目標對於施法者威脅表的威脅值|
+| [Throw][] | 將目標實體向外丟   |
+| [ToggleLever][]   | 在指定位置拉下拉桿  |
+| [ToggleSitting][] | 使生物坐下(需有可坐下的設定項)   |
+| [TrackLocation][] | 將生物的追隨位置設置為目標位置|
+| [UndoPaste][] | 復原上一個貼上的動作 |
+| [Velocity][]  | 編輯目標實體的重力  |
+| [Weather][]   | 更改世界天氣   |
+| [WolfSit][]   | 強制使狼坐下 |
 
-Effect Mechanics
+特效技能
 ----------------
 
-Effects are mechanics that add special effects to your skills. They have
-their own page!
+特效技能可為你的技能添加特效。
 
-[View the list of Effect Mechanics by clicking here][]
+[在這裡查看所有可用特效][]
 
-Advanced/Meta Mechanics
+高級/特殊技能
 -----------------------
 
-These skill mechanics have special advanced functions, and most are used
-to call other skills. If you specify a target, all other skills called
-by these will "inherit" the targets (if applicable).
+這些技能機制具有特殊的高級功能，並且大多數用於調用其他技能。
 
-| Mechanic                | Description                                                                                                                                             |
+如果您指定一個目標，則所有其他技能都將 **繼承** 目標(在適用的條件下)。
+
+| 技能名稱| 用途 |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **[Skill][]**           | Executes a meta-skill. The butter for your bread.                                                                                                       |
-| **[VariableSkill][]**   | Executes a meta-skill. Supports placeholders.                                                                                                       |
-| [Aura][]                | Applies an aura to the targeted entity, allowing for skills to be run onStart/onTick/onEnd/Etc which all originate from the target.                     |
-| [CancelEvent][]         | Cancel the Event that triggered the current skill-tree. Only works for certain triggers.                                                                |
-| [Cast][]                | "Casts" a meta-skill using various advanced options.                                                                                                    |
-| [Chain][]               | Chains a skill between multiple targets that are near each other.                                                                                       |
-| [ChainMissile][]        | A missile that chains between entities. **Premium-Only** mechanic!                                                                                      |
-| [Delay][]               | Delays execution of the current skill list by a set number of ticks.                                                                                    |
-| [EndProjectile][]       | Terminates the projectile. Only usable in projectile mechanics.                                                                                         |
-| [GlobalCooldown][]      | Sets the caster's Global Cooldown timer                                                                                                                 |
-| [Missile][]             | Fires a homing projectile towards the target.                                                                                                           |
-| [ModifyProjectile][]    | Modifying the projectile / missile / orbital                                                                                                            |
-| [OnAttack][]            | Applies an [aura][] to the target that triggers skills when they attack                                                                                 |
-| [OnDamaged][]           | Applies an [aura][] to the target that triggers skills when they take damage                                                                            |
-| [OnShoot][]             | Applies an [aura][] to the target that triggers skills when they shoot a bow                                                                            |
-| [OnBlockBreak][]        | Applies an [aura][] to the target that triggers skills when they break a block                                                                          |
-| [OnBlockPlace][]        | Applies an [aura][] to the target that triggers skills when they place a block                                                                          |
-| [OnSwing][]             | Applies an [aura][] to the target that triggers skills when they swing / left click                                                                     |
-| [OnInteract][]          | Applies an [aura][] to the target that triggers skills when they interact / right click while holding a block or looking at an outlined block (NOT AIR) |
-| [OnJump][]              | Applies an [aura][] to the target that triggers a skill when they jump (PAPER ONLY MECHANIC)                                                            |
-| [OnDeath][]             | Applies an [aura][] to the target that triggers a skill when they die                                                                                   |
-| [Orbital][]             | Applies an [aura][] that causes a projectile to orbit around the target                                                                                 |
-| [Polygon][]             | Creates a highly-customizable polygon-shaped pattern that can execute metaskills.                                                                                                                |
-| [Projectile][]          | Fires a highly-customizable projectile towards the target                                                                                               |
-| [ProjectileVelocity][]  | Modifies the velocity of the calling Projectile or Missile                                                                                               |
-| [RandomSkill][]         | Executes a random skill from a list                                                                                                                     |
-| [SetSkillCooldown][]    | Sets the given metakill's cooldown to the given value                                                                                                   |
-| [Shoot][]               | Shoots a item-projectile at the target, similar to arrows/eggs/snowballs.                                                                               |
-| [Slash][]               | Creates a highly-customizable slash pattern that can execute metaskills.                                                                               |
-| [SudoSkill][]           | Makes the target execute a skill                                                                                                                        |
-| [Switch-Case][]         | Acts as a switch/case                                                                                                                                   |
-| [Totem][]               | Creates a static "totem" at a location that can execute other skills                                                                                    |
-| [Volley][]              | Shoots a volley of projectile-items at the target with various options                                                                                  |
-| [VariableAdd][]         | Adds an amount to a numeric variable                                                                                                                    |
-| [VariableMath][]        | Performs math on a numeric variable                                                                                                                     |
-| [SetVariable][]         | Sets the value of a variable                                                                                                                            |
-| [SetVariableLocation][] | Sets a variable to the target location                                                                                                                  |
-| [VariableUnset][]       | Unsets the variable                                                                                                                                     |
-| [VariableSubtract][]    | Subtracts an amount from a numeric variable                                                                                                             |
+| **[Skill][]**   | 技能組   |
+| **[VariableSkill][]**   | 變數技能組，可使用佔位符(Placeholder) 作為技能名稱  |
+| [Aura][]| 將光環應用於目標實體，允許在 ***onStart/onTick/onEnd*** 上運行所有源自目標的技能 |
+| [CancelEvent][] | 取消觸發當前技能組的事件，僅適用於某些觸發器  |
+| [Cast][]| 使用各種特殊設定來 **施放** 技能 |
+| [Chain][]   | 在多個目標之間形成鎖鏈並施放技能|
+| [ChainMissile][]| 在實體之間形成鎖鏈的導彈. **付費版限定技能** |
+| [Delay][]   | 與下一個技能之間延遲多少ticks  |
+| [EndProjectile][]   | 強制停止投射物 只適用於射彈(Projectile)|
+| [GlobalCooldown][]  | 設置施法者的全域冷卻  |
+| [Missile][] | 向目標發射一枚自導砲彈|
+| [ModifyProjectile][]| 編輯射彈類技能 projectile / missile / orbital |
+| [OnAttack][]| 對目標施加[光環][]，攻擊時觸發技能  |
+| [OnDamaged][]   | 對目標施加[光環][]，受傷時觸發技能 |
+| [OnShoot][] | 對目標施加[光環][]，射弓時觸發技能  |
+| [OnBlockBreak][]| 對目標施加[光環][]，破壞方塊時觸發技能|
+| [OnBlockPlace][]| 對目標施加[光環][]，放置方塊時觸發技能|
+| [OnSwing][] | 對目標施加[光環][]，左鍵/揮劍時觸發技能   |
+| [OnInteract][]  | 對目標施加[光環][]，右鍵/互動時觸發技能(對空氣無效) |
+| [OnJump][]  | 對目標施加[光環][]，跳躍時觸發技能 (伺服器端限定為 PAPER)  |
+| [OnDeath][] | 對目標施加[光環][]，死亡時觸發技能 |
+| [Orbital][] | 對目標施加[光環][]，讓射彈(Projectile)環繞在玩家周圍 |
+| [Polygon][] | 創建一個可以執行技能的自定義多邊形圖案   |
+| [Projectile][]  | 射出自定義的投射物|
+| [ProjectileVelocity][]  | 修改 射彈(Projectile)或導彈(Missle)的速度|
+| [RandomSkill][] | 隨機執行列表中的技能 |
+| [SetSkillCooldown][]| 設定技能冷卻(單位:秒)|
+| [Shoot][]   | 對目標射出物品投射物 如:箭矢/雞蛋/雪球 |
+| [Slash][]   | 創建可以執行技能的自定義斜線圖形 |
+| [SudoSkill][]   | 讓目標強制執行技能|
+| [Switch-Case][] | 讓執行技能的方式向 switch/case 一樣 |
+| [Totem][]   | 在目標位置創建一個可執行技能的靜態 **圖騰**  |
+| [Volley][]  | 使用多個選項向目標發射一連串射彈(Projectile)  |
+| [VariableAdd][] | 將指定變量添加數值|
+| [VariableMath][]| 讓指定變量進行數學運算 |
+| [SetVariable][] | 將指定變量設定數值|
+| [SetVariableLocation][] | 將指定變量設置位置   |
+| [VariableUnset][]   | 將指定變量刪除 |
+| [VariableSubtract][]| 將指定變量減少數值  |
 
-Universal Attributes
+全域細項設定
 --------------------
 
-The following attributes are applicable to all mechanics.
+下方的細項設定可適用於所有技能
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 設定名稱 | 簡化寫法   | 用途| 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| cooldown  | cd        | In seconds. Allows for decimal values.                               | 0       |
-| delay     |           | Delays the execution of the mechanic by a set number of ticks.       | 0       |
-| repeat    |           | How many times the mechanic should be repeated                       | 0       |
-| repeatInterval | repeatI | How many ticks must elapse between repetitions                    | 0       |
-| targetInterval | targetI | How many ticks must elapse between target selection               | 0       |
-| origin **[PREMIUM]** ||Change the origin to whatever targeter is supplied. `origin=@Forward{f=10}` |   |
-| forcesync | sync      | Forces the execution type to be SYNC                                 | false   |
-| power     |           | [Power](/mobs/Power) multiplier                                      | 1       |
-| fromorigin | fo       | Whether to cast the mechanic from origin                             | false   |
-| targetisorigin |      | Whether to set the target of the mechanic to be the origin           | false   |
-| targetcreative |      | Whether to target creative players                                   | false   |
-| splitPower     | powersplit | Whether to split the power between targets                     | false |
+| cooldown  | cd| 技能冷卻時間(單位:秒)  | 0   |
+| delay |   | 技能距上一技能的延遲時間(單位:ticks)   | 0   |
+| repeat|   | 技能應該要重複執行幾次   | 0   |
+| repeatInterval | repeatI | 技能每次重複執行應該要間格多久(單位:ticks)| 0   |
+| targetInterval | targetI | 目標重新選擇之間必須要間格多久(單位:ticks)   | 0   |
+| origin  ||將起點更改為提供的任何目標器. `origin=@Forward{f=10}` **付費版限定**|   |
+| forcesync | sync  | 強制執行類型為 SYNC| false   |
+| power |   | [Power](/mobs/Power) 倍率 | 1   |
+| fromorigin | fo   | 是否從起點執行技能| false   |
+| targetisorigin |  | 是否將目標設為起點   | false   |
+| targetcreative |  | 是否把創造模式的玩家設為目標 | false   |
+| splitPower | powersplit | 是否在各目標間將力量分散 | false |
 
 <!--
 Upcoming Mechanics
@@ -273,12 +266,12 @@ These mechanics are currently being worked on and will be in future
 releases of the plugin. Some mechanics listed here are already included,
 but not yet ready for use.
 
-| Mechanic           | Description                     |
+| Mechanic   | Description |
 |--------------------|---------------------------------|
 -->
 
-  [here!]: /skills/skillparametersystem
-  [Targeter]: /skills/targeters/
+  [這裡!]: /skills/skillparametersystem
+  [目標選擇器]: /skills/targeters/
   [ActivateSpawner]: /skills/mechanics/activatespawner
   [AddTrade]: /skills/mechanics/AddTrade
   [AnimateArmorStand]: /skills/mechanics/animatearmorstand
@@ -327,7 +320,7 @@ but not yet ready for use.
   [FillChest]: /skills/mechanics/fillChest
   [Fly]: /skills/mechanics/fly
   [Freeze]: /skills/mechanics/freeze
-  [aura]: /skills/mechanics/aura
+  [光環]: /skills/mechanics/aura
   [ForcePull]: /skills/mechanics/forcepull
   [Glow]: /skills/mechanics/glow
   [GiveItem]: /skills/mechanics/giveitem
@@ -363,7 +356,6 @@ but not yet ready for use.
   [Rally]: /skills/mechanics/rally
   [RandomMessage]: /skills/mechanics/randommessage
   [RayTrace]: /skills/mechanics/raytrace
-  [RayTraceTo]: /skills/mechanics/raytraceto
   [Remount]: /skills/mechanics/remount
   [Remove]: /skills/mechanics/remove
   [RemoveHeldItem]: /skills/mechanics/removehelditem
@@ -435,7 +427,7 @@ but not yet ready for use.
   [Velocity]: /skills/mechanics/velocity
   [Weather]: /skills/mechanics/weather
   [WolfSit]: /skills/mechanics/wolfsit
-  [View the list of Effect Mechanics by clicking here]: /skills/effects/
+  [在這裡查看所有可用特效]: /skills/effects/
   
   
   <!-- METAMECHANICS -->
@@ -483,7 +475,6 @@ but not yet ready for use.
   [Time]: /skills/mechanics/time
   [Hide]: /skills/mechanics/hide
   [TrackLocation]: /skills/mechanics/tracklocation
-  [DisguiseAsBlock]: /skills/mechanics/disguiseasblock
   [GiveItemFromSlot]: /skills/mechanics/giveitemfromslot
   [OnBlockBreak]: /skills/mechanics/onblockbreak
   [OnBlockPlace]: /skills/mechanics/onblockplace

@@ -1,4 +1,4 @@
-## Description
+## 用途
 Checks if the target player is in survival mode
 
 
@@ -6,12 +6,12 @@ Checks if the target player is in survival mode
 *This condition has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
   TargetConditions:
   - isinsurvivalmode true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] insurvivalmode

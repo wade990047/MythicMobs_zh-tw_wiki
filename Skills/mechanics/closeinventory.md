@@ -10,13 +10,13 @@ Attributes
 
 | Attribute | Aliases | Description | Default Value |
 |-----------|---------|-------------|---------------|
-|           |         |             |               |
+|   | | |   |
 
   
 
 Examples
 --------
 ```yaml
-      Skills:
-      - closeinventory{forcesync=true} @target ~onTimer:100
+  Skills:
+  - closeinventory{forcesync=true} @target ~onTimer:100
 ```

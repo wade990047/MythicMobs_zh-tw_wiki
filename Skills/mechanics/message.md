@@ -16,10 +16,10 @@ codes](/databases/misc/colorcodes) and
 Attributes
 ----------
 
-| Attribute | Aliases | Description                 | Default |
+| Attribute | Aliases | Description | Default |
 |-----------|---------|-----------------------------|---------|
-| message   | msg,m   | The message to send.        | None    |
-| audience  |         | the audience of the message |         |
+| message   | msg,m   | The message to send.| None|
+| audience  | | the audience of the message | |
 
 ---------------
 
@@ -28,5 +28,5 @@ Audience attribute was added in 4.12. possible audience options are: caster, tar
 Examples
 --------
 
-      Skills:
-      - message{m="<mob.name>&f<&co> Hahaha! You will all die!"} @PlayersInRadius{r=30}
+  Skills:
+  - message{m="<mob.name>&f<&co> Hahaha! You will all die!"} @PlayersInRadius{r=30}

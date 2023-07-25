@@ -16,15 +16,15 @@ This example is a Mythic Mob named Rider, riding a Horse. When damaged,
 the Rider dismounts the horse. When right clicked, the Rider will get
 back onto the horse.
 
-    Rider:
-      Mobtype: skeleton
-      Display: 'Rider'
-      Health: 12
-      Mount: TestHorse
-      Skills:
-      - dismount ~onDamaged
-      - remount ~onInteract
-    TestHorse:
-      Mobtype: horse
-      Display: 'Test Horse'
-      Health: 20
+Rider:
+  Mobtype: skeleton
+  Display: 'Rider'
+  Health: 12
+  Mount: TestHorse
+  Skills:
+  - dismount ~onDamaged
+  - remount ~onInteract
+TestHorse:
+  Mobtype: horse
+  Display: 'Test Horse'
+  Health: 20

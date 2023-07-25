@@ -22,29 +22,29 @@ Patterns
 A list of available [patterns](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/banner/PatternType.html) can be found on the spigot javadocs.
 
 <!--
-| **Patterns**             |                       |
+| **Patterns** |   |
 |--------------------------|-----------------------|
-| BASE                     | SQUARE\_BOTTOM\_LEFT  |
-| BORDER                   | SQUARE\_BOTTOM\_RIGHT |
-| CIRCLE\_MIDDLE           | SQUARE\_TOP\_LEFT     |
-| CREEPER                  | SQUARE\_TOP\_RIGHT    |
-| CROSS                    | STRAIGHT\_CROSS       |
-| CURLY\_BORDER            | STRIPE\_BOTTOM        |
-| DIAGONAL\_LEFT           | STRIPE\_CENTER        |
-| DIAGONAL\_LEFT\_MIRROR   | STRIPE\_DOWNLEFT      |
-| DIAGONAL\_RIGHT          | STRIPE\_DOWNRIGHT     |
-| DIAGONAL\_RIGHT\_MIRROR  | STRIPE\_LEFT          |
-| FLOWER                   | STRIPE\_MIDDLE        |
-| GRADIENT                 | STRIPE\_RIGHT         |
-| GRADIENT\_UP             | STRIPE\_SMALL         |
-| HALF\_HORIZONTAL         | STRIPE\_TOP           |
-| HALF\_HORIZONTAL\_MIRROR | TRIANGLE\_BOTTOM      |
-| HALF\_VERTICAL           | TRIANGLE\_TOP         |
-| HALF\_VERTICAL\_MIRROR   | TRIANGLES\_BOTTOM     |
-| MOJANG                   | TRIANGLES\_TOP        |
-| RHOMBUS\_MIDDLE          | BRICKS                |
-| SKULL                    | GLOBE                 |
-| PIGLIN                   |                       |
+| BASE | SQUARE\_BOTTOM\_LEFT  |
+| BORDER   | SQUARE\_BOTTOM\_RIGHT |
+| CIRCLE\_MIDDLE   | SQUARE\_TOP\_LEFT |
+| CREEPER  | SQUARE\_TOP\_RIGHT|
+| CROSS| STRAIGHT\_CROSS   |
+| CURLY\_BORDER| STRIPE\_BOTTOM|
+| DIAGONAL\_LEFT   | STRIPE\_CENTER|
+| DIAGONAL\_LEFT\_MIRROR   | STRIPE\_DOWNLEFT  |
+| DIAGONAL\_RIGHT  | STRIPE\_DOWNRIGHT |
+| DIAGONAL\_RIGHT\_MIRROR  | STRIPE\_LEFT  |
+| FLOWER   | STRIPE\_MIDDLE|
+| GRADIENT | STRIPE\_RIGHT |
+| GRADIENT\_UP | STRIPE\_SMALL |
+| HALF\_HORIZONTAL | STRIPE\_TOP   |
+| HALF\_HORIZONTAL\_MIRROR | TRIANGLE\_BOTTOM  |
+| HALF\_VERTICAL   | TRIANGLE\_TOP |
+| HALF\_VERTICAL\_MIRROR   | TRIANGLES\_BOTTOM |
+| MOJANG   | TRIANGLES\_TOP|
+| RHOMBUS\_MIDDLE  | BRICKS|
+| SKULL| GLOBE |
+| PIGLIN   |   |
 -->
 
 Examples

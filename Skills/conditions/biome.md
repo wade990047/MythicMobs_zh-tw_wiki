@@ -1,16 +1,16 @@
-## Description
+## 用途
 This condition tests if the target is within the given list of biomes.  
 If no namespace is provided, it will default to `minecraft:`
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases | Description               | Default          |
+| Attribute | Aliases | Description   | Default  |
 | --------- | --------| --------------------------|------------------|
-| biome     | b       | A list of biomes to check | minecraft:plains |
-| exact     | e       | Whether to match the biome exactly | true    |
+| biome | b   | A list of biomes to check | minecraft:plains |
+| exact | e   | Whether to match the biome exactly | true|
 
 
-## Examples
+## 範例
 
 ```yaml
 Conditions:

@@ -6,11 +6,11 @@ Causes a geyser of liquid to shoot out of the ground at the targeted entity or l
 
 **Attributes:**
 
-| Attribute | Alias  | Description                                       | Default Value |
+| Attribute | Alias  | Description  | Default Value |
 | --------- | ------ | ------------------------------------------------- | ------------- |
-| type      | t      | The type of liquid. Can be “water” or “lava”      | water         |
-| height    | h      | How high the geyser will go                       | N/A           |
-| speed     | s      | The speed (in ticks) of the geyser animation      | 10            |
+| type  | t  | The type of liquid. Can be “water” or “lava”  | water |
+| height| h  | How high the geyser will go   | N/A   |
+| speed | s  | The speed (in ticks) of the geyser animation  | 10|
 
 ---
 

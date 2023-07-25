@@ -1,20 +1,20 @@
-## Description
+## 用途
 Checks the size of the target entity.  
 Valid entities: `Slime`, `Magmacube`, `Phantom`
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| size      | s         | The size to check for                                                |         |
+| size  | s | The size to check for   | |
 
 
-## Examples
+## 範例
 ```yaml
   TargetConditions:
   - size{s=>1} true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] mobSize

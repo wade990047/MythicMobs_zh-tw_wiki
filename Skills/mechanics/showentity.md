@@ -1,17 +1,17 @@
-## Description
+## 用途
 Shows the hidden caster to the targeted players.
 
 
-## Attributes
+## 細項設定
 > *This mechanic has  no attributes*
 
 
-## Examples
+## 範例
 ```yaml
   Skills:
   - showEntity{} @NearestPlayer{r=10}
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] showplayer

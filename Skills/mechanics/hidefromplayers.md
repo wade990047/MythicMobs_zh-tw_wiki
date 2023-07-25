@@ -7,9 +7,9 @@ Caster will become a **vanilla** mob when it isn't a player.
 Attributes
 ----------
 
-| Attribute   | Aliases | Description       | Default Value |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-------------|---------|-------------------|---------------|
-| duration    | d       | The given duration |  |
+| duration| d   | The given duration |  |
 
 Added in MM 4.13
 
@@ -18,5 +18,5 @@ Added in MM 4.13
 Examples
 --------
 
-    Skills:
-    - hidefromplayers{d=100} ~onUse
+Skills:
+- hidefromplayers{d=100} ~onUse

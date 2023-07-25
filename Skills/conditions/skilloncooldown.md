@@ -1,15 +1,15 @@
-## Description
+## 用途
 Checks if the given skill is in cooldown for the target entity
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| skill     | s         | The metaskill to check                                               |         |
+| skill | s | The metaskill to check  | |
 
 
-## Examples
+## 範例
 ```yaml
   TargetConditions:
   - skillOnCooldown{skill=TestSkill}

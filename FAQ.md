@@ -10,11 +10,11 @@ with numerous Premium-only perks, including:
 -   Access to the latest version faster
 -   Access to development builds
 -   Math and Placeholders are usable in most skills, drop amounts, and
-    options
+options
 -   Ability to use hit-conditions in any projectile skills
 -   Ability to use custom damage types and damage modifiers
 -   Ability to use several custom AI goals/targeters that can use
-    conditions
+conditions
 
 More premium-only features will continue to be added as time goes on.
 
@@ -75,9 +75,9 @@ There are many ways of spacing out mob skills to make them less
 predictable, more spread out, and more random.
 
 -   You can use the RandomSkill skill to cast random skills on an
-    interval
+interval
 -   Use the "GCD" (global cooldown) skill along with the "OffGCD"
-    condition.
+condition.
 -   Give your skills lower chances and cooldowns.
 -   Uses stances via the setstance mechanic and the stance condition.
 

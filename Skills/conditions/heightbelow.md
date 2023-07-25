@@ -1,15 +1,15 @@
-## Description
+## 用途
 Checks if the target's Y location is below a given value
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| height    | h         | The height they must be below                                        |         |
+| height| h | The height they must be below   | |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - heightbelow{h=50} true

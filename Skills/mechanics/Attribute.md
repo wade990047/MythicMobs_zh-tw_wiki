@@ -1,17 +1,17 @@
-## Description
-Sets the base value of the targeted entity's attribute
+## 用途
+設置目標實體的屬性
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| attribute | attr      | The attribute to set                                            | GENERIC_LUCK |
-| amount    | amt, a    | The amount of the attribute                                          | 0     |
-| duration  | dur       | The duration of the attribute                                          | 0     |
+| attribute | attr  | 要設置的屬性   | GENERIC_LUCK |
+| amount| amt, a| 要設置的值 | 0 |
+| duration  | dur   | 要持續多久(單位:ticks) | 0 |
 
 
-## Examples
+## 範例
 ```yaml
 ExampleMob:
   Type: ZOMBIE
@@ -20,5 +20,5 @@ ExampleMob:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] setattribute

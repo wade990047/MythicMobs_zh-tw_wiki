@@ -6,12 +6,12 @@ Plays a sound from either the vanilla game or a resource pack at the targeted en
 
 **Attributes:**
 
-| Attribute        | Alias | Description                                                   | Default Values |
+| Attribute| Alias | Description  | Default Values |
 | ---------------- | ----- | ------------------------------------------------------------- | -------------- |
-| sound            | s     | The sound to play                                             | entity.zombie.attack_iron_door |
-| pitch            | p     | The pitch of the sound. Can be between 0.01 and 2.0           | 1.0            |
-| volume           | v     | The volume of the sound.                                      | 1.0            |
-| soundcategory    | sc    | The category at which the sound is played, useful for resourcepacks | MASTER     |
+| sound| s | The sound to play| entity.zombie.attack_iron_door |
+| pitch| p | The pitch of the sound. Can be between 0.01 and 2.0   | 1.0|
+| volume   | v | The volume of the sound. | 1.0|
+| soundcategory| sc| The category at which the sound is played, useful for resourcepacks | MASTER |
 
 A list of sound categories can be found [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/SoundCategory.html).
 

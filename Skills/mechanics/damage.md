@@ -1,23 +1,23 @@
-## Description
+## 用途
 
 Damages the targeted entity.
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| amount    | a         | The amount of damage to deal                                         | 1       |
-| ignoreArmor | ia, i   | Whether or not to ignore armor, but will still use enchantment modifiers when calculating total damage                                                                       | false   |
-| preventknockback | pkb, pk | Whether or not to prevent knockback                             | false   |
-| preventimmunity  | pi      | Whether or not to ignore immunities                             | false   |
-| element   | e, damagetype, type | Sets the type of damage to be inflicted                    |         |
-| damagecause | dc, cause | Sets the damage cause for this damage mechanic.<br/> (This option is only available for 1.17+)                                                                     | entity_attack |
-| ignoreenchantments |ignoreenchants, ie  | Whether or not to ignore enchantments when calculating total damage.<br>(This option is only available for 1.19+) | false         |
-| noanger   | na        | Whether or not to generate anger when damaging the entity            | false   |
-| ignoreinvulnerability | ignoreinvulnerable, ii | Whether or not to ignore invulnerability    | false   |
-| ignoreshield | is     | Whether or not to ignore the shield blocking on the target           | false   |
-| damageshelmet| dh     | Whether or not the helmet should be damaged                          | false   |
-| ignoreeffects| ieff   | Whether or not effects should be ignored                             | false   |
-| ignoreresistance | ir | Whether or not resistance should be ignored                          | false   |
+| amount| a | The amount of damage to deal| 1   |
+| ignoreArmor | ia, i   | Whether or not to ignore armor, but will still use enchantment modifiers when calculating total damage | false   |
+| preventknockback | pkb, pk | Whether or not to prevent knockback| false   |
+| preventimmunity  | pi  | Whether or not to ignore immunities| false   |
+| element   | e, damagetype, type | Sets the type of damage to be inflicted| |
+| damagecause | dc, cause | Sets the damage cause for this damage mechanic.<br/> (This option is only available for 1.17+)   | entity_attack |
+| ignoreenchantments |ignoreenchants, ie  | Whether or not to ignore enchantments when calculating total damage.<br>(This option is only available for 1.19+) | false |
+| noanger   | na| Whether or not to generate anger when damaging the entity| false   |
+| ignoreinvulnerability | ignoreinvulnerable, ii | Whether or not to ignore invulnerability| false   |
+| ignoreshield | is | Whether or not to ignore the shield blocking on the target   | false   |
+| damageshelmet| dh | Whether or not the helmet should be damaged  | false   |
+| ignoreeffects| ieff   | Whether or not effects should be ignored| false   |
+| ignoreresistance | ir | Whether or not resistance should be ignored  | false   |
 
 ### DamageCause
 This attribute is only available in newer MM 5.0 builds.
@@ -48,7 +48,7 @@ DamageModTest:
 ```
 These options can also be used in the "onDamaged" aura, using the `damageMods="FIRE 0.5"` attribute.
 
-## Examples
+## 範例
 ```yaml
   Skills:
   - damage{amount=20;ignoreArmor=true} @target ~onTimer:20
@@ -84,5 +84,5 @@ This skill above does "<caster.var.somevariable> * 0.5 + 1" damage
 if the varibute: <caster.var.somevariable>'s value is 5,this mechaine will does 3.5 damage
 
 
-## Aliases
+## 簡化寫法
 - [x] d

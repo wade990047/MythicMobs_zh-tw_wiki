@@ -8,9 +8,9 @@ Toggles the sitting state for cats, dogs, foxes, and parrots.
 Attributes
 ----------
 
-| Attribute | Aliases   | Description                        | Default Value |
+| Attribute | Aliases   | Description| Default Value |
 |-----------|-----------|------------------------------------|---------------|
-| setSitting | state    | Sets the sitting state             | false         |
+| setSitting | state| Sets the sitting state | false |
 
 Examples
 --------

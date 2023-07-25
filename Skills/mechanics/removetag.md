@@ -11,9 +11,9 @@ the same thing.
 Attributes
 ----------
 
-| Attribute | Aliases | Description                | Default Value |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|---------|----------------------------|---------------|
-| tag       | t       | The string-name of the tag | default       |
+| tag   | t   | The string-name of the tag | default   |
 
   
 
@@ -22,14 +22,14 @@ Examples
 
 This skill would give the casting mob the tag "Test".
 
-    TagSkill
-      Skills:
-      - removetag{t=Test} @self
+TagSkill
+  Skills:
+  - removetag{t=Test} @self
 
 This skill would only run on the mob if it had the tag, "Test".
 
-    TagTest:
-      Conditions:
-      - hastag{t=Test}
-     Skills:
-      - suicide @self
+TagTest:
+  Conditions:
+  - hastag{t=Test}
+ Skills:
+  - suicide @self

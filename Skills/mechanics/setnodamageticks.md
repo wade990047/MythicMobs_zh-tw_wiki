@@ -4,7 +4,7 @@ Sets the immunity ticks on the target. This should be delayed if used immediatel
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
-| ticks     |       | the nodamageticks to set |
+| ticks |   | the nodamageticks to set |
 
 **Examples**
 ```

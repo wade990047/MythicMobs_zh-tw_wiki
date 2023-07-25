@@ -7,10 +7,10 @@ Executes another meta-skill like the [Skill mechanic](skills/mechanics/skill), b
 The attribute "sync=true" will be inherited by any sub-skills and cannot
 be set to *false* later in a skill-tree.
 
-| Attribute | Shorthand | Description                                                         | Default |
+| Attribute | Shorthand | Description| Default |
 |-----------|-----------|---------------------------------------------------------------------|---------|
-| skill     | s         | The metaskill to be executed. Accepts [Placeholders](Skills/Placeholders). |  |
-| forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft. | false   |
+| skill | s | The metaskill to be executed. Accepts [Placeholders](Skills/Placeholders). |  |
+| forcesync | sync  | Whether to force the skill to be run synchroniously with Minecraft. | false   |
 
 
 Examples

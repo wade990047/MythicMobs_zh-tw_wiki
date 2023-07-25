@@ -8,14 +8,14 @@ The BossBar feature is used to give your custom mobs a healthbar in the same sty
 internal_mobname:
   Type: <mobtype>
   BossBar:
-    Enabled: [true/false]
-    Title: '[name]'
-    Range: [range]
-    Color: [color]
-    Style: [style]
-    CreateFog: [true/false]
-    DarkenSky: [true/false]
-    PlayMusic: [true/false]
+Enabled: [true/false]
+Title: '[name]'
+Range: [range]
+Color: [color]
+Style: [style]
+CreateFog: [true/false]
+DarkenSky: [true/false]
+PlayMusic: [true/false]
 ```
 
 Available colors for Color (case sensitive): PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE.
@@ -40,9 +40,9 @@ SuperCreeper:
   Display: '&cTest'
   Health: 20
   BossBar:
-    Enabled: true
-    Title: 'Test'
-    Range: 20
-    Color: RED
-    Style: SOLID
+Enabled: true
+Title: 'Test'
+Range: 20
+Color: RED
+Style: SOLID
 ```

@@ -5,9 +5,9 @@ Breaks the block at a target location and gives item(s). This mechanic will also
 
 Attributes
 --------------
-| Attribute | Aliases   | Description                        | Default Value |
+| Attribute | Aliases   | Description| Default Value |
 |-----------|-----------|------------------------------------|---------------|
-| dodrops   | drops, d  | Whether or not to drop the block/s | true          |
+| dodrops   | drops, d  | Whether or not to drop the block/s | true  |
 | doeffect  | effect, e | Whether or not to play the break block particles (?) | true |
 | usetool   | tool, t   | Whether or not to use the tool in the players hands (?) | true |
 | fakelooting | fl | Plays the pickup-item animation from the origin | false |

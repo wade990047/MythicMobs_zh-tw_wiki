@@ -1,12 +1,12 @@
-## Description
+## 用途
 Checks if the target mob has an active [Global Cooldown](/skills/mechanics/globalcooldown)
 
 
-## Attributes
+## 細項設定
 > *This condition has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - offgcd true

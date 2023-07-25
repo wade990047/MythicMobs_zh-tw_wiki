@@ -1,15 +1,15 @@
-## Description
+## 用途
 Checks how many children the caster has.
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| amount    | a         | The amount of children to check for. Can accept ranged values.       | 1       |
+| amount| a | The amount of children to check for. Can accept ranged values.   | 1   |
 
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - children{a=1} true

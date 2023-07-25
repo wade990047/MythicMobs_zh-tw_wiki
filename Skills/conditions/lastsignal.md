@@ -1,15 +1,15 @@
-## Description
+## 用途
 Matches the last signal received by the target mob
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| signal    | s         | The signal to match                                                  | DEFAULT |
+| signal| s | The signal to match | DEFAULT |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - lastsignal{s=fireCannonShot} true

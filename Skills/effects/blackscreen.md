@@ -2,15 +2,15 @@
 ----
 Makes the player see with blindness.
 
-### Attributes
+### 細項設定
 
 | Attribute | Aliases |	Description | Default Value |
 |--|--|--|--|
 |duration|d|The time (in ticks) that the effect is active|20|
 
-### Examples
+### 範例
 
 Blinds players when the mob teleports
 
-    BlackScreen:
-      - blackscreen{d=2} @PlayersInRadius{r=100} ~onTeleport
+BlackScreen:
+  - blackscreen{d=2} @PlayersInRadius{r=100} ~onTeleport

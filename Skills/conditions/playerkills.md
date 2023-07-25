@@ -1,15 +1,15 @@
-## Description
+## 用途
 Matches how many players the target mob has killed.
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| kills     | k         | The number range to match                                            | 0       |
+| kills | k | The number range to match   | 0   |
 
 
-## Examples
+## 範例
 
 ```yaml
   Conditions:

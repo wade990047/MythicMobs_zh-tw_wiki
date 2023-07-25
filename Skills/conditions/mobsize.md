@@ -4,9 +4,9 @@ Checks the size of an entity that can have its size changed (Slimes, Magma_cubes
 
 **Attributes:**
 
-| Attribute | Aliases        | Description               |
+| Attribute | Aliases| Description   |
 | --------- | -------------  | ------------------------- |
-| size    | s | The size range to check |
+| size| s | The size range to check |
 
 **Examples**
 

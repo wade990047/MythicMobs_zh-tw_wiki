@@ -17,10 +17,10 @@ Syntax
 The attribute "sync=true" will be inherited by any sub-skills and cannot
 be set to *false* later in a skill-tree.
 
-| Attribute | Shorthand | Description                                                         | Default |
+| Attribute | Shorthand | Description| Default |
 |-----------|-----------|---------------------------------------------------------------------|---------|
-| skill     | s         | The metaskill to be executed.                                       |         |
-| forcesync | sync      | Whether to force the skill to be run synchroniously with Minecraft. | false   |
+| skill | s | The metaskill to be executed.  | |
+| forcesync | sync  | Whether to force the skill to be run synchroniously with Minecraft. | false   |
 
 Cooldown
 --------
@@ -74,8 +74,8 @@ Examples
   - skill{sync=true;s=flamethrower} @TargetLocation ~onTimer:200
   - skill:Onemechainc @Target ~onDamaged
   - skill
-      {
-      skill=leafs;
-      sync=true
-      }
+  {
+  skill=leafs;
+  sync=true
+  }
 ```

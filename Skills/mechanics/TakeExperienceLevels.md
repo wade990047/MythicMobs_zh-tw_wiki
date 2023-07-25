@@ -1,14 +1,14 @@
-## Description
+## 用途
 Takes experience levels to the targeted players
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| amount    | a         | The amount of levels to take                                         | 0       |
+| amount| a | The amount of levels to take| 0   |
 
 
-## Examples
+## 範例
 ```yaml
 ExampleMob:
   Type: ZOMBIE
@@ -17,5 +17,5 @@ ExampleMob:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] takeexplevels

@@ -11,10 +11,10 @@ MULTIPLY, and DIVIDE.
 Attributes
 ----------
 
-| Attribute | Aliases | Description                            | Default Value |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|---------|----------------------------------------|---------------|
-| action    | a       | Type of operation to perform           | SET           |
-| level     | l       | Amount of levels used in the operation | 1             |
+| action| a   | Type of operation to perform   | SET   |
+| level | l   | Amount of levels used in the operation | 1 |
 
   
 
@@ -23,10 +23,10 @@ Examples
 
 This will set the mob level to 3 when it spawns
 ```yaml
-    - setlevel{a=set;l=3} @self ~onSpawn
+- setlevel{a=set;l=3} @self ~onSpawn
 ```
 
 This will increase the mob level by 1 each time it kills a player
 ```yaml
-    - setlevel{a=add;l=1} ~onKillPlayer
+- setlevel{a=add;l=1} ~onKillPlayer
 ```

@@ -1,40 +1,36 @@
 Mechanic: Activate Spawner
 --------------------------
 
-Activates a MythicMobs [spawner](Spawners), causing it to spawn mobs. Will not
-override any conditions or options set on the spawner.
+在目標位置激活 MythicMobs 刷怪籠 [刷怪籠](Spawners)，因為這項技能而生成的怪物將無視刷怪籠的條件和設定.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases    | Description                                                                                                    | Default Value |
+| 設定項| 簡化寫法| 用途 | 預設值 |
 |-----------|------------|----------------------------------------------------------------------------------------------------------------|---------------|
-| spawners  | spawner, s | The name of the spawner(s) to activate. This can accept groups and wildcards also using the appropriate syntax | NONE          |
+| spawners  | spawner, s | 要激活的生成器的名稱。這也可以使用適當的語法接受群組和佔位符 | NONE          |
 
   
 
-Special Notes
+特別小筆記
 -------------
 
-Best used in conjunction with setting the "useTimer" attribute on
-spawners to "false".
+最好與設置"useTimer"屬性結合使用刷怪籠並設置為"false"
 
-Examples
+範例
 --------
 
-This would activate the spawner named "BossAdd"
+這會啟動名為 "BossAdd" 的刷怪籠
 ```yaml
     Skills:
     - activatespawner{spawner=BossAdd}
 ```
-This example would activate all spawners in the group "Castle"
+這會啟動所有在組 "Castle" 內的刷怪籠
 ```yaml
     Skills:
     - activatespawner{spawner=g:Castle}
 ```
-This example would activate all spawners starting with
-"DungeonBoss1Spawner" (i.e. DungeonBoss1Spawner1, DungeonBoss1Spawner2,
-etc)
+這會啟動所有名稱前為 "DungeonBoss1Spawner" 的所有刷怪籠 (例如: DungeonBoss1Spawner1, DungeonBoss1Spawner2)
 ```yaml
     Skills:
     - activatespawner{spawner=DungeonBoss1Spawner*}

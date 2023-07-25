@@ -6,5 +6,5 @@ Makes the target mount the caster mob.
 Examples
 --------
 
-      Skills:
-      - mountme @trigger ~onDamaged
+  Skills:
+  - mountme @trigger ~onDamaged

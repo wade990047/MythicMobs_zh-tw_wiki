@@ -1,26 +1,27 @@
-## Description
+## 用途
 
-Fires a volley of arrows towards the target with a number of
-configurable properties.
+同時發射許多箭矢
 
 
-## Attributes
-| Attribute   | Aliases | Description                                                | Default |
+## 細項設定
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-------------|---------|------------------------------------------------------------|---------|
-| amount      | a       | The number of arrows in the volley                         | 20      |
-| spread      | s       | How spread out the arrows are                              | 45      |
-| velocity    | v       | The velocity of the arrows                                 | 20      |
-| fireTicks   | f       | The duration hit entities will burn for in ticks           | 0       |
-| removeDelay | rd      | The time the arrows will stay before disappearing in ticks | 200     |
-| canPickup   | pickup  | Whether the arrows can be picked up by players             | true    |
+| amount  | a   | 要發射多少隻箭矢 | 20  |
+| spread  | s   | 箭矢的發散程度 | 45  |
+| velocity| v   | 箭矢的速度| 20  |
+| fireTicks   | f   | 被箭矢擊中後會燃燒多久   | 0   |
+| removeDelay | rd  | 在箭矢消失前會停留多久(單位:ticks) | 200 |
+| canPickup   | pickup  | 是否讓箭矢被玩家撿起 | true|
   
-Note that spread values must be very high to be noticed!
+請注意，發散值必須非常高才能被注意到！
 
-## Examples
+## 範例
 
-This example will fire 20 arrows, with a spread of 25, at a speed of 10,
-settings anything they impact on fire for 50 ticks (2.5 seconds), and
-then remove themselves after 200 ticks (10 seconds).
+技能將發射 20 支箭，發散程度為 25，速度為 10，
+
+被擊中的任何實體，使其著火 50 ticks(2.5秒)，以及
+
+然後在 200 ticks(10 秒)後自行移除。
 ```yaml
   Skills:
   - arrowvolley{a=20;s=25;v=10;f=50;rd=200} @Target

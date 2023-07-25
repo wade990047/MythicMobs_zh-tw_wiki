@@ -5,7 +5,7 @@ Creates a particle orbital effect, where the particle will orbit around the targ
 
 A list of particle types can be found [here](/skills/effects/particles/types).
 
-### Attributes
+### 細項設定
 ----
 
 #### Particle Attributes
@@ -18,10 +18,10 @@ Options for regular particles are applicable.
 | radius | r  | The radius at which the particle orbits  | 4 |
 | points | p | How many points make up the circle | 20 |
 | ticks | t | How many ticks this will last | 100 |
-| interval | in,i  | Tick speed at which the particle moves (faster tick rate=slower movement) | 10     |
-| rotationX | rotX,rX  | Rotates the orbit around the X axis | 0     |
-| rotationY | rotY,rY  | Rotates the orbit around the Y axis | 0     |
-| rotationZ | rotZ,rZ  | Rotates the orbit around the Z axis | 0     |
+| interval | in,i  | Tick speed at which the particle moves (faster tick rate=slower movement) | 10 |
+| rotationX | rotX,rX  | Rotates the orbit around the X axis | 0 |
+| rotationY | rotY,rY  | Rotates the orbit around the Y axis | 0 |
+| rotationZ | rotZ,rZ  | Rotates the orbit around the Z axis | 0 |
 | offsetX | offx,ox   | The X offset of the orbit's center | 0 |
 | offsetY | offy,oy   | The Y offset of the orbit's center | 0 |
 | offsetZ | offz,oz   | The Z offset of the orbit's center | 0 |
@@ -33,4 +33,4 @@ Options for regular particles are applicable.
 Example
 -------
 
-    - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=flame} @self ~onSpawn
+- effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=flame} @self ~onSpawn

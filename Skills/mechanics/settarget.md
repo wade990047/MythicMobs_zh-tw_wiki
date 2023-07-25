@@ -7,11 +7,11 @@ If using threat tables, will increase threat to the threshold to change targets 
 
 | Attribute | Alias | Description |
 | --------- | ----- | ----------- |
-| none      | none  | none        |
+| none  | none  | none|
 
 Examples
 --------
 ```yaml
-      Skills:
-      - setTarget @trigger ~onInteract
+  Skills:
+  - setTarget @trigger ~onInteract
 ```

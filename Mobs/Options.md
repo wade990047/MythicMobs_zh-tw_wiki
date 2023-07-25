@@ -3,8 +3,8 @@ All options available when creating a mob. Most of these options go under the `O
 Dummy:
   Type: skeleton
   Options:
-    MovementSpeed: 0.3
-    PreventSunburn: true
+MovementSpeed: 0.3
+PreventSunburn: true
 ```
 
 ## Universal options
@@ -23,8 +23,8 @@ Options:
 <!--
 **AttackSpeed: \[number\]**
 
-      * Sets the attack speed of the mob.
-      * Defaults to vanilla attack speed for the respective mobs. (Doesn't do anything.)
+  * Sets the attack speed of the mob.
+  * Defaults to vanilla attack speed for the respective mobs. (Doesn't do anything.)
 -->
 
 #### Invisible
@@ -244,7 +244,7 @@ ExampleMob:
   Type: COW
   Health: 100
   Options:
-    ReviveHealth: 50
+ReviveHealth: 50
   Skills:
   - cancelevent{sync=true} @self ~onDeath
 ```
@@ -254,7 +254,7 @@ ExampleMob:
   Type: COW
   Health: 100  
   Options:
-    ReviveHealth: -1
+ReviveHealth: -1
   Skills:
   - cancelevent{sync=true} @self ~onDeath
 ```
@@ -290,7 +290,7 @@ Sets whether an armor stand can move. Defaults to `true` and requires PaperSpigo
 Dummy:
   Type: ARMOR_STAND
   Options:
-    CanMove: true
+CanMove: true
 ```
 
 #### CanTick
@@ -299,7 +299,7 @@ Sets whether an armor stand can tick. Defaults to `true` and requires PaperSpigo
 Dummy:
   Type: ARMOR_STAND
   Options:
-    CanTick: true
+CanTick: true
 ```
 
 #### HasArms
@@ -308,7 +308,7 @@ Sets whether an armor stand has arms. Defaults to `false`.
 Dummy:
   Type: ARMOR_STAND
   Options:
-    HasArms: true
+HasArms: true
 ```
 
 #### HasBasePlate
@@ -317,7 +317,7 @@ Sets whether an armor stand has a baseplate. Defaults to `true`
 Dummy:
   Type: ARMOR_STAND
   Options:
-    HasBasePlate: true
+HasBasePlate: true
 ```
 
 #### HasGravity
@@ -326,7 +326,7 @@ Sets whether the armor stand is affected by gravity. Defaults to `true`.
 Dummy:
   Type: ARMOR_STAND
   Options:
-    HasGravity: true
+HasGravity: true
 ```
 
 #### Invisible
@@ -335,7 +335,7 @@ Sets whether the armor stand is invisible. Defaults to `false`.
 Dummy:
   Type: ARMOR_STAND
   Options:
-    Invisible: true
+Invisible: true
 ```
 
 #### ItemBody
@@ -344,7 +344,7 @@ Designates the [Mythic Item](/Items/Items) that should go in the body/chest slot
 Dummy:
   Type: ARMOR_STAND
   Options:
-    ItemBody: AN_EXAMPLE_CHESTPLATE
+ItemBody: AN_EXAMPLE_CHESTPLATE
 ```
 
 #### ItemFeet
@@ -353,7 +353,7 @@ Designates the [Mythic Item](/Items/Items) that should go in the feet slot of an
 Dummy:
   Type: ARMOR_STAND
   Options:
-    ItemFeet: AN_EXAMPLE_BOOTS
+ItemFeet: AN_EXAMPLE_BOOTS
 ```
 
 #### ItemHand
@@ -362,7 +362,7 @@ Designates the [Mythic Item](/Items/Items) that should go in the main hand slot 
 Dummy:
   Type: ARMOR_STAND
   Options:
-    ItemHand: AN_EXAMPLE_SWORD
+ItemHand: AN_EXAMPLE_SWORD
 ```
 
 #### ItemOffhand
@@ -371,7 +371,7 @@ Designates the [Mythic Item](/Items/Items) that should go in the off hand slot o
 Dummy:
   Type: ARMOR_STAND
   Options:
-    ItemOffhand: AN_EXAMPLE_STICK
+ItemOffhand: AN_EXAMPLE_STICK
 ```
 
 #### ItemHead
@@ -380,7 +380,7 @@ Designates the [Mythic Item](/Items/Items) that should go in the helmet slot of 
 Dummy:
   Type: ARMOR_STAND
   Options:
-    ItemHead: AN_EXAMPLE_HELMET
+ItemHead: AN_EXAMPLE_HELMET
 ```
 
 #### ItemLegs
@@ -389,7 +389,7 @@ Designates the [Mythic Item](/Items/Items) that should go in the leggings slot o
 Dummy:
   Type: ARMOR_STAND
   Options:
-    ItemLegs: AN_EXAMPLE_PANTS
+ItemLegs: AN_EXAMPLE_PANTS
 ```
 
 #### Marker
@@ -399,7 +399,7 @@ making it completely non-interactable. Defaults to `false`.
 Dummy:
   Type: ARMOR_STAND
   Options:
-    Marker: false
+Marker: false
 ```
 
 #### Small
@@ -408,7 +408,7 @@ Sets the armor stand to small variant. Defaults to `false`.
 Dummy:
   Type: ARMOR_STAND
   Options:
-    Small: true
+Small: true
 ```
 
 #### Pose
@@ -420,391 +420,391 @@ These will go under the `Pose` section instead of the `Options` section.
 Mob:
   Type: armor_stand
   Pose:
-    Head: 0,50,0
+Head: 0,50,0
 ```
 ###### Body
 ```yml
 Mob:
   Type: armor_stand
   Pose:
-    Body: 0,10,10
+Body: 0,10,10
 ```
 ###### LeftArm
 ```yml
 Mob:
   Type: armor_stand
   Pose:
-    Body: 0to360,0,0
+Body: 0to360,0,0
 ```
 ###### RightArm
 ```yml
 Mob:
   Type: armor_stand
   Pose:
-    RightArm: 0to90,0,0
+RightArm: 0to90,0,0
 ```
 ###### LeftLeg
 ```yml
 Mob:
   Type: armor_stand
   Pose:
-    LegLeg: 0,0to80,0
+LegLeg: 0,0to80,0
 ```
 ###### RightLeg
 ```yml
 Mob:
   Type: armor_stand
   Pose:
-    RightLeg: 20,25,0
+RightLeg: 20,25,0
 ```
 
 #### Bees
 
 **Anger: \[number\]**
 
-      * Sets the time in ticks until bee anger ends.
-      * If set to 0 the bee will not be angry.
-      * Defaults to 0.
+  * Sets the time in ticks until bee anger ends.
+  * If set to 0 the bee will not be angry.
+  * Defaults to 0.
 
 **HasNectar: \[true/false\]**
 
-      * Whether the bee is carrying pollen.
-      * Defaults to false.
+  * Whether the bee is carrying pollen.
+  * Defaults to false.
 
 **HasStung: \[true/false\]**
 
-      * Whether the bee has stung an entity.
-      * Defaults to false.
+  * Whether the bee has stung an entity.
+  * Defaults to false.
 
 #### Cat
 
 **CatType: \[type\]**
 
-     * Sets the type of cat
-     * Types can be ALL_BLACK, BLACK, BRITISH_SHORTHAIR, CALICO, PERSIAN, JELLIE, RAGDOLL, RED, SIAMESE, TABBY or WHITE.
+ * Sets the type of cat
+ * Types can be ALL_BLACK, BLACK, BRITISH_SHORTHAIR, CALICO, PERSIAN, JELLIE, RAGDOLL, RED, SIAMESE, TABBY or WHITE.
 
 **CollarColor: \[color\]**
 
-     * Sets the color of the cat's collar.
-     * Available colors are: BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.
+ * Sets the color of the cat's collar.
+ * Available colors are: BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.
 
 #### Chicken
 
 **Jockey: \[true/false\]**
 
-      * Wether or not the chicken is a chickenjockey.
-      * Doesn't really do anything, but it's nice to have options.
-      * Defaults to false.
+  * Wether or not the chicken is a chickenjockey.
+  * Doesn't really do anything, but it's nice to have options.
+  * Defaults to false.
 
 #### Creepers
 
 **ExplosionRadius: \[number\]**
 
-      * Sets the radius/power of the creepers explosion
-      * Defaults to 3
+  * Sets the radius/power of the creepers explosion
+  * Defaults to 3
 
 **FuseTicks: \[number\]**
 
-      * Sets the number of ticks it takes for creepers to explode.
-      * Defaults to 30
+  * Sets the number of ticks it takes for creepers to explode.
+  * Defaults to 30
 
 **SuperCharged: \[true/false\]**
 
-      * Wether the creeper should spawn as a super charged creeper.
-      * Defaults to false.
+  * Wether the creeper should spawn as a super charged creeper.
+  * Defaults to false.
 
 **PreventSuicide: \[true/false\]**
 
-      * Prevents creepers from dying upon exploding. Set `mobGriefing` gamerule to true for this option to work.
-      * Defaults to false.
+  * Prevents creepers from dying upon exploding. Set `mobGriefing` gamerule to true for this option to work.
+  * Defaults to false.
 
 #### Enderman
 
 **PreventTeleport: \[true/false\]**
 
-      * Meant for Endermen but //might// work on other mobs. May break teleport skills!
-      * Defaults to false.
+  * Meant for Endermen but //might// work on other mobs. May break teleport skills!
+  * Defaults to false.
 
 **HeldBlock: `[Material]`**
 
-      * Sets the block that the Enderman is carrying.
+  * Sets the block that the Enderman is carrying.
 
 #### Experience_orb
 
 **Experience: \[Number\]**
 
-      * Sets the amount of experience give by the experience orb mob.
-      * Defaults to 1
+  * Sets the amount of experience give by the experience orb mob.
+  * Defaults to 1
 
 #### Falling Blocks
 
 **Block: \[Material type\]**
 
-      * Determines the type of the block.
-      * Defaults to STONE
+  * Determines the type of the block.
+  * Defaults to STONE
 
 **BlockData: \[Number\]**
 
-      * Additional field for inputting blockdata.
-      * Defaults to 0
+  * Additional field for inputting blockdata.
+  * Defaults to 0
 
 **DropsItem: \[true/false\]**
 
-      * Drops the falling block's item.
-      * Defaults to true
+  * Drops the falling block's item.
+  * Defaults to true
 
 **HurtsEntities: \[true/false\]**
 
-      * Damages entities on impact.
-      * Defaults to true
+  * Damages entities on impact.
+  * Defaults to true
 
 #### Fox
 
 **FoxType: \[Entity type\]**
 
-      * Determines the type of the fox. 
-      * Can be RED or SNOW
-      * Defaults to RED
+  * Determines the type of the fox. 
+  * Can be RED or SNOW
+  * Defaults to RED
 
 #### Frog
 **Type: \[Entity type\]**
 
-      * Determines the type of the Frog
-      * Can be WARM, COLD or TEMPERATE
+  * Determines the type of the Frog
+  * Can be WARM, COLD or TEMPERATE
 
 #### Hoglin
 
 **ImmuneToZombification: \[true/false\]**
 
-      * Whether or not the hoglin is immune to being zombified
-      * Defaults to false
+  * Whether or not the hoglin is immune to being zombified
+  * Defaults to false
 
 **Huntable: \[true/false\]**
 
-      * Whether the hoglin is able to be hunted by piglins.
-      * Defaults to true
+  * Whether the hoglin is able to be hunted by piglins.
+  * Defaults to true
 
 #### Horses, Donkeys, and Mules
 
 **HorseArmor: \[armor\_type\]**
 
-      * Used for horses to set the type of armor they have on.
-      * Can be iron, gold, or diamond
-      * [armor_type] must be in lower case
+  * Used for horses to set the type of armor they have on.
+  * Can be iron, gold, or diamond
+  * [armor_type] must be in lower case
 
 **CarryingChest: \[true/false\]**
 
-      * Used for donkeys to set whether they are carrying a chest or not.
-      * Defaults to false.
+  * Used for donkeys to set whether they are carrying a chest or not.
+  * Defaults to false.
 
 **HorseColor: \[horse\_color\]**
 
-      * Sets color of the horse
-      * Colors Must be uppercase,can be BLACK, BROWN, CHESTNUT, CREAMY, DARK_BROWN, GRAY or WHITE
+  * Sets color of the horse
+  * Colors Must be uppercase,can be BLACK, BROWN, CHESTNUT, CREAMY, DARK_BROWN, GRAY or WHITE
 
 **Saddled: \[true/false\]**
 
-      * Used for horses to set whether they are saddled or not.
-      * Defaults to false.
+  * Used for horses to set whether they are saddled or not.
+  * Defaults to false.
 
 **HorseStyle: \[horse\_style\]**
 
-      * Sets the style of the horse.
-      * Styles can be BLACK_DOTS, WHITE, WHITE_DOTS, WHITEFIELD, NONE
+  * Sets the style of the horse.
+  * Styles can be BLACK_DOTS, WHITE, WHITE_DOTS, WHITEFIELD, NONE
 
 **Tamed: \[true/false\]**
 
-      * Used for horses to set whether they are tamed or not.
-      * Defaults to false.
+  * Used for horses to set whether they are tamed or not.
+  * Defaults to false.
 
 **HorseType: \[type\]**
 
-      * Defines the type of horse
-      * Can be UNDEAD_HORSE, SKELETON_HORSE, MULE, DONKEY or HORSE
-      * Defaults to HORSE
-      * Removed in MC 1.11+, use [[databases/mobs/types|mob type]] instead.
+  * Defines the type of horse
+  * Can be UNDEAD_HORSE, SKELETON_HORSE, MULE, DONKEY or HORSE
+  * Defaults to HORSE
+  * Removed in MC 1.11+, use [[databases/mobs/types|mob type]] instead.
 
 #### Iron Golem
 
 **PlayerCreated: \[true/false\]**
 
-      * Acts as if the player built the mob.
-      * Defaults to false.
+  * Acts as if the player built the mob.
+  * Defaults to false.
 
 #### Panda
 
 **MainGene: \[Gene Type\]**
 
-      * Sets the main gene that the panda can pass on to it's offspring.
-      * Can be NORMAL, AGGRESSIVE, LAZY, WORRIED, PLAYFUL, WEAK, BROWN
-      * Defaults to NORMAL
+  * Sets the main gene that the panda can pass on to it's offspring.
+  * Can be NORMAL, AGGRESSIVE, LAZY, WORRIED, PLAYFUL, WEAK, BROWN
+  * Defaults to NORMAL
 
 **HiddenGene: \[Gene Type\]**
 
-      * Sets the hidden gene that the panda can pass on to it's offspring.
-      * Can be NORMAL, AGGRESSIVE, LAZY, WORRIED, PLAYFUL, WEAK, BROWN
-      * Defaults to NORMAL
+  * Sets the hidden gene that the panda can pass on to it's offspring.
+  * Can be NORMAL, AGGRESSIVE, LAZY, WORRIED, PLAYFUL, WEAK, BROWN
+  * Defaults to NORMAL
 
 #### Piglin
 
 **AbleToHunt: \[true/false\]**
 
-      * Whether or not the piglin is able to hunt
-      * Defaults to false
+  * Whether or not the piglin is able to hunt
+  * Defaults to false
 
 **ImmuneToZombification: \[true/false\]**
 
-      * Whether or not the piglin is immune to being zombified
-      * Defaults to false
+  * Whether or not the piglin is immune to being zombified
+  * Defaults to false
 
 #### Piglin Brutes
 
 **ImmuneToZombification: \[true/false\]**
 
-      * Whether or not the piglin is immune to being zombified
-      * Defaults to false
+  * Whether or not the piglin is immune to being zombified
+  * Defaults to false
 
 #### Pigs
 
 **Saddled: \[true/false\]**
 
-      * Wether or not the pig spawns with a saddle.
-      * Defaults to false
+  * Wether or not the pig spawns with a saddle.
+  * Defaults to false
 
 #### Rabbits
 
 **RabbitType: \[rabbit\_type\]**
 
-      * Sets type of rabbit
-      * Types can be BLACK, BLACK_AND_WHITE, BROWN, GOLD, SALT_AND_PEPPER, THE_KILLER_BUNNY or WHITE
+  * Sets type of rabbit
+  * Types can be BLACK, BLACK_AND_WHITE, BROWN, GOLD, SALT_AND_PEPPER, THE_KILLER_BUNNY or WHITE
 
 **Baby: \[true/false\]**
 
-      * Not sure why this exists.
-      * Defaults to false.
+  * Not sure why this exists.
+  * Defaults to false.
 
 **IsKillerBunny: \[true/false\]**
 
-      * Sets the rabbit as the Killer Bunny.
+  * Sets the rabbit as the Killer Bunny.
 
 #### Sheep
 
 **Sheared: \[true/false\]**
 
-      * Sheep is already sheared.
-      * Defaults to false.
+  * Sheep is already sheared.
+  * Defaults to false.
 
 #### Silverfish
 
 **PreventBlockInfection: \[true/false\]**
 
-      * Prevent silverfish from infecting blocks.
-      * Defaults to true.
+  * Prevent silverfish from infecting blocks.
+  * Defaults to true.
 
 #### Snow Golem
 
 **Derp: \[true/false\]**
 
-      * Snow Golem is already sheared pumpkin
-      * Defaults to false.
+  * Snow Golem is already sheared pumpkin
+  * Defaults to false.
 
 **PreventSnowFormation: \[true/false\]**
 
-      * Prevent snowmen from creating snow.
-      * Defaults to false.
+  * Prevent snowmen from creating snow.
+  * Defaults to false.
 
 #### TNT
 
 **FuseTicks: \[number\]**
 
-      * How long the TNT takes to explode
-      * Defaults to -1 (instantly)
+  * How long the TNT takes to explode
+  * Defaults to -1 (instantly)
 
 **ExplosionYield: \[number\]**
 
-      * Determines the strength of the explosion
-      * Defaults to -1 (none)
+  * Determines the strength of the explosion
+  * Defaults to -1 (none)
 
 **Incendiary: \[true/false\]**
 
-      * Wether the explosion is capable of starting fires
-      * Defaults to false
+  * Wether the explosion is capable of starting fires
+  * Defaults to false
 
 #### Tropical Fish
 
 **Pattern: \[type\]**
 
-      * Sets the shape of the fish
-      * Types can be BETTY, BLOCKFISH, BRINELY, CLAYFISH, DASHER, FLOPPER, GLITTER, KOB, SNOOPER, SPOTTY, STRIPEY, or SUNSTREAK.
+  * Sets the shape of the fish
+  * Types can be BETTY, BLOCKFISH, BRINELY, CLAYFISH, DASHER, FLOPPER, GLITTER, KOB, SNOOPER, SPOTTY, STRIPEY, or SUNSTREAK.
 
 **BodyColor: \[color\]**
 
-      * Sets the primary color of the fish
-      * Color can be BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.
+  * Sets the primary color of the fish
+  * Color can be BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.
 
 **PatternColor: \[color\]**
 
-      * Sets the secondary color of the fish
-      * Color can be BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.
+  * Sets the secondary color of the fish
+  * Color can be BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE, LIGHT_GRAY, LIME, MAGENTA, ORANGE, PINK, PURPLE, RED, WHITE, or YELLOW.
 
 #### Villagers
 
 **HasTrades: \[true/false\]**
 
-      * Villager can be traded with.
-      * Defaults to false.
+  * Villager can be traded with.
+  * Defaults to false.
 Check out [Trades](/Mobs/Mobs#trades)
 
 **Profession: \[profession\]**
 
-      * Specifies the profession of the villager type mob.
-      * Can be ARMORER, BUTCHER, CARTOGRAPHER, CLERIC, FARMER, FISHERMAN, FLETCHER, LEATHERWORKER, LIBRARIAN, MASON, NITWIT, NONE, SHEPHERD, TOOLSMITH, WEAPONSMITH.
-      * Villagers without this option will roll a random profession on their initial spawn.
-      * Examples:
-        Profession: MASON
+  * Specifies the profession of the villager type mob.
+  * Can be ARMORER, BUTCHER, CARTOGRAPHER, CLERIC, FARMER, FISHERMAN, FLETCHER, LEATHERWORKER, LIBRARIAN, MASON, NITWIT, NONE, SHEPHERD, TOOLSMITH, WEAPONSMITH.
+  * Villagers without this option will roll a random profession on their initial spawn.
+  * Examples:
+Profession: MASON
 
 **Type: \[type\]**
 
-      * Represents Villager type, usually corresponding to what biome they spawn in.
-      * Can be DESERT, JUNGLE, PLAINS, SAVANNA, SNOW, SWAMP, TAIGA.
-      * Defaults to PLAINS.
-      * Examples:
-        Type: PLAINS
+  * Represents Villager type, usually corresponding to what biome they spawn in.
+  * Can be DESERT, JUNGLE, PLAINS, SAVANNA, SNOW, SWAMP, TAIGA.
+  * Defaults to PLAINS.
+  * Examples:
+Type: PLAINS
 
 **Level: \[level\]**
 
-      * Villager profession level, levels 1 - 5.
-      * Level 1 villagers might switch professions. If you want a villager to hold its profession, give them a level of 2 or higher.
-      * Required if setting villager professions.
-      
+  * Villager profession level, levels 1 - 5.
+  * Level 1 villagers might switch professions. If you want a villager to hold its profession, give them a level of 2 or higher.
+  * Required if setting villager professions.
+  
 #### Zombies (all variants)
 
 **PreventJockeyMounts: \[true/false\]**
 
-      * Sets whether the zombie will spawn as a jockey.
-      * Only works for Zombies.
-      * Defaults to false.
+  * Sets whether the zombie will spawn as a jockey.
+  * Only works for Zombies.
+  * Defaults to false.
 
 **PreventTransformation: \[true/false\]**
 
-      * Sets whether zombies can be turned into pigmen/drowned.
-      * Only works for Zombies.
-      * Defaults to true.
+  * Sets whether zombies can be turned into pigmen/drowned.
+  * Only works for Zombies.
+  * Defaults to true.
 
 **ReinforcementsChance: \[number\]**
 
-      * Chance for zombies to spawn reinforcements on taking damage.
-      * Should be a number between 0 and 1 (0% and 100% chance)
-      * Only works for Zombies.
-      * Defaults to 0.
+  * Chance for zombies to spawn reinforcements on taking damage.
+  * Should be a number between 0 and 1 (0% and 100% chance)
+  * Only works for Zombies.
+  * Defaults to 0.
 
 #### Zombie Villagers
 
 **Profession: \[type\]**
 
-      * Sets the type of the villager the zombie should represent.
-      * This option will also make the zombie turn into the respective villager type when being cured using potions.
-      * Can be `ARMORER, BUTCHER, CARTOGRAPHER, CLERIC, FARMER, FISHERMAN, FLETCHER, LEATHERWORKER, LIBRARIAN, MASON, NITWIT, NONE, SHEPHERD, TOOLSMITH, WEAPONSMITH.`
+  * Sets the type of the villager the zombie should represent.
+  * This option will also make the zombie turn into the respective villager type when being cured using potions.
+  * Can be `ARMORER, BUTCHER, CARTOGRAPHER, CLERIC, FARMER, FISHERMAN, FLETCHER, LEATHERWORKER, LIBRARIAN, MASON, NITWIT, NONE, SHEPHERD, TOOLSMITH, WEAPONSMITH.`
 
 ------------------------------------------------------------------------
 
@@ -814,24 +814,24 @@ Check out [Trades](/Mobs/Mobs#trades)
 
 **Age: \[number\]**
 
-      * -1 for Baby. 1 for Adults
-      * What the age of the mob will be.
-      * Usable on any mob that can age. For example: Sheep, Pigs, Cows...
-      * Defaults to 1.
-      * Use very low negative numbers to mess with the mobs model (not supported)
-      * May not be working properly
+  * -1 for Baby. 1 for Adults
+  * What the age of the mob will be.
+  * Usable on any mob that can age. For example: Sheep, Pigs, Cows...
+  * Defaults to 1.
+  * Use very low negative numbers to mess with the mobs model (not supported)
+  * May not be working properly
 
 **AgeLock: \[true/false\]**
 
-      * Whether the mobs age should be locked in place.
-      * Useful for keeping a baby mob from growing up over time.
-      * Defaults to false
-      * This is required if you want Age option to work
+  * Whether the mobs age should be locked in place.
+  * Useful for keeping a baby mob from growing up over time.
+  * Defaults to false
+  * This is required if you want Age option to work
 
 **Baby: \[true/false\]**
 
-      * Sets baby/adult status of mob.
-      * Use if **Age: [number]** does not work.
+  * Sets baby/adult status of mob.
+  * Use if **Age: [number]** does not work.
 
 #### Colorable Mobs
 
@@ -839,9 +839,9 @@ Used for sheep and wolves.
 
 **Color: \[number\]**
 
-      * Sets the wool color of sheep or the collar color of wolves
-      * **The string is the name of the color you want. Ex: Color: RED**
-      * [[http://minecraft.gamepedia.com/Wool|http://minecraft.gamepedia.com/Wool]]
+  * Sets the wool color of sheep or the collar color of wolves
+  * **The string is the name of the color you want. Ex: Color: RED**
+  * [[http://minecraft.gamepedia.com/Wool|http://minecraft.gamepedia.com/Wool]]
 
 #### Neutral mobs
 
@@ -849,29 +849,29 @@ Used for wolves and zombie pigmen.
 
 **Angry: \[true/false\]**
 
-      * Whether the mob will spawn angry or not.
-      * **Note: Due to a Bukkit/Spigot bug wolves can not be spawned angry with this option.**
-      * **Use AIGoalSelectors and AITargetSelectors if you want to spawn angry wolves.**
+  * Whether the mob will spawn angry or not.
+  * **Note: Due to a Bukkit/Spigot bug wolves can not be spawned angry with this option.**
+  * **Use AIGoalSelectors and AITargetSelectors if you want to spawn angry wolves.**
 
 #### Slimes & Magma Cubes
 
 **PreventSlimeSplit: \[true/false\]**
 
-      * Prevents slimes and magmacubes from splitting.
-      * Default to false
+  * Prevents slimes and magmacubes from splitting.
+  * Default to false
 
 **Size: \[number\]**
 
-      * Sets the size of slimes, magma cubes, and phantoms.
-      * Can get VERY big and get exponentially larger with each increase.
-      * Extremely high size will cause server lag and possibly crashes.
-      * Default to 1to8(Phantoms is 1)
+  * Sets the size of slimes, magma cubes, and phantoms.
+  * Can get VERY big and get exponentially larger with each increase.
+  * Extremely high size will cause server lag and possibly crashes.
+  * Default to 1to8(Phantoms is 1)
 
 #### Tameable Mobs
 
 **Tameable: \[true/false\]**
 
-      * Allows players to tame the mobs. Used for wolves, cats and horses.
-      * Defaults to false.
+  * Allows players to tame the mobs. Used for wolves, cats and horses.
+  * Defaults to false.
 
 ------------------------------------------------------------------------

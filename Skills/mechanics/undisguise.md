@@ -20,5 +20,5 @@ Examples
 
 Undisguise the mob when it is right clicked.
 
-      Skills:
-      - undisguise ~onInteract
+  Skills:
+  - undisguise ~onInteract

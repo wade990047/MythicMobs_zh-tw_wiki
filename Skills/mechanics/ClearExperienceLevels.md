@@ -1,12 +1,12 @@
-## Description
+## 用途
 Clears the experience levels for the targeted players
 
 
-## Attributes
+## 細項設定
 >*This mechanic has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
 ExampleMob:
   Type: ZOMBIE
@@ -15,5 +15,5 @@ ExampleMob:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] clearexplevels

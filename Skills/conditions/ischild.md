@@ -1,16 +1,16 @@
-## Description
+## 用途
 Checks if the target is a child of the caster of the skill
 
 
-## Attributes
+## 細項設定
 *This condition has no attributes*
 
-## Examples
+## 範例
 ```yaml
   TargetConditions:
   - isChild{} true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] child

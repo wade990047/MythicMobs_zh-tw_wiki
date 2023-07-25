@@ -12,10 +12,10 @@ This effect extends the general [Particle Effect](/skills/effects/particles) and
 
 Particle attributes are “per point” in this effect, so keeping 'amount' low is recommended.
 
-| Attribute       | Alias    | Description                                         | Default Value |
+| Attribute   | Alias| Description| Default Value |
 | --------------- | -------- | --------------------------------------------------- | ------------- |
-| points          | p        | The number of points to draw representing the ring  | 10            |
-| radius          | r        | The radius of the ring around the target            | 10            |
+| points  | p| The number of points to draw representing the ring  | 10|
+| radius  | r| The radius of the ring around the target| 10|
 
 ---
 

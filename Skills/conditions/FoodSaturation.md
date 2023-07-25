@@ -1,19 +1,19 @@
-## Description
+## 用途
 Checks the food saturation amount of the target
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| amount    | a, food, f, saturation, s | Range of amount of food saturation to check for      | 0       |
+| amount| a, food, f, saturation, s | Range of amount of food saturation to check for  | 0   |
 
 
-## Examples
+## 範例
 ```yaml
   TargetConditions:
   - FoodSaturation{a=<1} true
 ```
 
-## Aliases
+## 簡化寫法
 - [x] hungerSaturation

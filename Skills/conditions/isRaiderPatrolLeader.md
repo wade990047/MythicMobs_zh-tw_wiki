@@ -1,14 +1,14 @@
-## Description
+## 用途
 Checks if the target entity is the captain of a pillager group
 
-## Attributes
+## 細項設定
 >*This condition has no attributes*
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - israiderpatrolleader true
 ```
 
-## Aliases
+## 簡化寫法
 - [x] isPatrolLeader

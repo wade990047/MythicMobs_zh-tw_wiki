@@ -1,15 +1,15 @@
-## Description
+## 用途
 Checks if the given [variable](/Skills/Variables)is set.
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| variable  | name, n, var, key, k  | variable to match                                        |         |
+| variable  | name, n, var, key, k  | variable to match   | |
 
 
-## Examples
+## 範例
 
 ```yaml
   Conditions:
@@ -17,6 +17,6 @@ Checks if the given [variable](/Skills/Variables)is set.
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] varisset
 - [x] varset

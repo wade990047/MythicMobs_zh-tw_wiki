@@ -14,14 +14,14 @@ effects.
 Attributes
 ----------
 
-| Attribute    | Aliases        | Description                                                                               | Default |
+| Attribute| Aliases| Description | Default |
 |--------------|----------------|-------------------------------------------------------------------------------------------|---------|
-| type         | t              | The type of [potion effect](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html) to apply.                           |         |
-| duration     | d              | The duration of the effect in ticks [1].                                                  | 100     |
-| level        | l              | The modifier-level of the potion effect. The real level is level's value +1. | 1       |
-| force        |                | Whether not to override the current potion effect or not. (4.0+)                          | false   |
-| hasParticles | particles or p | Whether not to show the status effect particles. (4.6+)                                   | true    |
-| hasIcon      | icon or i      | Whether not to show the status effect icon. (4.6+)                                        | true    |
+| type | t  | The type of [potion effect](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html) to apply.   | |
+| duration | d  | The duration of the effect in ticks [1]. | 100 |
+| level| l  | The modifier-level of the potion effect. The real level is level's value +1. | 1   |
+| force|| Whether not to override the current potion effect or not. (4.0+)  | false   |
+| hasParticles | particles or p | Whether not to show the status effect particles. (4.6+)  | true|
+| hasIcon  | icon or i  | Whether not to show the status effect icon. (4.6+)   | true|
 
 Examples
 --------
@@ -29,9 +29,9 @@ Examples
 This example skill-configuration will strongly slow down the target for
 10 seconds (200 ticks) and deal 5 hearts of damage to it.
 
-    Cripple:
-      Skills:
-      - potion{type=SLOW;duration=200;level=4}
-      - damage{amount=10}
+Cripple:
+  Skills:
+  - potion{type=SLOW;duration=200;level=4}
+  - damage{amount=10}
 
 [1] 20 ticks = 1 second

@@ -18,12 +18,12 @@ A list of possible operations for the action-syntax:
 Attributes
 ----------
 
-| Attribute   | Aliases | Description                                                                                                                       | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-------------|---------|-----------------------------------------------------------------------------------------------------------------------------------|---------|
-| objective   | obj, o  | Specifies the scoreboard objective to be changed. If the objective doesn't exist it will automatically be created by the mechanic |         |
-| action      | a       | The operation to perform                                                                                                          | ADD     |
-| value       | v       | The value to perform the operation with                                                                                           | 0       |
-| name, entry | n, e    | The name of the player/fake player                                                                                                | dummy   |
+| objective   | obj, o  | Specifies the scoreboard objective to be changed. If the objective doesn't exist it will automatically be created by the mechanic | |
+| action  | a   | The operation to perform   | ADD |
+| value   | v   | The value to perform the operation with| 0   |
+| name, entry | n, e| The name of the player/fake player | dummy   |
 
   
 Examples 
@@ -34,8 +34,8 @@ named "Bob" for the objective "TestScore", even if that player doesn't
 exist on the server.  
 It will create the objective if it does not currently exist.
 
-      Skills:
-      - modifyscore{o=TestScore;e=Bob;a=add;v=1} ~onInteract 
+  Skills:
+  - modifyscore{o=TestScore;e=Bob;a=add;v=1} ~onInteract 
 
 ![](https://i.imgur.com/0HKvAUM.png)
 

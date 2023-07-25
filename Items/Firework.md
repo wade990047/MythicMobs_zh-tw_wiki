@@ -6,10 +6,10 @@ This attribute is required for every firework or firework_charge items.
 ItemName:
   Id: material
   Firework:
-    Colors:
-    FadeColors:
-    Flicker:
-    Trail:
+Colors:
+FadeColors:
+Flicker:
+Trail:
 ```
 
 Breaking Down The Firework Configuration
@@ -23,10 +23,10 @@ A list of primary colors to be added to the firework effect. The colors must be 
 example_item:
   Id: firework_charge
   Firework:
-    Colors:
-      - 255,0,0
-      - 0,255,0
-      - 0,0,255
+Colors:
+  - 255,0,0
+  - 0,255,0
+  - 0,0,255
 ```
 ### FadeColors
 Similar to the [colors](/Items/Firework#Colors) option but adds the colors to the fade effect instead.
@@ -34,13 +34,13 @@ Similar to the [colors](/Items/Firework#Colors) option but adds the colors to th
 example_item:
   Id: firework_charge
   Firework:
-    Colors:
-      - 255,0,0
-      - 0,255,0
-      - 0,0,255
-    FadeColors:
-      - 255,0,255
-      - 0,255,0
+Colors:
+  - 255,0,0
+  - 0,255,0
+  - 0,0,255
+FadeColors:
+  - 255,0,255
+  - 0,255,0
 ```
 ### Flicker
 Whether the firework effect flickers
@@ -48,7 +48,7 @@ Whether the firework effect flickers
 example_item:
   Id: firework_charge
   Firework:
-    Flicker: true
+Flicker: true
 ```
 ### Trail
 Whether the firework effect has a trail
@@ -56,5 +56,5 @@ Whether the firework effect has a trail
 example_item:
   Id: firework_charge
   Firework:
-    Trail: true
+Trail: true
 ```

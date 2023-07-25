@@ -8,15 +8,15 @@ negative number, too.
 Attributes
 ----------
 
-| Attribute | Aliases | Description                    | Default Value |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|---------|--------------------------------|---------------|
-| velocity  | v       | The velocity of the mob's jump | 1             |
+| velocity  | v   | The velocity of the mob's jump | 1 |
 
   
 
 Examples
 --------
 
-    SuperJump:
-      Skills:
-      - jump{velocity=20}
+SuperJump:
+  Skills:
+  - jump{velocity=20}

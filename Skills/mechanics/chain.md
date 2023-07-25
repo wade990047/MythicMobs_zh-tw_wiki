@@ -18,37 +18,37 @@ effects!
 Attributes
 ----------
 
-| Attribute        | Aliases    | Description                                                                 | Default |
+| Attribute| Aliases| Description   | Default |
 |------------------|------------|-----------------------------------------------------------------------------|---------|
-| onBounce         | ob         | The skill that bounces between targets                                      |         |
-| bounces          | b          | How many times the chain should bounce                                      | 2       |
-| delay            | d          | The delay between bounces                                                   | 1       |
-| radius           | r          | How far the skill will bounce to a new target                               | 5       |
-| hitSelf          | hs         | Whether the chain should affect the caster                                  | false   |
-| hitTarget        | ht         | Whether the chain should do the initial from the caster to the first target | true    |
-| hitPlayers       | hp         | Whether the chain should bounce to players                                  | true    |
-| hitNonPlayers    | hnp        | Whether the chain should bounce to non-players                              | false   |
-| bounceConditions | conditions | Conditions applied to the bounce target                                     | NONE    |
+| onBounce | ob | The skill that bounces between targets | |
+| bounces  | b  | How many times the chain should bounce | 2   |
+| delay| d  | The delay between bounces  | 1   |
+| radius   | r  | How far the skill will bounce to a new target  | 5   |
+| hitSelf  | hs | Whether the chain should affect the caster | false   |
+| hitTarget| ht | Whether the chain should do the initial from the caster to the first target | true|
+| hitPlayers   | hp | Whether the chain should bounce to players | true|
+| hitNonPlayers| hnp| Whether the chain should bounce to non-players | false   |
+| bounceConditions | conditions | Conditions applied to the bounce target| NONE|
 
   
 
 Examples
 --------
 
-    Skills:
-      - chain{
-          bounces=5;
-          bounceRadius=10;
-          bounceDelay=1;
-          hitSelf=false;
-          hitPlayers=true; 
-          hitNonPlayers=true;
-          hitTarget=true;
-          onBounce=[
-            - effect:particleline{p=flame;fromOrigin=true}
-          ];
-          bounceConditions=[
-            - inlineofsight
-            - hasaura{aura=damageResist} false
-          ];
-        } @target ~onTimer:20
+Skills:
+  - chain{
+  bounces=5;
+  bounceRadius=10;
+  bounceDelay=1;
+  hitSelf=false;
+  hitPlayers=true; 
+  hitNonPlayers=true;
+  hitTarget=true;
+  onBounce=[
+- effect:particleline{p=flame;fromOrigin=true}
+  ];
+  bounceConditions=[
+- inlineofsight
+- hasaura{aura=damageResist} false
+  ];
+} @target ~onTimer:20

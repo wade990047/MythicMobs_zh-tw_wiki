@@ -1,17 +1,17 @@
-## Description
+## 用途
 Checks if the target player's inventory slot holds an item that is similar to the specified one.  
 To be more specific, their ItemStacks will be compared and the condition will return true if they match.
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| item      | i, material, m, mm, mythicitem | The item to check for                           | DIRT    |
-| slot      | s         | The inventory slot to check for. Accepts 0 to 35, or equipment slots | HAND    |
+| item  | i, material, m, mm, mythicitem | The item to check for   | DIRT|
+| slot  | s | The inventory slot to check for. Accepts 0 to 35, or equipment slots | HAND|
 
 
-## Examples
+## 範例
 Tests the item in slot 0, or the first slot, of the targeted player's inventory.
 ```yml
   Conditions:
@@ -19,6 +19,6 @@ Tests the item in slot 0, or the first slot, of the targeted player's inventory.
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] issimilar
 - [x] similarto

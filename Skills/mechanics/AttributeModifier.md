@@ -1,18 +1,18 @@
-## Description
-Adds an attribute modifier to the attributable target
+## 用途
+向可設定屬性的目標添加屬性倍率器
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| attribute | attr      | The attribute                                                   | GENERIC_LUCK |
-| operation | op        | The operation to perform                                          | ADD_NUMBER |
-| amount    | amt, a    | The modifier of the attribute                                          | 0     |
-| duration  | dur       | The duration of the attribute                                          | 0     |
+| attribute | attr  | 要設置的屬性  | GENERIC_LUCK |
+| operation | op| 要執行的操作 | ADD_NUMBER |
+| amount| amt, a| 要設置的倍率 | 0 |
+| duration  | dur   | 要持續多久(單位:ticks) | 0 |
 
 
-## Examples
+## 範例
 ```yaml
 ExampleMob:
   Type: ZOMBIE

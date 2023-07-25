@@ -1,17 +1,17 @@
-## Description
+## 用途
 Checks if the target entity is a MythicMob
 
 
-## Attributes
+## 細項設定
 >*This condition has no attributes*
 
 
-## Examples
+## 範例
 ```yml
   TargetConditions:
   - isMythicMob true
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] ismm

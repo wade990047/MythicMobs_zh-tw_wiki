@@ -2,12 +2,12 @@ Mechanic: undoPaste
 ===============
 Undoes a previous paste done via the [fawePaste] mechanic, based on its id or on the schematic used
 
-| Attribute | Aliases | Description                                                   | Default Value |
+| Attribute | Aliases | Description  | Default Value |
 |-----------|---------|---------------------------------------------------------------|---------------|
-| schematic |  s       | The schematic that needs to be undone. Only necessary if no id can be provided | |
-| pasteID   | pid, id  | The id of the paste that needs to be undone                  |               |
+| schematic |  s   | The schematic that needs to be undone. Only necessary if no id can be provided | |
+| pasteID   | pid, id  | The id of the paste that needs to be undone  |   |
 
-## Examples
+## 範例
 ```yaml
 ExampleMob:
   Skills:

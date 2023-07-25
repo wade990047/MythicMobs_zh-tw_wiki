@@ -1,15 +1,15 @@
-## Description
+## 用途
 Checks if value1 equals value2. Both values can use [variables](/Skills/Variables) and [placeholders](/Skills/Placeholders).
 
 
-## Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+## 細項設定
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| value1    | val1, v1, string, s                     | The first value                        |         |
-| value2    | val2, v2, value, val, v, equals, eq, e  | The second value                       |         |
+| value1| val1, v1, string, s | The first value| |
+| value2| val2, v2, value, val, v, equals, eq, e  | The second value   | |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - stringequals{val1="yes!";val2="yes!"} true
@@ -25,5 +25,5 @@ Uses Denizen, PlaceholderAPI, and MythicMobs to check whether the item the playe
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] stringEq

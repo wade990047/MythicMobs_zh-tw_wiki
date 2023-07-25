@@ -7,9 +7,9 @@ Disguises and ProtocolLib be installed to enable Disguise functionality.
 Attributes
 ----------
 
-| Attribute | Aliases | Description                          | Default |
+| Attribute | Aliases | Description  | Default |
 |-----------|---------|--------------------------------------|---------|
-| disguise  | d, type | The disguise to apply to the target. |         |
+| disguise  | d, type | The disguise to apply to the target. | |
 
   
 

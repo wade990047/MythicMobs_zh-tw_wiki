@@ -11,11 +11,11 @@ an error if you try to use a variable type for something that makes no sense.
 
 **Current Types**:
 
-| **Type** | **Description**                  |
+| **Type** | **Description**  |
 |----------|----------------------------------|
 | INTEGER  | A number with no decimal places. |
-| FLOAT    | A number with decimal places.    |
-| STRING   | A word or sentence.              |
+| FLOAT| A number with decimal places.|
+| STRING   | A word or sentence.  |
 
 ### Variable Scopes
 
@@ -23,42 +23,42 @@ A variable's "scope" is **where** that variable exists. Not all scopes are appli
 
 **Variable Scopes**:
 
-| **Type** | **Where the Variable Exists**                                                                                  |
+| **Type** | **Where the Variable Exists**|
 |----------|----------------------------------------------------------------------------------------------------|
-| SKILL    | On the current skill tree. Always temporary and will vanish when the current queue of skills ends. |
-| CASTER   | On the casting mob.                                                                                |
-| TARGET   | On the target of the mechanic/condition.                                                           |
-| WORLD    | The current world.                                                                                 |
-| GLOBAL   | The server.                                                                                        |
+| SKILL| On the current skill tree. Always temporary and will vanish when the current queue of skills ends. |
+| CASTER   | On the casting mob.  |
+| TARGET   | On the target of the mechanic/condition. |
+| WORLD| The current world.   |
+| GLOBAL   | The server. |
 
 
 ### Usage
 
 All variable mechanics and conditions accept **var=** and **scope=** attributes to determine what variable you're wanting to work with and where. You can also shorthand the scope using *var=scope.variable\_name**. The following examples would return the same thing:
 ```
-    setvariable{var=target.somevariable; ...}
-    setvariable{var=somevariable;scope=target; ...}
+setvariable{var=target.somevariable; ...}
+setvariable{var=somevariable;scope=target; ...}
 ```
 
 ### Variable Mechanics
 
 Variable mechanics are special mechanics that utilize variables. They can target entities, locations, or nothing, but the target can affect the outcome depending on what scope you're using. For example, trying to get a target-scope'd variable will obviously fail if you're not targeting an entity.
 
-| Mechanic                                               | Description                                      |
+| Mechanic  | Description |
 |--------------------------------------------------------|--------------------------------------------------|
-| [SetVariable](/skills/mechanics/setvariable)           | Initializes and sets a variable.                 |
-| [SetVariableLocation](/skills/mechanics/setvariablelocation)   | Sets a variable, whose value depends on the target location.                 |
-| [VariableUnset](/skills/mechanics/variableunset)           | Unsets the variable.                 |
-| [VariableAdd](/skills/mechanics/variableadd)           | Adds to a numeric variable.                      |
-| [VariableSubtract](/skills/mechanics/variablesubtract) | Subtracts from a numeric variable.               |
-| [VariableMath](/skills/mechanics/variablemath)         | Lets you do calculations with numeric variables. |
+| [SetVariable](/skills/mechanics/setvariable)   | Initializes and sets a variable. |
+| [SetVariableLocation](/skills/mechanics/setvariablelocation)   | Sets a variable, whose value depends on the target location. |
+| [VariableUnset](/skills/mechanics/variableunset)   | Unsets the variable. |
+| [VariableAdd](/skills/mechanics/variableadd)   | Adds to a numeric variable.  |
+| [VariableSubtract](/skills/mechanics/variablesubtract) | Subtracts from a numeric variable.   |
+| [VariableMath](/skills/mechanics/variablemath) | Lets you do calculations with numeric variables. |
 
 ### Variable Conditions
 
-| Condition                                        | Description                                    |
+| Condition   | Description   |
 |--------------------------------------------------|------------------------------------------------|
-| [Variable Equals](/skills/conditions/variableequals)    | Checks if a variable equals a given value.     |
-| [Variable Is Set](/skills/conditions/variableisset)     | Checks if a variable is set.                   |
+| [Variable Equals](/skills/conditions/variableequals)| Checks if a variable equals a given value. |
+| [Variable Is Set](/skills/conditions/variableisset) | Checks if a variable is set.   |
 | [Variable In Range](/skills/conditions/variableinrange) | Checks if a number variable is within a range. |
 
 ### Variable Placeholders
@@ -67,13 +67,13 @@ Variables can be referenced in any MythicMobs mechanics or values that allow pla
 
 When using placeholder variables, you can also specify a "default" value that will be used if the variable is undefined by using the syntax **&lt;scope.var.\[variable\]\|\[default\]&gt;**.
 
-    message{m="Hello there, <target.var.title|wanderer>"} @trigger ~onInteract
+message{m="Hello there, <target.var.title|wanderer>"} @trigger ~onInteract
 
 In this example, the NPC would reply with "Hello there, wanderer" if
 right-clicked by somebody who had no "title" variable set on them.
 However, if we did this:
 
-    setVariable{var=target.title;value="Sir"} @trigger ~onInteract
+setVariable{var=target.title;value="Sir"} @trigger ~onInteract
 
 ...somewhere along the line, even with a different mob, the first mob
 would say "Hello there, Sir".

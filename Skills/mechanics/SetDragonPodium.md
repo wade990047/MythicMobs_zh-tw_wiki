@@ -1,7 +1,7 @@
-## Description
+## 用途
 Sets the position of the dragon's podium (aka the point the dragon circles around) at the target location. paper 1.18.2+ only.
 
-## Attributes
+## 細項設定
 *This mechanic has no attributes*
 
 ## Example
@@ -10,6 +10,6 @@ Sets the position of the dragon's podium (aka the point the dragon circles aroun
   - setDragonPodium @Location{c=125,50,-521}
 ```
 
-## Aliases
+## 簡化寫法
 - [x] setPodium
 - [x] podium

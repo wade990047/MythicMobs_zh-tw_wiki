@@ -6,10 +6,10 @@ Makes the target glow.
 
 **Attributes:**
 
-| Attribute | Alias  | Description                                       | Default Value |
+| Attribute | Alias  | Description  | Default Value |
 | --------- | ------ | ------------------------------------------------- | ------------- |
-| duration  | d      | The time (in ticks) that the effect is active     | 20            |
-| color     | c      | The color of the glow                             | white         |
+| duration  | d  | The time (in ticks) that the effect is active | 20|
+| color | c  | The color of the glow| white |
 
 ---
 

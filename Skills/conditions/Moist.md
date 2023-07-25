@@ -1,16 +1,16 @@
-## Description
+## 用途
 Checks if the target block of farmland is hydrated.
 
 
-## Attributes
+## 細項設定
 >*This condition has no attributes*
 
 
-## Examples
+## 範例
 ```yml
   TargetConditions:
   - ismoist{} true
 ```
 
-## Aliases
+## 簡化寫法
   - [x] moist

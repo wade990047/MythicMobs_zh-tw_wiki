@@ -1,15 +1,15 @@
-## Description
+## 用途
 Checks if the target entity is in the specified faction
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| faction   | f         | The faction to check for                                             |         |
+| faction   | f | The faction to check for| |
 
 
-## Examples
+## 範例
 ```yaml
 TargetConditions:
 - faction{faction=MyFaction} true

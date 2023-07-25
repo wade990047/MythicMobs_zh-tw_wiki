@@ -22,9 +22,9 @@ subforums unless you're certain that your syntax is correct.
 Attributes
 ----------
 
-| Attribute | Aliases | Description                                                    | Default |
+| Attribute | Aliases | Description   | Default |
 |-----------|---------|----------------------------------------------------------------|---------|
-| message   | m       | The json-message to send. Must be surrounded by double-quotes. |         |
+| message   | m   | The json-message to send. Must be surrounded by double-quotes. | |
 
   
 
@@ -35,9 +35,9 @@ You can use both bukkit color codes or json color formatting:
   
 ![](http://fs5.directupload.net/images/160309/u3fdf5cx.jpg)  
 
-      Skills:
-      - jsonmessage{m="[{'text':'&aHey, i am a JSON message!'}]"} @trigger ~onInteract
-      - jsonmessage{m="[{'text':'Hey, i am a red JSON message!','color':'red'}]"} @trigger ~onInteract
+  Skills:
+  - jsonmessage{m="[{'text':'&aHey, i am a JSON message!'}]"} @trigger ~onInteract
+  - jsonmessage{m="[{'text':'Hey, i am a red JSON message!','color':'red'}]"} @trigger ~onInteract
 
 
 ------------------------------------------------------------------------
@@ -46,8 +46,8 @@ Here's an example of how to make use of hover-events:
   
 <img src="http://fs5.directupload.net/images/160309/7irfoune.jpg" width="500" height="30" alt="http://fs5.directupload.net/images/160309/7irfoune.jpg" />
 
-      Skills:
-      - jsonmessage{m="[{'text':'&7With me, you can create hover events','hoverEvent':{'action':'show_text','value':{'text':'&aI am a hover event :)'}}}]"} @trigger ~onInteract
+  Skills:
+  - jsonmessage{m="[{'text':'&7With me, you can create hover events','hoverEvent':{'action':'show_text','value':{'text':'&aI am a hover event :)'}}}]"} @trigger ~onInteract
 
 ------------------------------------------------------------------------
 
@@ -58,5 +58,5 @@ mechanic, if the player clicks on the click-event.
   
 ![](http://fs5.directupload.net/images/160309/gjxvhpd8.jpg)
 
-      Skills:
-      - jsonmessage{m="[{'text':'&7&nAlso click events! :)','clickEvent':{'action':'run_command','value':'/mm signal <mob.uuid> <signal>'}}]"} @trigger ~onInteract
+  Skills:
+  - jsonmessage{m="[{'text':'&7&nAlso click events! :)','clickEvent':{'action':'run_command','value':'/mm signal <mob.uuid> <signal>'}}]"} @trigger ~onInteract

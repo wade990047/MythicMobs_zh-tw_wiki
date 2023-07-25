@@ -7,9 +7,9 @@ string. Does nothing if the target is not a Mythic Mob.
 Attributes
 ----------
 
-| Attribute | Aliases | Description                   | Default Value |
+| Attribute | Aliases | Description   | Default Value |
 |-----------|---------|-------------------------------|---------------|
-| stance    | s       | The string-name of the stance | default       |
+| stance| s   | The string-name of the stance | default   |
 
   
 
@@ -28,15 +28,15 @@ Examples
 
 This skill would change the caster's phase to "bowphase"
 
-    StanceChangeSkill
-      Skills:
-      - setstance{stance=bowphase} @self
+StanceChangeSkill
+  Skills:
+  - setstance{stance=bowphase} @self
 
 This skill would only be usable when the caster had the stance
 "bowphase"
 
-    AnotherSkill:
-      Conditions:
-      - stance bowphase
-     Skills:
-      - ...some bow skills
+AnotherSkill:
+  Conditions:
+  - stance bowphase
+ Skills:
+  - ...some bow skills

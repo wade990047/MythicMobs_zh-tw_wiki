@@ -1,4 +1,4 @@
-## Description 
+## 用途 
 
 Creates a mask of blocks around the specified target. The blocks created or changed by this effect will disappear or rather reset to their former state after the specified duration expired. Resetting the blocks at an earlier point in time can be achieved by using the blockunmask-effect (see example below).
 
@@ -7,18 +7,18 @@ Note that the blockmask effect will never actually change any blocks in the worl
 Bukkit material/block names can be acquired ingame. Simply hold the block you want to use for the effect in your hand and then use the command “/itemdb”. This command will output the bukkit-material info along with some other info, including the data value of the block. This command should work on any bukkit/spigot server.
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases| Description                              | Default       |
+| Attribute | Aliases| Description | Default   |
 | --------- | ------ | ---------------------------------------- | ------------- |
-| material  | mat, m | The type of block used for the blockmask | gravel        |
-| data      | dv     | The data value used for the material     | 0             |
-| radius    | r      | The radius of the blockmask effect       | 0             |
-| noise     | n      | Defines the randomness of the effect     | 0             |
-| duration  | d      | Duration of the effect in ticks          | 0             |
-| shape     | s      | The shape of the effect (Sphere/Cube)    | sphere        |
-| noair     | na     | Mask no air blocks only                  | true          |
-| onlyair   | oa     | Mask air blocks only                     | false         |
+| material  | mat, m | The type of block used for the blockmask | gravel|
+| data  | dv | The data value used for the material | 0 |
+| radius| r  | The radius of the blockmask effect   | 0 |
+| noise | n  | Defines the randomness of the effect | 0 |
+| duration  | d  | Duration of the effect in ticks  | 0 |
+| shape | s  | The shape of the effect (Sphere/Cube)| sphere|
+| noair | na | Mask no air blocks only  | true  |
+| onlyair   | oa | Mask air blocks only | false |
 
 ---
 
@@ -33,7 +33,7 @@ there are 20 ticks in 1 second, and setting duration to 0 will have an infinite 
 Sphere and Cube are the only shapes available.
 
 
-## Examples
+## 範例
 
 1. Creates a netherrack environment around the casting mob. Leaving the duration on 0 ticks will cause the blocks to stay in their new fake form until manual block updates are provided or players relog into the game.
 

@@ -1,14 +1,14 @@
-## Description
+## 用途
 If the target has gravity
 
-## Attributes
+## 細項設定
 *This condition has no attributes*
 
-## Examples
+## 範例
 ```yaml
 Conditions:
 - hasgravity true
 ```
 
-## Aliases
+## 簡化寫法
 - [x] gravity

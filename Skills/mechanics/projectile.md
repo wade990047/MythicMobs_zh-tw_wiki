@@ -1,4 +1,4 @@
-## Description
+## 用途
 The Projectile skill fires a meta-"projectile" that can be decorated
 using particle and sound effects.  
 It's great for creating complex, aesthetically pleasing skills, such as
@@ -10,67 +10,67 @@ It will disappear after reached targeted entity or location.
 It is of importance to note that other mechanics (such as [Missile](/skills/mechanics/missile)) are an "extension" of this mechanic, and can as such use a great deal of this mechanic's attributes. The attributes that those mechanics can use are listen in [Inheritable Attributes](/skills/mechanics/projectile#inheritable-attributes)
 
 
-## Attributes
+## 細項設定
 ### Inheritable Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onStartSkill | onStart, oS | Meta-Skill executed when the projectile starts at the projectile's origin location.                                                                                      |         |
-| onTickSkill  | onTick, oT  | Meta-Skill executed every [interval] ticks at the projectile's origin location                                                                                       |         |
-| onHitSkill   | onHit, oH   | Meta-Skill executed when the projectile hits entities that allow be hit. Targets hit are inherited by the meta-skill.                                                   |         |
-| onEndSkill   | onEnd, oE   | Meta-Skill executed when the projectile ends.                   |         |
-| onBounceSkill| onBounce    |Meta-Skill executed when the projectile bounces. **Premium Only**.|        |
-| onHitBlockSkill |onHitBlock, ohb | Meta-Skill executed when the projectile hits a block.     |         |
-| onInteractSkill |onInteract| Meta-Skill executed when the projectile is interacted with.     |         |
-| BulletType   | bullet, b   | The type of the bullet. If set, additional attributes becomes available depending on the specified bullet type. A list of bullet types and associated attributes is available [below](/skills/mechanics/projectile#projectile-bullets)                                       | NONE    |
-| Interval  | int, i      | How often (in ticks) the projectile updates its position           | 1       |
-| HorizontalRadius | hRadius, hR, r | The horizontal radius entities will be hit in around the projectile.                                                                                                                                    | 1.25    |
-| VerticalRadius   | vRadius, vR | The vertical radius entities will be hit in around the projectile.                                                                                                                                      | 1.25    |
-| Duration  | maxDuration, md, d | The max duration (in ticks) the projectile will persist.    | 400     |
-| MaxRange  | mr        | The maximum range (in blocks) the projectile will travel.            | 40      |
-| Velocity  | v         | The velocity of the projectile                                       | 5       |
-| DeathDelay| death, dd | Delays the removal of project bullets when the projectile is terminated | 2    |
-| StartYOffset | syo    | Lets you offset where on the casting mob the projectile shoots from. | 1       |
-| StartFOffset | forwardoffset, sfo |  How far in front of the mob the projectile starts       | 1       |
-| TargetYOffset | tyo   | Lets you offset where on the target the projectile shoots at.        | 0       |
-| SideOffset | soffset, so | The value of this attribute gets inherited by StartSideOffset and EndSideOffset if no value is specified for them                                                | 0       |  
-| StartSideOffset | ssoffset, sso | How far to the side of the mob the projectile starts      |sideoffset|
-| EndSideOffset | endoffset, esoffset, eso | How far to the side of the target location the projectile will end up                                                                                   |sideoffset|
-| startingdirection | startingdir, startdir, sdir | Start direction of the projectile. For now, it only works if inherited by a missile mechanic                                                      |@Targeted|
-| HorizontalOffset | hO | Horizontal Offset will rotate the projectile's horizontal starting velocity around a 360-degree axis                                                                      | 0        |
-| VerticalOffset   | vO | Vertical Offset will rotate the projectile's vertical starting velocity around a 360-degree axis                                                                               | 0        |
-| Accuracy  | ac, a     | Determines the accuracy of the projectile                           | 1        |
-| HorizontalNoise | hn  | The randomness of the projectile in horizontal direction            |(1-ac)*45 |
-| VerticalNoise   | vn  | The randomness of the projectile in the vertical direction          |(1-ac)*4.5|
-| StopAtEntity | sE     | Whether the projectile will stop upon hitting a targetable entity   | true     |
-| StopAtBlock  | sB     | Whether the projectile will stop upon hitting an opaque block       | true     |
+| onStartSkill | onStart, oS | Meta-Skill executed when the projectile starts at the projectile's origin location.| |
+| onTickSkill  | onTick, oT  | Meta-Skill executed every [interval] ticks at the projectile's origin location| |
+| onHitSkill   | onHit, oH   | Meta-Skill executed when the projectile hits entities that allow be hit. Targets hit are inherited by the meta-skill.  | |
+| onEndSkill   | onEnd, oE   | Meta-Skill executed when the projectile ends.   | |
+| onBounceSkill| onBounce|Meta-Skill executed when the projectile bounces. **Premium Only**.||
+| onHitBlockSkill |onHitBlock, ohb | Meta-Skill executed when the projectile hits a block. | |
+| onInteractSkill |onInteract| Meta-Skill executed when the projectile is interacted with. | |
+| BulletType   | bullet, b   | The type of the bullet. If set, additional attributes becomes available depending on the specified bullet type. A list of bullet types and associated attributes is available [below](/skills/mechanics/projectile#projectile-bullets)  | NONE|
+| Interval  | int, i  | How often (in ticks) the projectile updates its position   | 1   |
+| HorizontalRadius | hRadius, hR, r | The horizontal radius entities will be hit in around the projectile.| 1.25|
+| VerticalRadius   | vRadius, vR | The vertical radius entities will be hit in around the projectile.  | 1.25|
+| Duration  | maxDuration, md, d | The max duration (in ticks) the projectile will persist.| 400 |
+| MaxRange  | mr| The maximum range (in blocks) the projectile will travel.| 40  |
+| Velocity  | v | The velocity of the projectile  | 5   |
+| DeathDelay| death, dd | Delays the removal of project bullets when the projectile is terminated | 2|
+| StartYOffset | syo| Lets you offset where on the casting mob the projectile shoots from. | 1   |
+| StartFOffset | forwardoffset, sfo |  How far in front of the mob the projectile starts   | 1   |
+| TargetYOffset | tyo   | Lets you offset where on the target the projectile shoots at.| 0   |
+| SideOffset | soffset, so | The value of this attribute gets inherited by StartSideOffset and EndSideOffset if no value is specified for them   | 0   |  
+| StartSideOffset | ssoffset, sso | How far to the side of the mob the projectile starts  |sideoffset|
+| EndSideOffset | endoffset, esoffset, eso | How far to the side of the target location the projectile will end up |sideoffset|
+| startingdirection | startingdir, startdir, sdir | Start direction of the projectile. For now, it only works if inherited by a missile mechanic |@Targeted|
+| HorizontalOffset | hO | Horizontal Offset will rotate the projectile's horizontal starting velocity around a 360-degree axis| 0|
+| VerticalOffset   | vO | Vertical Offset will rotate the projectile's vertical starting velocity around a 360-degree axis | 0|
+| Accuracy  | ac, a | Determines the accuracy of the projectile   | 1|
+| HorizontalNoise | hn  | The randomness of the projectile in horizontal direction|(1-ac)*45 |
+| VerticalNoise   | vn  | The randomness of the projectile in the vertical direction  |(1-ac)*4.5|
+| StopAtEntity | sE | Whether the projectile will stop upon hitting a targetable entity   | true |
+| StopAtBlock  | sB | Whether the projectile will stop upon hitting an opaque block   | true |
 | PowerAffectsRange |pa | Whether a mob's [power level](/Mobs/Power) affects the projectile's range| true|
-| PowerAffectsVelocity | pav | Whether a mob's [power level](/Mobs/Power) affects the projectile's velocity.                                                                                     | true     |
-| Interactable |        | Whether the projectile is interactable                              | false    |
-| HitSelf   |           | Whether the projectile can hit the caster                           | false    |
-| HitPlayers | hp       | Whether the projectile can hit players                              | true     |
-| HitNonPlayers | hnp   | Whether the projectile can hit non player entities                  | false    |
-| HitTarget | ht        | Whether the projectile can hit the mechanic's target                | true     |
-| HitTargetOnly | hto   | Whether the projectile can **only** hit the mechanic's target       | false    |
+| PowerAffectsVelocity | pav | Whether a mob's [power level](/Mobs/Power) affects the projectile's velocity.   | true |
+| Interactable || Whether the projectile is interactable | false|
+| HitSelf   |   | Whether the projectile can hit the caster   | false|
+| HitPlayers | hp   | Whether the projectile can hit players | true |
+| HitNonPlayers | hnp   | Whether the projectile can hit non player entities  | false|
+| HitTarget | ht| Whether the projectile can hit the mechanic's target| true |
+| HitTargetOnly | hto   | Whether the projectile can **only** hit the mechanic's target   | false|
 | ImmuneDelay | immune, id | Sets the immunity delay (when the target can be hit by the projectile again) | 2000  |
 | hitConditions | conditions, cond, c | A list of conditions that a target must meet in order for the projectile to be able to hit it. **Premium Only** Mechanic  |  |
-| fromorigin | fo       | Whether the projectile should start from the origin of the mechanic | false    |
-| requireLineOfSight | rlos, los | Whether the starting point must have line-of-sight to the origin.  Values can be `true`, `false`, `PLAYERS_ONLY`                                             | PLAYERS_ONLY |
-| drawHitbox |          | Draw the hitbox of the projectile, useful for debugging             | false    |
-| tickinterpolation | interpolation, ti | Interpolates the specified amount of additional points between each tick of the projectile. The onTick and onHit skills will be applied there as well. Useful to fill in the gaps with super-fast projectiles and also prevent entities from being "skipped over"      | 0        |
+| fromorigin | fo   | Whether the projectile should start from the origin of the mechanic | false|
+| requireLineOfSight | rlos, los | Whether the starting point must have line-of-sight to the origin.  Values can be `true`, `false`, `PLAYERS_ONLY`| PLAYERS_ONLY |
+| drawHitbox |  | Draw the hitbox of the projectile, useful for debugging | false|
+| tickinterpolation | interpolation, ti | Interpolates the specified amount of additional points between each tick of the projectile. The onTick and onHit skills will be applied there as well. Useful to fill in the gaps with super-fast projectiles and also prevent entities from being "skipped over"  | 0|
 
 ### Projectile-Specific Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| Type      |           | The "type" of projectile. Default projectiles are launched from the mob's location towards the target. METEOR type projectiles fall from the sky above the target.       | NORMAL  |
-| gravity   | g         | Determines the gravity of the projectile; use fractions (0.1-0.2) for low gravity                                                                                        | 0       |
-| Bounces   | bounce    | Should the projectile bounce. Bounce radius depends on the projectile's hitbox. **Premium Only**.                                                                              | false   |
-| BounceVelocity | bv   | Every time the projectile bounces, its velocity will be multiplied by this value. **Premium Only** .                                                                      | 0.9     |
-| HugSurface| hs        | Whether or not the projectile should move along the ground.          | false   |
-| HugLiquid | hugwater, huglava | when using hugSurface will also move on top of liquids       | false   |
-| HeightFromSurface| hfs| For NORMAL projectiles, how high above the surface the projectile should glide if HugSurface is set to TRUE. For METEOR projectiles, how high above the surface the projectile starts above the target.                                                                              | 0.5     |
-| MaxClimbHeight | mch  | The number of attempts the projectile will make to **increase** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid        | 3       |
-| MaxDropHeight  | mdh  | The number of attempts the projectile will make to **decrease** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid        | 10      |
-| highAccuracyMode | ham| Whether to use high-accuracy mode, which raytraces every tick to ensure the projectile cannot ever go anything. Values can be `true`, `false`, `PLAYERS_ONLY`         | PLAYERS_ONLY |
+| Type  |   | The "type" of projectile. Default projectiles are launched from the mob's location towards the target. METEOR type projectiles fall from the sky above the target.   | NORMAL  |
+| gravity   | g | Determines the gravity of the projectile; use fractions (0.1-0.2) for low gravity | 0   |
+| Bounces   | bounce| Should the projectile bounce. Bounce radius depends on the projectile's hitbox. **Premium Only**.| false   |
+| BounceVelocity | bv   | Every time the projectile bounces, its velocity will be multiplied by this value. **Premium Only** .| 0.9 |
+| HugSurface| hs| Whether or not the projectile should move along the ground.  | false   |
+| HugLiquid | hugwater, huglava | when using hugSurface will also move on top of liquids   | false   |
+| HeightFromSurface| hfs| For NORMAL projectiles, how high above the surface the projectile should glide if HugSurface is set to TRUE. For METEOR projectiles, how high above the surface the projectile starts above the target.| 0.5 |
+| MaxClimbHeight | mch  | The number of attempts the projectile will make to **increase** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid| 3   |
+| MaxDropHeight  | mdh  | The number of attempts the projectile will make to **decrease** its y-location before terminating itself, when the projectiles is "hugging" either a block or a liquid| 10  |
+| highAccuracyMode | ham| Whether to use high-accuracy mode, which raytraces every tick to ensure the projectile cannot ever go anything. Values can be `true`, `false`, `PLAYERS_ONLY` | PLAYERS_ONLY |
 
 
 ## Special Notes
@@ -109,17 +109,17 @@ ones are pending further testing).
 The bullet type that will represent the projectile. These can be specified via the BulletType attribute.
 These work with the projectile, missile, and orbital mechanics.
 
-| BulletType  | Aliases      | Description                                                               |
+| BulletType  | Aliases  | Description |
 |-------------|--------------|---------------------------------------------------------------------------|
-| [ARROW][]   |              | The bullet will be a minecraft projectile                                 |
-| [BLOCK][]   |              | The bullet will be a block                                                |
-| [SMALLBLOCK][]|            | The bullet will be a small block                                          |
-| [ITEM][]    | MYTHICITEM   | The bullet will be an item                                                |
-| [MOB][]     |              | The bullet will be a mob. If a Mythicmobs, it will retain its skills      |
-| [TRACKING][]| ARMOR_STAND, ARMORSTAND, PSTAND | The bullet will be an item, but its rotation will be adjusted depending on the projectile's direction                                                         |
+| [ARROW][]   |  | The bullet will be a minecraft projectile|
+| [BLOCK][]   |  | The bullet will be a block   |
+| [SMALLBLOCK][]|| The bullet will be a small block |
+| [ITEM][]| MYTHICITEM   | The bullet will be an item   |
+| [MOB][] |  | The bullet will be a mob. If a Mythicmobs, it will retain its skills  |
+| [TRACKING][]| ARMOR_STAND, ARMORSTAND, PSTAND | The bullet will be an item, but its rotation will be adjusted depending on the projectile's direction|
 | [REALTRACKING][] | RTRACKING, REAL_ARMOR_STAND, REALARMORSTAND, STAND | As above, but a real armor stand will also be spawned instead of a packet |
-| [DISPLAY][] |              | The projectile will be a display entity                                   |
-| [TEXT][]    |              | The projectile will display a line of text                                |
+| [DISPLAY][] |  | The projectile will be a display entity  |
+| [TEXT][]|  | The projectile will display a line of text   |
 
 Examples:
 ```yaml
@@ -140,104 +140,104 @@ Examples:
 [TEXT]: /skills/mechanics/projectile#text-bullet
 
 ### Universal Bullet Attributes
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletforwardoffset | bulletfo, bulletoffset | The offset of the bullet                      | 1.8     |
+| bulletforwardoffset | bulletfo, bulletoffset | The offset of the bullet  | 1.8 |
 
 ### ARROW Bullet
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | arrowtype | bulletarrowtype | The type of the projectile to use. Can be `NORMAL`,`SPECTRAL`,`TRIDENT` | NORMAL |
 
 ### BLOCK Bullet
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
-| bulletspin | bspin    | The spin of the bullet                                               | 0       |
-| audience  |           | The [Audience][] of the bullet                                       | world   |
+| bulletmaterial | material, mat | The material of the bullet | STONE   |
+| bulletspin | bspin| The spin of the bullet  | 0   |
+| audience  |   | The [Audience][] of the bullet  | world   |
 
 ### SMALLBLOCK Bullet
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
-| audience  |           | The [Audience][] of the bullet                                       | world   |
+| bulletmaterial | material, mat | The material of the bullet | STONE   |
+| audience  |   | The [Audience][] of the bullet  | world   |
 
 ### ITEM Bullet
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
-|bulletModel| model     | The CustomModelData of the material                                  | 0       |
-|bulletColor|           | The color of the material, if applicable                             |         |
-| bulletmatchdirection | bmd | Should the bullet face where the projectile is facing           | false   |
-| bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
-| audience  |           | The [Audience][] of the bullet                                       | world   |
+| bulletmaterial | material, mat | The material of the bullet | STONE   |
+|bulletModel| model | The CustomModelData of the material | 0   |
+|bulletColor|   | The color of the material, if applicable| |
+| bulletmatchdirection | bmd | Should the bullet face where the projectile is facing   | false   |
+| bulletEnchanted | enchanted | Should the material be enchanted  | false   |
+| audience  |   | The [Audience][] of the bullet  | world   |
 
 ### MOB Bullet
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| mob       | mobType, mm | The mob of the bullet                                       | SkeletalKnight |
-| bulletspin | bspin    | The spin of the bullet                                               | 0       |
-| bulletmatchdirection | bmd | Should the bullet face where the projectile is facing           | false   |
-| bulletKillable | bk   | Allow other entities to damage the projectile bullet                 | false   |
-| bulletOffset| boffset | The offset of the bullet mob                                         | 1.35    | 
+| mob   | mobType, mm | The mob of the bullet  | SkeletalKnight |
+| bulletspin | bspin| The spin of the bullet  | 0   |
+| bulletmatchdirection | bmd | Should the bullet face where the projectile is facing   | false   |
+| bulletKillable | bk   | Allow other entities to damage the projectile bullet | false   |
+| bulletOffset| boffset | The offset of the bullet mob| 1.35| 
 
 ### TRACKING Bullet
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
-|bulletModel| model     | The CustomModelData of the material                                  | 0       |
-|bulletColor|           | The color of the material, if applicable                             |         |
-| bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
-| pitch     |           | The pitch rotation                                                   | 0       |
-| yaw       |           | The yaw rotation                                                     | 0       |
-| roll      |           | The roll rotation                                                    | 0       |
-| rotation  | rot       | The rotation of the bullet, in the x,y,z format                      | 0,0,0   |
-| pitchspeed| ps        | The pitch rotation speed                                             | 0       |
-| yawspeed  | ys        | The yaw rotation speed                                               | 0       |
-| rollspeed | rs        | The roll rotation speed                                              | 0       |
-| rotationspeed | rotspeed, rots | The rotation speed of the bullet, in the x,y,z format      | 0,0,0   |
-| audience  |           | The [Audience][] of the bullet                                       | world   |
+| bulletmaterial | material, mat | The material of the bullet | STONE   |
+|bulletModel| model | The CustomModelData of the material | 0   |
+|bulletColor|   | The color of the material, if applicable| |
+| bulletEnchanted | enchanted | Should the material be enchanted  | false   |
+| pitch |   | The pitch rotation  | 0   |
+| yaw   |   | The yaw rotation| 0   |
+| roll  |   | The roll rotation   | 0   |
+| rotation  | rot   | The rotation of the bullet, in the x,y,z format  | 0,0,0   |
+| pitchspeed| ps| The pitch rotation speed| 0   |
+| yawspeed  | ys| The yaw rotation speed  | 0   |
+| rollspeed | rs| The roll rotation speed | 0   |
+| rotationspeed | rotspeed, rots | The rotation speed of the bullet, in the x,y,z format  | 0,0,0   |
+| audience  |   | The [Audience][] of the bullet  | world   |
 
 ### REALTRACKING Bullet
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
-|bulletModel| model     | The CustomModelData of the material                                  | 0       |
-|bulletColor|           | The color of the material, if applicable                             |         |
-| bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
+| bulletmaterial | material, mat | The material of the bullet | STONE   |
+|bulletModel| model | The CustomModelData of the material | 0   |
+|bulletColor|   | The color of the material, if applicable| |
+| bulletEnchanted | enchanted | Should the material be enchanted  | false   |
 
 ### DISPLAY Bullet
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletmaterial | material, mat | The material of the bullet                                  | STONE   |
-|bulletModel| model     | The CustomModelData of the material                                  | 0       |
-|bulletColor|           | The color of the material, if applicable                             |         |
-| bulletEnchanted | enchanted | Should the material be enchanted                               | false   |
-| pitch     |           | The pitch rotation                                                   | 0       |
-| yaw       |           | The yaw rotation                                                     | 0       |
-| roll      |           | The roll rotation                                                    | 0       |
-| rotation  | rot       | The rotation of the bullet, in the x,y,z format                      | 0,0,0   |
-| pitchspeed| ps        | The pitch rotation speed                                             | 0       |
-| yawspeed  | ys        | The yaw rotation speed                                               | 0       |
-| rollspeed | rs        | The roll rotation speed                                              | 0       |
-| rotationspeed | rotspeed, rots | The rotation speed of the bullet, in the x,y,z format       | 0,0,0   |
-| rollspeed | rs        | The roll rotation speed                                              | 0       |
-| tx        |           | The translation on the x axis                                        | 0       |
-| ty        |           | The translation on the y axis                                        | 0       |
-| tz        |           | The translation on the z axis                                        | 0       |
-| translation | pos, offset | The translations on the axes, in the x,y,z format                | 0,0,0   |
-| hideFirstTick | hft   | Hides the item for the first tick                                    | false   |
-|bulletscale| scale     | The scale of the bullet                                            |0.5,0.5,0.5|
-| audience  |           | The [Audience][] of the bullet                                       | world   |
+| bulletmaterial | material, mat | The material of the bullet | STONE   |
+|bulletModel| model | The CustomModelData of the material | 0   |
+|bulletColor|   | The color of the material, if applicable| |
+| bulletEnchanted | enchanted | Should the material be enchanted  | false   |
+| pitch |   | The pitch rotation  | 0   |
+| yaw   |   | The yaw rotation| 0   |
+| roll  |   | The roll rotation   | 0   |
+| rotation  | rot   | The rotation of the bullet, in the x,y,z format  | 0,0,0   |
+| pitchspeed| ps| The pitch rotation speed| 0   |
+| yawspeed  | ys| The yaw rotation speed  | 0   |
+| rollspeed | rs| The roll rotation speed | 0   |
+| rotationspeed | rotspeed, rots | The rotation speed of the bullet, in the x,y,z format   | 0,0,0   |
+| rollspeed | rs| The roll rotation speed | 0   |
+| tx|   | The translation on the x axis   | 0   |
+| ty|   | The translation on the y axis   | 0   |
+| tz|   | The translation on the z axis   | 0   |
+| translation | pos, offset | The translations on the axes, in the x,y,z format| 0,0,0   |
+| hideFirstTick | hft   | Hides the item for the first tick   | false   |
+|bulletscale| scale | The scale of the bullet   |0.5,0.5,0.5|
+| audience  |   | The [Audience][] of the bullet  | world   |
 
 ### TEXT Bullet
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| bulletText| text      | The text of the bullet                                               | *       |
-| bulletBillboard | billboard | The [billboard type][] of the bullet                           | CENTER  |
-|bulletscale| scale     | The scale of the bullet                                            |0.5,0.5,0.5|
-| backgroundcolor | color | The Background color, in the ARGB format                          | 64,0,0,0 |
-| audience  |           | The [Audience][] of the bullet                                       | world   |
+| bulletText| text  | The text of the bullet  | *   |
+| bulletBillboard | billboard | The [billboard type][] of the bullet   | CENTER  |
+|bulletscale| scale | The scale of the bullet   |0.5,0.5,0.5|
+| backgroundcolor | color | The Background color, in the ARGB format  | 64,0,0,0 |
+| audience  |   | The [Audience][] of the bullet  | world   |
 
 
 [Audience]: /Skills/Effects#audience
@@ -264,7 +264,7 @@ You can also use the new **bulletSpin=#** option to give your bullets
 some spin.
 -->
 
-## Examples
+## 範例
 
 This example shoots a fast-moving ball of ice that damages and slows the
 first entity it hits:  

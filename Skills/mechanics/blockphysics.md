@@ -1,17 +1,17 @@
-## Description
+## 用途
 Force a block physics update at the target location
 
 
-## Attributes
+## 細項設定
 >*This mechanic has no attributes*
 
 
-## Examples
+## 範例
 ```yaml
   Skills:
   - blockphysics @selflocation{y=-1}
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] bphysics

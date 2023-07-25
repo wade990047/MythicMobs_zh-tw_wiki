@@ -1,16 +1,16 @@
-## Description
+## 用途
 Checks the phase of the target Ender Dragon entity.  
 A list of valid phases can be found in the [Spigot Phase javadoc](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EnderDragon.Phase.html).
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| phase     | p         | A list of phases to match                                            |         |
+| phase | p | A list of phases to match   | |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - enderdragonphase{phase=CIRCLING} true
@@ -20,5 +20,5 @@ Conditions:
 - enderdragonphase{phases=FLY_TO_PORTAL,LEAVE_PORTAL} true
 ```
 
-## Aliases
+## 簡化寫法
 - [x] edragonPhase

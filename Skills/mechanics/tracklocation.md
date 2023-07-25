@@ -9,5 +9,5 @@ Sets the mob's tracked location to the targeted location
 Examples
 --------
 
-      Skills:
-      - tracklocation @targetlocation
+  Skills:
+  - tracklocation @targetlocation

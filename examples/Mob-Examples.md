@@ -56,11 +56,11 @@ What we end up with is this:
 ```yml
   # ...
   Options:
-    AlwaysShowName: false # Don't always show name unless hovered
-    PreventOtherDrops: true # Don't drop default blaze drops on death
-    PreventMobKillDrops: true # Prevent mobs that the demon kills from dropping loot
-    MovementSpeed: 0.35 # Sets movement speed
-    Silent: false # Play the default blaze sound effects
+AlwaysShowName: false # Don't always show name unless hovered
+PreventOtherDrops: true # Don't drop default blaze drops on death
+PreventMobKillDrops: true # Prevent mobs that the demon kills from dropping loot
+MovementSpeed: 0.35 # Sets movement speed
+Silent: false # Play the default blaze sound effects
 ```
 
 Finally, let's make the mob more interesting by adding some abilities to it.
@@ -104,11 +104,11 @@ Demon:
   Equipment:
   - NETHERITE_AXE HAND # Makes the mob hold a netherite axe in its hand
   Options:
-    AlwaysShowName: false
-    PreventOtherDrops: true
-    PreventMobKillDrops: true
-    MovementSpeed: 0.35
-    Silent: false
+AlwaysShowName: false
+PreventOtherDrops: true
+PreventMobKillDrops: true
+MovementSpeed: 0.35
+Silent: false
   Skills:
   # PARTICLE EFFECTS
   - effect:flames @self ~onTimer:100 # Every 100 ticks (5 seconds), show a spawner flame effect on mob's location.
@@ -144,12 +144,12 @@ Sentinel:
   - attacker # Then targets whatever attacks it
   - otherfaction # Targets whatever is not in the 'bad' faction
   Options: # Additional mob options
-    PreventSunburn: true # Prevents the mob from burning in daylight
-    AlwaysShowName: false # Prevents the mob from showing its name all the time. (Players will have to look at the mob to show the name)
-    PreventOtherDrops: true # Prevents vanilla wither skeleton drops.
-    PreventMobKillDrops: true # Prevents mobs that the Sentinel kills from dropping loot.
-    MovementSpeed: 0.45 # Fast movement speed.
-    Silent: true # Disables its default sounds. Useful if you are going to use custom sounds.
+PreventSunburn: true # Prevents the mob from burning in daylight
+AlwaysShowName: false # Prevents the mob from showing its name all the time. (Players will have to look at the mob to show the name)
+PreventOtherDrops: true # Prevents vanilla wither skeleton drops.
+PreventMobKillDrops: true # Prevents mobs that the Sentinel kills from dropping loot.
+MovementSpeed: 0.45 # Fast movement speed.
+Silent: true # Disables its default sounds. Useful if you are going to use custom sounds.
   Equipment: # Things that the mob will wear.
   - COMMAND_BLOCK HEAD # Wears a Command Block on its head.
   - NETHERITE_SWORD HAND # Holds a Netherite Sword in its hand
@@ -191,12 +191,12 @@ Adventurer:
   Equipment:
   - IRON_SWORD HAND
   Options:
-    PreventSunburn: true
-    AlwaysShowName: false
-    PreventOtherDrops: true
-    PreventMobKillDrops: true
-    MovementSpeed: 0.26
-    Silent: true
+PreventSunburn: true
+AlwaysShowName: false
+PreventOtherDrops: true
+PreventMobKillDrops: true
+MovementSpeed: 0.26
+Silent: true
   Skills:
   - effect:sound{s=entity.villager.ambient;v=.6;p=0.7} @self ~onTimer:60 0.6
   - effect:sound{s=entity.villager.yes;v=.6;p=0.7} @self ~onKill
@@ -225,13 +225,13 @@ Citizen:
   - clear
   - attacker
   Options:
-    PreventItemPickup: false
-    AlwaysShowName: false
-    Despawn: true
-    PreventOtherDrops: true
-    PreventMobKillDrops: true
-    MovementSpeed: 0.35
-    Silent: true
+PreventItemPickup: false
+AlwaysShowName: false
+Despawn: true
+PreventOtherDrops: true
+PreventMobKillDrops: true
+MovementSpeed: 0.35
+Silent: true
   Skills:
   - effect:sound{s=entity.villager.yes;v=.6;p=0.8} @self ~onInteract
   - effect:sound{s=entity.villager.hurt;v=.6;p=0.8} @self ~onDamaged

@@ -27,10 +27,10 @@
   * [Mechanics](Skills/Mechanics)<!--   * [In-line skill](Skills/inline-skills)-->
   * [Effects](Skills/Effects)
   * [Targeters](Skills/Targeters)
-    * [Filters](/Skills/Targeters#target-filters)
+* [Filters](/Skills/Targeters#target-filters)
   * [Triggers](Skills/Triggers)
   * [Conditions](Skills/conditions)
-    * [In-line conditions](Skills/conditions/in-linetargetconditions)
+* [In-line conditions](Skills/conditions/in-linetargetconditions)
   * [Metaskills](/Skills/Metaskills)
   * [Placeholders](Skills/Placeholders)
   * [Variables](Skills/Variables)
@@ -61,4 +61,4 @@
 </a>
 </div>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7730437944686282"
-     crossorigin="anonymous"></script>
+ crossorigin="anonymous"></script>

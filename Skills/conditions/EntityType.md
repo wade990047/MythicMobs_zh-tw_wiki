@@ -1,14 +1,14 @@
-## Description
+## 用途
 Tests if the entity type of the target is the specified one.  
 A list of valid entity types can be found on the [Spigot Javadocs](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html).
 
-## Attributes
+## 細項設定
 
-| Attribute | Alias    | Description                     |
+| Attribute | Alias| Description |
 | --------- | -------- | ------------------------------- |
-| type      | types, t | A list of entity types to match |
+| type  | types, t | A list of entity types to match |
 
-## Examples
+## 範例
 
 ```yaml
 Conditions:
@@ -25,5 +25,5 @@ TriggerConditions:
 - entitytype{t=PLAYER} true
 ```
 
-## Aliases
+## 簡化寫法
 - [x] mobtype

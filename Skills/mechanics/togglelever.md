@@ -10,18 +10,18 @@ of time. (Defaulting to 20 ticks/1 second).
 Attributes
 ----------
 
-| Attribute | Aliases | Description                                                 | Default Value |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|---------|-------------------------------------------------------------|---------------|
-| duration  | d       | The duration (in ticks) the lever should remain toggled on. | 20            |
-| x         |         | The X coordinate of the button.                             | 0             |
-| y         |         | The Y coordinate of the button.                             | 0             |
-| z         |         | The Z coordinate of the button.                             | 0             |
+| duration  | d   | The duration (in ticks) the lever should remain toggled on. | 20|
+| x | | The X coordinate of the button.| 0 |
+| y | | The Y coordinate of the button.| 0 |
+| z | | The Z coordinate of the button.| 0 |
 
   
 
 Examples
 --------
 
-    OpenSecretDoor:
-      Skills:
-      - togglelever{duration=600;x=15;y=67;z=-213}
+OpenSecretDoor:
+  Skills:
+  - togglelever{duration=600;x=15;y=67;z=-213}

@@ -7,10 +7,10 @@ Sets a variable to the result of a math equation, where 'x' is the
 Attributes
 ----------
 
-| Attribute | Aliases | Description                                     | Default Value |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|---------|-------------------------------------------------|---------------|
-| var       |         | The name and scope of the variable              |               |
-| equation  | eq, e   | The operation to be done, must be inside quotes |               |
+| var   | | The name and scope of the variable  |   |
+| equation  | eq, e   | The operation to be done, must be inside quotes |   |
 
   
 Examples
@@ -18,15 +18,15 @@ Examples
 
 Storing a placeholder in a variable
 
-    MMOVar:
-      Skills:
-      - variableMath{var=target.exp;equation="%mmocore_level%"}
+MMOVar:
+  Skills:
+  - variableMath{var=target.exp;equation="%mmocore_level%"}
 
 Doing math
 
-    Math1:
-      Skills:
-      - variableMath{var=caster.damage;equation="<caster.hp>*5"}
-    Math2:
-      Skills:
-      - variableMath{var=caster.speed;equation="(<caster.var.age>/5)+1"}
+Math1:
+  Skills:
+  - variableMath{var=caster.damage;equation="<caster.hp>*5"}
+Math2:
+  Skills:
+  - variableMath{var=caster.speed;equation="(<caster.var.age>/5)+1"}

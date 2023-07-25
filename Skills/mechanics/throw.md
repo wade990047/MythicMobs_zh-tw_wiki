@@ -6,10 +6,10 @@ Throws all targets away from the mob (or origin).
 Attributes
 ----------
 
-| Attribute | Aliases | Description                                           | Default Value |
+| Attribute | Aliases | Description  | Default Value |
 |-----------|---------|-------------------------------------------------------|---------------|
-| velocity  | v       | The horizontal velocity at which the entity is throw. | 1             |
-| velocityY | vy      | The vertical velocity at which the entity is thrown   | 1             |
+| velocity  | v   | The horizontal velocity at which the entity is throw. | 1 |
+| velocityY | vy  | The vertical velocity at which the entity is thrown   | 1 |
 
   
 

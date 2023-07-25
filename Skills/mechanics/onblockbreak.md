@@ -1,18 +1,18 @@
-## Description
+## 用途
 Applies an aura to the target that triggers a skill when they break a block
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| onBlockBreak| oB      | Skill to execute if the target breaks a block                        |         |
-| cancelEvent | cE      | Whether or not to cancel the event that triggered the aura           | false   |
-| dropitem  | drop, allowDrop | If the broken item should be dropped or not                    |         |
-| blockType | blocktypes, bt, t, material, materials, mat, m, blocks, block, b| What blocks should trigger this aura                                                                                      |         |
+| onBlockBreak| oB  | Skill to execute if the target breaks a block| |
+| cancelEvent | cE  | Whether or not to cancel the event that triggered the aura   | false   |
+| dropitem  | drop, allowDrop | If the broken item should be dropped or not| |
+| blockType | blocktypes, bt, t, material, materials, mat, m, blocks, block, b| What blocks should trigger this aura| |
   
 
-## Examples
+## 範例
 
 Simple:
 

@@ -1,16 +1,16 @@
-## Description
+## 用途
 Checks the target's last damage cause.  
 You can find a list of valid damage causes on the [Spigot Javadoc](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html)
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| damagecause | cause, c | The damage cause to match                                     | ENTITY_ATTACK |
+| damagecause | cause, c | The damage cause to match| ENTITY_ATTACK |
 
 
-## Examples
+## 範例
 ```yaml
   Conditions:
   - lastdamagecause{c=ENTITY_ATTACK} true

@@ -1,15 +1,15 @@
-## Description
+## 用途
 Checks if the distance between the entity and the tracked location is within the specified values
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| distance  | d         | The values to check for. Can be a range.                             |         |
+| distance  | d | The values to check for. Can be a range.| |
 
 
-## Examples
+## 範例
 ```yml
 Conditions:
   - DistanceFromTrackedLocation{d=5} true
@@ -19,5 +19,5 @@ Conditions:
   - DistanceFromTrackedLocation{d=2to10} true
 ```
 
-## Aliases
+## 簡化寫法
 - [x] distanceFromTL

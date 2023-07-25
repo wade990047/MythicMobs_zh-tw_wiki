@@ -1,15 +1,15 @@
-## Description
+## 用途
 Matches the target's health
 
 
-## Attributes
+## 細項設定
 
-| Attribute | Aliases   | Description                                                          | Default |
+| 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| health    | h, amount, a | The health range to check for                                     | 0       |
+| health| h, amount, a | The health range to check for| 0   |
 
 
-## Examples
+## 範例
 
 ```yaml
 Conditions:
@@ -29,5 +29,5 @@ Conditions:
 ```
 
 
-## Aliases
+## 簡化寫法
 - [x] hp

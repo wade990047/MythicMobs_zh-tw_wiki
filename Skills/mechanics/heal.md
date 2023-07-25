@@ -7,22 +7,22 @@ the mob to more than its maximum health.
 Attributes
 ----------
 
-| Attribute  | Aliases | Description                                                 | Default |
+| Attribute  | Aliases | Description| Default |
 |------------|---------|-------------------------------------------------------------|---------|
-| amount     | a       | The amount to heal the target                               | 1       |
-| overheal* | oh      | Whether or not to apply overhealing as additional MaxHealth | false   |
+| amount | a   | The amount to heal the target  | 1   |
+| overheal* | oh  | Whether or not to apply overhealing as additional MaxHealth | false   |
 
 Examples
 --------
 
-      Skills:
-      - heal{amount=20} @self ~onDamaged 0.2
+  Skills:
+  - heal{amount=20} @self ~onDamaged 0.2
 
 Heals the casting mob for 20 health (10 hearts) when it is damaged. (20%
 chance)
 
-      Skills:
-      - heal{amount=20;overheal=true} @self ~onDamaged 0.2
+  Skills:
+  - heal{amount=20;overheal=true} @self ~onDamaged 0.2
 
 Heals the casting mob for 20 health (10 hearts) when it is damaged. (20%
 chance)
