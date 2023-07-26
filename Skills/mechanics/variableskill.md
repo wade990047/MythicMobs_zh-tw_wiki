@@ -13,7 +13,7 @@ be set to *false* later in a skill-tree.
 | forcesync | sync  | Whether to force the skill to be run synchroniously with Minecraft. | false   |
 
 
-Examples
+範例
 --------
 ```yaml
 ExampleSkill:

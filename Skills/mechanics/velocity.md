@@ -5,7 +5,7 @@ Modifies the velocity of the targeted entity(s). May be used on players,
 too. Useful for all sorts of things like true knockback resistance,
 force-skills or simulated wind.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases | Description   | Default Value |
@@ -18,7 +18,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 This example will stop all momentum of the casting mob upon taking

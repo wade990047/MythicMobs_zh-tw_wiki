@@ -8,7 +8,7 @@ additions.
 
 Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4.11
 
-Attributes
+細項設定
 ----------
 
 | Attribute| Aliases| Description | Default |
@@ -38,7 +38,7 @@ Attributes
 | damageCause  || Sets the damage cause for this damage mechanic ([Extra info](/skills/mechanics/damage#damagecause))  | | 
 
 
-Examples
+範例
 --------
 
 ArrowBarrage:

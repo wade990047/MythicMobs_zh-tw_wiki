@@ -3,7 +3,7 @@ Mechanic: Set Speed
 
 Causes the target to change its speed attribute
 
-Attributes
+細項設定
 ----------
 
 | Attributes | Description| Default Value |
@@ -13,7 +13,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 This will set the mob's walking speed to 2 when it spawns

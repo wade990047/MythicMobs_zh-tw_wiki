@@ -4,7 +4,7 @@ Mechanic: VariableSubtract
 Subtracts an amount to a [variable](/skills/variables) on the specified
 scope. Only works with numeric variable types.
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
@@ -14,7 +14,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
   Skills:

@@ -11,7 +11,7 @@ fire shield, and is a very complex skill to master.
 
 Added projectile bullets to Orbital in MM 4.11. See how to use them on the [projectiles mechanic](/skills/mechanics/projectile) page.
 
-Attributes
+細項設定
 ----------
 
 | Attribute   | Aliases  | Description  | Default Value |
@@ -73,7 +73,7 @@ the projectile to be hit in a certain way (such as a final large
 fireball explosion) you can use the **@PlayersNearOrigin{r=[radius]}**
 targeter.
 
-Examples
+範例
 --------
 
 This example puts an icy-looking orbital shield around the mob when it

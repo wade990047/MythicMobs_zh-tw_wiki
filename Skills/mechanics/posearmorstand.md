@@ -3,10 +3,10 @@ Mechanic: PoseArmorStand
 
 Moves the extremities of an armorstand, the value is in radians.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------|---------------|
 | head  | | | 0,0,0 |
 | body  | | | 0,0,0 |
@@ -17,7 +17,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
   Skills:

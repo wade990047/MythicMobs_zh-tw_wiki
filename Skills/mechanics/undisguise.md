@@ -1,24 +1,14 @@
-Mechanic: Undisguise
+用途
 ====================
-
-![](https://giant.gfycat.com/WideeyedExcellentArgusfish.gif)  
   
-Removes the mob's active disguise, if it has one.  
-This skill requires Libs' Disguises and ProtocolLib be installed to
-enable Disguise functionality.
+如果目標有正在使用的偽裝則移除他  
 
-See [Add-On: Disguises](/addons/disguises/start) for how to apply and
-use disguises.
+此技能需要插件 **Libs'Disguises** 以及 **ProtocolLib** 來確保正確運作
 
-Attributes
-----------
-
-None!
-
-Examples
+範例
 --------
 
-Undisguise the mob when it is right clicked.
+與目標互動時解除偽裝
 
   Skills:
   - undisguise ~onInteract

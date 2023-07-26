@@ -7,7 +7,7 @@ trigger other skills over its duration. Auras allow you to create custom
 status effects (i.e. buffs and debuffs) that are tracked for their
 duration and can also be used in other mechanics and conditions.  
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
@@ -65,7 +65,7 @@ The **onDamaged** aura type has the following options:
 
 (See example below for usage)
 
-Examples
+範例
 --------
 
   Skills:

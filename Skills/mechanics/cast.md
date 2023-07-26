@@ -13,12 +13,12 @@ caster named **#casting**. Removing the aura from the entity will
 interrupt the cast. Any aura settings that cause the cast to stop early
 will also interrupt casting, such as cancelling on move or teleport.
 
-Attributes
+細項設定
 ----------
 
 *Cast can also use most [Aura](/skills/mechanics/aura) attributes*
 
-| Attribute | Aliases | Description| Default |
+| 設定項 | 簡化寫法 | 用途  | 預設值 |
 |---------------|---------|----------------------------------------------------------------------|---------|
 | onCast| oc  | Skill to execute if the cast finishes successfully   | |
 | onInterrupted | oi  | Skill to execute if the cast is interrupted  | |
@@ -29,7 +29,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 ```yml

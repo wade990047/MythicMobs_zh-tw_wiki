@@ -3,10 +3,10 @@ Mechanic: Set Rotation
 
 Changes the rotation of the target (only works on non-player entities).
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|--------------------------------------------------|---------------|
 | relative  | | If the change is relative to the target, boolean |   |
 | yaw   | | The new yaw | 0 |
@@ -14,7 +14,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
   Skills:

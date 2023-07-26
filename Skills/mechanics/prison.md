@@ -5,10 +5,10 @@ Encases the target entity inside a temporary prison of blocks. The
 created blocks will disappear automatically after the specified
 duration.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|--------------------------------------------------------------|---------------|
 | material  | m   | The Material (block type) the prison is made out of. | ICE   |
 | duration  | d   | How long (in ticks) the prison will last | 100   |
@@ -16,7 +16,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 This skill creates a iron block prison around the target of the casting

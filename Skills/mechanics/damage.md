@@ -1,40 +1,40 @@
 ## 用途
 
-Damages the targeted entity.
+對目標造成傷害
 
 ## 細項設定
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| amount| a | The amount of damage to deal| 1   |
-| ignoreArmor | ia, i   | Whether or not to ignore armor, but will still use enchantment modifiers when calculating total damage | false   |
-| preventknockback | pkb, pk | Whether or not to prevent knockback| false   |
-| preventimmunity  | pi  | Whether or not to ignore immunities| false   |
-| element   | e, damagetype, type | Sets the type of damage to be inflicted| |
-| damagecause | dc, cause | Sets the damage cause for this damage mechanic.<br/> (This option is only available for 1.17+)   | entity_attack |
-| ignoreenchantments |ignoreenchants, ie  | Whether or not to ignore enchantments when calculating total damage.<br>(This option is only available for 1.19+) | false |
-| noanger   | na| Whether or not to generate anger when damaging the entity| false   |
-| ignoreinvulnerability | ignoreinvulnerable, ii | Whether or not to ignore invulnerability| false   |
-| ignoreshield | is | Whether or not to ignore the shield blocking on the target   | false   |
-| damageshelmet| dh | Whether or not the helmet should be damaged  | false   |
-| ignoreeffects| ieff   | Whether or not effects should be ignored| false   |
-| ignoreresistance | ir | Whether or not resistance should be ignored  | false   |
+| amount| a | 造成傷害量| 1   |
+| ignoreArmor | ia, i   | 是否無視盔甲防禦，但仍然會計算由附魔產生的保護| false   |
+| preventknockback | pkb, pk | 是否防止擊退| false   |
+| preventimmunity  | pi  | 是否無視傷害冷卻| false   |
+| element   | e, damagetype, type | 設置傷害屬性| |
+| damagecause | dc, cause | 設置這項傷害的傷害來源.<br/> (僅適用於版本 1.17+)   | entity_attack |
+| ignoreenchantments |ignoreenchants, ie  | 是否忽略附魔.<br>(僅適用於版本 1.19+) | false |
+| noanger   | na|是否讓被傷害的生物生氣| false   |
+| ignoreinvulnerability | ignoreinvulnerable, ii | 是否忽略無敵| false   |
+| ignoreshield | is | 是否忽略舉盾   | false   |
+| damageshelmet| dh | 是否影響頭盔耐久度  | false   |
+| ignoreeffects| ieff   | 是否無視藥水效果| false   |
+| ignoreresistance | ir | 是否忽略抗性  | false   |
 
-### DamageCause
-This attribute is only available in newer MM 5.0 builds.
-All available damage causes can be found on [spigot javadocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html)
+### 傷害來源 (DamageCause)
+這項設定只適用於 MM v5.0 以後的版本，
+可使用的來源類型都在 [Spigot文件](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html) 中
 
-Note: Only `entity_attack`, `entity_sweep_attack`, `thorns`, `sonic_boom`, `entity_explosion`, and `projectile` will return an entity damager, 
-meaning that `<trigger.name>` will not return "Unknown".
+筆記: 只有 `entity_attack`, `entity_sweep_attack`, `thorns`, `sonic_boom`, `entity_explosion`, 和 `projectile` 會回傳實體傷害, 
+這代表 `<trigger.name>` 會回傳 "Unknown"
 
-### Elements
-As seen above, the damage mechanic offers the ability to set an "element" for the damage, like so:
+### 傷害屬性 (Elements)
+向上面提到的, 可以為 傷害(Damage) 技能設置一個 "element" 如下:
 
 ```yaml
 - damage{amount=10;element=FIRE} @target ~onUse
 - damage{amount=10;element=ICE} @target ~onUse
 ```
 
-This element can buy named anything, and can be used in a mob's DamageModifiers to alter resistance to the damage type as needed:
+"element"可以命名為任何東西，也可以被使用在怪物的**傷害倍率器(DamageModifiers)**中，來決定對於這種傷害的該獲得多少的攻擊倍率
 ```yaml
 DamageModTest: 
   Type: COW 
@@ -46,16 +46,15 @@ DamageModTest:
   Skills:
   - message{m="Damaged by <skill.var.damage-type> for <skill.var.damage-amount>"} @PIR{r=50} ~onDamaged
 ```
-These options can also be used in the "onDamaged" aura, using the `damageMods="FIRE 0.5"` attribute.
+這項設定也可以用在 "onDamaged" 光環, 設定方式是 `damageMods="FIRE 0.5"`
 
 ## 範例
 ```yaml
   Skills:
   - damage{amount=20;ignoreArmor=true} @target ~onTimer:20
 ```
+將在每秒對目標造成20點無視盔甲保護的傷害
 
-This skill above does 20 damage (10 hearts), ignoring armor, to the
-mob's target every 1 second (20 ticks).
 ```yaml
 FreezeBlast:
   Skills:
@@ -65,23 +64,26 @@ FreezeBlast:
   - potion{t=SLOW;d=120;l=6} @PIR{r=6}
   - damage{a=120;pkb=true} @PIR{r=6}
 ```
-A more complex use of the **damage** mechanic can give illusions of say
-Ice attacks like the example above. Which uses effects to make the
-targets of the mob appear as if they were frozen by using particles (On
-a repeating interval to create a sort of lingering frost effect as well)
-and inflicting Slowness level 7 (which is -105% movement speed.) slowing
-the mob to a halt. Additionally, the mechanic inflicts 120 damage (60
-hearts) to players within 6 blocks.
+對**傷害(Damage)**技能更複雜的使用可以給人一種高級的感覺
+
+就像上面的例子。它使用特效來製作生物的目標看起來就像是被粒子凍結了
+
+(在重複間隔也可以產生一種揮之不去的冰凍效果) 
+
+並造成 7 級緩速(-105% 移動速度)
+另外對半徑6格內的玩家造成 120 點傷害
 
 ##
 
-**Premium Example**
+**付費版範例**
 ```yaml
   Skills:
   - damage{amount=<caster.var.somevariable> * 0.5 + 1} @target ~onTimer:20
 ```
-This skill above does "<caster.var.somevariable> * 0.5 + 1" damage
-if the varibute: <caster.var.somevariable>'s value is 5,this mechaine will does 3.5 damage
+這項技能用了變量即造成 "<caster.var.somevariable> * 0.5 + 1" 傷害
+假設: <caster.var.somevariable> 的值是 5,
+
+那就會造成```5*0.5+1 => 2.5+1 => 3.5點傷害```
 
 
 ## 簡化寫法

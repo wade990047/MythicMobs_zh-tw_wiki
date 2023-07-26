@@ -1,26 +1,24 @@
-Mechanic: CurrencyTake
+用途
 ======================
 
-Takes money from players.  
-This mechanic needs the Vault plugin and an economy plugin installed to
-work.  
-It also requires Vault being enabled in the [config.yml](/configuration/)
+拿走玩家金錢. 需要 **Vault** 及其他經濟配合插件
+
+***且必須在config.yml中將Vault啟用***
 ```yaml
 Vault:
   Enabled: true
 ```
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description| Default |
+| 設定項 | 簡化寫法 | 用途  | 預設值 |
 |-----------|---------|----------------------------------------|---------|
-| amount| a   | The amount of money taken from player. | 0.0 |
+| amount| a   | 金錢數量 | 0.0 |
 
   
 
-Examples
+範例
 --------
-This skill will take away 20 money from all players in radius of 20 blocks.
 ```yaml
   Skills:
   - currencytake{amount=20} @pir{r=20} ~onSpawn

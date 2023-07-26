@@ -3,7 +3,7 @@ Mechanic: Raytrace
 
 Traces a ray to the target. **[PREMIUM ONLY]**
  
-Attributes
+細項設定
 ----------
 
 | Attribute| Aliases   | Description  | Default Value |
@@ -21,7 +21,7 @@ Attributes
 | raytraceConditions   | rc, rcon, rconditions | Conditions applied to the raytraced target| NONE  |
 | headshotmultiplier   | hsmultiplier, hsm | headshot power multiplier| 1 |
 
-Examples
+範例
 --------
 
 ```

@@ -3,10 +3,10 @@ Mechanic: Shoot Shulker Bullet
 
 Shoots a shulker bullet at the target entity, giving them levitation on hit.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|----------------------------------------------|---------------|
 | interval  | i   | how often in ticks this mechanic updates | 4 |
 | onTick| oT  | the skill this mechanic calls each interval  | NONE  |
@@ -23,7 +23,7 @@ This skill seems to require an entity for a target. Tried using @forward{f=30;y=
 
 ------------
 
-Examples
+範例
 --------
 
 This example would shoot a shulker bullet with some smaller white reddust particles in the onTick and onEnd. It would also damage the target for 5 damage when it hits them.

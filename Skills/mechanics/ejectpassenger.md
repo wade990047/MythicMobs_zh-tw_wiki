@@ -1,12 +1,11 @@
-Mechanic: EjectPassenger
+用途
 ========================
 
-Ejects any passengers that are currently riding the mob. This is a
-no-target mechanic that will always affect the casting mob. It doesn't
-have any attributes nor options.
+將任何騎在自己身上的實體給甩下
 
-Examples
+範例
 --------
-
+```yaml
   Skills:
   - ejectpassenger ~onDamaged
+```

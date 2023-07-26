@@ -7,7 +7,7 @@ Toggles a lever on and off at the supplied coordinates.
 The lever will switch back to the starting position after a set amount
 of time. (Defaulting to 20 ticks/1 second).
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
@@ -19,7 +19,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 OpenSecretDoor:

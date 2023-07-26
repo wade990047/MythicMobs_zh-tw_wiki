@@ -4,7 +4,7 @@ Mechanic: Shoot Potion
 Throws a potion at the targeted entity or location, causing the splash
 potion effect of the given type to all entities hit.
 
-Attributes
+細項設定
 ----------
 
 | Attribute| Aliases| Description| Default |
@@ -18,7 +18,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 ThrownCripplingPotion:

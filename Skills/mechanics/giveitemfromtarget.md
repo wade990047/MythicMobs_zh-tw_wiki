@@ -5,7 +5,7 @@ Gives the caster an item while playing the pickup-item animation from the target
 
 Gives the caster an item from the target entity or location when fakelooting is set to false.
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
@@ -18,7 +18,7 @@ Attributes
 
 This mechanic was added in 4.12 MM
 
-Examples
+範例
 --------
 
 Skills:

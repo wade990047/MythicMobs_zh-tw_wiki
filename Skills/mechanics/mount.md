@@ -3,10 +3,10 @@ Mechanic: Mount
 
 Causes the casting mob to summon a specified MythicMob and mount it.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description  | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|----------------------------------|---------------|
 | type  | t   | The type of MythicMob to summon. |   |
 
@@ -19,7 +19,7 @@ The MythicMob defines in type must be a valid MythicMob type (and is
 case-sensitive). If an invalid type is specified the skill may throw an
 error.
 
-Examples
+範例
 --------
 
 This example would summon a Mythic Mob of the type "UndeadMount" and

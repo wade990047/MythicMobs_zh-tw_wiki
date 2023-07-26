@@ -1,20 +1,11 @@
-Mechanic: Close Inventory
+用途
 =========================
 
-Will close the inventory of the target (must be a player to function).
+關閉目標玩家的物品欄.
 
-REQUIRES `forcesync=true`.
+必要設定: `forcesync=true`.
 
-Attributes
-----------
-
-| Attribute | Aliases | Description | Default Value |
-|-----------|---------|-------------|---------------|
-|   | | |   |
-
-  
-
-Examples
+範例
 --------
 ```yaml
   Skills:

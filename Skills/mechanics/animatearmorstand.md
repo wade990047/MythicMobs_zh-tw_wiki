@@ -1,4 +1,4 @@
-Mechanic: Animate ArmorStand
+用途
 ============================
 
 設定盔甲座動畫

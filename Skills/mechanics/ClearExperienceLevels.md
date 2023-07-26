@@ -1,10 +1,5 @@
 ## 用途
-Clears the experience levels for the targeted players
-
-
-## 細項設定
->*This mechanic has no attributes*
-
+清除目標玩家經驗等級
 
 ## 範例
 ```yaml

@@ -3,7 +3,7 @@ Mechanic: onShoot
 
 Applies an aura to the target that triggers a skill when they shoot with a bow. Can use any [aura](/skills/mechanics/aura) attribute
 
-Attributes
+細項設定
 ----------
 
 | Attribute| Aliases   | Description   | Default Value |
@@ -14,7 +14,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
   Skills:

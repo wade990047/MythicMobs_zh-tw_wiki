@@ -4,7 +4,7 @@ Mechanic: Pull
 Pulls all targeted entities towards the caster with a base velocity,
 increasing based on the distance of targets from the caster.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases | Description   | Default Value |
@@ -22,7 +22,7 @@ The defined velocity is a "base" velocity, and the skill scales the
 velocity based on distance to attempt to pull the entity directly to the
 mob if it is possible based on the base velocity.
 
-Examples
+範例
 --------
 ```yaml
 DeathGrip:

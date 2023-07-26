@@ -15,7 +15,7 @@ A list of possible operations for the action-syntax:
 -   DIVIDE
 -   [1] MOD
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |

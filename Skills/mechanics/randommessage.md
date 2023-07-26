@@ -5,7 +5,7 @@ Sends a random message to the target player. Does nothing if the target
 is not a player. No limit to how much messages can be added to the list.
 The special character # will cause this skill to fail.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases | Description   | Default Value |
@@ -14,7 +14,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
   Skills:

@@ -3,7 +3,7 @@ Mechanic: Set Block Type
 
 Change blocktype at target location.
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
@@ -16,7 +16,7 @@ As of build 4018/4019 you can now setblock mmoitems custom blocks. An example is
 As of build 4088 it now supports all blockstates. An example of setting a button on the floor is below. 
 
 
-Examples
+範例
 --------
 
 SetBlockExample:

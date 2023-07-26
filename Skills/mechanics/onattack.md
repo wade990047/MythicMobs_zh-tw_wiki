@@ -4,7 +4,7 @@ Mechanic: onAttack
 Applies an aura to the target that triggers a skill when they damage
 something. Can use any aura attribute
 
-Attributes
+細項設定
 ----------
 
 | Attribute| Aliases   | Description   | Default Value |
@@ -16,7 +16,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
   Skills:

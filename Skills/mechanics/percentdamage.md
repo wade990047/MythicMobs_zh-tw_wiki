@@ -1,26 +1,20 @@
-Mechanic: Damage Percent
+用途
 ========================
 
-Deals damage equal to a percent of the player's max health, where 1 is
-100%. Has the same options as the Damage mechanic.
+以目標的最大血量為基礎，造成指定比例的傷害, 1 就是100%. 和傷害(Damage)技能有一樣的設定項.
 
-Attributes
+細項設定
 ----------
 
-| Attribute| Aliases | Description  | Default |
+| 設定項| 簡化寫法 | 用途 | 預設值 |
 |------------------|---------|------------------------------------------------------------------------|---------|
-| percent  | p   | The percentage to damage the target   | 0.1 |
-| current  | c,ch| Whether it calculates the percent from your original or current health | false   |
-| ignoreArmor  | ia  | Whether or not to ignore armor| false   |
-| preventknockback | pkb, pk | Whether or not to prevent knockback   | false   |
-| preventimmunity  | pi  | Whether or not to ignore immunities   | false   |
+| percent  | p   | 傷害倍率  | 0.1 |
+| current  | c,ch| 是否以當前為基礎 | false   |
 
-  
-
-Examples
+範例
 --------
-
+```yaml
   Skills:
   - damagepercent{percent=0.5}
-
-Hurts the target for half (50%) of its max health.
+```
+造成目標最大血量的50%傷害

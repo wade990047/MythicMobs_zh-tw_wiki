@@ -6,7 +6,7 @@ mechanic.
 
 ## 細項設定
 
-| Attribute | Aliases | Description  | Default |
+| 設定項 | 簡化寫法 | 用途  | 預設值 |
 |-----------|---------|---------------------------------------------------|---------|
 | amount| a   | The amount of projectiles | 10  |
 | source| s   | The type of the volley. Can be REGULAR or RAIN| REGULAR |

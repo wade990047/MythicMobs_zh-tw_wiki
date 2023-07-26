@@ -7,7 +7,7 @@ vehicle.
 Note: Minecraft 1.10 has a bug where mobs/players won't show up properly
 when riding things. That's not a MythicMobs bug sadly.
 
-Examples
+範例
 --------
 
   Skills:

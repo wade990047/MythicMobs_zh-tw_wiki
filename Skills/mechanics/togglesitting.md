@@ -5,14 +5,14 @@ Mechanic: togglesitting
 
 Toggles the sitting state for cats, dogs, foxes, and parrots.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases   | Description| Default Value |
 |-----------|-----------|------------------------------------|---------------|
 | setSitting | state| Sets the sitting state | false |
 
-Examples
+範例
 --------
 ```
 Dog:

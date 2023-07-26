@@ -3,16 +3,16 @@ Mechanic: Set Health
 
 Sets the health of the target entity.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-----------------------------|---------------|
 | amount| a   | Amount of health to set to. | 1.0   |
 
   
 
-Examples
+範例
 --------
 
 This example will set the players' health to 6 (3 hearts) when they

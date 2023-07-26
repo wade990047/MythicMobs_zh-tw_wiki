@@ -4,7 +4,7 @@ Mechanic: Set Game Mode
 Sets the gamemode of the target player. Does nothing if the target is
 not a player. Requires the `sync=true` attribute.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases | Description   | Default Value |
@@ -13,7 +13,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
   Skills:

@@ -3,10 +3,10 @@ Mechanic: ModifyProjectile
 
 Modifies a projectile, missile, or orbital as it is active.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------|---------------|
 | trait | | the trait to modify. Can be inertia, gravity, velocity, power, and radius | |
 | action| | ADD, SET, MULTIPLY |   |
@@ -22,7 +22,7 @@ Radius only works with orbitals (4.12 MM)
 
 --------
 
-Examples
+範例
 --------
 
 in this example when you shoot the projectile you will watch it slow down gradually to a halt. To test this you can cast it using the in game command below after adding it to a skills.yml file.

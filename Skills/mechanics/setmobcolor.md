@@ -4,7 +4,7 @@ Mechanic: Set Mob Color
 Changes the target color, can only be applied to colorable mobs such as
 shulkers or sheeps.
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
@@ -13,7 +13,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
   Skills:

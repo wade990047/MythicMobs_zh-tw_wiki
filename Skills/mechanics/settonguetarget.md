@@ -8,7 +8,7 @@ Sets the tongue target for a frog caster to the target entity.
 | --------- | ----- | ----------- |
 | none  | none  | none|
 
-Examples
+範例
 --------
 ```yaml
   Skills:

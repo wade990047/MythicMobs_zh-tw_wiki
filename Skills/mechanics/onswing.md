@@ -3,7 +3,7 @@ Mechanic: onSwing
 
 Applies an aura to the target that triggers a skill when they swing (left click)
 
-Attributes
+細項設定
 ----------
 
 | Attribute| Aliases   | Description   | Default Value |
@@ -12,7 +12,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 Simple:

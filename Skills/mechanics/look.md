@@ -4,7 +4,7 @@ Mechanic: Look
 Causes the entity to look at it's target. Can be used to make cool
 effects or creepy ones depending on how creative you get with it.
 
-Attributes
+細項設定
 ----------
 
 | Attribute   | Aliases | Description| Default Value |
@@ -12,7 +12,7 @@ Attributes
 | headOnly| | Only the mob's head is facing the target.   | true  |
 | immediately | | Immediately causes the mob to turn towards the target with no turning animation. | false |
 
-Examples
+範例
 --------
 
 CreepyStare:

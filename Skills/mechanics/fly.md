@@ -1,20 +1,20 @@
-Mechanic: Fly Aura
+用途
 ==================
 
-Makes the player fly, similar to the /fly command. Can use any aura
-attribute.
+施加光環，使目標玩家能夠飛行，跟指令 /fly 的效果一樣，可以套用所有光環的可設定項
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description  | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|----------------------|---------------|
-| duration  | d   | Duration of the aura | 200   |
+| duration  | d   | 光環持續時間 | 200   |
 
   
 
-Examples
+範例
 --------
-
+```yaml
   Skills:
   - fly{duration=100} @trigger ~onInteract
+```

@@ -8,7 +8,7 @@ Sets the projectile's model number. (DISPLAY bullet types only)
 | --------- | ----- | ----------- |
 | model |   | The model to set the projectile to   |
 
-Examples
+範例
 --------
 this example would set the cooldown of the metaskill *test_skill* to 10 seconds for the caster
 ```yaml

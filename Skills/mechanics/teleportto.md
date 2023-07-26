@@ -3,7 +3,7 @@ Mechanic: TeleportTo
 
 Will teleport the targeted entity or entities to the specified location.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases   | Description | Default Value |
@@ -15,7 +15,7 @@ Attributes
 | relative | r| Whether the location is relative or directional| false  |
 | targetasorigin| tao | Will use the target's location as the origin instead of the caster |  false |
 
-Examples
+範例
 --------
 
 Will teleport all players in a radius of 50 blocks around the casting

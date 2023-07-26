@@ -1,17 +1,16 @@
 ## 用途
-Gives money to players.  
-This mechanic needs the Vault plugin and an economy plugin installed to
-work.  
-It also requires Vault being enabled in the plugin's Configurations file
+給予玩家金錢. 需要 **Vault** 及其他經濟配合插件
+
+***且必須在config.yml中將Vault啟用***
 ```yaml
 Vault:
   Enabled: true
 ```
 
 ## 細項設定
-| Attribute | Aliases | Description  | Default |
+| 設定項 | 簡化寫法 | 用途  | 預設值 |
 |-----------|---------|----------------------|---------|
-| amount| a   | The amount of money. | 0.0 |
+| amount| a   | 金錢數量 | 0.0 |
 
   
 
@@ -20,5 +19,3 @@ Vault:
   Skills:
   - currencygive{amount=20} @pir{r=20} ~onSpawn 0.2
 ```
-If executed all players in radius of 20 blocks around the spawned mob
-will receive 20 money by a chance of 20%

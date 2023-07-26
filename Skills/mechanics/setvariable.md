@@ -5,10 +5,10 @@ Sets a [variable](/skills/variables). Variables can be permanent or
 temporary, and can be used in conjunction with conditions or
 placeholders to store data.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description  | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 | variable  | name, n, var, key, k | The name of the variable. Can optionally be prefixed with **scope.**   |   |
 | value | val | The value to set the variable to. Must be applicable for **type** or the mechanic will fail. Should be surrounded in double-quotes if using spaces. Value can also include placeholders, even from PlaceholderAPI. |   |

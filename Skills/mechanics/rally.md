@@ -4,7 +4,7 @@ Mechanic: Rally
 Rallies all nearby mobs of the given types to focus-attack the given
 target.
 
-Attributes
+細項設定
 ----------
 
 | Attribute   | Aliases | Description | Default Value |
@@ -17,7 +17,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 This example would cause all mobs of the type "Guard" or "Knight" within

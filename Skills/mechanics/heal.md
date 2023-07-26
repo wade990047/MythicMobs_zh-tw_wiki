@@ -4,7 +4,7 @@ Mechanic: Heal
 Heals the targeted entity for the specified value. Can also "overheal"
 the mob to more than its maximum health.
 
-Attributes
+細項設定
 ----------
 
 | Attribute  | Aliases | Description| Default |
@@ -12,7 +12,7 @@ Attributes
 | amount | a   | The amount to heal the target  | 1   |
 | overheal* | oh  | Whether or not to apply overhealing as additional MaxHealth | false   |
 
-Examples
+範例
 --------
 
   Skills:

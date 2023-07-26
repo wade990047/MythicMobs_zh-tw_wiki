@@ -1,10 +1,10 @@
-Mechanic: BlockDestabilize
+用途
 ============================
 
-Turns the target block into a falling block. Adding gravity physics to blocks..
+使目標方塊掉落(方塊類型需受重力影響)
   
 
-Examples
+範例
 --------
 ```yml
 Skills:

@@ -8,10 +8,10 @@ is a no-target skill and will always affect the casting mob's score.
 Works exactly like the ModifyMobScore-mechanic, but is only capable of
 performing the **set**-action.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description  | Default |
+| 設定項 | 簡化寫法 | 用途  | 預設值 |
 |-----------|---------|----------------------------------------------------------------------------------------------------------------------------------|---------|
 | objective | obj, o  | Specifies the scoreboard objectiv to be changed. If the objective doesn't exist it will automatically be created by the mechanic | |
 | value | v   | The value to perform the operation with   | |

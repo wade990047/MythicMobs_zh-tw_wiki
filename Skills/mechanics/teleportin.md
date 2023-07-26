@@ -6,7 +6,7 @@ Will teleport the target relative to the caster's yaw. The direction attribute m
 
 `x` is forward or backward, `y` is up or down, and `z` is left or right
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases   | Description | Default Value |
@@ -15,7 +15,7 @@ Attributes
 | yaw | y | Yaw modifier | 0 | 
 | targetasorigin | tao | Will use the target's location as the origin instead of the caster's | false |
 
-Examples
+範例
 --------
 
 Will teleport the player that triggered the skill to the right of the caster.

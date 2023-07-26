@@ -1,25 +1,27 @@
-Mechanic: breakBlockAndGiveItem
+用途
 ===================================
 
-Breaks the block at a target location and gives item(s). This mechanic will also drop the block (with exception of Bedrock). REQUIRES `forcesync=true`.
+破壞目標位置的方塊並掉落指定物品.
 
-Attributes
+此技能會掉落任何被破壞的方塊. 必要設定: `forcesync=true`..
+
+細項設定
 --------------
-| Attribute | Aliases   | Description| Default Value |
+| 設定項 | 簡化寫法   | 用途| 預設值 |
 |-----------|-----------|------------------------------------|---------------|
-| dodrops   | drops, d  | Whether or not to drop the block/s | true  |
-| doeffect  | effect, e | Whether or not to play the break block particles (?) | true |
-| usetool   | tool, t   | Whether or not to use the tool in the players hands (?) | true |
-| fakelooting | fl | Plays the pickup-item animation from the origin | false |
-| items | item, i | An array of item materials, or droptables. | |
+| dodrops   | drops, d  | 是否掉落方塊 | true  |
+| doeffect  | effect, e | 是否播放方塊破壞特效 | true |
+| usetool   | tool, t   | 是否用玩家手中的道具作為破壞標準 | true |
+| fakelooting | fl | 是否播放獲取掉落物的動畫 | false |
+| items | item, i | 物品列表或是物品掉落集 | |
 
 
-Examples
+範例
 --------
 
-Using Crucible Items:
+利用配合 Mythic Crucible 的物品:
 
-Instead of dropping dirt, it'll instead give diamonds to the player.
+只要破壞泥土或是草方塊，則直接給予玩家鑽石，並且不掉落泥土
 ```yaml
 #Items Document
 CustomItem:

@@ -5,7 +5,7 @@ Gives a copy of the caster's slot to the target.
 
 **Note:** Won't consume the item in the given slot of caster
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
@@ -31,7 +31,7 @@ fakeLooting was added in 4.12 and it makes the item being given show up on the s
 
   
 
-Examples
+範例
 --------
 
 Skills:

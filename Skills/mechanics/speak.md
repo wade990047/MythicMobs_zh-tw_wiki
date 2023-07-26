@@ -12,7 +12,7 @@ Holograms.
 * Now supports hover text in the format **`<hover:show_text:'hover text??'>hover over me!</hover>`**
 * Now supports clickable text in the format **`<click:run_command:/say hello>click me!</click>`**
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases | Description  | Default Value|
@@ -28,7 +28,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
   Skills:

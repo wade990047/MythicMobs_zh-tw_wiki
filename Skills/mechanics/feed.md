@@ -1,27 +1,24 @@
-Mechanic: Feed
+用途
 --------------
 
-Feeds the targeted player.  
-Doesn't work for other mobs.
+回復目標玩家飽食度
 
 ### 細項設定
 
-| Attribute  | Aliases | Description | Default |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |------------|---------|-------------------------------------|---------|
-| amount | a   | The amount of hunger to restore | 1   |
-| saturation | s   | The amount of saturation to restore | 0   |
-| overfeed   | o,of| Whether or not to overfeed  | false   |
+| amount | a   | 要恢復得飽實度 | 1   |
+| saturation | s   | 留給飽食效果的量 | 0   |
+| overfeed   | o,of| 是否恢復超過上限的飽食度  | false   |
 
-**Note:**  
-1 amount is half a food unit.  
-Overfeeding means excess food is converted into saturation.  
-Allows for negative values to decrease food!
+**筆記:**  
+超過上限將儲存為恢復效果  
+允許使用負值減少飽食度
 
   
 
 ### 範例
-
-This skill feeds the player 10 hunger (or 5 drumsticks).
-
+```yaml
 Skills:
 - feed{amount=10} @trigger ~onInteract
+```

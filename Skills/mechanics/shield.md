@@ -5,7 +5,7 @@ Adds absorption hearts. Having maxShield as a greater value than amount
 is recommended.  
 Doesn't work on **Minecraft below 1.13**(excluding 1.13).
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases   | Description | Default Value  |
@@ -15,7 +15,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
   Skills:

@@ -3,7 +3,7 @@ Mechanic: Set Gravity
 
 Sets whether gravity affects the target entity.
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
@@ -12,7 +12,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
   Skills:

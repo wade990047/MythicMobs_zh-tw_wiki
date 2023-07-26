@@ -6,7 +6,7 @@ affect the casting mob. It doesn't have any attributes nor options.
 
 This won't work on a few non-mob entities like boats or armor stands!
 
-Examples
+範例
 --------
 
   Skills:

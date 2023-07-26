@@ -3,16 +3,16 @@ Mechanic: Set AI
 
 Toggles the target AI
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description  | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|------------------------------|---------------|
 | ai| | Sets the new mob AI, boolean |   |
 
   
 
-Examples
+範例
 --------
 
   Skills:

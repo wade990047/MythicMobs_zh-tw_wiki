@@ -4,7 +4,7 @@ Mechanic: VariableMath
 Sets a variable to the result of a math equation, where 'x' is the
 [variable](/skills/variables)'s current value.
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |

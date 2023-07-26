@@ -1,29 +1,26 @@
-Mechanic: Give Item
+用途
 ===================
 
-Gives an item to the target. Supports Droptables.
+給予目標指定物品/掉落集合
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |-------------|---------|-------------------|---------------|
-| item| i   | The item material (supports for MythicMobs' [Items](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Items/Items) and [Droptables](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/drops/Drops#drop-tables)) |   |
-| fakeLooting | fl  | Plays the pickup-item animation from the origin | false |
+| item| i   | 物品 (可使用[自定義物品](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/Items/Items) 和 [掉落集合](https://git.lumine.io/mythiccraft/MythicMobs/-/wikis/drops/Drops#drop-tables)) |   |
+| fakeLooting | fl  | 是否播放拾取動畫 | false |
 
 ------------
 
-**Note:**
+**筆記:**
 
-This mechanic do nothing when targeted target's have no space in its inventory.  
+當玩家背包滿時這項技能將沒有任何效用  
 
-fakeLooting was added in 4.12 MM and it makes the item being given show up on the screen and fly toward the players inventory like when a player picks an item up off of the ground.
-
-  
-
-Examples
+範例
 --------
-
+```yaml
 Skills:
 - giveitem{i=diamond_sword} @PIR{r=20} ~onSpawn
 - ...
+```

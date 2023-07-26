@@ -14,14 +14,14 @@ post it in the bugs/suggestion-subforum!
 Note: Versions 2.3.0 onwards- The @trigger targeter is buggy for
 ~onAttack and ~onDamaged. Don't report it as a bug, we know.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description   | Default |
+| 設定項 | 簡化寫法 | 用途  | 預設值 |
 |-----------|---------|----------------------------------------------------|---------|
 | message   | m   | The message to send. Must be surrounded by quotes. | |
 
-Examples
+範例
 --------
 
 Skills:

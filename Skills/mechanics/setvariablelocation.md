@@ -8,7 +8,7 @@ Sets a value of type string. The value will depend on the location passed to the
 | --------- | ----- | ----------- | -------- |
 | value  | val, v  | The target location | @self
 
-Examples
+範例
 --------
 ```yaml
 TestSkill:

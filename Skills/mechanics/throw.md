@@ -3,17 +3,17 @@ Mechanic: Throw
 
 Throws all targets away from the mob (or origin).
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description  | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------------------------------------------------|---------------|
 | velocity  | v   | The horizontal velocity at which the entity is throw. | 1 |
 | velocityY | vy  | The vertical velocity at which the entity is thrown   | 1 |
 
   
 
-Examples
+範例
 --------
 ```yaml
 GroundSlam:
@@ -26,7 +26,7 @@ In this example the mob will create an explosion effect around them that
 inflicts 10 damage (5 hearts) to players within a radius of 5 blocks and
 will knock them back. Giving the illusion of a powerful explosion.
 
-Complex Examples
+Complex 範例
 ----------------
 ```yaml
 SuperShockslam:

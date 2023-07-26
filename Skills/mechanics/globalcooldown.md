@@ -5,7 +5,7 @@ The "GCD" or "Global Cooldown" skill lets you set a mob's global
 cooldown, used in conjunction with the "offgcd" condition if you want a
 mob's abilities to have a global, over-all shared cooldown.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases | Description   | Default Value |
@@ -14,7 +14,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 This skill would trigger a Global Cooldown of 40 ticks, during which the

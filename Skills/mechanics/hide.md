@@ -5,7 +5,7 @@ Hides the caster from the targeted players for a set duration.
 A duration of `0` will permanently hide the caster.
 Only works for MC 1.18+.
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
@@ -16,7 +16,7 @@ Added in MM 4.13
 
 ------------
 
-Examples
+範例
 --------
 ```yml
   DUMMY:

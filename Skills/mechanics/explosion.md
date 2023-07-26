@@ -1,23 +1,24 @@
-Mechanic: Explosion
+用途
 ===================
 
-Creates an explosion at the target entity or location.
+讓目標位置/實體爆炸
 
-Attributes
+細項設定
 ----------
 
-| Attribute   | Aliases | Description  | Default |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-------------|---------|-------------------------------------------------------|---------|
-| yield   | y   | The yield (power) of the explosion| 0.013   |
-| blockdamage | bd  | (true/false) Whether the explosion will damage blocks | false   |
-| fire| f,ft| (true/false) Whether the explosion leaves fire behind | false   |
+| yield   | y   | 爆炸強度| 0.013   |
+| blockdamage | bd  | 是否破壞方塊 | false   |
+| fire| f,ft| 是否炸出火焰 | false   |
 
   
-`WARNING: Blockdamage doesn't seem to respect protection like WorldGuard regions. Use at your own risk.`
+`警告: Blockdamage 不受任何插件阻擋. 使用時風險自負.`
 
-Examples
+範例
 --------
-
+```yaml
 ExplosiveBlast:
   Skills:
   - explosion{yield=4} @target
+```

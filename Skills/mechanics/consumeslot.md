@@ -1,25 +1,25 @@
-Mechanic: ConsumeSlot
+用途
 =================
 
-Removes an item from a specific slot of the player's inventory.
+從玩家物品欄的特定位置移除物品
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description  | Default |
+| 設定項 | 簡化寫法 | 用途  | 預設值 |
 |-----------|---------|----------------------------------------------------------------------------------------|---------|
-| slot  | s   | The inventory slot to remove the item from. Accepts Slots 0 to 35, or equipment slots. | HAND| 
-| amount| a   | The amount of items to remove| 1   |
+| slot  | s   | 目標物品欄欄位. 允許欄位 0 到 35, 或是裝備欄位 | HAND| 
+| amount| a   | 要移除的物品數量| 1   |
 
-Examples
+範例
 --------
 
-Would remove whatever item is in slot 0, or the first slot, of the nearest player's inventory
+將移除玩家物品欄位編號為 0 的物品一個
 ```yaml
 Skills:
   - consumeslot{slot=0;amount=1} @NearestPlayer{r=10}
 ```
-Would remove whatever item is in the HAND equipment slot the nearest player's inventory
+將移除玩家手上的物品一個
 ```yaml
 Skills:
   - consumeslot{slot=HAND;amount=1} @NearestPlayer{r=10}

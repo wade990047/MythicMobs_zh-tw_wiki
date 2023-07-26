@@ -1,4 +1,4 @@
-Mechanic: Activate Spawner
+用途
 --------------------------
 
 在目標位置激活 MythicMobs 刷怪籠 [刷怪籠](Spawners)，因為這項技能而生成的怪物將無視刷怪籠的條件和設定.

@@ -1,31 +1,30 @@
-Mechanic: BaseDamage
+用途
 ====================
 
-Damages the target entity for a percentage of the mob's damage stat.
+以怪物的傷害為基礎，造成指定倍率的傷害
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
 |------------------|---------|-------------------------------------|---------|
-| multiplier   | m   | The percentage of damage to deal| 1   |
-| ignoreArmor  | ia  | Whether or not to ignore armor  | false   |
-| preventknockback | pkb, pk | Whether or not to prevent knockback | false   |
-| preventimmunity  | pi  | Whether or not to ignore immunities | false   |
+| multiplier   | m   | 傷害倍率| 1   |
+| ignoreArmor  | ia  | 是否無視盔甲  | false   |
+| preventknockback | pkb, pk |是否無視攻擊擊退 | false   |
+| preventimmunity  | pi  | 是否無視受傷冷卻 | false   |
 
   
 
-Examples
+範例
 --------
-
-This example will make the mob deal 150% of its original damage to its
-target when its being attacked. In this case it would deal 15 damage,
-since the mob's base-damage is 10.
-
-  AMob:
-Type: HUSK
-Damage: 10
+怪物將會在受到傷害時造成目標
+10 * 1.5 的傷害
+即 15 點傷害
+```yaml
+AMob:
+  Type: HUSK
+  Damage: 10
   Skills:
   - basedamage{m=1.5} @target ~onDamaged
-
-[1] 1 = 100%, 0.5 = 50% and so-on
+```
+[1] 1 = 100%, 0.5 = 50% 以此類推

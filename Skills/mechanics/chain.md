@@ -15,7 +15,7 @@ in the skill and the inherited target of onBounce will be the next
 entity it is bouncing to, so fromOrigin is your friend for making
 effects!
 
-Attributes
+細項設定
 ----------
 
 | Attribute| Aliases| Description   | Default |
@@ -32,7 +32,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 Skills:

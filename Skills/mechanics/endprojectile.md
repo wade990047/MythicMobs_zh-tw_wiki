@@ -8,7 +8,7 @@ Terminates the projectile this mechanic has been called from, activating its onE
 | --------- | ----- | ----------- |
 | none  | none  | none|
 
-Examples
+範例
 --------
 
 **Mob file**

@@ -4,7 +4,7 @@ Mechanic: onDamaged
 Applies an aura to the target that triggers a skill when they take
 damage. Can use any aura attribute
 
-Attributes
+細項設定
 ----------
 
 | Attribute| Aliases   | Description   | Default Value |
@@ -16,7 +16,7 @@ Attributes
 | damageMultiplier | multiplier, m | An optional multiplier on the original hit's damage  | 1|
 | damageMods   |   | Allows the aura to apply damage modifiers. Also accepts a list, as shown in the example. Placeholders can be used as the modifier's amount (**Premium only**). |  |
 
-Examples
+範例
 --------
 
   Skills:

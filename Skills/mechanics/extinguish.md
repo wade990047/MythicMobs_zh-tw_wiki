@@ -1,12 +1,8 @@
-Removes any fire ticks from the target entity
+## 用途
 
-**Attributes**
+將生物的燃燒狀態移除
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none  | none  | none|
-
-**Examples**
+## 範例
 
 ```
 - extinguish{delay=2} @self ~onDamaged

@@ -64,7 +64,7 @@ internal_fallbackskill_name:
 
 Note that the skill you set as the value of OnCooldownSkill can itself have a OnCooldownSkill option.
 
-Examples
+範例
 --------
 
 ```yaml

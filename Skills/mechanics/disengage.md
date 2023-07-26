@@ -1,9 +1,5 @@
 ## 用途
-Disengages from the target, by making the mob leap away from it
-
-## 細項設定
-*This mechanic has no attributes*
-
+使施法者向後跳躍遠離目標實體
 
 ## 範例
 ```yaml

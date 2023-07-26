@@ -8,7 +8,7 @@ This is used in conjunction with the **hastag condition** (see
 "/scoreboard players tag &lt;player name&gt; remove [Tag Name] " to do
 the same thing.
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
@@ -17,7 +17,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 This skill would give the casting mob the tag "Test".

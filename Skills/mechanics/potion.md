@@ -11,7 +11,7 @@ the exception of the armorstand mobtype which has it's own attribute for
 indefinite invisibility. Extremely high modifier-levels may have obscure
 effects.
 
-Attributes
+細項設定
 ----------
 
 | Attribute| Aliases| Description | Default |
@@ -23,7 +23,7 @@ Attributes
 | hasParticles | particles or p | Whether not to show the status effect particles. (4.6+)  | true|
 | hasIcon  | icon or i  | Whether not to show the status effect icon. (4.6+)   | true|
 
-Examples
+範例
 --------
 
 This example skill-configuration will strongly slow down the target for

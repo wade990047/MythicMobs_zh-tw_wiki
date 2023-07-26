@@ -1,14 +1,7 @@
-Mechanic: Bone Meal
---------------------------
-Applies a bone meal effect to the target blocks.
+## 用途
+對目標方塊使用骨粉
 
-**Attributes**
-
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none  | none  | none|
-
-Examples
+範例
 --------
 
 ```yaml

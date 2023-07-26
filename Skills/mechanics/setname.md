@@ -3,7 +3,7 @@ Mechanic: setname
 
 Sets the display name of the caster. This will not work with players.
 
-Examples
+範例
 --------
 ```yaml
 Skills:

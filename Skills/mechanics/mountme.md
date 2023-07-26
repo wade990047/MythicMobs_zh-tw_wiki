@@ -3,7 +3,7 @@ Mechanic: MountMe
 
 Makes the target mount the caster mob.
 
-Examples
+範例
 --------
 
   Skills:

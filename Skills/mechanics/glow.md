@@ -1,25 +1,21 @@
-Mechanic: Glow
+用途
 ==============
 
-Makes the target entity glow (using the Glowing potion effect.)
+讓目標發光，可以指定顏色
 
-Can have a color specified.
+**需要插件 [GLOW API](https://www.spigotmc.org/resources/api-glowapi-1-9-1-10.19422/)**
 
-**REQUIRES THE PLUGIN [GLOW
-API](https://www.spigotmc.org/resources/api-glowapi-1-9-1-10.19422/)**
-
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description | Default |
+| 設定項 | 簡化寫法 | 用途  | 預設值 |
 |-----------|---------|---------------------------------|---------|
-| color | c   | The color the entity will glow: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, PURPLE, YELLOW, or WHITE | white   |
-| duration  | d   | How long the effect will last.  | 100 |
+| color | c   | 顏色可以是: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, PURPLE, YELLOW, WHITE | white   |
+| duration  | d   | 發光多久(單位:ticks)  | 100 |
 
-Examples
+範例
 --------
-
+```yaml
   Skills:
   - effect:glow{color=RED;duration=1000}
-
-Makes the target glow red for 1000 ticks (50 seconds).
+```

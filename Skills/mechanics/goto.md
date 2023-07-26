@@ -3,10 +3,10 @@ Mechanic: GoTo
 
 Causes the mob to pathfind to a location.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |---------------|---------|-------------------------------------------------------------------------------|---------------|
 | speedModifier | s   | The movement speed modifier  | 1 |
 | spreadH   | sh  | Amount of horizontal spread it can be away from the target its moving towards | 0 |
@@ -14,7 +14,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 ```yml
 Skills:

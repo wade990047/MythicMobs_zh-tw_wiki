@@ -8,7 +8,7 @@ Delay can also be used as syntax directly inside other skills by adding
 
 Skill-delay and Syntax-delay do not function the same manner.
 
-Examples
+範例
 --------
 
   Skills:

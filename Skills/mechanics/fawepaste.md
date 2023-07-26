@@ -1,32 +1,32 @@
-Mechanic: fawePaste
+用途
 ===============
 
-Pastes a Schematic using the FAWE Plugin found here: [FAWE](https://www.spigotmc.org/resources/fast-async-worldedit.13932/)
+貼上 FAWE 的選取建築 (插件:Fast Async World Edit): [FAWE](https://www.spigotmc.org/resources/fast-async-worldedit.13932/)
 
-You must create a `Schematics` folder in your MythicMob directory and put the schematics you will use inside that folder.<br>
-If the schematic defined in the mechanic is not found inside mm's `Schematics` folder, FAWE's and WE's will be then checked for its presence
+您必須在 MythicMob 資料夾中創建一個 `Schematics` 資料夾，並將你要使用的藍圖放入該資料夾中。<br>
+如果在 MM 的 `Schematics` 資料夾中找不到技能中定義的藍圖，則請檢查 FAWE 和 WE 是否存在
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description  | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|---------------------------------------------------------------|---------------|
-| schematic |  s   | Which schematic to load. |   |
-| pasteAir | air,a   | Should air be pasted? |   |
-| xOffset | x,xo  | The X offset of pasting the Schematic from the target.   | 0 |
-| yOffset | y,yo  | The Y offset of pasting the Schematic from the target.   | 0 |
-| zOffset | z,zo  | The Z offset of pasting the Schematic from the target.   | 0 |
-| chestDropTable | chests,cdt  | Which MythicMob Drop Tables to supply the chests within the Schematic with.   | "" |
-| trappedchestDropTable | trapchests,tcdt  | Which MythicMob Drop Tables to supply the Trapped Chests within the Schematic with.   | "" |
-| blocksPerTick  || The number of blocks that are placed every tick  |   |
-| pasteID   | pid, id | The paste's id. Can be used to undo the paste via the [undoPaste] mechanic |   |
+| schematic |  s   | 結構名稱 |   |
+| pasteAir | air,a   | 是否也要貼上空氣 | true |
+| xOffset | x,xo  | 貼上結構的目標左右偏移值   | 0 |
+| yOffset | y,yo  | 貼上結構的目標上下偏移值  | 0 |
+| zOffset | z,zo  | 貼上結構的目標前後偏移值   | 0 |
+| chestDropTable | chests,cdt  | 儲物箱裡的物品要用MM的哪個掉落集合   | "" |
+| trappedchestDropTable | trapchests,tcdt  | 陷阱儲物箱裡的物品要用MM的哪個掉落集合   | "" |
+| blocksPerTick  || 每ticks要放置多少方塊  |   |
+| pasteID   | pid, id | 執行貼上的動作id. 可以用在 [還原貼上] 的技能裡 |   |
   
 
-Examples
+範例
 --------
 ```yaml
   - fawePaste{schematic=deserttempleiron.schem;y=6;air=true;chestDropTable=IronDropTable} @origin
 ```
 
 
-  [undoPaste]: /Skills/mechanics/undopaste
+  [還原貼上]: /Skills/mechanics/undopaste

@@ -5,7 +5,7 @@ Causes a lightning strike at the target entity or location, dealing
 damage and potentially setting the target entity or block on fire if it
 is not currently raining, but only if fire spread is enabled.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases | Description   | Default Value |
@@ -14,7 +14,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 This example will summon a lightning bolt to the designated targeters.

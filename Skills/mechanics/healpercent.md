@@ -4,7 +4,7 @@ Mechanic: HealPercent
 Heals the target entity for a percentage of its max-health. Like the
 heal skill, can also overheal mobs by a percentage.
 
-Attributes
+細項設定
 ----------
 
 | Attribute  | Aliases | Description| Default |
@@ -14,7 +14,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 This will make the casting mob heal for 20% of its health each time it

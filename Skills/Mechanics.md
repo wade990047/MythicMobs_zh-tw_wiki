@@ -51,8 +51,8 @@
 | [CurrencyTake][]  | 拿走玩家金錢. 需要 Vault 及經濟配合插件   |
 | [Damage][]| 對目標造成傷害|
 | [BaseDamage][]| 以怪物的傷害為基礎，造成指定倍率的傷害   |
-| [DamagePercent][] | 以目標的當前血量為基礎，造成指定比例的傷害   |
-| [Decapitate][]| 掉落目標頭顱|
+| [DamagePercent][] | 以目標的最大血量為基礎，造成指定比例的傷害   |
+| [Decapitate][]| 掉落目標玩家的頭顱|
 | [Doppleganger][]  | 複製目標玩家的樣貌  |
 | [DropItem][]  | 在目標位置掉落指定物品   |
 | [EjectPassenger][]| 將任何騎在自己身上的實體給甩下  |

@@ -1,25 +1,20 @@
-Mechanic: Force Pull
+用途
 ====================
 
-Teleports all targeted entities to a location within &lt;spread&gt;
-blocks of the casting mob.
+將所有目標實體傳送至施術者`spread`範圍內的某個位置
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|------------------------------------------------------|---------------|
-| spread| s   | How spread out players will be from the casting mob. | 0 |
-| vspread   | vs  | Lets you override the vertical spread value  | spread|
+| spread| s   | 分散半徑 | 0 |
+| vspread   | vs  | 垂直分散半徑(可覆蓋平面分散)  | spread|
 
-  
-
-Examples
+範例
 --------
-
-This example would teleport all entities within 30 blocks to a random
-location within 5 blocks of the boss.
-
+```yaml
 ForceGrip:
   Skills:
   - forcepull{spread=5} @EntitiesInRadius{r=30}
+```

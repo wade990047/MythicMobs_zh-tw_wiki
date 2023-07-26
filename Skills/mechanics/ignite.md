@@ -3,7 +3,7 @@ Mechanic: Ignite
 
 Sets the targeted entity on fire.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases  | Description   | Default |
@@ -12,7 +12,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
   Skills:

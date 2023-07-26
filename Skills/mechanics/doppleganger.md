@@ -1,18 +1,20 @@
-Mechanic: Doppleganger
+用途
 ======================
 
-Copies the appearance of the target player. Does nothing if the target
-is not a player. This skill requires Libs' Disguises and ProtocolLib be
-installed to enable disguise-functionality.
+複製目標玩家的樣貌
 
-| Attribute | Description  |
+此技能需要插件 **Libs'Disguises** 以及 **ProtocolLib** 來確保正確運作
+
+| 細項設定 | 用途  |
 |---------------|--------------------------------------|
-| usePlayerName | Uses the player name as the new name |
+| usePlayerName | 使用玩家名稱 |
 
-Examples
+範例
 --------
 
+```yaml
 Ditto:
   Type: SKELETON
   Skills:
   - doppleganger @NearestPlayer ~onSpawn
+```

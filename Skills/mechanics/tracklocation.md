@@ -6,7 +6,7 @@ Mechanic: TrackLocation
 Sets the mob's tracked location to the targeted location
 
 
-Examples
+範例
 --------
 
   Skills:

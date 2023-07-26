@@ -1,16 +1,13 @@
-Mechanic: Decapitate
+用途
 --------------------
 
-Drops a copy of the target players head. Doesn't do anything if used
-against a non-player entity.
-
-### 細項設定
-
-None!
+掉落目標玩家頭顱
 
 ### 範例
 
-Drops the head of the person who clicked on the mob.
+掉落與怪物互動的玩家頭顱
 
+```yaml
 Skills:
 - decapitate @trigger ~onInteract
+```

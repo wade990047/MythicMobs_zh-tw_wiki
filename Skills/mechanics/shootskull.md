@@ -4,7 +4,7 @@ Mechanic: Shoot Skull
 Shoots a wither skull from the mob towards the target entity or
 location.
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
@@ -14,7 +14,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 This example would shoot a barrage of 3 fast-moving Wither Skulls at the

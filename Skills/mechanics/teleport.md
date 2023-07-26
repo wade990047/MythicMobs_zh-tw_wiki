@@ -3,7 +3,7 @@ Mechanic: Teleport
 
 Teleports the caster to the targeted location/entity. The end point of the teleportation will be within an area whose size depends on the `spreadh` and `spreadv` attributes.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases | Description   | Default Value |
@@ -20,7 +20,7 @@ The skill will attempt to find a safe landing location within the spread
 area, if possible, and should generally avoid putting the mob inside of
 blocks.
 
-Examples
+範例
 --------
 
 This example would teleport the mob to within 5 blocks of the targeted

@@ -4,7 +4,7 @@ Mechanic: Send Toast
 Displays a "toast" message to all targeted players. Does nothing if the
 target is not a player.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases | Description   | Default Value  |
@@ -16,7 +16,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
   Skills:

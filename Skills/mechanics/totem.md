@@ -11,7 +11,7 @@ their defined radius until their charges or duration run out. They're
 useful for creating ground effects with particles, such as clouds of
 poison or land mines.
 
-Attributes
+細項設定
 ----------
 
 | Attribute| Aliases | Description   | Default Value |
@@ -31,7 +31,7 @@ Attributes
 | HitTarget| ht  | Whether can hit skill target. | true  |
 | HitTargetOnly| | Whether only can hit skill target | false |
 
-Examples
+範例
 --------
 
 ```

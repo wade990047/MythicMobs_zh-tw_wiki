@@ -5,7 +5,7 @@ PAPER ONLY MECHANIC
 
 Applies an aura to the target that triggers a skill when they jump
 
-Attributes
+細項設定
 ----------
 
 | Attribute| Aliases   | Description   | Default Value |
@@ -14,7 +14,7 @@ Attributes
 | cancelevent | cE   | cancel the event when it is triggered   | false |
 
 
-Examples
+範例
 --------
 
 Simple 1: 

@@ -5,17 +5,17 @@ Executes a random skill from the list of supplied
 [skills](skills/mechanics/skill). Will ignore any skills that are on
 cooldown. There is no limit to how much skills can be added.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description| Default |
+| 設定項 | 簡化寫法 | 用途  | 預設值 |
 |-----------|---------|---------------------------------------------------------|---------|
 | skills| | The list of skills to execute, must be separated by a `,` | |
 | fallbackskill | fbskill, fbs | the metaskill to run if condition checks fail for all skills in the randomskill list |
 
 
 
-Examples
+範例
 --------
 
 Skills:

@@ -1,29 +1,31 @@
-Mechanic: DisguiseTarget
+用途
 ========================
 
-Runs a disguise string on the target mob. This skill requires Libs'
-Disguises and ProtocolLib be installed to enable Disguise functionality.
+改變目標的偽裝樣貌
 
-Attributes
+此技能需要插件 **Libs'Disguises** 以及 **ProtocolLib** 來確保正確運作
+
+查看 [擴充:偽裝](/Mobs/Disguises) 來查詢所有可用的偽裝列表
+
+細項設定
 ----------
 
-| Attribute | Aliases | Description  | Default |
+| 設定項 | 簡化寫法 | 用途  | 預設值 |
 |-----------|---------|--------------------------------------|---------|
-| disguise  | d, type | The disguise to apply to the target. | |
+| disguise  | d, type | 要應用在目標的偽裝 | |
 
   
 
-Examples
+範例
 --------
 
-This example would cause the target to turn into a sheep.
+將目標變成羊
 ```yaml
 Skills:
   - disguisetarget{d=SHEEP} @target
 ```
 
-This one would turn it into a player using the skin of Notch and giving
-it the display name *Jeb*. Color codes are useable in the nametag field.
+這會將目標轉換為一名玩家並且使用Notch的Skin，頭上的顯示名稱叫做 *Jeb* 且可以使用顏色代碼
 ```yaml
 Skills:
   - disguisetarget{d="player libraryaddict setCustomName '&7Jeb' setSkin Notch.png"} @target

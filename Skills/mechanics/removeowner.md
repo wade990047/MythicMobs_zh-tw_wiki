@@ -3,7 +3,7 @@ Mechanic: RemoveOwner
 
 Removes the wolf's owner
 
-Examples
+範例
 --------
 
   Skills:

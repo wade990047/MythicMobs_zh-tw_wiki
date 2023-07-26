@@ -3,7 +3,7 @@ Mechanic: AddTag
 
 Adds a scoreboard tag to the target.
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
@@ -20,7 +20,7 @@ This is used in conjunction with the **hastag condition** (see
 "/scoreboard players tag &lt;player name&gt; add [Tag Name] " to do
 the same thing.
 
-Examples
+範例
 --------
 
 This skill would give the casting mob the tag "Test".

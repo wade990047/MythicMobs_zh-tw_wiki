@@ -1,18 +1,18 @@
-Mechanic: BossBorder
+用途
 ============================
 
-Traps the player within a border around the caster.
+在生物周圍創建一個無法逃脫的結界
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |---------------|---------|-------------------------------------------------------------------------------|---------------|
-| Range | r   | The border radius  | 1 |
+| Range | r   | 結界半徑  | 1 |
 
   
 
-Examples
+範例
 --------
 ```yml
 Skills:

@@ -13,10 +13,10 @@ codes](/databases/misc/colorcodes) and
 * Now supports hover text in the format **`<hover:show_text:'hover text??'>hover over me!</hover>`**
 * Now supports clickable text in the format **`<click:run_command:/say hello>click me!</click>`**
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description | Default |
+| 設定項 | 簡化寫法 | 用途  | 預設值 |
 |-----------|---------|-----------------------------|---------|
 | message   | msg,m   | The message to send.| None|
 | audience  | | the audience of the message | |
@@ -25,7 +25,7 @@ Attributes
 
 Audience attribute was added in 4.12. possible audience options are: caster, target, and world.
 
-Examples
+範例
 --------
 
   Skills:

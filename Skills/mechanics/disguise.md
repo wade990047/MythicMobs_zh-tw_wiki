@@ -1,52 +1,30 @@
-Mechanic: Disguise
+用途
 ==================
+改變施法者的偽裝樣貌
 
-Runs a disguise string on the casting mob. This skill requires Libs'
-Disguises and ProtocolLib be installed to enable Disguise functionality.
+對目標執行偽裝設定字串. 
 
-See [Add-On: Disguises](/Mobs/Disguises) for a list of available
-disguises.
+此技能需要插件 **Libs'Disguises** 以及 **ProtocolLib** 來確保正確運作
 
-Attributes
+查看 [擴充:偽裝](/Mobs/Disguises) 來查詢所有可用的偽裝列表
+
+細項設定
 ----------
 
-| Attribute | Aliases | Description   | Default |
+| 設定項 | 簡化寫法 | 用途   | 預設值 |
 |-----------|---------|-----------------------------------|---------|
-| disguise  | d, type | The disguise to apply to the mob. | |
+| disguise  | d, type | 施法者的偽裝樣貌. | |
 
   
 
-Examples
+範例
 --------
 
-you can test cast both of these disguises with ``/mm test cast TestingDisguiseMechanic``
+你可以用指令 ``/mm test cast TestingDisguiseMechanic`` 測試下方的技能
 
-This will disguise you as a sheep that is on fire and spinning.
+這項偽裝會使你變成羊，同時正在燃燒以及旋轉
 ```yml
 TestingDisguiseMechanic:
   Skills:
   - disguise{d="Sheep SetBurning SetSpinning"} @self
 ```
-
-This next example will turn you into a steve head that glides across the floor. No good way to describe it. It is pretty funny. I recommend you try it out!
-
-```yml
-TestingDisguiseMechanic:
-  Skills:
-  - disguise{d="Zombie setYModifier -1.5 setPitchLocked setInvisible setHelmet PLAYER_HEAD"} @self
-```
-
-<!--
-
----------
-**Old Way**
-
-This example would cause the mob to turn into a sheep.
-
-  Skills:
-  - disguiseOld{d=SHEEP}
-
-Configure custom disguises using Lib's Disguises for more granular detail.
-
----------
--->

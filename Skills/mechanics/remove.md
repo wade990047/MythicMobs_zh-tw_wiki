@@ -3,7 +3,7 @@ Mechanic: Remove
 
 Removes the targeted entity from existence. Does not work on players.
 
-Examples
+範例
 --------
 
 This mob would despawn 10 seconds after spawning:

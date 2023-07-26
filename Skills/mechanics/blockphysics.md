@@ -1,10 +1,5 @@
 ## 用途
-Force a block physics update at the target location
-
-
-## 細項設定
->*This mechanic has no attributes*
-
+在目標位置觸發方塊更新
 
 ## 範例
 ```yaml

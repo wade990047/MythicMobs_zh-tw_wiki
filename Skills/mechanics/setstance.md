@@ -4,7 +4,7 @@ Mechanic: SetStance
 Sets the "stance" attribute of the target Mythic Mob to the given
 string. Does nothing if the target is not a Mythic Mob.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases | Description   | Default Value |
@@ -23,7 +23,7 @@ match the current stance loosely, meaning if you set the stance to
 "angry fiery explosive" the stance condition will be true for "stance
 fiery".
 
-Examples
+範例
 --------
 
 This skill would change the caster's phase to "bowphase"

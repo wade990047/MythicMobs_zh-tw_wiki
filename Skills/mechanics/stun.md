@@ -3,7 +3,7 @@ Mechanic: Stun
 
 Holds the target in place temporarily.
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
@@ -29,7 +29,7 @@ Special Notes
 This mechanic can cause Spigot to kick the player (PlayerName moved
 wrongly!)
 
-Examples
+範例
 --------
 
 Stuns the target for 3 seconds, target cannot rotate.

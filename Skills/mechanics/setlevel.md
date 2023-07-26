@@ -8,7 +8,7 @@ Causes the casting mob to change it's level.
 Possible operations for the action value are SET, ADD, SUBTRACT,
 MULTIPLY, and DIVIDE.
 
-Attributes
+細項設定
 ----------
 
 | 技能名稱 | 簡化寫法| 用途 | 預設值 |
@@ -18,7 +18,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 This will set the mob level to 3 when it spawns

@@ -4,7 +4,7 @@ Mechanic: TakeItem
 
 Removes an item from the target
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases| Description  | Default |
@@ -13,7 +13,7 @@ Attributes
 | amount| a  | The amount to remove | 1   |
 
 
-Examples
+範例
 --------
 
 Would remove a stack of dirt from the nearest player's inventory

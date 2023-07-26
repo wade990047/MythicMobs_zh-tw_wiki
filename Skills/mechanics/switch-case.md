@@ -3,7 +3,7 @@ Mechanic: Switch-Case
 
 A switch allows a condition to be tested against a list of (cases) values.
 
-Attributes
+細項設定
 ----------
 
 | Attribute| Aliases   | Description | Default Value |
@@ -13,7 +13,7 @@ Attributes
 | cases|   | A list of cases to evaluate |   |
 
 
-Examples
+範例
 --------
 ```yml
 MyCoolMob:

@@ -3,17 +3,17 @@ Mechanic: Send Resource Pack
 
 Sends a resource pack to the targeted player.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|------------------------------------------------------|---------------|
 | url   | u   | The link to the resourcepack to download.| NONE  |
 | hash  | h   | The hash for the resource pack (not currently used). | mythicmobs|
 
   
 
-Examples
+範例
 --------
 
 *Note: the hash provided in this example is just a demonstration, do not

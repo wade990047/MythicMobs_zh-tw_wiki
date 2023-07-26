@@ -3,14 +3,14 @@ Mechanic: setFaction
 
 Sets or changes the target mob's faction.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases| Description | Default Value |
 |-----------|------------|----------------------------------------------------------------------------------------------------------------|---------------|
 | faction  |  | The name of the faction to apply to the mob. | NONE  |
 
-Examples
+範例
 --------
 
 Skills:

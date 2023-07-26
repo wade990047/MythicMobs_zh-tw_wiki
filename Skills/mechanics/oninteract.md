@@ -5,7 +5,7 @@ Applies an aura to a PLAYER that triggers a skill when they interact (right clic
 
 Applies an aura to an entity that triggers a skill when they are interacted with (gets right clicked) by a player
 
-Attributes
+細項設定
 ----------
 
 | Attribute| Aliases   | Description   | Default Value |
@@ -14,7 +14,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 Simple 1: (Player has aura)

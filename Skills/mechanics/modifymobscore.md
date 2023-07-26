@@ -12,10 +12,10 @@ A list of possible operations for the action-syntax:
 -   DIVIDE
 -   [1] MOD
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description  | Default |
+| 設定項 | 簡化寫法 | 用途  | 預設值 |
 |-----------|---------|----------------------------------------------------------------------------------------------------------------------------------|---------|
 | objective | obj, o  | Specifies the scoreboard objectiv to be changed. If the objective doesn't exist it will automatically be created by the mechanic | |
 | action| a   | The operation to perform  | ADD |

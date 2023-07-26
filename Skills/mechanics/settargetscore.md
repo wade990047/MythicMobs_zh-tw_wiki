@@ -7,10 +7,10 @@ Modifies the a scoreboard-objective value of the specified targeter(s).
 Works exactly like the ModifyTargetScore-mechanic, but is only capeable
 of performing the **set**-action.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description  | Default |
+| 設定項 | 簡化寫法 | 用途  | 預設值 |
 |-----------|---------|----------------------------------------------------------------------------------------------------------------------------------|---------|
 | objective | obj, o  | Specifies the scoreboard objectiv to be changed. If the objective doesn't exist it will automatically be created by the mechanic | |
 | value | v   | The value to perform the operation with   | |

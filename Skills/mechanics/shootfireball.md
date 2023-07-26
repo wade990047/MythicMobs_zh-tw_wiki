@@ -4,7 +4,7 @@ Mechanic: Shoot Fireball
 Shoots a fireball from the mob towards the target entity or location.
 **Caution** the large version of this fireball can grief blocks.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases   | Description  | Default Value |
@@ -19,7 +19,7 @@ Attributes
 
   
 
-Examples
+範例
 --------
 
 This example would shoot a barrage of 3 fast-moving fireballs at the

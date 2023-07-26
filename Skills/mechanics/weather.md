@@ -3,7 +3,7 @@ Mechanic: Weather
 
 Changes the weather in the casting mob's world.
 
-Attributes
+細項設定
 ----------
 
 | Attribute | Aliases   | Description  | Default |
@@ -20,7 +20,7 @@ Aliases for weather types:
 | **Rainy**  | rain   |
 | **Stormy** | storm, thunder |
 
-Examples
+範例
 --------
 
 Causes a storm for 10 minutes when the mob spawns.

@@ -6,10 +6,10 @@ projecitle-like trajectory so that the mob will land directly on top of
 the target if the velocity is great enough, otherwise the mob will leap
 at far as possible towards the target.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description  | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------------------------------------|---------------|
 | velocity  | v   | The max velocity of the leap  | 100   |
 | noise | | Added variance to where the mob will land | 1 |
@@ -23,7 +23,7 @@ Because of the way this skill works, using very high velocity values is
 recommended (usually values exceeding 100 work best). Velocity is
 calculated differently with this skill than most others.
 
-Examples
+範例
 --------
 
 This skill would cause the mob to leap towards the target at high

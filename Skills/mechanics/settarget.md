@@ -9,7 +9,7 @@ If using threat tables, will increase threat to the threshold to change targets 
 | --------- | ----- | ----------- |
 | none  | none  | none|
 
-Examples
+範例
 --------
 ```yaml
   Skills:

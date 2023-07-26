@@ -19,16 +19,16 @@ JSON-message mechanics.**
 Please do not post issues relating to this mechanic in the bug-report
 subforums unless you're certain that your syntax is correct.
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description   | Default |
+| 設定項 | 簡化寫法 | 用途  | 預設值 |
 |-----------|---------|----------------------------------------------------------------|---------|
 | message   | m   | The json-message to send. Must be surrounded by double-quotes. | |
 
   
 
-Examples
+範例
 --------
 
 You can use both bukkit color codes or json color formatting:  

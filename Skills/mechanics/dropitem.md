@@ -1,29 +1,27 @@
 Mechanic: Drop Item
 ===================
 
-Drops a set of items or optionally a
-[DropTable](/databases/drops/overview).
+在目標位置掉落指定物品或[掉落集合](/databases/drops/overview).
 
-Attributes
+細項設定
 ----------
 
-| Attribute | Aliases | Description  | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|------------------------------------------------------------------------|---------------|
-| items | i   | Items to drop. Can be a comma-separated list of items, or a DropTable. | NONE  |
+| items | i   | 要掉落的物品，可以是獨立物品、掉落集合、用,分割的物品列 | NONE  |
 
-  
-
-Examples
+範例
 --------
 
-Example of dropping specific items.
-
+掉落指定物品列的範例.
+```yaml
   Skills:
   - dropitem{i=diamond_sword,diamond} @self ~onDeath
   - ...
-
-Example of dropping items from a DropTable.
-
+```
+掉落指定掉落集合的範例
+```yaml
   Skills:
   - dropitem{i=SkeletonKingDrops} @self ~onSpawn
   - ...
+```

@@ -9,7 +9,7 @@ Notes
 Obviously this move won't work if the rider's mount has despawned or is
 killed.
 
-Examples
+範例
 --------
 
 This example is a Mythic Mob named Rider, riding a Horse. When damaged,
