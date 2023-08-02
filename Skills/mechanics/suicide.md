@@ -1,13 +1,11 @@
-Mechanic: Suicide
+用途
 =================
 
-Instantly kills the mob. This is a no-target mechanic and will only
-affect the casting mob. It doesn't have any attributes nor options.
-
-This won't work on a few non-mob entities like boats or armor stands!
+使施法者死亡(只適用於施法者)
 
 範例
 --------
-
+```yml
   Skills:
   - suicide ~onDamaged 0.1
+```

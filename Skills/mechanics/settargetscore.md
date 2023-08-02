@@ -1,11 +1,7 @@
-Mechanic: SetTargetScore
+用途
 ========================
 
-*Added in version 2.3*
-
-Modifies the a scoreboard-objective value of the specified targeter(s).
-Works exactly like the ModifyTargetScore-mechanic, but is only capeable
-of performing the **set**-action.
+設定目標的記分板分數
 
 細項設定
 ----------
@@ -19,12 +15,7 @@ of performing the **set**-action.
 範例
 ----
 
-This example will track how often and whom damaged
-the casting mob in battle.
-
+```yml
   Skills:
-  - settargetscore
-  {
-  o=damagescore;
-  value=1
-  } @trigger ~onDamaged
+  - settargetscore{o=damagescore;value=1} @trigger ~onDamaged
+```

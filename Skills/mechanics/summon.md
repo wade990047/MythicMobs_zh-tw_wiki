@@ -1,39 +1,31 @@
 ## 用途
 
-<!--
-To utilize the summon mechanic in Mythic Mobs, you will need the following:
-
-1. Minecraft: make sure you have a working installation of Minecraft Java Edition on your computer
-
-  - ChatGPT, 16/05/2023, oil on canvas
--->
-
-Summons mobs of the given type around the target.
+對目標召喚其他生物
 
 ## 細項設定
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| type  | t, mob, m| The type of mob to summon. Can be a Mythic Mob type or a regular entity type   | SKELETON  |
-| amount| a | The number of mobs to summon.   | 1   |
-| level | l | The level of the mob being summoned | 0   |
-| radius| r, noise, n| The radius around the target within which the mobs will be summoned | 0   |
-| yRadius   | yr, ynoise, yn| Overrides the Y component of radius.| radius  |
-| yRadiusUpOnly | yradiusonlyup, yruo, yu| Whether the Y spread should only go upward, not downward.| false   |
-| velocity | v, force, f| The maximum initial velocity the mob will have once summoned, making the mob be propelled in a random direction  | 0   |
-| yvelocity| yv, yforce, yf | Same as velocity, but only applied to the y axis | velocity|
-| onSurface | os, s |(true/false) Whether the mobs should be spawned only on a solid block | false   |
-| copyThreatTable | ctt | Whether the summoned mobs should copy the parent's threat table. Requires threat tables to be enabled on the summoned mob to function.  | false   |
-| inheritThreatTable | itt | Whether the summoned mobs should share a threat table with the parent. Requires threat tables to be enabled on the summoned mob to function.  | false   |
-| inheritFaction | if   | Whether the summoned mobs should have the same faction as the parent | true|
-| summonerIsOwner | sio | Whether to set the summoner as the owner of the mob. | true|
-| summonerIsParent | sip| Whether to set the summoner as the parent of the mob.| true|
+| type  | t, mob, m| 要召喚的怪物   | SKELETON  |
+| amount| a | 召喚怪物的數量   | 1   |
+| level | l | 召喚的怪物等級 | 0   |
+| radius| r, n| 在目標周圍半徑多少內生成 | 0   |
+| yRadius   | yr, yn| 用來覆蓋垂直半徑| radius  |
+| yRadiusUpOnly | yruo, yu| 是否讓垂直半徑只有上方| false   |
+| velocity | v, f| 生物被召喚後的最大初始速度，使生物沿隨機平面方向前進  | 0   |
+| yvelocity| yv, yf | 生物被召喚後的最大初始速度，使生物沿隨機垂直方向前進 | velocity|
+| onSurface | os, s |是否只能生成在完整方塊上 | false   |
+| copyThreatTable | ctt | 是否複製父級威脅表 | false   |
+| inheritThreatTable | itt | 是否共用父級威脅表  | false   |
+| inheritFaction | if   | 是否共用父級派系 | true|
+| summonerIsOwner | sio | 召喚者是否為擁有者 | true|
+| summonerIsParent | sip| 召喚者是否為父級| true|
 
   
 
 ## 範例
 
-This example would summon 5 wither skeletons around the target players.
+在半徑 20 格內的所有玩家身旁召喚 五隻凋零骷髏
 ```yml
 RaiseSkeletons:
   Skills:

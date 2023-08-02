@@ -1,17 +1,15 @@
-Mechanic: StopUsingItem
+用途
 --------------------------
 
-Stops the targeted living entity from using an item, i.e. blocking with a shield.
-
-Note: If you want to do some sort of cooldown, try using this mechanic in an aura.
+停止玩家使用物品，例如盾牌，如果要使用冷卻可以配合aura
 
 範例
 --------
 ```yml
 Skills:
-  #basic example
+  #基本做法
   - stopusingitem{} @NearestPlayer
   
-  #with an aura to prevent the player from using a shield
+  #利用光環當玩家舉盾時取消舉盾
   - aura{onTick=[ - stopusingitem{} ?isBlocking ];duration=500} @NearestPlayer
 ```

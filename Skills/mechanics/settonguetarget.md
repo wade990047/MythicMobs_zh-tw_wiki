@@ -1,12 +1,6 @@
-Mechanic: Set Tongue Target
+用途
 --------------------------
-Sets the tongue target for a frog caster to the target entity.
-
-**Attributes**
-
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none  | none  | none|
+將青蛙的舌頭目標設置為目標
 
 範例
 --------

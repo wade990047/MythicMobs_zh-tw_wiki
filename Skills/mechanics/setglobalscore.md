@@ -1,10 +1,7 @@
-Mechanic: SetGlobalScore
+用途
 ========================
 
-為 變更計分板數值 of the fake player \_\_GLOBAL\_\_.
-This is a notarget skill and cannot affect any other players' score.
-Works exactly like the ModifyGlobalScore-mechanic, but is only capeable
-of performing the **set**-action.
+為 `__GLOBAL__` 變更計分板數值
 
 細項設定
 ----------

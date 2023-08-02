@@ -1,30 +1,28 @@
-Mechanic: Rally
+用途
 ===============
 
-Rallies all nearby mobs of the given types to focus-attack the given
-target.
+使附近的其他生物一起攻擊目標
 
 細項設定
 ----------
 
-| Attribute   | Aliases | Description | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------------|---------|----------------------------------------------------------------------------------------------------|---------------|
-| types   | type, t | A list of mob types to rally. The list can include both Mythic Mob types and regular Entity types. | NONE  |
-| radius  | r   | The radius (in blocks) to rally mobs.| 10|
-| vradius | vr  | Overrides the set vertical radius.   | radius|
-| hradius | hr  | Overrides the set horizontal radius. | radius|
-| overwritetarget | ot  | (true/false) Whether to rally mobs that already have a target | true  |
+| types   | type, t | 生物類型，可以是一隻或列表 | NONE  |
+| radius  | r   | 受影響的怪物半徑| 10|
+| vradius | vr  | 平面半徑  | radius|
+| hradius | hr  | 垂直半徑 | radius|
+| overwritetarget | ot  | 是否重置已被指定的目標 | true  |
 
   
 
 範例
 --------
 
-This example would cause all mobs of the type "Guard" or "Knight" within
-30 blocks, that don't already have a target, to attack the whatever or
-whoever triggered this skill.
-
+呼叫半徑 30 格內，所有怪物類型為 "Guard" 跟 "Knight" 的生物，攻擊觸發這個技能的實體
+```yml
 CallForHelp:
   Skills:
   - message{m="<mob.name><&co> Guards! Help me!"} @PlayersInRadius{r=30}
   - rally{types=Guard,Knight;radius=30;ot=false} @Trigger
+```

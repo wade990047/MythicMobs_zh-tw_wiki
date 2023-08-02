@@ -1,12 +1,14 @@
-Sets the immunity ticks on the target. This should be delayed if used immediately during an attack since the ticks are applied after an event completes.
+## 用途
 
-**Attributes**
+設置目標的 NoDamageTicks
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| ticks |   | the nodamageticks to set |
+## 細項設定
 
-範例
-```
+| Attribute | Alias | Description | 預設值 |
+| --------- | ----- | ----------- | -------- |
+| ticks |   | 要設置的無傷tick時間 |  |
+
+## 範例
+```yml
 - setNoDamageTicks{ticks=0;delay=1} @trigger ~onAttack
 ```

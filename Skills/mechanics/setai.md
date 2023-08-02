@@ -1,20 +1,19 @@
-Mechanic: Set AI
+用途
 ================
 
-Toggles the target AI
+關閉/啟用 目標生物的AI
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|------------------------------|---------------|
-| ai| | Sets the new mob AI, boolean |   |
-
-  
+| ai| | 重新設定生物AI(true/false) |   |
 
 範例
 --------
-
+```yml
   Skills:
   - setAI{ai=false} @self ~onSpawn
   - ...
+```

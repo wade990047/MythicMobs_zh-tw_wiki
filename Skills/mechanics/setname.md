@@ -1,7 +1,7 @@
-Mechanic: setname
+用途
 =================
 
-Sets the display name of the caster. This will not work with players.
+改變目標實體的名稱(不適用於玩家)
 
 範例
 --------
@@ -9,7 +9,7 @@ Sets the display name of the caster. This will not work with players.
 Skills:
   - setname{name=newmobname} @self ~onDamaged 1
 ```
-Sets the name of the mob to "newmobname" when the mob is damaged.
+當受到傷害時將名稱改為 "newmobname"
 
 ```yml
 MySkeleton:
@@ -19,6 +19,6 @@ MySkeleton:
   - setname{name=<caster.name>;delay=2} @self ~onDamaged
   - setname{name=<caster.name>;delay=2} @self ~onTimer:10 ?incombat{}
 ```
-This will set the name of the mob to the name it has in its Display: option when it is damaged and every 10 ticks when it is in combat. This is an example of how to make your mob update any placeholders in its name. In this example we are doing it to update the <caster.hp> placeholder.
+將生物的名稱設置為其"Display:" 設定中的名稱(當受到傷害時) 以及在戰鬥中每 10 ticks 一次。
 
-As of Build 3070, this mechanic supports placeholders.
+這是如何讓生物更新其名稱中的占位符的範例。在範例中，這樣做是為了更新 <caster.hp> 佔位符。

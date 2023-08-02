@@ -1,30 +1,30 @@
-Mechanic: Raytrace
+用途
 ---------------------
 
-Traces a ray to the target. **[PREMIUM ONLY]**
+沿著直線到達目標. **[付費版限定]**
  
 細項設定
 ----------
 
-| Attribute| Aliases   | Description  | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |----------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| entityskill  | eskill, es| meta-skill to use when the ray hits an entity |   |
-| locationskill| lskill, ls| meta-skill to use when the ray hits a location|   |
-| headshotskill| hskill, hs| meta-skill to use when it's a headshot|   |
-| maxdistance  | distance, md, d   | max distance to trace| 50|
-| raywidth | rw, w | Width of the ray traced  | 0.2   |  |
-| ignorepassableblocks | ignorepassable, ip| ignores collision of passable blocks | true  |
-| fluidcollisionmode   | fcm   | [Determines the collision behaviour when fluids get hit during ray tracing](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/FluidCollisionMode.html) | NEVER |
-| accuracy | ac, a | spread of the traced ray | 1 |
-| verticalnoise| vn| vertical spread of the ray   | 0 |
-| horizontalnoise  | hn| horizontal spread of the ray | 0 |
-| raytraceConditions   | rc, rcon, rconditions | Conditions applied to the raytraced target| NONE  |
-| headshotmultiplier   | hsmultiplier, hsm | headshot power multiplier| 1 |
+| entityskill  |es| 當直線命中實體時執行的技能 |   |
+| locationskill|ls| 當直線命中位置時執行的技能 |   |
+| headshotskill|hs| 當直線命中頭部時執行的技能 |   |
+| maxdistance  | md   | 直線的最大距離| 50|
+| raywidth | rw | 直線的寬度  | 0.2   |  |
+| ignorepassableblocks | ip| 忽略可通過方塊的碰撞(如:草、花...) | true  |
+| fluidcollisionmode   | fcm   | [直線追踪過程中流體受到撞擊時的碰撞箱](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/FluidCollisionMode.html) | NEVER |
+| accuracy | ac, a | 擊中擴散範圍 | 1 |
+| verticalnoise| vn| 平面擴散範圍   | 0 |
+| horizontalnoise  | hn| 垂直擴散範圍 | 0 |
+| raytraceConditions   | rc|  直線的條件判斷式| NONE  |
+| headshotmultiplier   | hsm | 命中頭部的力量倍率| 1 |
 
 範例
 --------
 
-```
+```yml
   - raytrace{
   entitySkill=[
 - damage{amount=20}

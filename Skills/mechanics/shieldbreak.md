@@ -1,21 +1,20 @@
-Mechanic: Shield Break
+用途
 --------------------------
 
-Breaks the target player's shield block if they are blocking. Only works when targeting players.
+強制玩家取消舉盾狀態並使其進入冷卻狀態
 
 細項設定
 ----------
 
-| Attribute | Aliases| Description | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|------------|----------------------------------------------------------------------------------------------------------------|---------------|
-| duration  | d  | The duration in ticks that the shield will be disabled for after the block is broken | 100  |
+| duration  | d  | 舉盾冷卻時間(單位:ticks) | 100  |
 
   
 
 範例
 --------
-
-If the player is blocking, this would break the block and put the shield on cooldown for 200 ticks (or 10 seconds.)
-
+```yml
 Skills:
 - shieldbreak{duration=200} @target
+```

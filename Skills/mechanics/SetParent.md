@@ -1,14 +1,11 @@
 ## 用途
-Sets the "Parent" of the casting MythicMob as the targeted entity.  
-The Parent can be either a Player or another MythicMob.
-Works with the [@Parent Targeter](/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Parent), and the [IsParent Condition](/mythiccraft/MythicMobs/-/wikis/skills/conditions/IsParent).
 
-## 細項設定
->*This mechanic has no attributes*
-
+設定目標為施法者的父母 
+父母可以是玩家或是其他怪物
+配合 [目標選擇器: 父母](/mythiccraft/MythicMobs/-/wikis/Skills/Targeters/Parent) 和 [條件: 父母](/mythiccraft/MythicMobs/-/wikis/skills/conditions/IsParent).
 
 ## 範例
-This mob will try to set its current parent to the nearest ZombieBoss mob in a 20 block radius if it does not already have a parent
+如果生物沒有父母，則嘗試將其父母設置為半徑 20 格內最近的 "ZombieBoss"
 ```yml
 ZombieFollower:
   Type: DROWNED

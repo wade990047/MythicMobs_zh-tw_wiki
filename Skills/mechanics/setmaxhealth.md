@@ -1,34 +1,32 @@
 Mechanic: Set Max Health
 ========================
 
-Sets the max health of the target entity.
+設置目標實體的最大血量
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| amount| a   | The amount to set max health by. | 1.0   |
-| mode  | m   | The method of setting max health. STATIC will set the max health directly to amount value. SCALE will set the new max health but also scale the current health of the entity accordingly. | STATIC|
+| amount| a   | 要設定的血量 | 1.0   |
+| mode  | m   | 設定的方式. STATIC 會直接更改最大血量. SCALE 會依照當前血量做倍率調整 | STATIC|
 
   
 
 範例
 --------
 
-This example would simply set the new max health of the entity to 5. If
-the new max health is lower than the entity's current health, the
-current health will be set to the new max health.
-
+將簡單將實體的最大生命值設置為 5。如果新的最大生命值低於實體當前的生命值，當前值將設置為新的最大生命值。
+```yml
   Skills:
   - setmaxhealth{amount=5;mode=STATIC} @self ~onInteract
   - ...
+```
+將生物的新最大生命值增加到 5 並擴展它的剩餘血量。
 
-This example would increase the new max health of the mob to 5 and scale
-it's remaining HP up as well. If the entity has 15/20 health and is then
-interacted with, instead of the new health being 5/5 it would become
-3/5.
-
+如果實體的生命值是 15/20，那麼互動後，最新血量不是 5/5，而是 3/5。
+```yml
   Skills:
   - setmaxhealth{amount=5;mode=SCALE} @self ~onInteract
   - ...
+```

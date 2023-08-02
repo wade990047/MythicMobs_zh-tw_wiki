@@ -1,31 +1,28 @@
-Mechanic: Weather
+用途
 =================
 
-Changes the weather in the casting mob's world.
+更改世界天氣
 
 細項設定
 ----------
 
-| Attribute | Aliases   | Description  | Default |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|-----------------------------------------------------------|---------|
-| type  | sunny [1] | The type of weather. Can be "sunny", "rainy", or "stormy" | sunny   |
-| duration  |   | How long (in ticks) the weather will be forced to last| 500 |
+| type  | sunny | 天氣類型可以是 "sunny", "rainy", 或 "stormy" | sunny   |
+| duration  |   | 持續時間(單位:ticks)| 500 |
 
   
-Aliases for weather types:  
-|**Sunny**| sun, clear|
-
-|||
+天氣類型/簡化:  
+|天氣類型|簡化寫法|
 |------------|----------------|
+|**Sunny**| sun, clear|
 | **Rainy**  | rain   |
 | **Stormy** | storm, thunder |
 
 範例
 --------
 
-Causes a storm for 10 minutes when the mob spawns.
-
+```yml
   Skills:
   - weather{type=storm;duration=6000} ~onSpawn
-
-[1] ????
+```

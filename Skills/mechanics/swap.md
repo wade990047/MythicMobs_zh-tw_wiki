@@ -1,19 +1,9 @@
-**Description:** swaps the caster and targets locations
+## 用途 
 
-**Type:** Entity
+和目標交換位置
 
----
+## 範例
 
-**Attributes:**
-
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| none  | none  | none|
-
----
-
-**範例:**
-
-```
+```yml
 - swap @target
 ```

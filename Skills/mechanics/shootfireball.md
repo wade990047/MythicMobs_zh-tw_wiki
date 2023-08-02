@@ -1,29 +1,25 @@
-Mechanic: Shoot Fireball
+用途
 ========================
 
-Shoots a fireball from the mob towards the target entity or location.
-**Caution** the large version of this fireball can grief blocks.
+目標或位置射出火焰彈
 
 細項設定
 ----------
 
-| Attribute | Aliases   | Description  | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |---------------|-----------|--------------------------------------------------------------------------------|---------------|
-| yield | y | The yield (power) of the fireball's explosion.| 1 |
-| velocity  | v | The velocity of the fireball. | 1 |
-| incendiary| i | (true/false) Whether the fireball will leave behind fire.  | false |
-| fireTicks | ft| How long (in ticks) fire left behind by the fireball will persist. | 0 |
-| smallfireball | small,sml | Whether or not to use the smaller blaze fireball instead of the ghast fireball | false |
-| playsound | ps| Whether or not to play the fireball launching sound when it is created | false |
-| type  | t | SMALL/LARGE/DRAGON Added in MM 4.11 | SMALL |
+| yield | y | 爆炸威力| 1 |
+| velocity  | v | 速度 | 1 |
+| incendiary| i | 火焰彈是否會殘留火焰  | false |
+| fireTicks | ft| 火焰存留時間 | 0 |
+| smallfireball | small,sml | 是否替換成烈焰使者的火球 | false |
+| playsound | ps| 是否播放聲音 | false |
+| type  | t | 火球類型:SMALL/LARGE/DRAGON 新增於 MM v4.11 版 | SMALL |
 
   
 
 範例
 --------
-
-This example would shoot a barrage of 3 fast-moving fireballs at the
-target.
 ```yml
 FireballBarrage:
   Skills:

@@ -1,13 +1,10 @@
 ## 用途
-Sets the "owner" attribute of the Mythic Mob to the given target. This is a special attribute used within MythicMobs, and different from the normal "vanilla" owner of a mob.  
-Does nothing if the caster is not a Mythic Mob, or the target is not a Player.  
-Works with the [@Owner Targeter](/Skills/Targeters/Owner), and the [Owner Condition](/skills/conditions/owner).  
+設定目標為施法者的擁有者
 
-If the casting mob is a `Wolf`,`Cat` or `Parrot`, then the mechanic will _also_ set their Vanilla Owner as the targeted player.
+這是 MythicMobs 中使用的特殊屬性，與普通生物的"普通"擁有者不同。
+配合 [目標選擇器:擁有者](/Skills/Targeters/Owner) 和 [條件: 擁有者](/skills/conditions/owner).  
 
-
-## 細項設定
->*This mechanic has no attributes*
+如果目標怪物是 `Wolf`,`Cat`,`Parrot` 也會同時將原版的擁有者一起設定
 
 
 ## 範例
@@ -22,13 +19,13 @@ PetSheep:
   - skill{s=HealOwner} @PIR{R=10} ~onTimer:50
 ```
 
-This skill would change the mob's owner to whoever right clicked it.
+將互動者做為主人
 ```yml
 SetOwner:
   Skills:
   - setowner @trigger
 ```
-This skill would only heal the owner of the mob
+這項技能只會恢復主人血量
 ```yml
 HealOwner:
   TargetConditions:

@@ -1,21 +1,21 @@
-Mechanic: Set Mob Color
+用途
 =======================
 
-Changes the target color, can only be applied to colorable mobs such as
-shulkers or sheeps.
+設置生物的顯示顏色(如果可變更顏色)
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|----------------|---------------|
-| color | c   | The color name |   |
+| color | c   | 顏色 |   |
 
   
 
 範例
 --------
-
+```yml
   Skills:
   - setcolor{color=blue} @self ~onSpawn
   - ...
+```

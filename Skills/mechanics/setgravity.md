@@ -1,21 +1,21 @@
-Mechanic: Set Gravity
+用途
 =====================
-
-Sets whether gravity affects the target entity.
+設置重力是否影響目標實體
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------------------------------------------|---------------|
-| gravity   | g   | Sets whether the entity uses gravity (boolean). | true  |
+| gravity   | g   | 是否被重力影響. | true  |
 
   
 
 範例
 --------
-
+```yml
   Skills:
   - setgravity{g=false} @self ~onSpawn
   - setusegravity{g=false} @self ~onSpawn
   - ...
+```

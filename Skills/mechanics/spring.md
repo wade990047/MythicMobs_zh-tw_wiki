@@ -1,29 +1,21 @@
-Mechanic: Spring
+用途
 ================
 
-Creates a temporary "spring" of liquid at the target entity or location.
+在目標位置產生臨時液體
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|----------------------------------------------|---------------|
-| type  | t | The type of spring. Can be "water" or "lava" | water |
-| duration  | d   | The duration (in ticks) the spring will last | 40|
-
-  
-
-Special Notes
--------------
-
-Liquid spread from the spring can and will destroy any blocks that are
-normally destroyed by liquids. Use wisely.
+| type  | t | 液體類型. 可以是 "water" 或 "lava" | water |
+| duration  | d   | 持續時間(單位:ticks) | 40|
 
 範例
 --------
 
-Creates a spring of water under the target for 5 seconds.
-
+```yml
 Flood:
   Skills:
   - spring{d=100} @target
+```

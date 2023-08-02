@@ -1,26 +1,26 @@
-Mechanic: Shoot Potion
+用途
 ======================
 
-Throws a potion at the targeted entity or location, causing the splash
-potion effect of the given type to all entities hit.
+丟出飛濺藥水
 
 細項設定
 ----------
 
-| Attribute| Aliases| Description| Default |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |--------------|----------------|-----------------------------------------------------------------|---------|
-| type | t | The type of [potion effect](/databases/items/potions) to apply. | None|
-| duration | d  | The duration of the effect, in ticks| 100 |
-| level| l  | The level of the potion effect | 1   |
-| velocity | v  | The velocity of the thrown potion  | 1   |
-| hasParticles | particles or p | Whether not to show the status effect particles. (4.6+) | true|
-| hasIcon  | icon or i  | Whether not to show the status effect icon. (4.6+)  | true|
+| type | t | 要使用的 [藥水類型](/databases/items/potions) | None|
+| duration | d  | 持續時間(單位:ticks)| 100 |
+| level| l  | 藥水效果等級 | 1   |
+| velocity | v  | 丟藥水的速度  | 1   |
+| hasParticles | p | 是否顯示粒子效果 (MM 4.6+) | true|
+| hasIcon  | i  | 是否顯示藥水圖示 (MM 4.6+)  | true|
 
   
 
 範例
 --------
-
+```yml
 ThrownCripplingPotion:
   Skills:
-  - shootpotion{type=SLOW;duration=200;level=4;velocity=5} @target
+  - shootpotion{t=SLOW;d=200;l=4;v=5} @target
+```

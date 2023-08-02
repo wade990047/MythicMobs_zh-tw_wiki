@@ -1,12 +1,9 @@
-Mechanic: SetMobScore
+用途
 =====================
 
-*Added in version 2.3*
+新增於MM v2.3版本
 
-Modifies the a scoreboard-objective value of the casting mob. The skill
-is a no-target skill and will always affect the casting mob's score.
-Works exactly like the ModifyMobScore-mechanic, but is only capable of
-performing the **set**-action.
+設置施法者生物的記分板分數
 
 細項設定
 ----------
@@ -19,5 +16,6 @@ performing the **set**-action.
   
 範例 
 ----
-
-*soon!*
+```yml
+  - setmobscore{o=someobjective=;v=2} @self ~onAttack
+```

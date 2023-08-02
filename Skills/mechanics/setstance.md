@@ -1,42 +1,29 @@
-Mechanic: SetStance
+用途
 ===================
 
-Sets the "stance" attribute of the target Mythic Mob to the given
-string. Does nothing if the target is not a Mythic Mob.
+設置目標生物的姿態(只適用Mythicmobs)
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------------------------|---------------|
-| stance| s   | The string-name of the stance | default   |
-
-  
-
-Special Notes
--------------
-
-This is used in conjunction with the **stance condition** (see
-[Conditions](/conditions/start)) to create different stances or phases
-for a mob, where they use different abilities. The stance condition will
-match the current stance loosely, meaning if you set the stance to
-"angry fiery explosive" the stance condition will be true for "stance
-fiery".
+| stance| s   | 姿態名稱 | default   |
 
 範例
 --------
 
-This skill would change the caster's phase to "bowphase"
-
-StanceChangeSkill
+將施法者的姿態設為 "bowphase"
+```yml
+StanceChangeSkill:
   Skills:
   - setstance{stance=bowphase} @self
-
-This skill would only be usable when the caster had the stance
-"bowphase"
-
+```
+技能只會在姿態為 "bowphase" 時執行
+```yml
 AnotherSkill:
   Conditions:
   - stance bowphase
  Skills:
   - ...some bow skills
+```

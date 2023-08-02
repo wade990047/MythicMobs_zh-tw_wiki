@@ -1,17 +1,17 @@
-Mechanic: Remove
+用途
 ================
 
-Removes the targeted entity from existence. Does not work on players.
+移除目標生物(對玩家無效)
 
 範例
 --------
 
-This mob would despawn 10 seconds after spawning:
+出生後 10 秒移除自己
 ```yml
   Skills:
   - remove{delay=200} @self ~onSpawn
 ```
-This skill despawns the mob immediately when it is right clicked.
+當互動時移除自己
 ```yml
   Skills:
   - remove @self ~onInteract

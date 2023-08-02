@@ -1,17 +1,16 @@
-Mechanic: SetProjectileBulletModel
+用途
 --------------------------
-Sets the projectile's model number. (DISPLAY bullet types only)
+設定投射物的子彈模型. (只會顯示子彈)
 
-**Attributes**
+細項設定
+---
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| model |   | The model to set the projectile to   |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
+| --------- | ----- | ----------- | ----- |
+| model |   | 要使用的模型   |  |
 
 範例
 --------
-this example would set the cooldown of the metaskill *test_skill* to 10 seconds for the caster
 ```yml
-- setProjectileBulletModel{model=1234}
-
+  - setProjectileBulletModel{model=1234}
 ```

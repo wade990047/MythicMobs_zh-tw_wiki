@@ -1,19 +1,21 @@
-Sets the sitting state of the target wolf.
+## 用途
 
-**Attributes**
+強制使狼坐下
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| state |   | The state the wolf is in. True = sitting and False = standing |
+## 細項設定
 
-範例
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
+| --------- | ----- | -----|------ |
+| state |   | 是否坐下| |
 
-```
-# Standing
+## 範例
+
+```yml
+# 站著
 - wolfSit{state=false} @self ~onInteract
 ```
 
-```
-# Sitting
+```yml
+# 坐著
 - wolfSit{state=true} @self ~onInteract
 ```

@@ -1,23 +1,23 @@
-Mechanic: ShieldPercent
+用途
 =======================
 
-Applies an absorb shield to the target entity for a percentage of their
-max health.  
-Doesn't work on **Minecraft below 1.13**(excluding 1.13).
+對目標實體新增以最大血量為基礎，取比例增加吸收效果的心
+**適用於Minecraft版本 1.13+**
 
 細項設定
 ----------
 
-| Attribute  | Aliases   | Description | Default Value  |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |------------|-------------------|-------------|--------------------|
-| multiplier | m | | 0.1|
-| maxabsorb  | maxshield, ma, ms | | Multiplier's value |
+| multiplier | m | 倍率| 0.1|
+| maxabsorb  | ma, ms | 最大數量| Multiplier's value |
 
   
 
 範例
 --------
-
+```yml
   Skills:
   - shieldPercent{multiplier=2;mS=2.5} @self ~onTimer:2000
   - ...
+```

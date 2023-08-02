@@ -1,23 +1,21 @@
-Mechanic: Set Health
+用途
 ====================
 
-Sets the health of the target entity.
+設置目標實體的血量
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-----------------------------|---------------|
-| amount| a   | Amount of health to set to. | 1.0   |
+| amount| a   | 要設定的血量 | 1.0   |
 
   
 
 範例
 --------
-
-This example will set the players' health to 6 (3 hearts) when they
-right-click the mob.
-
+```yml
   Skills:
   - sethealth{a=6} @trigger ~onInteract
   - ...
+```

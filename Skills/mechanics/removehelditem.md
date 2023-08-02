@@ -1,12 +1,12 @@
 ## 用途
-Removes the given amount from the target player's held item. 
+移除玩家手上的物品
 
 
 ## 細項設定
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-| amount| a | The amount to remove| 1   |
+| amount| a | 要移除的數量| 1   |
 
 
 ## 範例

@@ -1,34 +1,23 @@
-Mechanic: Shoot Shulker Bullet
+用途
 ================================
 
-Shoots a shulker bullet at the target entity, giving them levitation on hit.
+設出界伏蚌的子彈，並給擊中的生物漂浮效果
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|----------------------------------------------|---------------|
-| interval  | i   | how often in ticks this mechanic updates | 4 |
-| onTick| oT  | the skill this mechanic calls each interval  | NONE  |
-| onHit | oH  | the skill this mechanic calls when it hits the target | NONE |
-| onEnd | oE  | the skill this mechanic calls when it ends   | NONE  |
+| interval  | i   | 每多少 ticks 更新一次 | 4 |
+| onTick| oT  | ticks 計算時要執行的技能  | NONE  |
+| onHit | oH  | 擊中後要執行的技能 | NONE |
+| onEnd | oE  | 結束後要執行的技能   | NONE  |
 
-------------
-
-Notes:
-
-Added in 4.12 MM
-
-This skill seems to require an entity for a target. Tried using @forward{f=30;y=0} and it did not spawn the shulker bullet. 
-
-------------
 
 範例
 --------
 
-This example would shoot a shulker bullet with some smaller white reddust particles in the onTick and onEnd. It would also damage the target for 5 damage when it hits them.
-
-```
+```yml
 TestingShootShulkerBullet:
   Skills:
   - ShootShulkerBullet{oT=TSSB_oT;oH=TSSB_oH;oE=TSSB_oE;i=1} @target

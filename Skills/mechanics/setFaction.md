@@ -1,19 +1,18 @@
-Mechanic: setFaction
+用途
 =================
 
-Sets or changes the target mob's faction.
+改變目標實體的派系
 
 細項設定
 ----------
 
-| Attribute | Aliases| Description | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|------------|----------------------------------------------------------------------------------------------------------------|---------------|
-| faction  |  | The name of the faction to apply to the mob. | NONE  |
+| faction  |  | 派系名稱(限英文) | NONE  |
 
 範例
 --------
-
+```yml
 Skills:
 - setFaction{faction=Hostile} @self ~onSpawn
-
-Sets the faction of the mob to "Hostile" when the mob spawns.
+```

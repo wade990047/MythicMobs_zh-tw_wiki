@@ -1,21 +1,14 @@
-Mechanic: Remount
+用途
 =================
 
-Causes the casting mob to remount the mob it spawned riding.
-
-Notes
------
-
-Obviously this move won't work if the rider's mount has despawned or is
-killed.
+重新騎乘施法者最初騎乘的生物(如果它還活著)
 
 範例
 --------
+一隻名為 "Rider" 的生物預設騎著 "TestHorse"，
 
-This example is a Mythic Mob named Rider, riding a Horse. When damaged,
-the Rider dismounts the horse. When right clicked, the Rider will get
-back onto the horse.
-
+當受傷時下馬，互動時若 "TestHorse" 還活著則重新騎上
+```yml
 Rider:
   Mobtype: skeleton
   Display: 'Rider'
@@ -28,3 +21,4 @@ TestHorse:
   Mobtype: horse
   Display: 'Test Horse'
   Health: 20
+```

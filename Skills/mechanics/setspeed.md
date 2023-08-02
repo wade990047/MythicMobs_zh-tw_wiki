@@ -1,21 +1,21 @@
-Mechanic: Set Speed
+用途
 ===================
 
-Causes the target to change its speed attribute
+設定目標實體的移動速度
 
 細項設定
 ----------
 
-| Attributes | Description| Default Value |
-|------------|-----------------------------------------|---------------|
-| speed  | Speed of the entity | 1 |
-| type   | Type of speed, can be WALKING or FLYING | WALKING   |
+| 預設值 | 簡化寫法 | 用途 | 預設值 |
+|------------|-----|-----------------------------------------|---------------|
+| speed  | | 速度倍率 | 1 |
+| type   | | 加速類型，可以是WALKING, FLYING | WALKING   |
 
   
 
 範例
 --------
 
-This will set the mob's walking speed to 2 when it spawns
-
-- setspeed{speed=2;type=walking} ~onSpawn
+```yml
+  - setspeed{speed=2;type=walking} ~onSpawn
+```

@@ -1,12 +1,12 @@
 ## 用途
-Sets if the target raider should be a raider patrol leader or not
+設定目標為突襲的隊長
 
 
 ## 細項設定
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
-|  leader   | l, bool, b| Should the target raider be a leader|   true  |
+|  leader   | l, bool, b| 是否將目標設為突襲隊長|   true  |
 
 
 ## 範例

@@ -1,10 +1,6 @@
 ## 用途
-Sets the position of the dragon's podium (aka the point the dragon circles around) at the target location. paper 1.18.2+ only.
-
-## 細項設定
-*This mechanic has no attributes*
-
-## Example
+將終界龍的盤旋位置設置在目標位置，伺服端 Paper 1.18.2+ 限定
+## 範例
 ```yml
   Skills:
   - setDragonPodium @Location{c=125,50,-521}

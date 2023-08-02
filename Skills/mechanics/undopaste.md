@@ -1,24 +1,26 @@
-Mechanic: undoPaste
-===============
-Undoes a previous paste done via the [fawePaste] mechanic, based on its id or on the schematic used
+## 用途
+復原上一個貼上的動作 [技能:fawePaste]
 
+
+## 細項設定
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|---------------------------------------------------------------|---------------|
-| schematic |  s   | The schematic that needs to be undone. Only necessary if no id can be provided | |
-| pasteID   | pid, id  | The id of the paste that needs to be undone  |   |
+| schematic |  s   | 要取消貼上的結構 | |
+| pasteID   | pid, id  | 要取消貼上的ID  |   |
 
 ## 範例
+
 ```yml
 ExampleMob:
   Skills:
 
-  # With ID
+  # 有 ID
   - fawePaste{s=cgym.schem;id=abc} @self ~onSpawn
   - undoPaste{id=abc} @self ~onDamaged
 
-  # Without ID
+  # 沒 ID
   - fawePaste{s=lab.schem} @self ~onSpawn
   - undoPaste{id=lab.schem} @self ~onDamaged
 ```
 
-[fawePaste]: /Skills/mechanics/fawepaste/
+[技能:fawePaste]: /Skills/mechanics/fawepaste/

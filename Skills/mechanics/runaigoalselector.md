@@ -1,26 +1,18 @@
-Mechanic: RunAIGoalSelector
+用途
 ======================
 
-**Aliases**: aigoal
+**設定項**: aigoal
 
-Change pathfindergoals. It is not possible to use every goal on every
-entity. To change the ai of an entity, you need to use clear first.
-After that you can use the runaigoalselector and add the goals you need.
-Unlike the mob configuration, if you use the runaigoalselector skill,
-you can only use one pathfindergoal in the mechanic. But aslong as you
-dont use clear, the pathfindergoal is added to the end of the already
-existing goals of the entity.
+執行目標的 AIGoalSelectors
 
-A list of AI Goals can be found
-[here](/Mobs/Custom-AI#ai-goal-selectors)
+[可用的AI動作目標](/Mobs/Custom-AI#ai-goal-selectors)
 
-Example
+範例
 -------
-
-Skill.yml:
-
+```yml
 ChangePatchfinderGoalExample:
   Skills:
   - runaigoalselector{goal=clear}
   - runaigoalselector{goal=fleesun}
   - runaigoalselector{goal=randomstroll}
+```

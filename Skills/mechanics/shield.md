@@ -1,23 +1,23 @@
-Mechanic: Shield
+用途
 ================
 
-Adds absorption hearts. Having maxShield as a greater value than amount
-is recommended.  
-Doesn't work on **Minecraft below 1.13**(excluding 1.13).
+增加吸收效果的心
+**適用於Minecraft版本 1.13+**
 
 細項設定
 ----------
 
-| Attribute | Aliases   | Description | Default Value  |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-------------------|-------------|----------------|
-| amount| a | | 1  |
-| maxabsorb | maxshield, ma, ms | | Amount's value |
+| amount| a | 數量| 1  |
+| maxabsorb | ma, ms | 最大數量| Amount's value |
 
   
 
 範例
 --------
-
+```yml
   Skills:
   - shield{amount=50;maxShield=100} @self ~onSpawn
   - ...
+```

@@ -1,10 +1,5 @@
 ## 用途
-Shows the hidden caster to the targeted players.
-
-
-## 細項設定
-> *This mechanic has  no attributes*
-
+顯示對目標玩家隱形的實體
 
 ## 範例
 ```yml
