@@ -9,7 +9,7 @@ Missiles can target both a location and an entity.
 
 
 ## 細項設定
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | Inertia   | in| Sets the "turning-rate" of the missile. Lower values make the missile turn around faster. Use big numbers (10-100) when trying to make your missiles turn slowly. | 1.5 |
 | onStart   | oS| Meta-Skill executed when the projectile starts   | |
@@ -48,14 +48,14 @@ Missiles can target both a location and an entity.
 This example shoots a missile that looks like a thin trail of flames
 with a high turning rate. It bursts into a powerful explosion upon
 hitting its target.
-```yaml
+```yml
 # Mob File
 Mob:
   Type: ZOMBIE
   Skills:
   - skill{s=Homer} @target ~onTimer:100
 ```
-```yaml
+```yml
 # Skills File
 Homer:
   Skills:

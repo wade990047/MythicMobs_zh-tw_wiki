@@ -14,7 +14,7 @@
 
 範例
 --------
-```yaml
+```yml
   Skills:
   - fly{duration=100} @trigger ~onInteract
 ```

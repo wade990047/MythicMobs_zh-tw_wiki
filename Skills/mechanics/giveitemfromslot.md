@@ -1,40 +1,36 @@
-Mechanic: Give Item From Slot
+用途
 ===================
 
-Gives a copy of the caster's slot to the target.
+給予目標玩家一份施法者物品欄指定位置的複製物品
 
-**Note:** Won't consume the item in the given slot of caster
+**筆記:** 原物品不會消失
 
 細項設定
 ----------
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-------------|---------|-------------------|---------------|
-| slot| s   | The caster's slot | None |
-| fakeLooting | fl  | plays the pickup-item animation from the origin | false |
+| slot| s   | 欄位 | None |
+| fakeLooting | fl  | 是否播放撿取物品的動畫 | false |
 
-**Valid Slots:**
+**可用的其他欄位:**
 
 | HEAD | CHEST | LEGS | FEET | HAND | OFFHAND |   
 | ---- | ----- | ---- | ---- | ---- | ------- |  
 ---
 
-Added in MM 4.13
+更新於MM v4.13 版本
 
 ------------
 
-**Note:**
+**筆記:**
 
-this mechanic does nothing when the target has no space in it's inventory.  
-
-fakeLooting was added in 4.12 and it makes the item being given show up on the screen and fly toward the players inventory like when a player picks an item up off of the ground.
-
-  
+當目標背包沒有任何空間時，本項技能沒有任何用處 
 
 範例
 --------
-
+```yml
 Skills:
 - giveitemfromslot{slot=HAND;fakelooting=true} @server ~onTimer:10
-
-Give caster's main hand item to all players on the server, and plays the pickup animation.
+```
+每 0.5 秒給予全伺服器的玩家施法者手上的物品

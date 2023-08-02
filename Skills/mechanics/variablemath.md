@@ -7,13 +7,13 @@ Sets a variable to the result of a math equation, where 'x' is the
 細項設定
 ----------
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------------------------------------------|---------------|
 | var   | | The name and scope of the variable  |   |
 | equation  | eq, e   | The operation to be done, must be inside quotes |   |
 
   
-Examples
+範例
 ----
 
 Storing a placeholder in a variable

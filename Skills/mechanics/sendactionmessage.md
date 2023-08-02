@@ -17,7 +17,7 @@ Note: Versions 2.3.0 onwards- The @trigger targeter is buggy for
 細項設定
 ----------
 
-| 設定項 | 簡化寫法 | 用途  | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|----------------------------------------------------|---------|
 | message   | m   | The message to send. Must be surrounded by quotes. | |
 

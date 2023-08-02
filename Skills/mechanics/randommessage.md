@@ -8,7 +8,7 @@ The special character # will cause this skill to fail.
 細項設定
 ----------
 
-| Attribute | Aliases | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|---------------------------------------------------------------------------------------------------------------------------------------|---------------|
 | messages  | m   | A list of message strings to send to the player, separated by commas. Each string must be in quotes. These strings can use variables. |   |
 

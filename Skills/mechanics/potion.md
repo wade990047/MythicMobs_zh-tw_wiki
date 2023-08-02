@@ -1,37 +1,30 @@
-Mechanic: Potion
+用途
 ================
 
-Applies a potion effect to the target entity, which is usually
-frequently used on custom mob creations and a quite powerful tool; as it
-allows for countless interesting applications. See the [spigot javadocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html) for a complete list of available potion
-effects.
+給予目標藥水效果, 在 [這裡](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html) 
+可以看到所有可用藥水效果
 
-Potion effects are currently the only way to make mobs invisible, with
-the exception of the armorstand mobtype which has it's own attribute for
-indefinite invisibility. Extremely high modifier-levels may have obscure
-effects.
+過高的藥水等級可能會有反效果
 
 細項設定
 ----------
 
-| Attribute| Aliases| Description | Default |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |--------------|----------------|-------------------------------------------------------------------------------------------|---------|
-| type | t  | The type of [potion effect](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html) to apply.   | |
-| duration | d  | The duration of the effect in ticks [1]. | 100 |
-| level| l  | The modifier-level of the potion effect. The real level is level's value +1. | 1   |
-| force|| Whether not to override the current potion effect or not. (4.0+)  | false   |
-| hasParticles | particles or p | Whether not to show the status effect particles. (4.6+)  | true|
-| hasIcon  | icon or i  | Whether not to show the status effect icon. (4.6+)   | true|
+| type | t | 要套用的 [藥水效果](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html) | |
+| duration | d  | 效果持續時間(單位:ticks) | 100 |
+| level| l  | 藥水效果等級，實際等級為設定值+1 | 1   |
+| force|| 是否強制覆蓋已有的藥水效果 (MM v4.0 以上版本)  | false   |
+| hasParticles | p | 是否顯示藥水粒子 (MM v4.6 以上版本)  | true|
+| hasIcon  | i  | 是否顯示藥水圖示 (MM v4.6 以上版本)   | true|
 
 範例
 --------
 
-This example skill-configuration will strongly slow down the target for
-10 seconds (200 ticks) and deal 5 hearts of damage to it.
-
+對目標造成 10 秒 緩速V 並附帶 10 點傷害
+```yml
 Cripple:
   Skills:
   - potion{type=SLOW;duration=200;level=4}
   - damage{amount=10}
-
-[1] 20 ticks = 1 second
+```

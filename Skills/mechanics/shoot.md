@@ -11,9 +11,9 @@ Added most of the options from the Projectile mechanic to Shoot & Volley in MM 4
 細項設定
 ----------
 
-| Attribute| Aliases| Description | Default |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |----------------------|------------|-------------------------------------------------------------------------------------------|---------|
-| type | t  | Type of projectile to shoot. Can be "arrow", "snowball", "egg", "enderpearl", or "potion" added "trident", "splash_potion", and "lingering_potion" in MM 4.11 | arrow   |
+| type | t | Type of projectile to shoot. Can be "arrow", "snowball", "egg", "enderpearl", or "potion" added "trident", "splash_potion", and "lingering_potion" in MM 4.11 | arrow   |
 | damage   | d  | How much damage the projectile will cause| 5   |
 | velocity | v  | The velocity of the projectile  | 1   |
 | maxDistance  | md | The maximum distance the projectile will travel  | 64  |

@@ -16,7 +16,7 @@
 
 ## 細項設定
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | command   | c, cmd| 要執行的指令  | |
 | asCaster  | ac, caster, sudo, asmob| 是否由施法者執行指令，若否則由控制台執行 | false   |
@@ -29,7 +29,7 @@
 ## 範例
 
 ### 正確的指令技能寫法
-```yaml
+```yml
   Skills:
   - command{c="give <target.name> gold_ingot 20"} @trigger ~onInteract
   - command{c="minecraft:tp <target.name> <mob.uuid>"} @self ~onDamaged
@@ -45,7 +45,7 @@
 "或是{}必須要用佔位符來取代
 
 特殊字元列表 [特殊字元佔位符](/skills/Placeholders#special-characters)
-```yaml
+```yml
   Skills:
   - command{c="minecraft:summon Zombie ~ ~ ~ {NoAI:true,CustomName:"Summoned Zombie"}"}
 ```
@@ -54,7 +54,7 @@
 
 ### **讓玩家執行一條技能**
 下方的範例會讓與怪物進行互動的玩家執行 say 的指令
-```yaml
+```yml
 ExampleMob:
   Type: ZOMBIE
   Skills:

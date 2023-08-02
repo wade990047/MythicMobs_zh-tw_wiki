@@ -4,14 +4,14 @@ Allows to either equip or remove a saddle on the target entity.
 
 ## 細項設定
 
-| Attribute  | Aliases | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |----------------|-----------------|----------------------------------------------------|---------------|
-| take   | t   | If the saddle should be taken away.| false |
+| take   | t | If the saddle should be taken away.| false |
 
 
 ## 範例
 
-```yaml
+```yml
 ExampleSkill:
   Skills:
   - saddle{r=true} @self
@@ -20,7 +20,7 @@ ExampleSkill:
 ##
 
 The following example is a bit more nuanced: it shows how a horse that can equip itself with a temporary saddle can be made
-```yaml
+```yml
 ExampleMob:
   Type: HORSE
   Options:

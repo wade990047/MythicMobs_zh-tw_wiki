@@ -1,14 +1,11 @@
-Mechanic: MountTarget
+用途
 =====================
 
-Causes the mob to "mount" the specified targeter as though they were a
-vehicle.
-
-Note: Minecraft 1.10 has a bug where mobs/players won't show up properly
-when riding things. That's not a MythicMobs bug sadly.
+讓施法者騎上目標
 
 範例
 --------
-
+```yml
   Skills:
   - mounttarget @trigger ~onDamaged
+```

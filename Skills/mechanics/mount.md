@@ -1,30 +1,26 @@
-Mechanic: Mount
+用途
 ===============
 
-Causes the casting mob to summon a specified MythicMob and mount it.
+讓施法怪物騎上指定生物
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|----------------------------------|---------------|
-| type  | t   | The type of MythicMob to summon. |   |
+| type  | t | 要騎乘的自訂生物 |   |
 
   
 
-Special Notes
+特別筆記
 -------------
-
-The MythicMob defines in type must be a valid MythicMob type (and is
-case-sensitive). If an invalid type is specified the skill may throw an
-error.
+騎乘生物必須是MythicMobs的生物，若未定義則會輸出錯誤
 
 範例
 --------
 
-This example would summon a Mythic Mob of the type "UndeadMount" and
-make the caster mount it.
-
-  CallSkeletalHorse:
-Skills:
-- mount{type=UndeadMount}
+```yml
+CallSkeletalHorse:
+  Skills:
+  - mount{type=UndeadMount}
+```

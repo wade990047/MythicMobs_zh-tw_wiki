@@ -1,22 +1,18 @@
-Mechanic: Ignite
+用途
 ================
 
-Sets the targeted entity on fire.
+點燃目標
 
 細項設定
 ----------
 
-| Attribute | Aliases  | Description   | Default |
-|-----------|--------------|---------------------------------------|---------|
-| ticks | t,d,duration | How many ticks the target should burn | 60  |
-
-  
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
+|-----------|--------------|------------------|---------|
+| ticks | t,d,duration | 要燃燒多久(單位:ticks) | 60  |
 
 範例
 --------
-
+```yml
   Skills:
   - ignite{ticks=100} @trigger ~onAttack
-
-Ignites the entity that the mob using this skill is attacking for 100
-ticks (5 seconds).
+```

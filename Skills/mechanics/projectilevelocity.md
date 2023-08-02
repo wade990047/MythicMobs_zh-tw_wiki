@@ -5,7 +5,7 @@ Modifies the velocity of the calling [Projectile](/skills/mechanics/projectile) 
 
 ## 細項設定
 
-| Attribute | Aliases | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------------------------------------------------------------------|---------------|
 | mode  | m   | The operation to perform. Can be SET, ADD, REMOVE, DIVIDE, or MULTIPLY. | SET   |
 | velocityx | vx, x   | Velocity on the x-axis. Can be negative.   | 1 |
@@ -15,7 +15,7 @@ Modifies the velocity of the calling [Projectile](/skills/mechanics/projectile) 
 
 
 ## 範例
-```yaml
+```yml
 Projectile-onTick:
   Conditions:
   - chance{chance=0.1} true

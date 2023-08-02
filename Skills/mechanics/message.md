@@ -1,32 +1,33 @@
-Mechanic: Message
+用途
 =================
 
-Sends a chat message to the target, if the target is a player. [Color
-codes](/databases/misc/colorcodes) and
-[variables](/skills/stringvariables) are useable in this mechanic.
+對目標玩家發送訊息，支援 [顏色代碼](/databases/misc/colorcodes) 和 [變量](/skills/stringvariables)
 
-**Added in 4.10**
+**更新於 v4.10**
 
-* Now allow hex colors in the format **`<#FFFFFF>`**
-* Now supports gradients in the format **`<gradient:#color1:#color2>text</gradient>`**
-* Now supports **`<rainbow>text</rainbow>`**
-* Now supports hover text in the format **`<hover:show_text:'hover text??'>hover over me!</hover>`**
-* Now supports clickable text in the format **`<click:run_command:/say hello>click me!</click>`**
+* 16進位色碼格式 **`<#FFFFFF>`**
+* 漸層顏色格式 **`<gradient:#color1:#color2>text</gradient>`**
+* 彩虹變色字 **`<rainbow>text</rainbow>`**
+* 滑動顯示文字 **`<hover:show_text:'hover text??'>hover over me!</hover>`**
+* 可執行指令文字 **`<click:run_command:/say hello>click me!</click>`**
 
 細項設定
 ----------
 
-| 設定項 | 簡化寫法 | 用途  | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-----------------------------|---------|
-| message   | msg,m   | The message to send.| None|
-| audience  | | the audience of the message | |
+| message   | msg,m   | 要傳送的訊息| None|
+| audience  | | 訊息目標 | |
 
 ---------------
 
-Audience attribute was added in 4.12. possible audience options are: caster, target, and world.
+訊息目標設定更新於 v4.12
+
+可用的目標有: caster, target 和 world.
 
 範例
 --------
-
+```yml
   Skills:
   - message{m="<mob.name>&f<&co> Hahaha! You will all die!"} @PlayersInRadius{r=30}
+```

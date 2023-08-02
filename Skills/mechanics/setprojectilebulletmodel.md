@@ -11,7 +11,7 @@ Sets the projectile's model number. (DISPLAY bullet types only)
 範例
 --------
 this example would set the cooldown of the metaskill *test_skill* to 10 seconds for the caster
-```yaml
+```yml
 - setProjectileBulletModel{model=1234}
 
 ```

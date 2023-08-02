@@ -1,17 +1,10 @@
-Mechanic: Pick Up Item
+用途
 -----------------
 
-Pick up the targeted item, if the caster is a player.
-
-細項設定
-----------
-
-| Attribute| Aliases | Description   | Default |
-|------------------|---------|---------------------------------------|---------|
-| none | none| none | none|
+撿起目標物品
 
 範例
 --------
-```
-- pickupitem @ItemsInRadius{r=10}
+```yml
+  - pickupitem @ItemsInRadius{r=10}
 ```

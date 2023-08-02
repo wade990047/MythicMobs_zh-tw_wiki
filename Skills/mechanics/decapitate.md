@@ -7,7 +7,7 @@
 
 掉落與怪物互動的玩家頭顱
 
-```yaml
+```yml
 Skills:
 - decapitate @trigger ~onInteract
 ```

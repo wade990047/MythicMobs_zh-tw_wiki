@@ -12,7 +12,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 
 ## 細項設定
 ### Inheritable Attributes
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | onStartSkill | onStart, oS | Meta-Skill executed when the projectile starts at the projectile's origin location.| |
 | onTickSkill  | onTick, oT  | Meta-Skill executed every [interval] ticks at the projectile's origin location| |
@@ -59,7 +59,7 @@ It is of importance to note that other mechanics (such as [Missile](/skills/mech
 | tickinterpolation | interpolation, ti | Interpolates the specified amount of additional points between each tick of the projectile. The onTick and onHit skills will be applied there as well. Useful to fill in the gaps with super-fast projectiles and also prevent entities from being "skipped over"  | 0|
 
 ### Projectile-Specific Attributes
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | Type  |   | The "type" of projectile. Default projectiles are launched from the mob's location towards the target. METEOR type projectiles fall from the sky above the target.   | NORMAL  |
 | gravity   | g | Determines the gravity of the projectile; use fractions (0.1-0.2) for low gravity | 0   |
@@ -121,8 +121,8 @@ These work with the projectile, missile, and orbital mechanics.
 | [DISPLAY][] |  | The projectile will be a display entity  |
 | [TEXT][]|  | The projectile will display a line of text   |
 
-Examples:
-```yaml
+範例:
+```yml
   - projectile{bulletType=ARROW;arrowType=TRIDENT;...}
   - projectile{bulletType=BLOCK;material=STONE;...}
   - projectile{bulletType=ITEM;material=MyMythicItem;...}
@@ -140,30 +140,30 @@ Examples:
 [TEXT]: /skills/mechanics/projectile#text-bullet
 
 ### Universal Bullet Attributes
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletforwardoffset | bulletfo, bulletoffset | The offset of the bullet  | 1.8 |
 
 ### ARROW Bullet
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | arrowtype | bulletarrowtype | The type of the projectile to use. Can be `NORMAL`,`SPECTRAL`,`TRIDENT` | NORMAL |
 
 ### BLOCK Bullet
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletmaterial | material, mat | The material of the bullet | STONE   |
 | bulletspin | bspin| The spin of the bullet  | 0   |
 | audience  |   | The [Audience][] of the bullet  | world   |
 
 ### SMALLBLOCK Bullet
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletmaterial | material, mat | The material of the bullet | STONE   |
 | audience  |   | The [Audience][] of the bullet  | world   |
 
 ### ITEM Bullet
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletmaterial | material, mat | The material of the bullet | STONE   |
 |bulletModel| model | The CustomModelData of the material | 0   |
@@ -173,7 +173,7 @@ Examples:
 | audience  |   | The [Audience][] of the bullet  | world   |
 
 ### MOB Bullet
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | mob   | mobType, mm | The mob of the bullet  | SkeletalKnight |
 | bulletspin | bspin| The spin of the bullet  | 0   |
@@ -182,7 +182,7 @@ Examples:
 | bulletOffset| boffset | The offset of the bullet mob| 1.35| 
 
 ### TRACKING Bullet
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletmaterial | material, mat | The material of the bullet | STONE   |
 |bulletModel| model | The CustomModelData of the material | 0   |
@@ -199,7 +199,7 @@ Examples:
 | audience  |   | The [Audience][] of the bullet  | world   |
 
 ### REALTRACKING Bullet
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletmaterial | material, mat | The material of the bullet | STONE   |
 |bulletModel| model | The CustomModelData of the material | 0   |
@@ -207,7 +207,7 @@ Examples:
 | bulletEnchanted | enchanted | Should the material be enchanted  | false   |
 
 ### DISPLAY Bullet
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletmaterial | material, mat | The material of the bullet | STONE   |
 |bulletModel| model | The CustomModelData of the material | 0   |
@@ -231,7 +231,7 @@ Examples:
 | audience  |   | The [Audience][] of the bullet  | world   |
 
 ### TEXT Bullet
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | bulletText| text  | The text of the bullet  | *   |
 | bulletBillboard | billboard | The [billboard type][] of the bullet   | CENTER  |
@@ -269,14 +269,14 @@ some spin.
 This example shoots a fast-moving ball of ice that damages and slows the
 first entity it hits:  
 **Mob File**  
-```yaml
+```yml
 Mob:
   Type: SKELETON
   Skills:
   - skill{s=IceBolt} @target ~onTimer:100
 ```
 **Skills File**  
-```yaml
+```yml
 IceBolt:
   Skills:
   - projectile{onTick=IceBolt-Tick;onHit=IceBolt-Hit;v=8;i=1;hR=1;vR=1;hnp=true}
@@ -289,6 +289,6 @@ IceBolt-Hit:
   - potion{type=SLOW;duration=100;lvl=2}
 ```
 hitConditions usage example:
-```yaml
+```yml
   - projectile{hitConditions=[  - isMonster true  - isFrozen false ]}
 ```

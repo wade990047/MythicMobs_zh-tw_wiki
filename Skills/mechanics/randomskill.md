@@ -8,7 +8,7 @@ cooldown. There is no limit to how much skills can be added.
 細項設定
 ----------
 
-| 設定項 | 簡化寫法 | 用途  | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|---------------------------------------------------------|---------|
 | skills| | The list of skills to execute, must be separated by a `,` | |
 | fallbackskill | fbskill, fbs | the metaskill to run if condition checks fail for all skills in the randomskill list |

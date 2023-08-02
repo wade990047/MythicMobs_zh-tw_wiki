@@ -5,7 +5,7 @@
 
 範例
 --------
-```yaml
+```yml
   Skills:
   - ejectpassenger ~onDamaged
 ```

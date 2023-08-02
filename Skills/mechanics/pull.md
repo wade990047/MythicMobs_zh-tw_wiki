@@ -1,33 +1,21 @@
-Mechanic: Pull
-==============
+用途
+-----
 
-Pulls all targeted entities towards the caster with a base velocity,
-increasing based on the distance of targets from the caster.
+將目標拉向生物
 
 細項設定
 ----------
 
-| Attribute | Aliases | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------------------------------------------------------------------|---------------|
-| velocity  | v   | The base velocity of the pull. | 1 |
-| toOrigin  | to  | Wether or not the target should pulled towards the origin of the skill. | false |
-
-  
-
-Special Notes
--------------
-
-Targets are pulled much faster based on their distance from the caster.
-The defined velocity is a "base" velocity, and the skill scales the
-velocity based on distance to attempt to pull the entity directly to the
-mob if it is possible based on the base velocity.
+| velocity  | v   | 將目標拉過來的力量 | 1 |
+| toOrigin  | to  | 是否將目標設為使用技能的原點 | false |
 
 範例
 --------
-```yaml
+```yml
 DeathGrip:
   Skills:
   - pull{velocity=10} @target
-
   - pull{v=6;to=true} @PIR{r=10}
 ```

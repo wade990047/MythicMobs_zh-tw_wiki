@@ -10,13 +10,13 @@ of performing the **set**-action.
 細項設定
 ----------
 
-| 設定項 | 簡化寫法 | 用途  | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|----------------------------------------------------------------------------------------------------------------------------------|---------|
-| objective | obj, o  | Specifies the scoreboard objectiv to be changed. If the objective doesn't exist it will automatically be created by the mechanic | |
-| value | v   | The value to perform the operation with   | |
+| objective | obj, o  | 記分板名稱，若不存在則自動創建 | |
+| value | v   | 要使用的數值   | |
 
   
-Examples
+範例
 ----
 
 This example will track how often and whom damaged
@@ -25,6 +25,6 @@ the casting mob in battle.
   Skills:
   - settargetscore
   {
-  objective=damagescore;
+  o=damagescore;
   value=1
   } @trigger ~onDamaged

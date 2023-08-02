@@ -10,7 +10,7 @@ duration and can also be used in other mechanics and conditions.
 細項設定
 ----------
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |---------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 | auraName| buffname, debuffname | Optional name, required to use associated mechanics & conditions that reference a specific aura  | None  |
 | onStartSkill | onStart, os  | Meta-Skill executed when the aura first starts. | None  |
@@ -18,7 +18,7 @@ duration and can also be used in other mechanics and conditions.
 | onEndSkill   | onEnd, oe  | Meta-Skill executed when the aura fades.   | None  |
 | ShowBarTimer | bartimer, bt | If set, the aura will display a bar for caster during it
 | Charges | c   | If set, the aura will fade when it hits zero charges. Modifiable by other mechanics. | 0 |
-| Duration| ticks, t, d, time, t   | The max duration (in ticks) the aura will persist.  | 200   |
+| Duration| ticks, t, d, time, t | The max duration (in ticks) the aura will persist.  | 200   |
 | Interval| i   | How often (in ticks) the aura fires its onTick skill| 1 |
 | maxStacks   | ms | How many times the aura stacks on the same targeted entity if applied multiple times (4.6.0 +)   | None  |
 | refreshDuration | rd | Makes the aura's duration refresh to the amount defined in the mechanic should the entity have the same aura applied to it again (4.6.0 +) | true |

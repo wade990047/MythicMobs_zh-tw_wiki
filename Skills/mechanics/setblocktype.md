@@ -6,7 +6,7 @@ Change blocktype at target location.
 細項設定
 ----------
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|--------------------------------|---------------|
 | material  | m   | The material for the block to be set to | [DIRT](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html "CLICK ME to view valid block materials")  |
 | data  | md  | Material data value.   | 0 |

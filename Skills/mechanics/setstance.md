@@ -7,7 +7,7 @@ string. Does nothing if the target is not a Mythic Mob.
 細項設定
 ----------
 
-| Attribute | Aliases | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------------------------|---------------|
 | stance| s   | The string-name of the stance | default   |
 

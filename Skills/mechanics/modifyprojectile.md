@@ -37,5 +37,5 @@ TestingModifyProjectile:
 TMP_oT:
   Skills:
   - particles{particle=flame;a=2;hs=0;vs=0;s=0;y=0} @origin
-  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=0.95}
+  - modifyProjectile{trait=VELOCITY;a=MULTIPLY;value=0.95}
 ```

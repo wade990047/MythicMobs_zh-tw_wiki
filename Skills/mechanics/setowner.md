@@ -11,7 +11,7 @@ If the casting mob is a `Wolf`,`Cat` or `Parrot`, then the mechanic will _also_ 
 
 
 ## 範例
-```yaml
+```yml
 PetSheep:
   Mobtype: sheep
   Display: 'Pet'
@@ -23,13 +23,13 @@ PetSheep:
 ```
 
 This skill would change the mob's owner to whoever right clicked it.
-```yaml
+```yml
 SetOwner:
   Skills:
   - setowner @trigger
 ```
 This skill would only heal the owner of the mob
-```yaml
+```yml
 HealOwner:
   TargetConditions:
   - owner true

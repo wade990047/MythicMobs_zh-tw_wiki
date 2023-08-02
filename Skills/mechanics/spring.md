@@ -8,7 +8,7 @@ Creates a temporary "spring" of liquid at the target entity or location.
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|----------------------------------------------|---------------|
-| type  | t   | The type of spring. Can be "water" or "lava" | water |
+| type  | t | The type of spring. Can be "water" or "lava" | water |
 | duration  | d   | The duration (in ticks) the spring will last | 40|
 
   

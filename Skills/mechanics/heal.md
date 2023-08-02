@@ -1,35 +1,32 @@
-Mechanic: Heal
+用途
 ==============
 
-Heals the targeted entity for the specified value. Can also "overheal"
-the mob to more than its maximum health.
+回復目標血量. 可以 "超過上限" 的回復
 
 細項設定
 ----------
 
-| Attribute  | Aliases | Description| Default |
-|------------|---------|-------------------------------------------------------------|---------|
-| amount | a   | The amount to heal the target  | 1   |
-| overheal* | oh  | Whether or not to apply overhealing as additional MaxHealth | false   |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
+|------------|---------|-------------------|---------|
+| amount | a   | 要回復的血量  | 1   |
+| overheal | oh  | 是否回復至超過最大血量 | false   |
 
 範例
 --------
-
+```yml
   Skills:
   - heal{amount=20} @self ~onDamaged 0.2
+```
+當怪物受傷時有20%的機會回復20點血量
 
-Heals the casting mob for 20 health (10 hearts) when it is damaged. (20%
-chance)
+假設怪物有 10/20 點血量則會回復成 20/20 點血量
 
+```yml
   Skills:
   - heal{amount=20;overheal=true} @self ~onDamaged 0.2
+```
+當怪物受傷時有20%的機會回復20點血量，但會恢復到上限以上
 
-Heals the casting mob for 20 health (10 hearts) when it is damaged. (20%
-chance)
+假設怪物有 20/20 點血量則會回復成 40/20 點血量
 
-If the mob is near or at full health, it will add those 20 health points
-onto its existing health. Eg. mob with 20 health using this move will
-now have 40 health. 20/20 + 20 = 40/20
-
-The same mob with 17 health will gain 17 health on top of its maximum of
-20. 17/20 + 20 = 37/20
+假設怪物有 17/20 點血量則會回復成 37/20 點血量

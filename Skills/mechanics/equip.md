@@ -3,21 +3,21 @@
 
 
 ## 細項設定
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | item  | items, equipment, equip, e | 裝備設定   | |
 
 
 ## 範例
 讓怪物手拿鑽石劍.
-```yaml
+```yml
 EquipDiamondSword:
   Skills:
   - equip{item=diamond_sword HAND}
 ```
 
 讓怪物頭戴 "KingsCrown"
-```yaml
+```yml
 EquipCrown:
   Skills:
   - equip{item=KingsCrown HEAD}

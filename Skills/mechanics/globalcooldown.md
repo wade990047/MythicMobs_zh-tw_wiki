@@ -8,9 +8,9 @@ mob's abilities to have a global, over-all shared cooldown.
 細項設定
 ----------
 
-| Attribute | Aliases | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------------------------|---------------|
-| ticks | t   | How many ticks to set the GCD | 20|
+| ticks | t | How many ticks to set the GCD | 20|
 
   
 

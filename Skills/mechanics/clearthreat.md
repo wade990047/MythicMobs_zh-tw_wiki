@@ -3,7 +3,7 @@
 
 ## 範例
 
-```yaml
+```yml
 Skills:
 - clearThreat{} @self
 ```

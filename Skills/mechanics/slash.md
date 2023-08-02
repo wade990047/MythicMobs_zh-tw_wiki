@@ -27,12 +27,12 @@ The Slash meta-mechanic can execute other skills in a slash-shaped pattern. The 
 | HitConditions  | conditions, cond, c, oC, hC | List of [Inline Conditions](/Skills/conditions/in-linetargetconditions) that an entity must met to be hit by the slash mechanic|   |
 
 ## 範例
-```yaml
+```yml
 ExampleSkill:
   Skills:
   - slash{y=1.8;w=4;h=2;mpd=true;a=180;oP=[ - effect:particles{p=CRIT} ];roll=<random.-45to45>}
 ```
-```yaml
+```yml
 SlashSword:
   Id: NETHERITE_SWORD
   Skills:

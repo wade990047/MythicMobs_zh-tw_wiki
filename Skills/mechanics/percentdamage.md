@@ -13,7 +13,7 @@
 
 範例
 --------
-```yaml
+```yml
   Skills:
   - damagepercent{percent=0.5}
 ```

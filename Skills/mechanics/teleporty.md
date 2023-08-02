@@ -5,14 +5,14 @@ No target is required for this mechanic, as the caster will always be the one th
 
 ## 細項設定
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | y |   | The distance to teleport on the y axis  | 0   |
 
 
 ## 範例
 This example would teleport the caster 5 blocks up.
-```yaml
+```yml
 WarpY:
   Skills:
   - teleportY{y=5}

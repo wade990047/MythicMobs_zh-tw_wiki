@@ -10,7 +10,7 @@
 細項設定
 ----------
 
-| 設定項 | 簡化寫法 | 用途  | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|--------------------------------------|---------|
 | disguise  | d, type | 要應用在目標的偽裝 | |
 
@@ -20,13 +20,13 @@
 --------
 
 將目標變成羊
-```yaml
+```yml
 Skills:
   - disguisetarget{d=SHEEP} @target
 ```
 
 這會將目標轉換為一名玩家並且使用Notch的Skin，頭上的顯示名稱叫做 *Jeb* 且可以使用顏色代碼
-```yaml
+```yml
 Skills:
   - disguisetarget{d="player libraryaddict setCustomName '&7Jeb' setSkin Notch.png"} @target
 ```

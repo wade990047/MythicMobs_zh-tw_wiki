@@ -1,27 +1,23 @@
-Mechanic: Prison
-================
+用途
+----------
 
-Encases the target entity inside a temporary prison of blocks. The
-created blocks will disappear automatically after the specified
-duration.
+將目標囚禁在方塊內，生成的方塊將在持續時間結束後消失
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|--------------------------------------------------------------|---------------|
-| material  | m   | The Material (block type) the prison is made out of. | ICE   |
-| duration  | d   | How long (in ticks) the prison will last | 100   |
-| breakable | b   | (true/false) Whether or not the prison blocks can be broken. | false |
-
-  
+| material  | m   | 要使用的方塊 | ICE   |
+| duration  | d   | 持續時間(單位:ticks:) | 100   |
+| breakable | b   | 是否讓方塊可以破壞 | false |
 
 範例
 --------
 
-This skill creates a iron block prison around the target of the casting
-mob, for 200 ticks (10 seconds), and the prison can be mined.
-
+用 鐵磚 將目標囚禁起來持續 10 秒 並且方塊 可被破壞
+```yml
 IronPrison:
   Skills:
   - prison{material=IRON_BLOCK;duration=200;breakable=true} @target
+```

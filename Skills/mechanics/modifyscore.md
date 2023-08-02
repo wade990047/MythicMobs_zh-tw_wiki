@@ -1,42 +1,36 @@
-Mechanic: ModifyScore
+用途
 =====================
 
-*Added in version 2.3*
+為 `指定名稱` 變更計分板數值
 
-Modifies the scoreboard-objective value of a fake player name.  
-Can also be used to modify a specific players score.
+可用的變更動作:
 
-A list of possible operations for the action-syntax:
-
--   SET
--   ADD
--   SUBTRACT
--   MULTIPLY
--   DIVIDE
--   [1] MOD
+-   SET `設定`
+-   ADD `加法`
+-   SUBTRACT `減法`
+-   MULTIPLY `乘法`
+-   DIVIDE `除法`
+-   MOD `除後取餘數`
 
 細項設定
 ----------
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-------------|---------|-----------------------------------------------------------------------------------------------------------------------------------|---------|
-| objective   | obj, o  | Specifies the scoreboard objective to be changed. If the objective doesn't exist it will automatically be created by the mechanic | |
-| action  | a   | The operation to perform   | ADD |
-| value   | v   | The value to perform the operation with| 0   |
-| name, entry | n, e| The name of the player/fake player | dummy   |
+| objective   | obj, o  | 記分板名稱，若不存在則自動創建 | |
+| action  | a   | 要進行的動作   | ADD |
+| value   | v   | 要使用的數值| 0   |
+| name, entry | n, e| 指定的玩家/非玩家名稱 | dummy   |
 
   
-Examples 
+範例 
 ----
 
-This example will add one to the score of a player
-named "Bob" for the objective "TestScore", even if that player doesn't
-exist on the server.  
-It will create the objective if it does not currently exist.
+範例將為Bob在計分板TestScore上新增數值
 
+不論Bob有沒有在伺服器上，都將為他新增一個計分板數值
+```yml
   Skills:
   - modifyscore{o=TestScore;e=Bob;a=add;v=1} ~onInteract 
-
+```
 ![](https://i.imgur.com/0HKvAUM.png)
-
-[1] shorthand for "Modular Division"

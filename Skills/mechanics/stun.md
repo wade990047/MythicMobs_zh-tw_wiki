@@ -6,7 +6,7 @@ Holds the target in place temporarily.
 細項設定
 ----------
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |---------------------|---------|--------------------------------------------------------------------------------------------------------------|---------------|
 | duration| d   | The duration (in ticks) the stun will last |   |
 | stopai  | ai  | Removes entity AI while stunned| false |

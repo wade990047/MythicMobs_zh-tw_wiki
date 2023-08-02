@@ -1,5 +1,5 @@
 Mechanic: RunAIGoalSelector
-===========================
+======================
 
 **Aliases**: aigoal
 

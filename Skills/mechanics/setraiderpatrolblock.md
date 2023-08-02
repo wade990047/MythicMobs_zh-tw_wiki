@@ -4,13 +4,13 @@ Sets the target raider to patrol the given location
 
 ## 細項設定
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | location  |block, l, b| A [Location Targeter], whose targeted location will be the specified one | |  
 
 
 ## 範例
-```yaml
+```yml
   Skills:
   - setRaiderPatrolBlock{l=@TrackedLocation} @self
 ```

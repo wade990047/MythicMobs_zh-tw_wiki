@@ -12,21 +12,21 @@
 
 ## 細項設定
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | disguise  | d, type   | 要變更的偽裝設定項 | player Ashijin |
 
 
 ## 範例
 這項偽裝將會使手上物品拿著**"空氣"**
-```yaml
+```yml
   Skills:
   - disguisemodify{d="setItemInMainHand air"} @self 
 ```
 
 ##
 這項偽裝將會使手上物品拿著**"原始手上物品"**
-```yaml
+```yml
   Skills:
   - disguisemodify{d="setItemInMainHand %held-item%"} @self
 ```

@@ -24,7 +24,7 @@
 
 範例
 --------
-```yaml
+```yml
   - fawePaste{schematic=deserttempleiron.schem;y=6;air=true;chestDropTable=IronDropTable} @origin
 ```
 

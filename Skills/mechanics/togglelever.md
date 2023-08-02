@@ -10,7 +10,7 @@ of time. (Defaulting to 20 ticks/1 second).
 細項設定
 ----------
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------------------------------------------------------|---------------|
 | duration  | d   | The duration (in ticks) the lever should remain toggled on. | 20|
 | x | | The X coordinate of the button.| 0 |

@@ -15,7 +15,7 @@ be set to *false* later in a skill-tree.
 
 範例
 --------
-```yaml
+```yml
 ExampleSkill:
   Skills:
   - vskill{s=ExampleSkill_<random.1to3>} @self
@@ -34,7 +34,7 @@ In the example, the `ExampleSkill` metaskill, once triggered, will execute a ski
 
 #
 
-```yaml
+```yml
 Example_StanceSkill:
   Skills:
   - vskill{s=ExampleMob_<caster.stance>_<random.1to2>} @self
@@ -43,7 +43,7 @@ In this example, the VariableSkill is being used to quickly create some stance-b
 
 #
 
-```yaml
+```yml
 Example_VariablePlaceholder:
   Skills:
   - vskill{s=Fireball_<skill.var.fireballtype>} @self

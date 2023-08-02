@@ -1,36 +1,29 @@
-Mechanic: ModifyGlobalScore
+用途
 ===========================
 
-Modifies the scoreboard-objective value of the fake player \_\_GLOBAL\_\_.
-This is a notarget skill and cannot affect any other players' score.
+為 `__GLOBAL__` 變更計分板數值，這是一個無目標技能
 
-A list of possible operations for the action-syntax:
+可用的變更動作:
 
--   SET
--   ADD
--   SUBTRACT
--   MULTIPLY
--   DIVIDE
--   [1] MOD
+-   SET `設定`
+-   ADD `加法`
+-   SUBTRACT `減法`
+-   MULTIPLY `乘法`
+-   DIVIDE `除法`
+-   MOD `除後取餘數`
 
 細項設定
 ----------
 
-| 設定項 | 簡化寫法 | 用途  | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|----------------------------------------------------------------------------------------------------------------------------------|---------|
-| objective | obj, o  | Specifies the scoreboard objectiv to be changed. If the objective doesn't exist it will automatically be created by the mechanic | |
-| action| a   | The operation to perform  | ADD |
-| value | v   | The value to perform the operation with   | |
+| objective | obj, o  | 記分板名稱，若不存在則自動創建 | |
+| action| a   | 要進行的動作  | ADD |
+| value | v   | 要使用的數值   | |
 
   
-Examples
+範例
 ----
-
-- modifyglobalscore
-{
-objective=someobjective;
-action=multiply;
-v=2
-} ~onAttack
-
-[1] shorthand for "Modular Division"
+```yml
+  - modifyglobalscore{o=someobjective;a=multiply;v=2} ~onAttack
+```

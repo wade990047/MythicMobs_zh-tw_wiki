@@ -1,20 +1,21 @@
-Mechanic: Lunge
+用途
 ===============
 
-Applies forward directional velocity to the target.
+使施法者向前沖向目標
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|---------------------------------------------------------------|---------------|
-| velocity  | v   | The horizontal velocity at which the entity is moved forward. | 1 |
-| velocityY | vy  | The vertical velocity at which the entity is moved forward.   | 1 |
-| oldmath   | old, o  | If the lunge mechanic should use the old math formula | false |
+| velocity  | v   | 平面移動力量值 | 1 |
+| velocityY | vy  | 垂直移動力量值   | 1 |
+| oldmath   | old, o  | 是否使用舊的數學公式 | false |
 
   
 
 範例
 --------
-
-- lunge{velocity=15;velocityY=5} @Self
+```yml
+  - lunge{velocity=15;velocityY=5} @Self
+```

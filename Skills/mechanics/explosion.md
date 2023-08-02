@@ -17,7 +17,7 @@
 
 範例
 --------
-```yaml
+```yml
 ExplosiveBlast:
   Skills:
   - explosion{yield=4} @target

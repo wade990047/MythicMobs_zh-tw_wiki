@@ -3,13 +3,13 @@ Summons a mob to mount the caster. Will knock the current rider off if there is 
 
 
 ## 細項設定
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | passenger | p. rider, r, type, t | The type of the mob to set as the passenger   | |
 
   
 ## 範例
-```yaml
+```yml
   Skills:
   - summonPassenger{type=MyZombie}
 ```

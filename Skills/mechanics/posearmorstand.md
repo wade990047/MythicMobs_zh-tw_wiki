@@ -1,7 +1,7 @@
-Mechanic: PoseArmorStand
+用途
 ========================
 
-Moves the extremities of an armorstand, the value is in radians.
+設定盔甲座的姿勢，值的單位是弧度
 
 細項設定
 ----------
@@ -15,11 +15,10 @@ Moves the extremities of an armorstand, the value is in radians.
 | leftleg   | | | 0,0,0 |
 | rightleg  | | | 0,0,0 |
 
-  
-
 範例
 --------
-
+```yml
   Skills:
   - posearmorstand{head=45,0,0} @self ~onSpawn
   - ...
+```

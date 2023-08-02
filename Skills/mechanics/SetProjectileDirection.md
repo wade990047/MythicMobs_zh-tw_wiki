@@ -8,7 +8,7 @@ Sets the calling projectile's movement direction to the given target
 
 ## 範例
 Once called by a projectile, this mechanic will change the projectile's direction based on its current direction
-```yaml
+```yml
   Skills:
   - setprojectiledirection @ProjectileForward{f=10;rot=45}
 ```

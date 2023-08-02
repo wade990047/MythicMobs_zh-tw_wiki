@@ -3,7 +3,7 @@
 
 
 ## 細項設定
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | action| a | 要執行的動作. 可以是 `SET`, `ADD`, `MULTIPLY`, `DIVIDE` | SET |
 | transformationtype | transformation, type, tt | 要轉換的型態. 可以是 `TRANSLATION`, `SCALE`, `RIGHT_ROTATION`, `LEFT_ROTATION`| TRANSLATION |
@@ -11,7 +11,7 @@
 
 
 ## 範例
-```yaml
+```yml
 ExampleDisplayEntity:
   Type: block_display
   Skills:

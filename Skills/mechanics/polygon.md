@@ -27,7 +27,7 @@ The Polygon meta-mechanic can execute other skills in a polygon-shaped pattern. 
 | HitConditions  | conditions, cond, c, oC, hC | List of [Inline Conditions](/Skills/conditions/in-linetargetconditions) that an entity must met to be hit by the polygon mechanic  |   |
 
 ## 範例
-```yaml
+```yml
 ExampleSkill:
   Skills:
   - polygon{db=0.25;y=0.1;mpd=false;scale=6;
@@ -36,7 +36,7 @@ oP=[ - effect:particles{p=CRIT;a=1;repeat=20;repeati=1} ];
 oS=[ - effect:particles{p=SOUL_FIRE_FLAME} ]
 ;p=10;skip=6;duration=20} @Origin
 ```
-```yaml
+```yml
 ExampleSkill:
   Skills:
   - setVar{var=global.a;v=0}

@@ -1,26 +1,22 @@
-Mechanic: HealPercent
+用途
 =====================
 
-Heals the target entity for a percentage of its max-health. Like the
-heal skill, can also overheal mobs by a percentage.
+以最大血量為基礎的比例回復目標血量，回復可超過上限
 
 細項設定
 ----------
 
-| Attribute  | Aliases | Description| Default |
-|------------|---------|-------------------------------------------------------------|---------|
-| multiplier | m   | The percentage to heal, refers to the targets max-health| [1] 0.1 |
-| overheal   | oh | Whether or not to apply overhealing as additional MaxHealth | false   |
-
-  
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
+|------------|---------|-------------------|---------|
+| multiplier | m   | 恢復倍率| [1] 0.1 |
+| overheal   | oh | 是否恢復超過血量上限 | false   |
 
 範例
 --------
 
-This will make the casting mob heal for 20% of its health each time it
-gets to attack.
-
+當攻擊時恢復20%的血量
+```yml
   Skills:
   - healpercent{m=0.2} @self ~onAttack
-
-[1] 1 = 100 %, 0.5 = 50 % and so on...
+```
+[1] 1 = 100 %, 0.5 = 50 % 以此類推

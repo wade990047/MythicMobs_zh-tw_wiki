@@ -8,7 +8,7 @@ Undoes a previous paste done via the [fawePaste] mechanic, based on its id or on
 | pasteID   | pid, id  | The id of the paste that needs to be undone  |   |
 
 ## 範例
-```yaml
+```yml
 ExampleMob:
   Skills:
 

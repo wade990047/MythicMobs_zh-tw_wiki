@@ -7,7 +7,7 @@ Note: If you want to do some sort of cooldown, try using this mechanic in an aur
 
 範例
 --------
-```yaml
+```yml
 Skills:
   #basic example
   - stopusingitem{} @NearestPlayer

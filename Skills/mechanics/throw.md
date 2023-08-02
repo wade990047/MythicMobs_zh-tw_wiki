@@ -15,7 +15,7 @@ Throws all targets away from the mob (or origin).
 
 範例
 --------
-```yaml
+```yml
 GroundSlam:
   Skills:
   - effect:explosion @Self
@@ -28,7 +28,7 @@ will knock them back. Giving the illusion of a powerful explosion.
 
 Complex 範例
 ----------------
-```yaml
+```yml
 SuperShockslam:
   Skills:
   - throw{velocity=5;velocityY=5} @PIR{r=10}

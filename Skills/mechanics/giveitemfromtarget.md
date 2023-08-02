@@ -8,7 +8,7 @@ Gives the caster an item from the target entity or location when fakelooting is 
 細項設定
 ----------
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-------------|---------|-------------------|---------------|
 | item| i   | The item material (supports for mythicmobs item) | None |
 | amount  | a   | The amount given  | 1 |

@@ -11,7 +11,7 @@
 |-----------|-----------|------------------------------------|---------------|
 | dodrops   | drops, d  | 是否掉落方塊 | true  |
 | doeffect  | effect, e | 是否播放方塊破壞特效 | true |
-| usetool   | tool, t   | 是否用玩家手中的道具作為破壞標準 | true |
+| usetool   | tool, t | 是否用玩家手中的道具作為破壞標準 | true |
 | fakelooting | fl | 是否播放獲取掉落物的動畫 | false |
 | items | item, i | 物品列表或是物品掉落集 | |
 
@@ -22,7 +22,7 @@
 利用配合 Mythic Crucible 的物品:
 
 只要破壞泥土或是草方塊，則直接給予玩家鑽石，並且不掉落泥土
-```yaml
+```yml
 #Items Document
 CustomItem:
   Id: GOLDEN_SHOVEL

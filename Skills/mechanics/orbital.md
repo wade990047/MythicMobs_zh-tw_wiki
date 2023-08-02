@@ -80,14 +80,14 @@ This example puts an icy-looking orbital shield around the mob when it
 is hit sometimes, that will last for 10 seconds or until it is triggered
 once:  
 **Mob File**  
-```yaml
+```yml
 Mob:
   Type: SKELETON
   Skills:
   - skill{s=IceShield} @self ~onDamaged 0.2
 ```
 **Skills File**  
-```yaml
+```yml
 IceShield:
   Skills:
   - orbital{onTick=IceShield-Tick;onHit=IceShield-Hit;points=20;interval=1;duration=200;charges=1}
@@ -105,7 +105,7 @@ IceShield-Hit:
 This example shows how the orbital can be removed via the [Auraremove](`auraremove`) mechanic.
 <br>The mob `ExampleMob` create the shield from the previous example once it gets damaged with a 20% chance, but unlike the previous example this time the orbital also has an auraName attribute. When the mob receives a REMOVESHIELD signal, he will both remove the orbital via the auraremove mechanic and the orbital's auraName while also sending a SHIELDREMOVED signal back to the trigger of the metaskill
 
-```yaml
+```yml
 ExampleMob:
   Type: ZOMBIE
   Skills:
@@ -113,7 +113,7 @@ ExampleMob:
   - skill{s=IceShield-Remove} @self ~onSignal:REMOVESHIELD
 ```
 
-```yaml
+```yml
 IceShield:
   Skills:
   - orbital{

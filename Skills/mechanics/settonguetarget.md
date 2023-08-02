@@ -10,7 +10,7 @@ Sets the tongue target for a frog caster to the target entity.
 
 範例
 --------
-```yaml
+```yml
   Skills:
   - setTongueTarget @trigger ~onInteract
 ```

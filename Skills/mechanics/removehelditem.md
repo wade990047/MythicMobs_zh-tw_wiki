@@ -4,13 +4,13 @@ Removes the given amount from the target player's held item.
 
 ## 細項設定
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | amount| a | The amount to remove| 1   |
 
 
 ## 範例
-```yaml
+```yml
 ExampleSkill:
   Skills:
   - consumeHeldItem{amount=1} @trigger

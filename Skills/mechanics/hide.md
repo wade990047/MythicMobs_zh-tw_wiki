@@ -1,32 +1,33 @@
-Mechanic: Hide
+用途
 ===================
 
-Hides the caster from the targeted players for a set duration.
-A duration of `0` will permanently hide the caster.
-Only works for MC 1.18+.
+時間內對目標玩家隱藏施法者
+
+當持續時間設置為 `0` 將永久隱藏目標
+限制版本 1.18+
 
 細項設定
 ----------
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|--------------------|---------------|
-| duration  | d   | The given duration | 0 |
+| duration  | d   | 隱藏的時間(單位:ticks) | 0 |
 
-Added in MM 4.13
+新增於MM v4.13 版本
 
 ------------
 
 範例
 --------
 ```yml
-  DUMMY:
-Type: ZOMBIE
-Skills:
-- hide{d=100} @Server ~onInteract
+DUMMY:
+  Type: ZOMBIE
+  Skills:
+  - hide{d=100} @Server ~onInteract
 ```
 ```yml
-  CUSTOM_ITEM:
-Id: STICK
-Skills:
-- hide{d=100} @Server ~onUse #User is now invisible from all online players, no armor is shown
+CUSTOM_ITEM:
+  Id: STICK
+  Skills:
+  - hide{d=100} @Server ~onUse #施法者將在接下來 5 秒對全伺服器的玩家隱形，並且不顯示盔甲
 ```

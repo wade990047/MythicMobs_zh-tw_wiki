@@ -3,7 +3,7 @@
 對目標造成傷害
 
 ## 細項設定
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | amount| a | 造成傷害量| 1   |
 | ignoreArmor | ia, i   | 是否無視盔甲防禦，但仍然會計算由附魔產生的保護| false   |
@@ -29,13 +29,13 @@
 ### 傷害屬性 (Elements)
 向上面提到的, 可以為 傷害(Damage) 技能設置一個 "element" 如下:
 
-```yaml
+```yml
 - damage{amount=10;element=FIRE} @target ~onUse
 - damage{amount=10;element=ICE} @target ~onUse
 ```
 
 "element"可以命名為任何東西，也可以被使用在怪物的**傷害倍率器(DamageModifiers)**中，來決定對於這種傷害的該獲得多少的攻擊倍率
-```yaml
+```yml
 DamageModTest: 
   Type: COW 
   DamageModifiers:
@@ -49,13 +49,13 @@ DamageModTest:
 這項設定也可以用在 "onDamaged" 光環, 設定方式是 `damageMods="FIRE 0.5"`
 
 ## 範例
-```yaml
+```yml
   Skills:
   - damage{amount=20;ignoreArmor=true} @target ~onTimer:20
 ```
 將在每秒對目標造成20點無視盔甲保護的傷害
 
-```yaml
+```yml
 FreezeBlast:
   Skills:
   - effect:sound{s=block.fire.extinguish;v=1;p=0.5} @PIR{r=6}
@@ -76,7 +76,7 @@ FreezeBlast:
 ##
 
 **付費版範例**
-```yaml
+```yml
   Skills:
   - damage{amount=<caster.var.somevariable> * 0.5 + 1} @target ~onTimer:20
 ```

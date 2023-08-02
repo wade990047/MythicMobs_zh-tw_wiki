@@ -5,13 +5,13 @@ Sets the display name of the caster. This will not work with players.
 
 範例
 --------
-```yaml
+```yml
 Skills:
   - setname{name=newmobname} @self ~onDamaged 1
 ```
 Sets the name of the mob to "newmobname" when the mob is damaged.
 
-```yaml
+```yml
 MySkeleton:
   Type: Skeleton
   Display: 'Skeleton <caster.hp>/<caster.mhp><&heart>'

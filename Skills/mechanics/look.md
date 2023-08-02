@@ -1,25 +1,23 @@
-Mechanic: Look
+用途
 --------------
 
-Causes the entity to look at it's target. Can be used to make cool
-effects or creepy ones depending on how creative you get with it.
+讓施法者看著目標
+
+可以用來做效果或令人毛骨悚然的效果取決於你的創意程度
 
 細項設定
 ----------
 
-| Attribute   | Aliases | Description| Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-------------|---------|----------------------------------------------------------------------------------|---------------|
-| headOnly| | Only the mob's head is facing the target.   | true  |
-| immediately | | Immediately causes the mob to turn towards the target with no turning animation. | false |
+| headOnly| | 只轉頭不轉身體   | true  |
+| immediately | | 強制直接轉動不含任何過程 | false |
 
 範例
 --------
-
+```yml
 CreepyStare:
   Skills:
   - look{headOnly=true;immediately=true} @Target
-
-The skill above causes the mob to immediately force it's head to face
-the target immediately. Giving it a creepy effect as only the head will
-stare for a short bit before the body catches up and turns around as
-well.
+```
+使生物立即強制其頭部面對目標。

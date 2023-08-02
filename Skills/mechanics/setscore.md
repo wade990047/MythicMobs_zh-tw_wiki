@@ -3,7 +3,7 @@ Mechanic: SetScore
 
 *Added in version 2.3*
 
-Modifies the scoreboard-objective value of a fake player name. Works
+為 變更計分板數值 of a fake player name. Works
 like the [Modify Score](/skills/mechanics/modifyscore) mechanic, but is
 only capable of performing the **set**-action.
 
@@ -12,12 +12,12 @@ only capable of performing the **set**-action.
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-------------|---------|----------------------------------------------------------------------------------------------------------------------------------|---------|
-| objective   | obj, o  | Specifies the scoreboard objectiv to be changed. If the objective doesn't exist it will automatically be created by the mechanic | |
-| value   | v   | The value to perform the operation with   | |
+| objective   | obj, o  | 記分板名稱，若不存在則自動創建 | |
+| value   | v   | 要使用的數值   | |
 | name, entry | n, e| The name of the fake player | dummy   |
 
   
-Examples
+範例
 ----
 
 This example will set the score of a player named

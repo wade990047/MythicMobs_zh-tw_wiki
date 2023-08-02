@@ -6,7 +6,7 @@ Teleports the caster to the targeted location/entity. The end point of the telep
 細項設定
 ----------
 
-| Attribute | Aliases | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|------------------------------------------------|---------------|
 | spreadh   | sh  | The horizontal spread of the landing location. | 0 |
 | spreadv   | sv  | The vertical spread of the landing location.   | 0 |
@@ -26,7 +26,7 @@ blocks.
 This example would teleport the mob to within 5 blocks of the targeted
 player, on the same vertical axis.
 
-```yaml
+```yml
 Warp:
   Skills:
   - teleport{spreadh=5;spreadv=0} @target

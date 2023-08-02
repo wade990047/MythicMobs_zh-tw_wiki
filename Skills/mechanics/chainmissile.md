@@ -6,7 +6,7 @@ This mechanic inherits all attributes from the [missile](/skills/mechanics/missi
 
 **Attributes**
 
-| Attribute | Alias | Description | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 | --------- | ----- | ----------- | ------------- |
 | bounces   | b | How many times the chain should bounce | 2 |
 | radius| r | How far the skill will bounce to a new target | 5 |
@@ -19,7 +19,7 @@ Added in MM 4.12
 
 ---
 
-**Examples**
+範例
 
 ```
 ## Mob.yml ##

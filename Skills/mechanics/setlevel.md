@@ -11,7 +11,7 @@ MULTIPLY, and DIVIDE.
 細項設定
 ----------
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|----------------------------------------|---------------|
 | action| a   | Type of operation to perform   | SET   |
 | level | l   | Amount of levels used in the operation | 1 |
@@ -22,11 +22,11 @@ MULTIPLY, and DIVIDE.
 --------
 
 This will set the mob level to 3 when it spawns
-```yaml
+```yml
 - setlevel{a=set;l=3} @self ~onSpawn
 ```
 
 This will increase the mob level by 1 each time it kills a player
-```yaml
+```yml
 - setlevel{a=add;l=1} ~onKillPlayer
 ```

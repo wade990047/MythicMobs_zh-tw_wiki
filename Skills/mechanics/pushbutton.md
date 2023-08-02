@@ -1,22 +1,20 @@
-Mechanic: Push Button
+用途
 ---------------------
 
-Pushes a button at the supplied coordinates.
+在目標位置按下按鈕
 
 細項設定
 ----------
 
-| Attribute | Aliases| Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|--------|--------------------------------------------|---------------|
-| x || The X coordinate of the button.| 0 |
-| y || The Y coordinate of the button.| 0 |
-| z || The Z coordinate of the button.| 0 |
-
-  
+| x || X 座標| 0 |
+| y || Y 座標| 0 |
+| z || Z 座標| 0 |
 
 範例
 --------
-```yaml
+```yml
 HitSecretButton:
   Skills:
   - pushbutton{x=15;y=67;z=-213}

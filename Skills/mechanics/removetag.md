@@ -11,9 +11,9 @@ the same thing.
 細項設定
 ----------
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|----------------------------|---------------|
-| tag   | t   | The string-name of the tag | default   |
+| tag   | t | The string-name of the tag | default   |
 
   
 

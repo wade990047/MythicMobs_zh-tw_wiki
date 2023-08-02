@@ -4,7 +4,7 @@
 範例
 --------
 
-```yaml
+```yml
   Skills:
   - bonemeal @selflocation{y=-1}
 ```

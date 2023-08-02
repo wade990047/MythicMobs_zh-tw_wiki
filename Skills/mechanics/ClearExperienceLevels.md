@@ -2,7 +2,7 @@
 清除目標玩家經驗等級
 
 ## 範例
-```yaml
+```yml
 ExampleMob:
   Type: ZOMBIE
   Skills:

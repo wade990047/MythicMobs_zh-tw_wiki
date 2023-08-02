@@ -6,7 +6,7 @@ mechanic.
 
 ## 細項設定
 
-| 設定項 | 簡化寫法 | 用途  | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|---------------------------------------------------|---------|
 | amount| a   | The amount of projectiles | 10  |
 | source| s   | The type of the volley. Can be REGULAR or RAIN| REGULAR |
@@ -15,7 +15,7 @@ mechanic.
 | canPickup   | pickup  | Whether the arrows can be picked up by players | true|
 
 ## 範例
-```yaml
+```yml
   Skills:
   - volley{type=EGG;velocity=5;damage=10;amount=20}
 ```

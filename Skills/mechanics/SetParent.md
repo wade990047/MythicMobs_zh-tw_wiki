@@ -9,7 +9,7 @@ Works with the [@Parent Targeter](/mythiccraft/MythicMobs/-/wikis/Skills/Targete
 
 ## 範例
 This mob will try to set its current parent to the nearest ZombieBoss mob in a 20 block radius if it does not already have a parent
-```yaml
+```yml
 ZombieFollower:
   Type: DROWNED
   Skills:

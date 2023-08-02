@@ -1,17 +1,20 @@
-Clears all potion effects from the target entity
+用途
+-----
+清除目標藥水效果
 
-**Attributes**
+細項設定
+-----
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
+|--------------|----------------|--------|---------|
+| type  | | 要清除的效果類型  | |
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| types  | type  | The type or list of types of potion effect to clear.|
+不輸入則清除所有效果
 
-Not providing a type will clear all effects.
-
-**Examples**
-
-```yaml
-- potionclear{type=FIRE_RESISTANCE} @target
-- potionclear{type=FIRE_RESISTANCE,SPEED} @self
-- potionclear{} @self
+範例
+-----
+```yml
+Skills:
+  - potionclear{type=FIRE_RESISTANCE} @target
+  - potionclear{type=FIRE_RESISTANCE,SPEED} @self
+  - potionclear{} @self
 ```

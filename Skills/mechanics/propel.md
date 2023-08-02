@@ -1,16 +1,18 @@
-## Mechanic: Propel
-Propels the caster of the mechanic towards the target.
+用途
+-----
+將施法者推向目標
+  
 
-
-## 細項設定
-
-| Attribute  | Aliases | Description   | Default Value |
+細項設定
+-----
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |----------------|-----------------|----------------------------------------------------|---------------|
-| velocity   | magnitude, v| The velocity at which the mob will be propelled.   | 1 |
+| velocity   | v| 推向前方的力量   | 1 |
 
 
-## 範例
-```yaml
+範例
+-----
+```yml
 ExampleMob:
   Type: ZOMBIE
   Skills:

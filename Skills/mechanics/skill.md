@@ -7,7 +7,7 @@ targeter is specified.
 
 Syntax
 ------
-```yaml
+```yml
   Skills:
   - skill{skill=AnotherSkill} @Target ~onAttack
   - skill{s=AnotherSkill} @Trigger ~onSpawn
@@ -28,7 +28,7 @@ Cooldown
 Skill configurations are capable of utilizing cooldown
 Add cooldown to your skills like this:
 
-```yaml
+```yml
 internal_skillname:
   Cooldown: <seconds>
   Conditions:
@@ -48,7 +48,7 @@ OnCooldownSkill
 
 If the metaskill is triggered while on cooldown, this option allows for it to launch another metaskill instead
 
-```yaml
+```yml
 internal_skillname:
   Cooldown: <seconds>
   OnCooldownSkill: internal_fallbackskill_name
@@ -67,7 +67,7 @@ Note that the skill you set as the value of OnCooldownSkill can itself have a On
 範例
 --------
 
-```yaml
+```yml
   Skills:
   - skill{s=AnotherSkill;sync=true} @Target ~onAttack
   - skill{s=ice_bolt;sync=true} @Target ~onTimer:100

@@ -12,7 +12,7 @@ Summons mobs of the given type around the target.
 
 ## 細項設定
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|----------------------------------------------------------------------|---------|
 | type  | t, mob, m| The type of mob to summon. Can be a Mythic Mob type or a regular entity type   | SKELETON  |
 | amount| a | The number of mobs to summon.   | 1   |
@@ -34,7 +34,7 @@ Summons mobs of the given type around the target.
 ## 範例
 
 This example would summon 5 wither skeletons around the target players.
-```yaml
+```yml
 RaiseSkeletons:
   Skills:
   - summon{type=WITHER_SKELETON;amount=5;radius=4} @PIR{r=20}

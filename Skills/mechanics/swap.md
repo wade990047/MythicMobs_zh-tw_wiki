@@ -12,7 +12,7 @@
 
 ---
 
-**Examples:**
+**範例:**
 
 ```
 - swap @target

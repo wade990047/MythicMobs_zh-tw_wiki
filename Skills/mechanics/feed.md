@@ -18,7 +18,7 @@
   
 
 ### 範例
-```yaml
+```yml
 Skills:
 - feed{amount=10} @trigger ~onInteract
 ```

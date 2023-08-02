@@ -7,7 +7,7 @@ location.
 細項設定
 ----------
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|---------------------------------------------------------------------|---------------|
 | yield | y   | The yield (power) of the skull's explosion. | 1 |
 | playsound | ps  | Whether or not to play the skull launching sound when it is created | false |

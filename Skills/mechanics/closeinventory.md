@@ -7,7 +7,7 @@
 
 範例
 --------
-```yaml
+```yml
   Skills:
   - closeinventory{forcesync=true} @target ~onTimer:100
 ```

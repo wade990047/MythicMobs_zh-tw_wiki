@@ -1,32 +1,33 @@
-Mechanic: Lightning
+用途
 ===================
 
-Causes a lightning strike at the target entity or location, dealing
-damage and potentially setting the target entity or block on fire if it
-is not currently raining, but only if fire spread is enabled.
+對目標打雷，並造成傷害及燃燒(僅在有開啟火焰延燒的情況下發生)
 
 細項設定
 ----------
 
-| Attribute | Aliases | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|--------------------------------------------|---------------|
-| damage| d   | The amount of damage the strike will deal. | 0.01337   |
+| damage| d   | 閃電給予目標的傷害. | 0.01337   |
 
   
 
 範例
 --------
 
-This example will summon a lightning bolt to the designated targeters.
+對半徑10格內的所有實體劈下一道閃電。
 
+```yml
 StaticSheep:
   Type: SHEEP
   Skills:
   - lightning @EntitiesInRadius{r=10} ~onTimer:100
+```
+對半徑10格內的所有實體劈下一道閃電，並造成6點傷害。
 
-This example will summon a lightning bolt to the designated targeters and deal 6 damage.
-
+```yml
 StaticSheep:
   Type: SHEEP
   Skills:
   - lightning{d=6} @EntitiesInRadius{r=10} ~onTimer:100
+```

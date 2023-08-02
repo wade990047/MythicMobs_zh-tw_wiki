@@ -22,35 +22,35 @@ doDrops, doEffect, 和 useTool 都是從 MM v4.12 後新增
 下方測試技能可以使用指令 /mm test cast TestingBreakBlock
 
 1. 當玩家手上**沒有拿**物品，破壞方塊時不掉落物品也不播放特效
-```yaml
+```yml
 TestingBreakBlock:
   Skills:
   - breakblock{forcesync=true;doEffect=true;doDrops=true;useTool=true} @origin
 ```
 
 2. 當玩家手上**沒有拿**物品，破壞方塊時掉落物品但不播放特效 
-```yaml
+```yml
 TestingBreakBlock:
   Skills:
   - breakblock{forcesync=true;doEffect=true;doDrops=true;useTool=false} @origin
 ```
 
 3. 當玩家手上**有拿**物品，破壞方塊時掉落物品但不播放特效
-```yaml
+```yml
 TestingBreakBlock:
   Skills:
   - breakblock{forcesync=true;doEffect=false;doDrops=true;useTool=true} @origin
 ```
 
 4. 當玩家手上**有拿**物品，破壞方塊時不掉落物品也不播放特效
-```yaml
+```yml
 TestingBreakBlock:
   Skills:
   - breakblock{forcesync=true;doEffect=true;doDrops=false;useTool=true} @origin
 ```
 
 5. 當玩家手上**有拿**物品，破壞方塊時掉落物品也播放特效
-```yaml
+```yml
 TestingBreakBlock:
   Skills:
   - breakblock{forcesync=true;doEffect=true;doDrops=true;useTool=true} @origin
@@ -61,7 +61,7 @@ TestingBreakBlock:
 --------
 
 當點擊右鍵時會在當前世界座標 x:100,y:64,z:100 破壞方塊
-```yaml
+```yml
 Skills:
   - breakblock{forcesync=true} @location{c=100,64,100} ~onInteract
 ```

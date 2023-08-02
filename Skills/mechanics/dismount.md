@@ -4,7 +4,7 @@
 
 範例
 --------
-```yaml
+```yml
   Skills:
   - dismount ~onDamaged
 ```

@@ -8,7 +8,7 @@ force-skills or simulated wind.
 細項設定
 ----------
 
-| Attribute | Aliases | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------------------------------------------------------------------|---------------|
 | mode  | m   | The operation to perform. Can be SET, ADD, REMOVE, DIVIDE, or MULTIPLY. | SET   |
 | velocityx | vx, x   | Velocity on the x-axis. Can be negative.   | 1 |
@@ -25,7 +25,7 @@ This example will stop all momentum of the casting mob upon taking
 damage. The effect will only last until the mob decides to move again or
 is moved by other sources.
 
-```yaml
+```yml
 internal_mobname:
   Type: Zombie
   Skills:
@@ -33,7 +33,7 @@ internal_mobname:
 ```
 
 While the example above works most of the time, the bow's ARROW_KNOCKBACK enchantment will still manage to move them. This can be prevented by doing a slight modification to the mechanic, as shown below.
-```yaml
+```yml
 internal_mobname:
   Type: Zombie
   Skills:

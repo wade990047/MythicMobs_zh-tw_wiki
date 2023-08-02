@@ -7,7 +7,7 @@ Caster will become a **vanilla** mob when it isn't a player.
 細項設定
 ----------
 
-| 技能名稱 | 簡化寫法| 用途 | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-------------|---------|-------------------|---------------|
 | duration| d   | The given duration |  |
 

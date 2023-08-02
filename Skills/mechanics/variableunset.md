@@ -19,7 +19,7 @@ This mechanic was added in 4.12
 
 --------
  
-Examples
+範例
 ----
 
 This will unset the testing caster scope variable from the caster.

@@ -12,7 +12,7 @@
 範例
 --------
 
-```yaml
+```yml
 Ditto:
   Type: SKELETON
   Skills:

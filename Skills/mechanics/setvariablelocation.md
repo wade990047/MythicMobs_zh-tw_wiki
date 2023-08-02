@@ -10,7 +10,7 @@ Sets a value of type string. The value will depend on the location passed to the
 
 範例
 --------
-```yaml
+```yml
 TestSkill:
  Skills:
  - setvarloc{var=caster.1;v=@self} @self

@@ -5,7 +5,7 @@ Sets the position of the dragon's podium (aka the point the dragon circles aroun
 *This mechanic has no attributes*
 
 ## Example
-```yaml
+```yml
   Skills:
   - setDragonPodium @Location{c=125,50,-521}
 ```

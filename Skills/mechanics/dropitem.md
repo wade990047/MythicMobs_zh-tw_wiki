@@ -14,13 +14,13 @@ Mechanic: Drop Item
 --------
 
 掉落指定物品列的範例.
-```yaml
+```yml
   Skills:
   - dropitem{i=diamond_sword,diamond} @self ~onDeath
   - ...
 ```
 掉落指定掉落集合的範例
-```yaml
+```yml
   Skills:
   - dropitem{i=SkeletonKingDrops} @self ~onSpawn
   - ...

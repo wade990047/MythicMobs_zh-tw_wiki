@@ -7,7 +7,7 @@ Shows the hidden caster to the targeted players.
 
 
 ## 範例
-```yaml
+```yml
   Skills:
   - showEntity{} @NearestPlayer{r=10}
 ```

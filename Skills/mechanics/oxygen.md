@@ -1,13 +1,17 @@
-Gives the target player an amount of oxygen.
+用途
+------
 
-**Attributes**
+幫目標玩家補充氧氣
 
-| Attribute | Alias | Description |
-| --------- | ----- | ----------- |
-| amount|   | the amount of oxygen to give the player |
+細項設定
+----------
 
-**Examples**
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
+|-----------|---------|----------------------------------|---------------|
+| amount  |  | 要給予的氧氣數量 |   |
 
-```
-- oxygen{amount=10}
+範例
+
+```yml 
+  - oxygen{amount=10}
 ```

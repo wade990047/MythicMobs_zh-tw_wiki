@@ -16,12 +16,12 @@
 --------
 
 填充指定物品
-```yaml
+```yml
   Skills:
   - fillchest{i=diamond_sword,diamond} @Location{x=#;y=#;z=#} ~onDeath
 ```
 填充指定掉落集合
-```yaml
+```yml
   Skills:
   - fillchest{i=SkeletonKingDrops} @Location{x=#;y=#;z=#} ~onSpawn
   ```

@@ -18,7 +18,7 @@ will also interrupt casting, such as cancelling on move or teleport.
 
 *Cast can also use most [Aura](/skills/mechanics/aura) attributes*
 
-| 設定項 | 簡化寫法 | 用途  | 預設值 |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |---------------|---------|----------------------------------------------------------------------|---------|
 | onCast| oc  | Skill to execute if the cast finishes successfully   | |
 | onInterrupted | oi  | Skill to execute if the cast is interrupted  | |

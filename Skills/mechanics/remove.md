@@ -7,12 +7,12 @@ Removes the targeted entity from existence. Does not work on players.
 --------
 
 This mob would despawn 10 seconds after spawning:
-```yaml
+```yml
   Skills:
   - remove{delay=200} @self ~onSpawn
 ```
 This skill despawns the mob immediately when it is right clicked.
-```yaml
+```yml
   Skills:
   - remove @self ~onInteract
 ```
