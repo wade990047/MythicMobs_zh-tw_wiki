@@ -1,25 +1,25 @@
-Mechanic: Threat
+用途
 ================
 
-Modifies the mob's threat value towards the target. Requires the mob
-have Threat Tables enabled in order to have any effect.
+編輯目標對於施法者威脅表的威脅值 **(生物必須開啟威脅表)**
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-----------------------------------------------------------|---------|
-| amount| a   | The amount of threat to give the target. Can be negative. | 1   |
-| mode  | m   | Add / Remove / Multiply / Divide / Set / Reset / Forcetop | Add |
+| amount| a   | 要給予目標的值(可以是負值) | 1   |
+| mode  | m   | 動作: Add / Remove / Multiply / Divide / Set / Reset / Forcetop | Add |
 
-Set/reset/forcetop modes do not require the “amount=” field  
+Set/reset/forcetop 這三種動作不需要 “amount=” 的設定
 
 範例
 --------
 
-This example will set the nearest player's threat level to a very high
-amount.
+範例中怪物會在重生時將最近的玩家設置10000點的威脅值
 
+```yml
 Fixate:
   Skills:
   - threat{amount=10000} @NearestPlayer ~onSpawn
+```

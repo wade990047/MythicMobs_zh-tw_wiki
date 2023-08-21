@@ -1,32 +1,31 @@
 ## 用途
-Sets the world's time. Depending on the attributes used, the change in time can be absolute or relative to the target player.
+變更時間，可以變更當前世界的時間，也可以獨立變更目標玩家的顯示時間
 
-Time mechanics must be synced to function. "sync=true;"
+技能必要設定項`sync=true`
 
 ## 細項設定
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
-|-----------|-----------|----------------------------------------------------------------------|---------|
-| mode  | m | The mode used in the time mechanic. Can be ADD/SET/RESET | ADD |
-| amount| ticks, t, amt | The amount of ticks by which the time will be changed| 20  |
-| personal  |   | Sets whether to change the global time or the player's client time   | false   |
-| relative  |   | Sets whether to keep the player's time synchronized to its world time with an offset  | true|
+|-----------|-----------|------------------|---------|
+| mode  | m | 變更時間的方法，可以是： `ADD/SET/RESET` | ADD |
+| amount| t | 要變更的時間量(單位: ticks)| 20  |
+| personal  |   | 是否獨立變更玩家的時間 | false   |
+| relative  |   | 設置是否讓玩家的時間與其世界時間保持同步(含偏移量)  | true|
 
-#### Mode Attribute
-The different values the mode attribute can be all have different effects
-- **`ADD`** - Sets the current time of the world with an offset
-- **`SET`** - Sets the current time of the world
-- **`RESET`** - Re-syncs the target's world time with the server world time, if it is not already synced
+#### 變更方法
+以下是各方法的解釋
+- **`ADD`** - 設置基於當前世界時間的額外偏移時間(增加意義)
+- **`SET`** - 設置當前的世界時間
+- **`RESET`** - 重置目標的世界時間，若未完成同步可用此方法修正
 
 ## 範例
 ```yml
-#MOB
 ExampleMob:
   Type: ZOMBIE
   Skills:
   - sudoskill{s=MidnightAura} @PIR{r=30} ~onTimer:20
 ```
+---
 ```yml
-#SKILL
 MidnightAura:
   Skills:
   - aura{auraName=midnight;i=1;ms=1;rd=true;
@@ -37,6 +36,3 @@ onEnd=[
   - time{mode=RESET;sync=true} @self
 ]} @self
 ```
-
-## 簡化寫法
-- [x] setTime

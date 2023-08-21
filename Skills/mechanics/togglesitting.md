@@ -1,20 +1,19 @@
-Mechanic: togglesitting
+用途
 =======================
+使生物坐下(需有可坐下的設定項)
 
-**Aliases:** sit
-
-Toggles the sitting state for cats, dogs, foxes, and parrots.
+可用的生物有：貓、狼、狐狸、鸚鵡
 
 細項設定
 ----------
 
-| Attribute | Aliases   | Description| Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|-----------|------------------------------------|---------------|
-| setSitting | state| Sets the sitting state | false |
+| setSitting | state| 設置是否坐下 | false |
 
 範例
 --------
-```
+```yml
 Dog:
   Type: Wolf
   Skills:

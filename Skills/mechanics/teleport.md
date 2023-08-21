@@ -1,30 +1,23 @@
-Mechanic: Teleport
-==================
-
-Teleports the caster to the targeted location/entity. The end point of the teleportation will be within an area whose size depends on the `spreadh` and `spreadv` attributes.
+用途
+---
+將施法者傳送至位置/目標，傳送的點會在垂直與水平偏移量內
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
-|-----------|---------|------------------------------------------------|---------------|
-| spreadh   | sh  | The horizontal spread of the landing location. | 0 |
-| spreadv   | sv  | The vertical spread of the landing location.   | 0 |
+|---------|----|---------------|---|
+| spreadh | sh | 最大水平偏移量 | 0 |
+| spreadv | sv | 最大垂直偏移量 | 0 |
 
   
 
-Special Notes
--------------
-
-The skill will attempt to find a safe landing location within the spread
-area, if possible, and should generally avoid putting the mob inside of
-blocks.
+**筆記：** 該技能會將目標傳送至安全的位置，避免卡在方塊中
 
 範例
 --------
 
-This example would teleport the mob to within 5 blocks of the targeted
-player, on the same vertical axis.
+範例中怪物使用技能後會傳送至離目標五格內的水平位置
 
 ```yml
 Warp:

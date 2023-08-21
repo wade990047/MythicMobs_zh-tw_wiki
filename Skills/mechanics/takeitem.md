@@ -1,22 +1,21 @@
-Mechanic: TakeItem
+用途
 =================
-*Aliases*: take, itemtake, takeitems
 
-Removes an item from the target
+移除目標的物品
 
 細項設定
 ----------
 
-| Attribute | Aliases| Description  | Default |
-|-----------|----------------|----------------------------------|---------|
-| item  | material, m, i | The item, or material, to remove | DIRT|
-| amount| a  | The amount to remove | 1   |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
+|-----------|-------|---|---------|
+| item  | i | 要移除的物品 | DIRT |
+| amount| a | 要移除的數量 | 1 |
 
 
 範例
 --------
 
-Would remove a stack of dirt from the nearest player's inventory
+清除半徑10格內最近的玩家背包中的64個泥土
 ```yml
 Skills:
   - takeitem{i=DIRT;a=64} @NearestPlayer{r=10}

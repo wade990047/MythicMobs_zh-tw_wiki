@@ -1,37 +1,32 @@
-Mechanic: VariableUnset
+用途
 =======================
 
-**Aliases:** varUnset, unsetVariable, unsetVar
-
-Unsets a [variable](/skills/variables).
+刪除指定 [變量](/skills/variables)
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
-|-----------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| variable  | var | The name of the variable. Can optionally be prefixed with **scope.**   |   |
-| scope | s   | The [scope](/skills/variables#variable_scopes) of the variable, e.g. where the variable will be located.| SKILL |
+|-----------|---------|------------|---------------|
+| variable  | var | 變量名稱，可以通過 **scope.** 來補足設定項  |   |
+| scope | s   | 變量的 [所屬位置](/skills/variables#variable_scopes) | SKILL |
 
---------
 
-This mechanic was added in 4.12
+技能新增於MM版本 v4.12
 
---------
  
 範例
 ----
 
-This will unset the testing caster scope variable from the caster.
+刪除施法者在`caster`位置底下的`testing`變量
 
-```
+```yml
 RemoveVariable:
   Skills:
   - variableUnset{var=caster.testing} @self
 ```
-
-This will unset the testing caster scope variable from the caster as well.
-```
+結果同上
+```yml
 RemoveVariable:
   Skills:
   - variableUnset{var=testing;scope=caster} @self

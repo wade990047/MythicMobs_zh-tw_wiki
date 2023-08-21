@@ -1,27 +1,28 @@
-Mechanic: Toggle Lever
+用途
 ----------------------
 
-Toggles a lever on and off at the supplied coordinates.
+在指定位置變更控制桿狀態
 
-**Note:**  
-The lever will switch back to the starting position after a set amount
-of time. (Defaulting to 20 ticks/1 second).
+**筆記:** 
+
+控制桿會在經過設定的指定時間後恢復原狀 (預設值為 20 ticks / 1 秒).
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|-------------------------------------------------------------|---------------|
-| duration  | d   | The duration (in ticks) the lever should remain toggled on. | 20|
-| x | | The X coordinate of the button.| 0 |
-| y | | The Y coordinate of the button.| 0 |
-| z | | The Z coordinate of the button.| 0 |
+| duration  | d   | 控制桿的狀態要變更多久(單位:ticks) | 20|
+| x | | X 座標 | 0 |
+| y | | Y 座標 | 0 |
+| z | | Z 座標 | 0 |
 
   
 
 範例
 --------
-
-OpenSecretDoor:
+```yml
+開啟隱藏門:
   Skills:
-  - togglelever{duration=600;x=15;y=67;z=-213}
+  - togglelever{d=600;x=15;y=67;z=-213}
+```

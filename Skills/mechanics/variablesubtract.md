@@ -1,22 +1,20 @@
-Mechanic: VariableSubtract
+用途
 ==========================
 
-Subtracts an amount to a [variable](/skills/variables) on the specified
-scope. Only works with numeric variable types.
+減少指定 [變量](/skills/variables) 的值，僅適用於類型為數字的變量
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
 |-----------|---------|------------------------------------|---------------|
-| var   | name, key | The scope and name of the varibale |   |
-| amount| a   |   | 1 |
-
-  
+| var   | name| 變量名稱 |   |
+| amount| a   |   | 1 |  
 
 範例
 --------
-
+```yml
   Skills:
-  - variablesubtract{var=skill.testVar;amount=1} ~onInteract
+  - variablesubtract{var=skill.testVar;a=1} ~onInteract
   - ...
+```

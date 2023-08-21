@@ -1,24 +1,27 @@
-Mechanic: TeleportIn
+用途
 ====================
-**Aliases:** tpin, tpdir, tpi
 
-Will teleport the target relative to the caster's yaw. The direction attribute must be in this format: direction=x,y,z
+將目標傳送至施法者的相對位置
 
-`x` is forward or backward, `y` is up or down, and `z` is left or right
+`x` 設定前後
+`y` 設定上下
+`z` 設定左右
 
 細項設定
 ----------
 
-| Attribute | Aliases   | Description | Default Value |
-|-----------------------|-----------|-------------------------------------------------------------------------------|---------------|
-| vector | direction,dir,d,v | The direction to where the mob will be teleported| |
-| yaw | y | Yaw modifier | 0 | 
-| targetasorigin | tao | Will use the target's location as the origin instead of the caster's | false |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
+|-----------------------|-----------|--------|---------------|
+| vector | d,v | 要被傳送的變更位置| |
+| yaw | y | 左右視角偏移量 | 0 | 
+| targetasorigin | tao | 是否以目標的位置為準 | false |
 
 範例
 --------
 
-Will teleport the player that triggered the skill to the right of the caster.
+將觸發技能的玩家向右傳送一格
 
+```yml
 Skills:
 - teleportin{vector=0,0,1} @trigger ~onInteract
+```

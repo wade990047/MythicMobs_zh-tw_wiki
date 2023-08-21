@@ -1,35 +1,37 @@
-Mechanic: RemoveTag
+用途
 ===================
 
-Removes a scoreboard tag from the target.
+對目標移除一個記分板標籤
 
-This is used in conjunction with the **hastag condition** (see
-[Conditions](/conditions/start)). You can also use the vanilla command
-"/scoreboard players tag &lt;player name&gt; remove [Tag Name] " to do
-the same thing.
+這項技能通常與 **hastag** 一起使用 (可以在 [條件判斷式](/conditions/start) 中找到)
+
+也可以利用原版指令達到一樣的效果
+
+**`/scoreboard players tag <player name> remove [Tag Name]`**
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
-|-----------|---------|----------------------------|---------------|
-| tag   | t | The string-name of the tag | default   |
+|-----------|---------|------------------|---------------|
+| tag   | t | 標籤名稱 | default   |
 
   
 
 範例
 --------
 
-This skill would give the casting mob the tag "Test".
-
-TagSkill
+這項技能會移除施法者名為`Test`的`tag`
+```yml
+TagSkill:
   Skills:
   - removetag{t=Test} @self
-
-This skill would only run on the mob if it had the tag, "Test".
-
+```
+這項技能只會在施法者擁有名為`Test`的`tag`時執行
+```yml
 TagTest:
   Conditions:
   - hastag{t=Test}
  Skills:
   - suicide @self
+```

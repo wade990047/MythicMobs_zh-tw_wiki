@@ -1,12 +1,17 @@
-Mechanic: Set Variable Location
+用途
 --------------------------
-Sets a value of type string. The value will depend on the location passed to the "value" parameter, and will include informations regarding coordinates and world of the target location
+將指定變量設置座標
 
-**Attributes**
+設置一個字串類型的值。
 
-| Attribute | Alias | Description | Defaults |
+該值將取決於傳遞給"value"參數的位置，資料含有目標位置的坐標和世界
+
+細項設定
+---
+
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 | --------- | ----- | ----------- | -------- |
-| value  | val, v  | The target location | @self
+| value  | v | 目標位置 | `@self`
 
 範例
 --------
@@ -14,5 +19,5 @@ Sets a value of type string. The value will depend on the location passed to the
 TestSkill:
  Skills:
  - setvarloc{var=caster.1;v=@self} @self
- - m{m=<caster.var.1>} @self
+ - message{m=<caster.var.1>} @self
 ```

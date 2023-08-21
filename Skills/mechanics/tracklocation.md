@@ -1,13 +1,11 @@
-Mechanic: TrackLocation
-=================
-
-*Aliases*: settrackedlocation, stl
-
-Sets the mob's tracked location to the targeted location
+用途
+--------
+將生物的追隨位置設置為目標位置
 
 
 範例
 --------
-
+```yml
   Skills:
   - tracklocation @targetlocation
+```

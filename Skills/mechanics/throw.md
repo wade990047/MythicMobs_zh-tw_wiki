@@ -1,56 +1,25 @@
-Mechanic: Throw
+用途
 ===============
 
-Throws all targets away from the mob (or origin).
+將目標實體向外丟(由原點出發)
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
-|-----------|---------|-------------------------------------------------------|---------------|
-| velocity  | v   | The horizontal velocity at which the entity is throw. | 1 |
-| velocityY | vy  | The vertical velocity at which the entity is thrown   | 1 |
+|-----------|-----|----------------|----|
+| velocity  | v   | 向外丟的水平力量 | 1 |
+| velocityY | vy  | 向外丟的垂直力量 | 1 |
 
   
 
 範例
 --------
 ```yml
-GroundSlam:
+地面衝擊:
   Skills:
   - effect:explosion @Self
   - damage{amount=10} @PlayersInRadius{r=5}
   - throw{velocity=15;velocityY=5} @PlayersInRadius{r=5}
 ```
-In this example the mob will create an explosion effect around them that
-inflicts 10 damage (5 hearts) to players within a radius of 5 blocks and
-will knock them back. Giving the illusion of a powerful explosion.
-
-Complex 範例
-----------------
-```yml
-SuperShockslam:
-  Skills:
-  - throw{velocity=5;velocityY=5} @PIR{r=10}
-  - damage{a=50;i=false} @PIR{r=10}
-  - effect:particles{p=hugeexplode;a=5;vs=0.5;hs=0.5;s=0;y=1} @Self
-  - effect:sound{s=entity.generic.explode;v=2;p=0.5} @Self
-  - effect:sound{s=entity.generic.explode;v=2;p=1;repeat=7;repeatInterval=2} @Self
-  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=1} @Self
-  - delay 2
-  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=3} @Self
-  - delay 2
-  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=5} @Self
-  - delay 2 
-  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=7} @Self
-  - delay 2
-  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=9} @Self
-  - delay 2
-  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=11} @Self
-```
-This complex example shows how the throw mechanic can be used in
-conjunction with other mechanics to make quite amazing effects. The
-caster unleashes a powerful shockwave that deals 50 damage (25 hearts)
-to all players within 10 blocks and using the **throw** mechanic causes
-them to be flung a small bit into the air. There is also extra effects
-added to make the attack more appealing to look at and intimidating.
+範例中的技能會先在技能施放者的位置顯示一個爆炸效果，同時對半徑5格內的所有玩家造成10點傷害(五顆心)，並且讓玩家有向外(離開技能施放者)的力飛去，藉此模擬爆炸後的擊退

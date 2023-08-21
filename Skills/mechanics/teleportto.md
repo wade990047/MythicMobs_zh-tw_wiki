@@ -1,25 +1,25 @@
-Mechanic: TeleportTo
+用途
 ====================
 
-Will teleport the targeted entity or entities to the specified location.
+傳送目標到指定位置
 
 細項設定
 ----------
 
-| Attribute | Aliases   | Description | Default Value |
-|-----------------------|-----------|-------------------------------------------------------------------------------|---------------|
-| location, coordinates | loc, l, c | The coordinates of the teleport-destination  |   |
-| world | w | The destination-world. Optional attribute if "location" is given  |   |
-| yaw   | y | The yaw that the affected entities should assume | 0 |
-| pitch | p | The pitch that the affected entities should assume| 0 |
-| relative | r| Whether the location is relative or directional| false  |
-| targetasorigin| tao | Will use the target's location as the origin instead of the caster |  false |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
+|--------|-----------|-------------|--------|
+| location | loc, l | 傳送座標  |   |
+| world | w | 指定世界  |   |
+| yaw   | y | 傳送後的視角左右偏移 | 0 |
+| pitch | p | 傳送後的視角上下偏移| 0 |
+| relative | r| 位置是否為相對位置(^)而非絕對位置(~)| false  |
+| targetasorigin| tao | 是否以目標做為傳送原點，而非自身 |  false |
 
 範例
 --------
 
-Will teleport all players in a radius of 50 blocks around the casting
-mob to the specified location:
-
+將半徑50格內的所有玩家傳送至當前地圖(x=190, y=60, z=200)的地方
+```yml
 Skills:
 - teleportto{location=190,64,200} @PIR{r=50}
+```
