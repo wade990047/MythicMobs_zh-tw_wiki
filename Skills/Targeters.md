@@ -210,10 +210,7 @@ TestOwner:
 | coordinatepitch | cpitch | 設置音高值 |
 | blockcentered| centered | 布林值(true/false). 如果設定為 true, 目標位置的方塊中心將成為目標，而不是目標位置 |
 
-
-# target-filters
-
-## 目標篩選器
+# 目標篩選器
 
 目標篩選器允許你篩選掉某些目標，並使目標選擇器更加靈活。
 
