@@ -6,7 +6,7 @@ Applies an aura to the target that triggers a skill when they shoot with a bow. 
 細項設定
 ----------
 
-| Attribute| Aliases   | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |------------------|---------------|------------------------------------------------------------|---------------|
 | onShoot| osh| Skill to execute when the entity shoots|   |
 | cancelEvent  | cE| Whether or not to cancel the event that triggered the aura | false |

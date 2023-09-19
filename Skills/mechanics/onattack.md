@@ -7,7 +7,7 @@ something. Can use any aura attribute
 細項設定
 ----------
 
-| Attribute| Aliases   | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |------------------|---------------|------------------------------------------------------------|---------------|
 | onHit| oH| Skill to execute if the target hits something  | NONE |
 | cancelEvent  | cE| Whether or not to cancel the event that triggered the aura | false |

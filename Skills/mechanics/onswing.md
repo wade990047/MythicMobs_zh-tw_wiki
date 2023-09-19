@@ -6,7 +6,7 @@ Applies an aura to the target that triggers a skill when they swing (left click)
 細項設定
 ----------
 
-| Attribute| Aliases   | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |------------------|---------------|------------------------------------------------------------|---------------|
 | onSwing | osw| Skill to execute if the target swings / left clicks | NONE |
 

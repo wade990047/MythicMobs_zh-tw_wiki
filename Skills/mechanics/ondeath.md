@@ -6,7 +6,7 @@ Applies an aura to the target that triggers a skill when they die
 細項設定
 ----------
 
-| Attribute| Aliases   | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |------------------|---------------|------------------------------------------------------------|---------------|
 | onDeathSkill| od| Skill to execute if the target dies| NONE |
 

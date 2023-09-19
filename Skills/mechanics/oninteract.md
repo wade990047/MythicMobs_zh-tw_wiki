@@ -8,7 +8,7 @@ Applies an aura to an entity that triggers a skill when they are interacted with
 細項設定
 ----------
 
-| Attribute| Aliases   | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |------------------|---------------|------------------------------------------------------------|---------------|
 | onInteract | or, oi| Skill to execute if the target interacts / right clicks || OR when the casting entity is interacted with| NONE |
 

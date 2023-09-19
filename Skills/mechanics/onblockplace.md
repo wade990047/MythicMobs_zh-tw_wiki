@@ -6,7 +6,7 @@ Applies an aura to the target that triggers a skill when they break a block
 細項設定
 ----------
 
-| Attribute| Aliases   | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |------------------|---------------|------------------------------------------------------------|---------------|
 | onBlockPlace | op| Skill to execute if the target places a block  | NONE |
 | cancelEvent  | cE| Whether or not to cancel the event that triggered the aura | false |

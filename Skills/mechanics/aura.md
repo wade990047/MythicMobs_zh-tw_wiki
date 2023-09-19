@@ -1,62 +1,55 @@
-Mechanic: Aura
+用途
 ==============
-Aliases: (Buff/Debuff)
 
-The Aura mechanic acts as a status effect on the target entity, and can
-trigger other skills over its duration. Auras allow you to create custom
-status effects (i.e. buffs and debuffs) that are tracked for their
-duration and can also be used in other mechanics and conditions.  
+光環系列技能對實體起到狀態效果的作用，並且可以在其持續時間內觸發其他技能。
+
+光環允許建立自訂追蹤其狀態效果(即增益和減益)持續時間，也可用於其他技能和條件。
 
 細項設定
 ----------
 
 | 設定項 | 簡化寫法 | 用途 | 預設值 |
-|---------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| auraName| buffname, debuffname | Optional name, required to use associated mechanics & conditions that reference a specific aura  | None  |
-| onStartSkill | onStart, os  | Meta-Skill executed when the aura first starts. | None  |
-| onTickSkill  | onTick, ot  | Meta-Skill executed every [interval] ticks on the affected entity.| None  |
-| onEndSkill   | onEnd, oe  | Meta-Skill executed when the aura fades.   | None  |
-| ShowBarTimer | bartimer, bt | If set, the aura will display a bar for caster during it
-| Charges | c   | If set, the aura will fade when it hits zero charges. Modifiable by other mechanics. | 0 |
-| Duration| ticks, t, d, time, t | The max duration (in ticks) the aura will persist.  | 200   |
-| Interval| i   | How often (in ticks) the aura fires its onTick skill| 1 |
-| maxStacks   | ms | How many times the aura stacks on the same targeted entity if applied multiple times (4.6.0 +)   | None  |
-| refreshDuration | rd | Makes the aura's duration refresh to the amount defined in the mechanic should the entity have the same aura applied to it again (4.6.0 +) | true |
-| mergeSameCaster | msc, mc | Merges all of the same auras applied by one entity to another into one aura (Prevents a mob from being able to stack an aura multiple times on the same entity) (4.6.0 +)   | false |
-| mergeAll| ma | Merges all of the same auras applied by any and all entities to another into one aura (Prevents multiple mobs from being able to stack an aura multiple times on the same entity) (4.6.0 +) | false |
-| overwriteSameCaster | | When applied, stops all of the same auras applied on the target by the same caster and replaces them with the new aura | false |
-| overwriteAll | | When applied, stops all of the same auras applied on the target and replaces them with the new aura | false |
-| CancelOnGiveDamage  | cogd| Cancels the aura if the entity with the aura deals any damage to another entity. | false |
-| CancelOnTakeDamage  | cotd| Cancels the aura if entity with the aura takes any sort of damage.  | false |
-| CancelOnDeath   | cod | Cancels the aura if the entity with the aura dies.  | true  |
-| CancelOnTeleport| cot | Cancels the aura if the entity with the aura teleports at all whether by another mechanic or server command.  | false |
-| CancelOnChangeWorld | cocw| Cancels the aura if the entity with the aura changes worlds. (Most times applies to players) | false |
-| CancelOnSkillUse| cosu| Cancels the aura if the entity with the aura uses another skill while the aura is active.| false |
-| CancelOnQuit| coq | Cancels the aura if the entity with the aura logs out. (Only really applies to players)  | true  |
-| DoEndSkillOnTerminate | desot, ares | Whether or not the aura will run onEndSkill when it's removed by auraremove mechanic | true |
+|---------------------|---------|------------------|---------------|
+| auraName| | 自訂名稱 | None  |
+| onStartSkill | os | 光環執行時首先觸發的技能 | None  |
+| onTickSkill  | ot | 每觸發一次 **Tick** 計算時所執行的技能 | None  |
+| onEndSkill   | oe | 光環結束後所執行的技能  | None  |
+| ShowBarTimer | bt | 設置後，光環將在施法期間顯示一個施法條
+| Charges | c | 設置後，當使用次數達到零時，光環就會消失。可由其他技能修改。 | 0 |
+| Duration| d | 光環最大持續時間(單位: ticks)  | 200   |
+| Interval| i   | 每隔多少 **Tick** 執行一次 `onTickSkill`| 1 |
+| maxStacks | ms | 最多對同一個目標施加幾次光環 (v4.6.0+)   | None  |
+| refreshDuration | rd | 如果實體被再次施加相同的光環，則使光環的持續時間刷新(v4.6.0+) | true |
+| mergeSameCaster | msc | 將一個實體施加於另一個實體的所有相同光環合併為一個光環(防止生物能夠在同一實體上多次疊加光環)(v4.6.0+)   | false |
+| mergeAll| ma | 將任意和所有實體施加於另一個實體的所有相同光環合併為一個光環（防止多個生物能夠在同一實體上多次堆疊光環） (v4.6.0+) | false |
+| overwriteSameCaster | | 啟用後，停止同一施法者對目標施加的相同光環，並用新光環取代 | false |
+| overwriteAll | |啟用後，停止應用在目標上的所有相同光環，並用新光環取代| false |
+| CancelOnGiveDamage  | cogd| 實體造成傷害時結束光環 | false |
+| CancelOnTakeDamage  | cotd| 實體受到傷害時結束光環 | false |
+| CancelOnDeath   | cod | 實體自身死亡時結束光環 | true  |
+| CancelOnTeleport| cot | 實體進行傳送時結束光環 | false |
+| CancelOnChangeWorld | cocw| 實體變更世界時結束光環 | false |
+| CancelOnSkillUse| cosu| 實體使用技能時結束光環| false |
+| CancelOnQuit| coq | 玩家退出遊戲時結束光環  | true  |
+| DoEndSkillOnTerminate | desot | 當技能被 [auraremove](skills/mechanics/auraremove) 移除時是否執行 `onEndSkill` | true |
 
   
-===== Special Options (4.6.0 +)=====  
- The **onAttack** aura type has the following options:
+===== 特殊設定 (v4.6.0+)=====  
+**onAttack** 光環類型有下列額外設定項:
 
--   All options available to Auras
-
-| Attribute| Aliases   | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |------------------|---------------|------------------------------------------------------------|---------------|
-| onHit| oH| Skill to execute if the target hits something  | NONE |
-| cancelEvent  | cE| Whether or not to cancel the event that triggered the aura | false |
-| damageAdd| add, a| An optional static increase to the original hit's damage | 0 |
-| damageSub   | sub, s| An optional static decrease (or increase if negative) to the original hit's damage | 0 |
-| damageMultiplier | multiplier, m | An optional multiplier on the original hit's damage to the original hit's damage | 1   |
-
-
-(See example below for usage)
+| onHit| oH| 當實體造成攻擊時所執行的技能  | NONE |
+| cancelEvent  | cE| 是否取消觸發光環的事件 | false |
+| damageAdd| a| 增加傷害量(負值為減少) | 0 |
+| damageSub   | s| 減少傷害量(負值為增加) | 0 |
+| damageMultiplier | m | 造成傷害的額外倍率 | 1   |
 
 The **onDamaged** aura type has the following options:
 
 -   All options available to Auras
 
-| Attribute| Aliases   | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |------------------|---------------|------------------------------------------------------------|---------------|
 | onHit| oH| Skill to execute if the target is damaged  | NONE|
 | cancelEvent  | cE| Whether or not to cancel the event that triggered the aura | false |

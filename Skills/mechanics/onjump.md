@@ -8,7 +8,7 @@ Applies an aura to the target that triggers a skill when they jump
 細項設定
 ----------
 
-| Attribute| Aliases   | Description   | Default Value |
+| 設定項 | 簡化寫法 | 用途 | 預設值 |
 |------------------|---------------|------------------------------------------------------------|---------------|
 | onJump | oj| Skill to execute if the target jumps| NONE |
 | cancelevent | cE   | cancel the event when it is triggered   | false |
